@@ -123,7 +123,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button variant="contained" color="secondary" sx={{ width: '200px', textTransform: 'none', borderRadius: '64px' }}>
+            <Button variant="contained" color="warning" sx={{ width: '200px', borderRadius: '64px', fontWeight: 'bold' }}>
               Log your will attend! GCANXX1
             </Button>
           </Box>
