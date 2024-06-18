@@ -1,16 +1,8 @@
-import { Button, Grid, Typography, styled, useTheme } from "@mui/material";
+import { Button, Grid, Typography, useTheme } from "@mui/material";
 import { Fragment } from "react/jsx-runtime";
 import PlaceIcon from '@mui/icons-material/Place';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-
-const Section = styled('div')(() => {
-  return {
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'center',
-    padding: '32px 0px',
-  }
-})
+import { Section } from "../../components/Section";
 
 const InfoBlockStuff = [
   {

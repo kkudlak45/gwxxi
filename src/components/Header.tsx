@@ -15,6 +15,10 @@ const pages = [
   {
     text: 'Events & Activities',
     href: '/events'
+  },
+  {
+    text: 'Travel & Lodging',
+    href: '/travel'
   }
 ];
 

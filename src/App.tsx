@@ -6,6 +6,7 @@ import { Home } from './pages/Home'
 import Events from './pages/Events'
 import { ThemeProvider } from '@emotion/react'
 import { theme } from './constants/theme'
+import { Travel } from './pages/Travel'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route index element={<Home />} />
             <Route path="events" element={<Events />} />
+            <Route path="travel" element={<Travel />} />
           </Routes>
         </Container>
         <Footer />
