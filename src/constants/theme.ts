@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material";
 
-const GREEN = "#687659";
-const BLUE = "#396B92";
-const CHARCOAL = "#2C2A29";
-const RED = "#7F3E42";
-const YELLOW = "#BB8346";
+export const GREEN = "#687659";
+export const BLUE = "#396B92";
+export const CHARCOAL = "#2C2A29";
+export const RED = "#7F3E42";
+export const YELLOW = "#BB8346";
 
 export const theme = createTheme({
   typography: {

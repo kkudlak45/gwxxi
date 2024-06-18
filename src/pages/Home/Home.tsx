@@ -49,7 +49,7 @@ export function Home() {
       <Section sx={{ backgroundColor: palette.grey[200] }}>
         <Grid container justifyContent="center" alignItems="center" sx={{ width: "100%" }}>
           <Grid item xs={12} md={6} width="100%" textAlign="center">
-            <video autoPlay controls style={{ padding: "0px 8px 0px 16px", width: "calc(100% - 24px)" }}>
+            <video autoPlay muted controls style={{ padding: "0px 8px 0px 16px", width: "calc(100% - 24px)" }}>
               <source src="gwvideo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -87,7 +87,7 @@ export function Home() {
                   sx={{ display: "flex", flexDirection: "column", textAlign: "flex-start", alignItems: "center" }}
                 >
                   <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                    <img src={info.imgSrc} style={{ maxWidth: '80%', maxHeight: '100%', width: "auto", height: "auto", aspectRatio: 1, paddingTop: "16px" }} />
+                    <img src={info.imgSrc} style={{ maxWidth: '80%', maxHeight: '100%', width: "auto", height: "auto", aspectRatio: 4/3, paddingTop: "16px" }} />
                     <Typography sx={{ padding: "16px 16px 0px 16px" }}>{info.text}</Typography>
                   </div>
                 </Grid>
@@ -97,6 +97,19 @@ export function Home() {
       </Section>
 
       <Section sx={{ flexDirection: "column", alignItems: "center", backgroundColor: palette.grey[200], gap: "16px" }}>
+        <Grid container alignItems="center" justifyContent="cemter">
+          <Grid item xs={12} md={4}>
+            <img src={`${import.meta.env.BASE_URL}placeholder.png`} style={{ width: "100%", padding: "0rem 1rem" }} />
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Typography padding="0 1rem 0 2rem" textAlign="start">
+              Want to help support the event and showcase your love for GeoWoodstock? Our store currently has a pre-event fundraiser opportunity as well as the Friends of GeoWoodstock program. The full store to register and purchase SWAG will be available this fall.
+            </Typography>
+          </Grid>
+        </Grid>
+      </Section>
+
+      <Section sx={{ flexDirection: "column", alignItems: "center", gap: "16px" }}>
         <Typography variant="h2">PLATINUM SPONSORS</Typography>
         <div style={{ justifyContent: "flex-start", display: "flex", flexDirection: "column" }}>
           <Typography fontFamily="TTNorms-light" textAlign="center">{"Thank you to our incredible sponsors for helping make GeoWoodstock XXI a reality! Want to help support the largest gathering of geocachers in North America?"}<br />{"Check out our ‘More Info’ page for sponsorship information."}</Typography>

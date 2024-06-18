@@ -14,20 +14,36 @@ import AdbIcon from '@mui/icons-material/Adb';
 const pages = [
   {
     text: 'Events & Activities',
-    href: '/events'
+    href: `${import.meta.env.BASE_URL}events`
   },
   {
     text: 'Travel & Lodging',
-    href: '/travel'
+    href: `${import.meta.env.BASE_URL}travel`
   },
   {
     text: 'Shop',
     href: 'https://geowoodstock-xxi.square.site/s/shop',
+  },
+  {
+    text: 'Morgantown',
+    href: `${import.meta.env.BASE_URL}morgantown`,
   }
 ];
 
+const infoPages = [
+  {
+    text: 'Sponsors',
+    href: `${import.meta.env.BASE_URL}sponsors`,
+  },
+  {
+    text: 'FAQs',
+    href: `${import.meta.env.BASE_URL}faqs`,
+  },
+]
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [anchorElInfo, setAnchorElInfo] = React.useState<null | HTMLElement>(null);
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -35,6 +51,14 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleInfo = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElInfo(event.currentTarget);
+  };
+
+  const handleInfoClose = () => {
+    setAnchorElInfo(null);
   };
 
   return (
@@ -46,7 +70,7 @@ function ResponsiveAppBar() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -55,8 +79,8 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
-            }}
-          >
+              }}
+              >
             GWXXI
           </Typography>
 
@@ -96,6 +120,32 @@ function ResponsiveAppBar() {
                   </a>
                 </MenuItem>
               ))}
+              <MenuItem key={"info"} onClick={handleInfo}>
+                <Typography textAlign="center">Info</Typography>
+              </MenuItem>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElInfo}
+                anchorOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElInfo)}
+                onClose={handleInfoClose}
+              >
+                {infoPages.map((page) => (
+                  <MenuItem key={page.text} href={page.href} onClick={handleCloseNavMenu}>
+                    <a href={page.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <Typography textAlign="center">{page.text}</Typography>
+                    </a>
+                  </MenuItem>
+                ))}
+              </Menu>
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -123,11 +173,32 @@ function ResponsiveAppBar() {
                 key={page.text}
                 href={page.href}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block', textAlign: "center" }}
               >
                 {page.text}
               </Button>
             ))}
+            <Button key="info" onClick={handleInfo} sx={{ my: 2, color: 'white', display: 'block', textAlign: "center" }}>
+              Info
+            </Button>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElInfo}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElInfo)}
+              onClose={handleInfoClose}
+            >
+              <MenuItem onClick={handleInfoClose}>Sponsors</MenuItem>
+              <MenuItem onClick={handleInfoClose}>FAQs</MenuItem>
+            </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
