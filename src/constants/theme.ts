@@ -14,6 +14,7 @@ export const theme = createTheme({
     },
     h1: {
       fontFamily: "San Andreas",
+      color: GREEN,
     },
     h2: {
       fontFamily: "San Andreas",
