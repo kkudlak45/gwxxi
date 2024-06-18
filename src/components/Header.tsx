@@ -19,6 +19,10 @@ const pages = [
   {
     text: 'Travel & Lodging',
     href: '/travel'
+  },
+  {
+    text: 'Shop',
+    href: 'https://geowoodstock-xxi.square.site/s/shop',
   }
 ];
 

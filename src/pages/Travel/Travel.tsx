@@ -124,13 +124,22 @@ export function Travel() {
 
   return (
     <Fragment>
+      <Typography variant="h2" textAlign="center" marginTop="2rem">TRAVEL & LODGING</Typography>
       <Section>
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={6}>
             <img src="/placeholder.png" width="80%" />
           </StyledGrid>
-          <StyledGrid item xs={6}>
-            <Typography>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas non atque obcaecati quaerat asperiores, culpa reiciendis dolore esse deserunt, eos commodi perspiciatis tenetur eius modi consectetur. Sapiente, voluptates doloribus?</Typography>
+          <StyledGrid item xs={6} sx={{ flexDirection: "column", gap: "1rem" }}>
+            <Typography>
+              {"Welcome to Wild and Wonderful, West Virginia. Come for the day, or make a week out of it; there are endless adventures when caching in West Virginia. "}<em>{"(Travel time is greatly dependent on how many caches you stop for.)"}</em>
+            </Typography>
+            <Typography>
+              {"For those flying, the closest airport is located about an hour north in Pittsburgh. Following I-79, you’ll have the opportunity to explore the home of Mr. Roger’s in Pittsburgh or enjoy the hundreds of caches in the most haunted county in America, Greene County. Looking East, flights into Dulles International Airport will have you driving through the heart of WVTim territory in the Eastern Panhandle. If you enjoy gadget caches, this is a must-do during your visit to West Virginia. Ohio airports such as Cleveland or Columbus are also great options for those looking to explore the Buckeye State. Lastly, for those looking to add another National Park to their map, flying into Charlotte will give you the unique opportunity to check out what wild and wonderful is all about as you travel through Fayetteville."}
+            </Typography>
+            <Typography>
+              {"Check out our list of host hotels with discounts and rates exclusive to those joining us for GeoWoodstock weekend. We recommend traveling to Morgantown on Wednesday (5/21) and staying until Monday (5/26) to soak up all the caching fun planned. We promise, one weekend won’t be long enough! With side events showcasing the best that north central West Virginia has to offer, you can’t go wrong with staying in Morgantown or Fairmont. We can't wait to see you!"}
+            </Typography>
           </StyledGrid>
         </Grid>
       </Section>

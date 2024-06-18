@@ -86,8 +86,8 @@ export function Home() {
                   item xs={12} md={6} lg={3}
                   sx={{ display: "flex", flexDirection: "column", textAlign: "flex-start", alignItems: "center" }}
                 >
-                  <div>
-                    <img src={info.imgSrc} style={{ maxWidth: '100%', maxHeight: '100%', width: "auto", height: "auto" }} />
+                  <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+                    <img src={info.imgSrc} style={{ maxWidth: '80%', maxHeight: '100%', width: "auto", height: "auto", aspectRatio: 1, paddingTop: "16px" }} />
                     <Typography sx={{ padding: "16px 16px 0px 16px" }}>{info.text}</Typography>
                   </div>
                 </Grid>
