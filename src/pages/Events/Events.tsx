@@ -119,7 +119,7 @@ export function Events() {
         </Grid>
 
         <div style={{ marginTop: "1.2rem" }}>
-          <Button variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem"}} href="https://www.visitmountaineercountry.com/deals/">
+          <Button target="_blank" variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem"}} href="https://www.visitmountaineercountry.com/deals/">
             Click here for full list of deals and discounts
           </Button>
         </div>

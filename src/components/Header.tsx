@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { ArrowDropDown } from '@mui/icons-material';
 
-const pages = [
+export const pages = [
   {
     text: 'Home',
     href: `${import.meta.env.BASE_URL}`
@@ -35,7 +35,7 @@ const pages = [
   },
 ];
 
-const infoPages = [
+export const infoPages = [
   {
     text: 'Sponsors',
     href: `${import.meta.env.BASE_URL}sponsors`,
@@ -105,7 +105,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.text} href={page.href} onClick={handleCloseNavMenu}>
-                  <a href={page.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <a href={page.href} target={page.text === "Shop" ? "_blank" : undefined} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <Typography textAlign="center">{page.text}</Typography>
                   </a>
                 </MenuItem>
@@ -161,6 +161,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page.text}
+                target={page.text === "Shop" ? "_blank" : undefined} 
                 href={page.href}
                 onClick={handleCloseNavMenu}
                 sx={{
