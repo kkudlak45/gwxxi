@@ -9,8 +9,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { ArrowDropDown } from '@mui/icons-material';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export const pages = [
   {
@@ -47,6 +47,7 @@ export const infoPages = [
 ]
 
 function ResponsiveAppBar() {
+  const isMobile = useIsMobile();
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElInfo, setAnchorElInfo] = React.useState<null | HTMLElement>(null);
 
@@ -67,14 +68,21 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ width: "100vw" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ height: "84px", maxHeight: "84px" }}>
-          <a href="/" style={{ height: "70%", marginTop: "-4px" }}>
-            <img src={`${import.meta.env.BASE_URL}headericon.webp`} style={{ height: "100%" }} />
+          <a
+            href="/"
+            style={{
+              height: isMobile ? "auto" : "70%",
+              width: isMobile ? "132px" : "auto",
+              marginTop: "-4px"
+            }}
+          >
+            <img src={`${import.meta.env.BASE_URL}headericon.webp`} style={{ height: "100%", width: "100%" }} />
           </a>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: "flex-end" }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -138,25 +146,7 @@ function ResponsiveAppBar() {
               </Menu>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
             {pages.map((page) => (
               <Button
@@ -207,7 +197,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "block" } }}>
             <Button
               variant="contained"
               color="warning"

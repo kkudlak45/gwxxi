@@ -1,7 +1,8 @@
-import { Container, IconButton, Typography, styled } from "@mui/material";
+import { Container, Grid, IconButton, Typography, styled } from "@mui/material";
 import { BLUE } from "../constants/theme";
 import { infoPages, pages } from "./Header";
 import { Event, Facebook, Mail, People } from "@mui/icons-material";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 const socials = [
   {
@@ -38,72 +39,127 @@ const FooterDiv = styled("div")(({ theme }) => {
 })
 
 export default function Footer() {
+  const isMobile = useIsMobile();
+
   return (
     <FooterDiv>
       <Container maxWidth="xl" sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <div style={{ display: "flex", gap: "12px" }}>
-          <img
-            src={`${import.meta.env.BASE_URL}footericon.webp`}
-            style={{
-              borderRadius: "12px",
-              maxWidth: '240px',
-              maxHeight: '240px',
-              width: 'auto',
-              height: 'auto',
+        <Grid container>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              display: "flex",
+              gap: "12px",
+              flexDirection: isMobile ? "column" : undefined,
+              alignItems: isMobile ? "center" : undefined
             }}
-          />
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}footericon.webp`}
+              style={{
+                borderRadius: "12px",
+                maxWidth: isMobile ? '80%' : '240px',
+                maxHeight: isMobile ? '80%' : '240px',
+                width: 'auto',
+                height: 'auto',
+              }}
+            />
 
-          <div style={{ display: "flex", alignItems: "flex-start", flexDirection: "column", padding: "6px 0", gap: "1.4rem" }}>
-            <Typography variant="h4" style={{ color: "white", fontFamily: "San Andreas" }} fontSize="1.8rem">
-              GEOWOODSTOCK XXI
-            </Typography>
-            <div>
-              <Typography style={{color: "white" }}>Geocaching Mega-Event</Typography>
-              <Typography style={{color: "white" }}>Morgantown, West Virginia</Typography>
-              <Typography style={{color: "white" }}>May 22 - 25, 2025</Typography>
+            <div
+              style={{
+                display: "flex",
+                alignItems: isMobile ? "center" : "flex-start",
+                flexDirection: "column",
+                padding: "6px 0",
+                gap: isMobile ? "0.4rem" : "1.4rem"
+              }}
+            >
+              <Typography variant="h4" style={{ color: "white", fontFamily: "San Andreas" }} fontSize="1.8rem" textAlign="start">
+                GEOWOODSTOCK XXI
+              </Typography>
+              <div style={isMobile ? { textAlign: "center" } : {}}>
+                <Typography style={{color: "white" }}>Geocaching Mega-Event</Typography>
+                <Typography style={{color: "white" }}>Morgantown, West Virginia</Typography>
+                <Typography style={{color: "white" }}>May 22 - 25, 2025</Typography>
+              </div>
+              <div style={{ display: "flex", gap: "4px", marginLeft: "-8px" }}>
+                {socials.map((social) =>  {
+                  return (
+                    <IconButton href={social.href} target="_blank" style={{ color: "white" }}>
+                      {social.component}
+                    </IconButton>
+                  )
+                })}
+              </div>
             </div>
-            <div style={{ display: "flex", gap: "4px", marginLeft: "-8px" }}>
-              {socials.map((social) =>  {
-                return (
-                  <IconButton href={social.href} target="_blank" style={{ color: "white" }}>
-                    {social.component}
-                  </IconButton>
-                )
-              })}
-            </div>
-          </div>
-        </div>
+          </Grid>
 
-
-        <div style={{ display: "flex", gap: "12px" }}>
-
-          <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexDirection: "column", padding: "6px 0 16px 0" }}>
-            <Typography variant="h4" style={{ color: "white", fontFamily: "San Andreas" }} fontSize="1.8em">
-              QUICK LINKS
-            </Typography>
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end" }}>
-              {[...pages, ...infoPages].map((page) => {
-                return (
-                  <a href={page.href} target={page.text === "Shop" ? "_blank" : undefined} style={{ textDecoration: "none" }} >
-                    <Typography style={{color: "white" }}>{page.text}</Typography>
-                  </a>
-                )
-              })}
-            </div>
-          </div>
-
-          <img
-            src={`${import.meta.env.BASE_URL}mylan.png`}
-            style={{
-              borderRadius: "12px",
-              maxWidth: '240px',
-              maxHeight: '240px',
-              width: 'auto',
-              height: 'auto',
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              display: "flex",
+              gap: "12px",
+              flexDirection: isMobile ? "column" : undefined,
+              alignItems: isMobile ? "center" : undefined,
+              justifyContent: isMobile ? undefined : "flex-end",
+              marginTop: isMobile ? "1rem" : undefined,
             }}
-          />
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}mylan.png`}
+              style={{
+                display: isMobile ? undefined : 'none',
+                borderRadius: "12px",
+                maxWidth: isMobile ? '80%' : '240px',
+                maxHeight: isMobile ? '80%' : '240px',
+                width: 'auto',
+                height: 'auto',
+                aspectRatio: 1,
+              }}
+            />
+        
+            <div
+              style={{
+                display: "flex",
+                alignItems: isMobile ? "center" : "flex-end",
+                justifyContent: "space-between",
+                flexDirection: "column",
+              }}
+            >
+              <Typography variant="h4" style={{ color: "white", fontFamily: "San Andreas" }} fontSize="1.8em" textAlign="end">
+                QUICK LINKS
+              </Typography>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: isMobile ? "center" : "flex-end" }}>
+                {[...pages, ...infoPages].map((page) => {
+                  return (
+                    <a href={page.href} target={page.text === "Shop" ? "_blank" : undefined} style={{ textDecoration: "none" }} >
+                      <Typography style={{color: "white" }}>{page.text}</Typography>
+                    </a>
+                  )
+                })}
+              </div>
+            </div>
 
-        </div>
+            <img
+              src={`${import.meta.env.BASE_URL}mylan.png`}
+              style={{
+                display: isMobile ? 'none' : undefined,
+                borderRadius: "12px",
+                maxWidth: isMobile ? '80%' : '240px',
+                maxHeight: isMobile ? '80%' : '240px',
+                width: 'auto',
+                height: 'auto',
+                aspectRatio: 1,
+              }}
+            />
+          </Grid>
+        </Grid>
+
+
       </Container>
     </FooterDiv>
   )

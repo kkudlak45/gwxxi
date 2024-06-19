@@ -13,18 +13,22 @@ export const theme = createTheme({
       color: CHARCOAL,
     },
     h1: {
+      textAlign: "center",
       fontFamily: "San Andreas",
       color: GREEN,
     },
     h2: {
+      textAlign: "center",
       fontFamily: "San Andreas",
       color: BLUE,
     },
     h3: {
+      textAlign: "center",
       fontFamily: "KGRedHands",
       color: GREEN,
     },
     h4: {
+      textAlign: "center",
       fontFamily: "KGRedHands",
       color: BLUE,
     },
