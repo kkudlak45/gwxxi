@@ -1,29 +1,29 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import { ArrowDropDown } from '@mui/icons-material';
-import { useIsMobile } from '../hooks/useIsMobile';
+import * as React from 'react'
+import AppBar from '@mui/material/AppBar'
+import Box from '@mui/material/Box'
+import Toolbar from '@mui/material/Toolbar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import Menu from '@mui/material/Menu'
+import MenuIcon from '@mui/icons-material/Menu'
+import Container from '@mui/material/Container'
+import Button from '@mui/material/Button'
+import MenuItem from '@mui/material/MenuItem'
+import { ArrowDropDown } from '@mui/icons-material'
+import { useIsMobile } from '../hooks/useIsMobile'
 
 export const pages = [
   {
     text: 'Home',
-    href: `${import.meta.env.BASE_URL}`
+    href: `${import.meta.env.BASE_URL}`,
   },
   {
     text: 'Events & Activities',
-    href: `${import.meta.env.BASE_URL}events`
+    href: `${import.meta.env.BASE_URL}events`,
   },
   {
     text: 'Travel & Lodging',
-    href: `${import.meta.env.BASE_URL}travel`
+    href: `${import.meta.env.BASE_URL}travel`,
   },
   {
     text: 'Morgantown',
@@ -33,7 +33,7 @@ export const pages = [
     text: 'Shop',
     href: 'https://geowoodstock-xxi.square.site/s/shop',
   },
-];
+]
 
 export const infoPages = [
   {
@@ -47,42 +47,53 @@ export const infoPages = [
 ]
 
 function ResponsiveAppBar() {
-  const isMobile = useIsMobile();
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElInfo, setAnchorElInfo] = React.useState<null | HTMLElement>(null);
+  const isMobile = useIsMobile()
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
+  const [anchorElInfo, setAnchorElInfo] = React.useState<null | HTMLElement>(
+    null,
+  )
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
+    setAnchorElNav(event.currentTarget)
+  }
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+    setAnchorElNav(null)
+  }
 
   const handleInfo = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElInfo(event.currentTarget);
-  };
+    setAnchorElInfo(event.currentTarget)
+  }
 
   const handleInfoClose = () => {
-    setAnchorElInfo(null);
-  };
+    setAnchorElInfo(null)
+  }
 
   return (
-    <AppBar position="static" sx={{ width: "100vw" }}>
+    <AppBar position="static" sx={{ width: '100vw' }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ height: "84px", maxHeight: "84px" }}>
+        <Toolbar disableGutters sx={{ height: '84px', maxHeight: '84px' }}>
           <a
             href="/"
             style={{
-              height: isMobile ? "auto" : "70%",
-              width: isMobile ? "132px" : "auto",
-              marginTop: "-4px"
+              height: isMobile ? 'auto' : '70%',
+              width: isMobile ? '132px' : 'auto',
+              marginTop: '-4px',
             }}
           >
-            <img src={`${import.meta.env.BASE_URL}headericon.webp`} style={{ height: "100%", width: "100%" }} />
+            <img
+              src={`${import.meta.env.BASE_URL}headericon.webp`}
+              style={{ height: '100%', width: '100%' }}
+            />
           </a>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: "flex-end" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'flex', md: 'none' },
+              justifyContent: 'flex-end',
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -112,13 +123,21 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.text} href={page.href} onClick={handleCloseNavMenu}>
-                  <a href={page.href} target={page.text === "Shop" ? "_blank" : undefined} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <MenuItem
+                  key={page.text}
+                  href={page.href}
+                  onClick={handleCloseNavMenu}
+                >
+                  <a
+                    href={page.href}
+                    target={page.text === 'Shop' ? '_blank' : undefined}
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                  >
                     <Typography textAlign="center">{page.text}</Typography>
                   </a>
                 </MenuItem>
               ))}
-              <MenuItem key={"info"} onClick={handleInfo}>
+              <MenuItem key={'info'} onClick={handleInfo}>
                 <Typography textAlign="center">Info</Typography>
               </MenuItem>
               <Menu
@@ -137,8 +156,15 @@ function ResponsiveAppBar() {
                 onClose={handleInfoClose}
               >
                 {infoPages.map((page) => (
-                  <MenuItem key={page.text} href={page.href} onClick={handleCloseNavMenu}>
-                    <a href={page.href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <MenuItem
+                    key={page.text}
+                    href={page.href}
+                    onClick={handleCloseNavMenu}
+                  >
+                    <a
+                      href={page.href}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
                       <Typography textAlign="center">{page.text}</Typography>
                     </a>
                   </MenuItem>
@@ -147,23 +173,29 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex' },
+              justifyContent: 'center',
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page.text}
-                target={page.text === "Shop" ? "_blank" : undefined} 
+                target={page.text === 'Shop' ? '_blank' : undefined}
                 href={page.href}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  fontSize: "1.1rem",
+                  fontSize: '1.1rem',
                   color: 'white',
                   display: 'block',
-                  textAlign: "center",
-                  borderRight: "2px solid white",
-                  borderRadius: "0px",
-                  paddingLeft: "1.2rem",
-                  paddingRight: "1.2rem"
+                  textAlign: 'center',
+                  borderRight: '2px solid white',
+                  borderRadius: '0px',
+                  paddingLeft: '1.2rem',
+                  paddingRight: '1.2rem',
                 }}
               >
                 {page.text}
@@ -171,11 +203,29 @@ function ResponsiveAppBar() {
             ))}
             <Button
               key="info"
-              style={{ fontSize: "1.1rem !important" }}
-              onClick={handleInfo} sx={{ my: 2, color: 'white', display: 'flex', paddingLeft: "1rem", textAlign: "center" }}
-              endIcon={<ArrowDropDown sx={{ marginLeft: "-0.5rem", marginTop: "-0.2rem", height: "1.4rem", width: "1.4rem" }} />}
+              style={{ fontSize: '1.1rem !important' }}
+              onClick={handleInfo}
+              sx={{
+                my: 2,
+                color: 'white',
+                display: 'flex',
+                paddingLeft: '1rem',
+                textAlign: 'center',
+              }}
+              endIcon={
+                <ArrowDropDown
+                  sx={{
+                    marginLeft: '-0.5rem',
+                    marginTop: '-0.2rem',
+                    height: '1.4rem',
+                    width: '1.4rem',
+                  }}
+                />
+              }
             >
-              <Typography color="white" fontSize="1.1rem">Info</Typography>
+              <Typography color="white" fontSize="1.1rem">
+                Info
+              </Typography>
             </Button>
             <Menu
               id="menu-appbar"
@@ -197,13 +247,19 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 0, display: { xs: "none", md: "block" } }}>
+          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'block' } }}>
             <Button
               variant="contained"
               color="warning"
               href="https://coord.info/gcanxx1"
               target="_blank"
-              sx={{ width: '200px', borderRadius: '64px', fontWeight: 'bold', lineHeight: "1rem", textAlign: "center" }}
+              sx={{
+                width: '200px',
+                borderRadius: '64px',
+                fontWeight: 'bold',
+                lineHeight: '1rem',
+                textAlign: 'center',
+              }}
             >
               Log your will attend! GCANXX1
             </Button>
@@ -211,6 +267,6 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
-  );
+  )
 }
-export default ResponsiveAppBar;
+export default ResponsiveAppBar

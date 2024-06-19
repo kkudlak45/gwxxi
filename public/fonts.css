@@ -1,24 +1,24 @@
 @font-face {
-  font-family: "San Andreas";
+  font-family: 'San Andreas';
   src: url('/fonts/SanAndreas-MVxPw.otf');
 }
 
 @font-face {
-  font-family: "KGRedHands";
+  font-family: 'KGRedHands';
   src: url('/fonts/KGRedHands.ttf');
 }
 
 @font-face {
-  font-family: "TTNorms-Light";
+  font-family: 'TTNorms-Light';
   src: url('/fonts/TTNorms-Light.otf');
 }
 
 @font-face {
-  font-family: "TTNorms-Black";
+  font-family: 'TTNorms-Black';
   src: url('/fonts/TTNorms-Black.otf');
 }
 
 @font-face {
-  font-family: "Kollektif";
+  font-family: 'Kollektif';
   src: url('/fonts/Kollektif.ttf');
 }
