@@ -218,7 +218,11 @@ export function Travel() {
             )
           })}
         </Grid>
-        <Button variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem", width: "fit-content", marginTop: "24px" }}>
+        <Button
+          variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem", width: "fit-content", marginTop: "24px" }}
+          href="https://www.visitmountaineercountry.com/stay/"
+          target="_blank"
+        >
           CLICK HERE FOR THE FULL LIST OF HOTELS
         </Button>
       </Section>
@@ -246,7 +250,11 @@ export function Travel() {
             )
           })}
         </Grid>
-        <Button variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem", width: "fit-content", marginTop: "24px" }}>
+        <Button
+          variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem", width: "fit-content", marginTop: "24px" }}
+          href="https://www.visitmountaineercountry.com/stay/"
+          target="_blank"
+        >
           CLICK HERE FOR THE FULL LIST OF CAMPGROUNDS
         </Button>
       </Section>

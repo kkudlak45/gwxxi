@@ -1,0 +1,11 @@
+@keyframes shake {
+  0% { transform: rotate(-1deg); }
+  50% { transform: rotate(1deg); }
+  100% { transform: rotate(-1deg); }
+}
+
+.info-block-image:hover {
+  animation: shake 0.2s;
+  animation-iteration-count: 1;
+  opacity: 0.9;
+}

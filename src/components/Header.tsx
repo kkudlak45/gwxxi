@@ -10,8 +10,13 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { ArrowDropDown } from '@mui/icons-material';
 
 const pages = [
+  {
+    text: 'Home',
+    href: `${import.meta.env.BASE_URL}`
+  },
   {
     text: 'Events & Activities',
     href: `${import.meta.env.BASE_URL}events`
@@ -21,13 +26,13 @@ const pages = [
     href: `${import.meta.env.BASE_URL}travel`
   },
   {
+    text: 'Morgantown',
+    href: `${import.meta.env.BASE_URL}morgantown`,
+  },
+  {
     text: 'Shop',
     href: 'https://geowoodstock-xxi.square.site/s/shop',
   },
-  {
-    text: 'Morgantown',
-    href: `${import.meta.env.BASE_URL}morgantown`,
-  }
 ];
 
 const infoPages = [
@@ -63,26 +68,11 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" sx={{ paddingTop: '8px', paddingBottom: '8px' }}>
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              }}
-              >
-            GWXXI
-          </Typography>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{ height: "84px", maxHeight: "84px" }}>
+          <a href="/" style={{ height: "70%", marginTop: "-4px" }}>
+            <img src={`${import.meta.env.BASE_URL}headericon.webp`} style={{ height: "100%" }} />
+          </a>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -167,19 +157,34 @@ function ResponsiveAppBar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
             {pages.map((page) => (
               <Button
                 key={page.text}
                 href={page.href}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block', textAlign: "center" }}
+                sx={{
+                  my: 2,
+                  fontSize: "1.1rem",
+                  color: 'white',
+                  display: 'block',
+                  textAlign: "center",
+                  borderRight: "2px solid white",
+                  borderRadius: "0px",
+                  paddingLeft: "1.2rem",
+                  paddingRight: "1.2rem"
+                }}
               >
                 {page.text}
               </Button>
             ))}
-            <Button key="info" onClick={handleInfo} sx={{ my: 2, color: 'white', display: 'block', textAlign: "center" }}>
-              Info
+            <Button
+              key="info"
+              style={{ fontSize: "1.1rem !important" }}
+              onClick={handleInfo} sx={{ my: 2, color: 'white', display: 'flex', paddingLeft: "1rem", textAlign: "center" }}
+              endIcon={<ArrowDropDown sx={{ marginLeft: "-0.5rem", marginTop: "-0.2rem", height: "1.4rem", width: "1.4rem" }} />}
+            >
+              <Typography color="white" fontSize="1.1rem">Info</Typography>
             </Button>
             <Menu
               id="menu-appbar"
@@ -202,7 +207,13 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Button variant="contained" color="warning" sx={{ width: '200px', borderRadius: '64px', fontWeight: 'bold' }}>
+            <Button
+              variant="contained"
+              color="warning"
+              href="https://coord.info/gcanxx1"
+              target="_blank"
+              sx={{ width: '200px', borderRadius: '64px', fontWeight: 'bold', lineHeight: "1rem", textAlign: "center" }}
+            >
               Log your will attend! GCANXX1
             </Button>
           </Box>

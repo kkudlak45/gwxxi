@@ -3,26 +3,33 @@ import { Fragment } from "react/jsx-runtime";
 import PlaceIcon from '@mui/icons-material/Place';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { Section } from "../../components/Section";
+import "./Home.css"
+import { BLUE } from "../../constants/theme";
 
 const InfoBlockStuff = [
   {
     title: "Schedule",
-    imgSrc: "/placeholder.png",
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/events.webp`,
+    href: `${import.meta.env.BASE_URL}events`,
     text: "With 8 events spanning from Thursday (5/22) to Sunday (5/25), there's never a dull moment when caching in West Virginia. Explore an 18th-century reconstructed fort, listen to some authentic mountain music, or enjoy a craft brew with your caching buddies - the possibilities are endless!",
   },
   {
     title: "Travel",
-    imgSrc: "/placeholder.png",
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels.webp`,
+    href: `${import.meta.env.BASE_URL}travel`,
     text: "Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as helpful travel information for you to plan your trip to West Virginia!"
   },
   {
-    title: "Shop",
-    imgSrc: "/placeholder.png",
-    text: "Want to help support the event and showcase your love for GeoWoodstock? Our store currently has a pre-event fundraiser opportunity as well as the Friends of GeoWoodstock program. The full store to register and purchase SWAG will be available this fall."
+    title: "Morgantown",
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/morgantown.webp`,
+    href: `${import.meta.env.BASE_URL}morgantown`,
+    // italicize parentheses
+    text: "Welcome to Morgantown, West Virginia, located in the heart of Appalachia. There are tons of great things to explore in the immediate Morgantown area, including Coopers Rock State Park and the state's land-grant institution, West Virginia University (Let's Go Mountaineers)."
   },
   {
     title: "More Info",
-    imgSrc: "/placeholder.png",
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/info.webp`,
+    href: `${import.meta.env.BASE_URL}faqs`,
     text: "Can’t find what you’re looking for? More info will be updated regularly as the event approaches, so check back for sponsorship information, frequently asked questions, and more!"
   },
 ]
@@ -59,7 +66,13 @@ export function Home() {
               {"Nestled in the heart of Appalachia, West Virginia is any geocacher’s gateway to the great outdoors. There is a reason the Mountain State is known as Almost Heaven, and we can’t wait to showcase the world-class adventures, friendly culture, and unique experiences West Virginia has to offer. Join us for a weekend of Geocaching greatness, as we celebrate the 25th anniversary of the hobby with the world’s original Mega event: "}
               <em style={{ fontWeight: "bold" }}>Wild and Wonderful GeoWoodstock XXI.</em>
             </Typography>
-            <Button variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem"}}>
+            <Button
+              target="_blank"
+              href="http://coord.info/gcanxx1"
+              variant="contained"
+              color="warning"
+              sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem"}}
+            >
               Check out the event page
             </Button>
           </Grid>
@@ -73,21 +86,23 @@ export function Home() {
                 <Grid
                   key={info.title}
                   item xs={12} md={6} lg={3}
-                  sx={{ textAlign: "center", alignItems: "center", justifyContent: "center", display: "flex" }}
-                >
-                  <Typography variant="h3">{info.title}</Typography>
-                </Grid>
-              )
-            })}
-            {InfoBlockStuff.map((info) => {
-              return (
-                <Grid
-                  key={info.title}
-                  item xs={12} md={6} lg={3}
                   sx={{ display: "flex", flexDirection: "column", textAlign: "flex-start", alignItems: "center" }}
                 >
                   <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                    <img src={info.imgSrc} style={{ maxWidth: '80%', maxHeight: '100%', width: "auto", height: "auto", aspectRatio: 4/3, paddingTop: "16px" }} />
+                    <a
+                      href={info.href}
+                      style={{ maxWidth: '80%', maxHeight: '100%', width: "auto", height: "auto", aspectRatio: 1, marginTop: "16px" }}
+                    >
+                      <img
+                        className="info-block-image"
+                        src={info.imgSrc}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "12px",
+                        }}
+                      />
+                    </a>
                     <Typography sx={{ padding: "16px 16px 0px 16px" }}>{info.text}</Typography>
                   </div>
                 </Grid>
@@ -98,13 +113,16 @@ export function Home() {
 
       <Section sx={{ flexDirection: "column", alignItems: "center", backgroundColor: palette.grey[200], gap: "16px" }}>
         <Grid container alignItems="center" justifyContent="cemter">
-          <Grid item xs={12} md={4}>
-            <img src={`${import.meta.env.BASE_URL}placeholder.png`} style={{ width: "100%", padding: "0rem 1rem" }} />
+          <Grid item xs={12} md={4} display="flex" justifyContent="center" alignItems="center">
+            <img src={`${import.meta.env.BASE_URL}homeicons/shop.webp`} style={{ width: "80%", margin: "0rem 1rem", borderRadius: "16px" }} />
           </Grid>
-          <Grid item xs={12} md={8}>
-            <Typography padding="0 1rem 0 2rem" textAlign="start">
+          <Grid item xs={12} md={8} display="flex" padding="0 4rem 0 2rem" justifyContent="center" alignItems="center" flexDirection="column">
+            <Typography textAlign="start" fontSize="1.4rem">
               Want to help support the event and showcase your love for GeoWoodstock? Our store currently has a pre-event fundraiser opportunity as well as the Friends of GeoWoodstock program. The full store to register and purchase SWAG will be available this fall.
             </Typography>
+            <Button target="_blank" variant="contained" color="warning" sx={{ borderRadius: '64px', fontWeight: "bold", fontSize: "1.4rem", marginTop: "1rem"}} href="https://geowoodstock-xxi.square.site/s/shop">
+              Shop now
+            </Button>
           </Grid>
         </Grid>
       </Section>
@@ -112,7 +130,13 @@ export function Home() {
       <Section sx={{ flexDirection: "column", alignItems: "center", gap: "16px" }}>
         <Typography variant="h2">PLATINUM SPONSORS</Typography>
         <div style={{ justifyContent: "flex-start", display: "flex", flexDirection: "column" }}>
-          <Typography fontFamily="TTNorms-light" textAlign="center">{"Thank you to our incredible sponsors for helping make GeoWoodstock XXI a reality! Want to help support the largest gathering of geocachers in North America?"}<br />{"Check out our ‘More Info’ page for sponsorship information."}</Typography>
+          <Typography fontFamily="TTNorms-light" textAlign="center">
+            {"Thank you to our incredible sponsors for helping make GeoWoodstock XXI a reality! Want to help support the largest gathering of geocachers in North America?"}
+            <br />
+            {"Check out our "}
+            <a style={{ color: BLUE }} target="_blank" href={`${import.meta.env.BASE_URL}sponsors`}>{"‘More Info’"}</a>
+            {" page for sponsorship information."}
+          </Typography>
           <Grid container marginTop="16px">
             <Grid item xs={1} md={4}>
               <a href="https://www.geocaching.com" target="_blank" style={{ width: "100%" }}>

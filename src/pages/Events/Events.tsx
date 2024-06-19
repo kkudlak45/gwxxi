@@ -3,7 +3,8 @@ import { Section } from "../../components/Section";
 import { Event, EventType, SCHEDULE } from "./schedule";
 import moment from "moment";
 import { Fragment } from "react/jsx-runtime";
-import { CHARCOAL, GREEN } from "../../constants/theme";
+import { BLUE, CHARCOAL, GREEN } from "../../constants/theme";
+import { PlayArrow } from "@mui/icons-material";
 
 function getIconSrc(type: EventType) {
   switch(type) {
@@ -94,16 +95,24 @@ export function Events() {
           <Grid item xs={12} md={4} textAlign="center">
             <div style={{ margin: "0 2rem", padding: "0.2rem 1rem", height: "100%" }}>
               <img src={`${import.meta.env.BASE_URL}eventpictures/kayak.webp`} style={{ aspectRatio: 4/3, width: "100%", borderRadius: "12px" }} />
-              <Typography paddingTop="0.6rem" textAlign="start">
-                Experience Appalachia from a local! Check back for curated lists of caches great for kids, scenic hikes, must-grab gadgets, and more!
+              <Typography paddingTop="0.6rem" textAlign="justify">
+                It's not Wild and Wonderful without getting a little wet! For the true terrain junkie, check out the Fairmont Land or Aquatic Trail (F.L.O.A.T. for short)! This 32-piece wherigo geo-art will have you kayaking down the Mon River and hiking the trails around Prickett's Fort State Park. Upon completion of either the land or aquatic sections, you'll earn a limited-edition pathtag!
               </Typography>
+              <a  href="https://marioncvb.com/blog/float-geocache-trail/" target="_blank" style={{ marginTop: "0.4rem", display: "flex", justifyContent: "center"}}>
+                <PlayArrow sx={{ width: "1.4rem", height: "1.4rem", color: BLUE }} />
+                <Typography sx={{ color: BLUE }}>Learn more here!</Typography>
+              </a>
             </div>
           </Grid>
           <Grid item xs={12} md={4} textAlign="center">
             <div style={{ margin: "0 2rem", padding: "0.2rem 1rem", height: "100%" }}>
               <img src={`${import.meta.env.BASE_URL}eventpictures/golf.webp`} style={{ aspectRatio: 4/3, width: "100%", borderRadius: "12px" }} />
-              <Typography paddingTop="0.6rem" textAlign="start">
-                Experience Appalachia from a local! Check back for curated lists of caches great for kids, scenic hikes, must-grab gadgets, and more!
+              <Typography paddingTop="0.6rem" textAlign="justify">
+                {"Looking for fun for the whole family? Check out one of two unique mini-golf courses in the area! "}
+                <a style={{ color: BLUE }} target="_blank" href="https://marioncvb.com/company/coal-country-miniature-golf-batting-cages/">Coal Country Mini Golf</a>
+                {" in Fairmont features 18 coal-mining-themed holes. You'll be putting your way through mine shafts and supports, but don't get your ball stuck in a coal trap! Another unique mini golf course is "}
+                <a style={{ color: BLUE }} target="_blank" href="https://visitmountaineercountry.com/business/cryptid-mountain-miniature-golf/">Cryptid Mountain Mini Golf</a>
+                {". This 13-hole indoor course features the legends and lore of what might be hiding in the West Virginia woods (besides caches of course!). Watch out for the Mothman!"}
               </Typography>
             </div>
           </Grid>
