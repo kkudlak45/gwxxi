@@ -128,7 +128,7 @@ export function Travel() {
       <Section>
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={6}>
-            <img src="/placeholder.png" width="80%" />
+            <img src={`${import.meta.env.BASE_URL}placeholder.png`} width="80%" />
           </StyledGrid>
           <StyledGrid item xs={6} sx={{ flexDirection: "column", gap: "1rem" }}>
             <Typography>
@@ -206,7 +206,7 @@ export function Travel() {
               <Grid item xs={12} md={6}>
                 <Grid container>
                   <StyledGrid item xs={6}>
-                    <img src="/placeholder.png" width="80%" style={{ aspectRatio: 1 }} />
+                    <img src={`${import.meta.env.BASE_URL}placeholder.png`} width="80%" style={{ aspectRatio: 1 }} />
                   </StyledGrid>
                   <StyledGrid item xs={6} sx={{ flexDirection: "column", alignItems: "flex-start" }}>
                     <Typography fontSize="2rem" fontWeight="bold">{item.name}</Typography>
@@ -238,7 +238,7 @@ export function Travel() {
               <Grid item xs={12} md={6}>
                 <Grid container>
                   <StyledGrid item xs={6}>
-                    <img src="/placeholder.png" width="80%" style={{ aspectRatio: 1 }} />
+                    <img src={`${import.meta.env.BASE_URL}placeholder.png`} width="80%" style={{ aspectRatio: 1 }} />
                   </StyledGrid>
                   <StyledGrid item xs={6} sx={{ flexDirection: "column", alignItems: "flex-start" }}>
                     <Typography fontSize="2rem" fontWeight="bold">{item.name}</Typography>

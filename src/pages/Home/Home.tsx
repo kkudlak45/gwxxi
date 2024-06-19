@@ -40,7 +40,7 @@ export function Home() {
   return (
     <Fragment>
       <Section sx={{ flexDirection: "column", alignItems: "center" }}>
-        <img src="/gwxxi.jpg" style={{ maxWidth: '100%', maxHeight: '50vh', width: 'auto', height: 'auto', marginBottom: "24px" }} />
+        <img src={`${import.meta.env.BASE_URL}gwxxi.jpg`} style={{ maxWidth: '100%', maxHeight: '50vh', width: 'auto', height: 'auto', marginBottom: "24px" }} />
         <Typography variant="h3" marginBottom="24px" textAlign="center">{"JOIN US FOR THE MEGA IN THE MOUNTAINS!"}</Typography>
         <Typography textAlign="center" fontWeight="bold" fontSize="2rem" lineHeight="2.2rem">{"GeoWoodstock XXI (GCANXX1)"}</Typography>
         <Typography textAlign="center" fontSize="2.4rem" lineHeight="2.2rem" display="flex" gap="4px" fontFamily="TTNorms-Light">
@@ -57,7 +57,7 @@ export function Home() {
         <Grid container justifyContent="center" alignItems="center" sx={{ width: "100%" }}>
           <Grid item xs={12} md={6} width="100%" textAlign="center">
             <video autoPlay muted controls style={{ padding: "0px 8px 0px 16px", width: "calc(100% - 24px)" }}>
-              <source src="gwvideo.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}gwvideo.mp4`} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </Grid>
@@ -140,7 +140,7 @@ export function Home() {
           <Grid container marginTop="16px">
             <Grid item xs={1} md={4}>
               <a href="https://www.geocaching.com" target="_blank" style={{ width: "100%" }}>
-                <img src="/geocachinglogo.png" style={{ width: "100%" }} />
+                <img src={`${import.meta.env.BASE_URL}geocachinglogo.png`} style={{ width: "100%" }} />
               </a>
             </Grid>
           </Grid>
