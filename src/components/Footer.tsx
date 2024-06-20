@@ -131,18 +131,23 @@ export default function Footer() {
               marginTop: isMobile ? '1rem' : undefined,
             }}
           >
-            <img
-              src={`${import.meta.env.BASE_URL}mylan.png`}
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Mylan+Park/@39.6364966,-80.0339881,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e350f2f:0xad6f29585796b9fe!8m2!3d39.6364925!4d-80.0314132!16s%2Fg%2F1tl1jk4c?entry=ttu"
               style={{
                 display: isMobile ? undefined : 'none',
-                borderRadius: '12px',
                 maxWidth: isMobile ? '80%' : '240px',
                 maxHeight: isMobile ? '80%' : '240px',
                 width: 'auto',
                 height: 'auto',
                 aspectRatio: 1,
               }}
-            />
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}mylan.png`}
+                style={{ width: '100%', height: '100%', borderRadius: '12px' }}
+              />
+            </a>
 
             <div
               style={{
@@ -184,18 +189,23 @@ export default function Footer() {
               </div>
             </div>
 
-            <img
-              src={`${import.meta.env.BASE_URL}mylan.png`}
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Mylan+Park/@39.6364966,-80.0339881,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e350f2f:0xad6f29585796b9fe!8m2!3d39.6364925!4d-80.0314132!16s%2Fg%2F1tl1jk4c?entry=ttu"
               style={{
                 display: isMobile ? 'none' : undefined,
-                borderRadius: '12px',
                 maxWidth: isMobile ? '80%' : '240px',
                 maxHeight: isMobile ? '80%' : '240px',
                 width: 'auto',
                 height: 'auto',
                 aspectRatio: 1,
               }}
-            />
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}mylan.png`}
+                style={{ width: '100%', height: '100%', borderRadius: '12px' }}
+              />
+            </a>
           </Grid>
         </Grid>
       </Container>
