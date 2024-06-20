@@ -163,7 +163,7 @@ export function Events() {
       <Section sx={{ flexDirection: 'column' }}>
         {SCHEDULE.map((event, index) => (
           <EventBlock
-            key={event.name}
+            key={event.description}
             event={event}
             showBottom={index < SCHEDULE.length - 1}
           />

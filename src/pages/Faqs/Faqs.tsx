@@ -17,8 +17,15 @@ function FaqCard({
   children: React.ReactNode
 }) {
   return (
-    <Grid item xs={12} md={6} marginBottom="1rem" display="flex" justifyContent="center">
-      <Accordion sx={{ maxWidth: "98%" }}>
+    <Grid
+      item
+      xs={12}
+      md={6}
+      marginBottom="1rem"
+      display="flex"
+      justifyContent="center"
+    >
+      <Accordion sx={{ maxWidth: '98%' }}>
         <AccordionSummary>
           <Typography variant="h3" fontSize="1rem">
             {question}
@@ -35,7 +42,7 @@ export function Faqs() {
 
   return (
     <Fragment>
-      <Typography variant="h2">
+      <Typography variant="h2" textAlign="center" marginTop="2rem">
         {isMobile ? 'FAQS' : 'FREQUENTLY ASKED QUESTIONS'}
       </Typography>
 
@@ -45,7 +52,7 @@ export function Faqs() {
 
       <Grid container>
         <FaqCard question="Tempor magna do anim ad eiusmod aliqua fugiat ea anim sit labore?">
-          <Typography textAlign={isMobile ? "center" : "start"}>
+          <Typography textAlign={isMobile ? 'center' : 'start'}>
             Non esse ut dolor commodo occaecat. Cupidatat pariatur sint magna
             nisi laborum minim eiusmod ut quis reprehenderit voluptate sit.
             Tempor consectetur fugiat magna aute. Occaecat cupidatat pariatur
@@ -60,7 +67,7 @@ export function Faqs() {
         </FaqCard>
 
         <FaqCard question="Ipsum cillum duis est incididunt ipsum commodo?">
-          <Typography textAlign={isMobile ? "center" : "start"}>
+          <Typography textAlign={isMobile ? 'center' : 'start'}>
             Culpa duis aute amet dolore. Eiusmod cupidatat ullamco anim et
             aliquip. Non qui deserunt esse tempor duis pariatur culpa irure
             ipsum. Exercitation esse consequat irure labore. Eiusmod ea proident
@@ -74,7 +81,7 @@ export function Faqs() {
         </FaqCard>
 
         <FaqCard question="Tempor magna do anim ad eiusmod aliqua fugiat ea anim sit labore?">
-          <Typography textAlign={isMobile ? "center" : "start"}>
+          <Typography textAlign={isMobile ? 'center' : 'start'}>
             Non esse ut dolor commodo occaecat. Cupidatat pariatur sint magna
             nisi laborum minim eiusmod ut quis reprehenderit voluptate sit.
             Tempor consectetur fugiat magna aute. Occaecat cupidatat pariatur
@@ -89,7 +96,7 @@ export function Faqs() {
         </FaqCard>
 
         <FaqCard question="Ipsum cillum duis est incididunt ipsum commodo?">
-          <Typography textAlign={isMobile ? "center" : "start"}>
+          <Typography textAlign={isMobile ? 'center' : 'start'}>
             Culpa duis aute amet dolore. Eiusmod cupidatat ullamco anim et
             aliquip. Non qui deserunt esse tempor duis pariatur culpa irure
             ipsum. Exercitation esse consequat irure labore. Eiusmod ea proident

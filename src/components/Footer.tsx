@@ -28,7 +28,6 @@ const socials = [
 ]
 
 const FooterDiv = styled('div')(({ theme }) => {
-  console.log(theme)
   return {
     backgroundColor: BLUE,
     color: 'white',
@@ -106,6 +105,7 @@ export default function Footer() {
                 {socials.map((social) => {
                   return (
                     <IconButton
+                      key={social.alt}
                       href={social.href}
                       target="_blank"
                       style={{ color: 'white' }}
@@ -170,6 +170,7 @@ export default function Footer() {
                 {[...pages, ...infoPages].map((page) => {
                   return (
                     <a
+                      key={page.text}
                       href={page.href}
                       target={page.text === 'Shop' ? '_blank' : undefined}
                       style={{ textDecoration: 'none' }}

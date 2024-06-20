@@ -226,6 +226,7 @@ export function Travel() {
             }).map((airport) => {
               return (
                 <div
+                  key={airport.name}
                   style={{
                     display: 'flex',
                     justifyContent: isMobile ? 'center' : 'space-between',
@@ -307,6 +308,7 @@ export function Travel() {
             {RENTAL_CARS.map((cars) => {
               return (
                 <div
+                  key={cars.name}
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -364,7 +366,7 @@ export function Travel() {
         <Grid container>
           {HOTELS.map((item) => {
             return (
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={6} key={item.name}>
                 <Grid container>
                   <StyledGrid item xs={6}>
                     <img
@@ -423,7 +425,7 @@ export function Travel() {
         <Grid container>
           {CAMPGROUNDS.map((item) => {
             return (
-              <Grid item xs={12} md={6}>
+              <Grid item xs={12} md={6} key={item.name}>
                 <Grid container>
                   <StyledGrid item xs={6}>
                     <img
