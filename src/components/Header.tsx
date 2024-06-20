@@ -122,7 +122,7 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {[...pages, ...infoPages].map((page) => (
                 <MenuItem
                   key={page.text}
                   href={page.href}
@@ -137,39 +137,6 @@ function ResponsiveAppBar() {
                   </a>
                 </MenuItem>
               ))}
-              <MenuItem key={'info'} onClick={handleInfo}>
-                <Typography textAlign="center">Info</Typography>
-              </MenuItem>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElInfo}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorElInfo)}
-                onClose={handleInfoClose}
-              >
-                {infoPages.map((page) => (
-                  <MenuItem
-                    key={page.text}
-                    href={page.href}
-                    onClick={handleCloseNavMenu}
-                  >
-                    <a
-                      href={page.href}
-                      style={{ textDecoration: 'none', color: 'inherit' }}
-                    >
-                      <Typography textAlign="center">{page.text}</Typography>
-                    </a>
-                  </MenuItem>
-                ))}
-              </Menu>
             </Menu>
           </Box>
 

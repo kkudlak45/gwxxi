@@ -56,6 +56,7 @@ function EventBlock({
             src={getIconSrc(event.type)}
             style={{
               height: '4rem',
+              width: '4rem',
               aspectRatio: 1,
               borderRadius: '1000px',
               border: `4px solid ${CHARCOAL}`,
@@ -112,7 +113,7 @@ function EventBlock({
         style={{
           width: '100%',
           display: isMobile ? undefined : 'none',
-          paddingBottom: "1rem",
+          paddingBottom: '1rem',
           borderBottom: showBottom ? `2px solid ${CHARCOAL}` : undefined,
         }}
       >
@@ -144,7 +145,7 @@ export function Events() {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        padding: "0px 8px"
+        padding: '0px 8px',
       }}
     >
       <Typography variant="h2" textAlign="center" marginTop="2rem">

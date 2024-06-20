@@ -7,6 +7,7 @@ import { Events } from './pages/Events'
 import { ThemeProvider } from '@emotion/react'
 import { theme } from './constants/theme'
 import { Travel } from './pages/Travel'
+import { Faqs } from './pages/Faqs'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="events" element={<Events />} />
             <Route path="travel" element={<Travel />} />
+            <Route path="faqs" element={<Faqs />} />
           </Routes>
         </Container>
         <Footer />
