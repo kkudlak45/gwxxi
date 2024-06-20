@@ -2,6 +2,7 @@ import { Button, Grid, Typography, styled, useTheme } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import StarIcon from '@mui/icons-material/Star'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -117,22 +118,23 @@ const RENTAL_CARS = [
 ]
 
 export function Travel() {
-  const { palette } = useTheme()
+  const { palette } = useTheme();
+  const isMobile = useIsMobile();
 
   return (
     <Fragment>
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         TRAVEL & LODGING
       </Typography>
-      <Section>
+      <Section style={isMobile ? { textAlign: "center" } : {}}>
         <Grid container justifyContent="center" alignItems="center">
-          <StyledGrid item xs={6}>
+          <StyledGrid item xs={12} md={6}>
             <img
               src={`${import.meta.env.BASE_URL}placeholder.png`}
               width="80%"
             />
           </StyledGrid>
-          <StyledGrid item xs={6} sx={{ flexDirection: 'column', gap: '1rem' }}>
+          <StyledGrid item xs={12} md={6} sx={{ flexDirection: 'column', gap: '1rem' }}>
             <Typography>
               {
                 'Welcome to Wild and Wonderful, West Virginia. Come for the day, or make a week out of it; there are endless adventures when caching in West Virginia. '
@@ -164,7 +166,7 @@ export function Travel() {
               AIRPORTS
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{ display: isMobile ? 'none' : undefined }}>
             <Typography variant="h2" color="secondary" textAlign="center">
               RENTAL CARS
             </Typography>
@@ -183,8 +185,8 @@ export function Travel() {
                 <div
                   style={{
                     display: 'flex',
-                    justifyContent: 'space-between',
-                    padding: '0 24%',
+                    justifyContent: isMobile ? "center" : 'space-between',
+                    padding: isMobile ? undefined : '0 24%',
                   }}
                 >
                   <Typography
@@ -206,6 +208,7 @@ export function Travel() {
                   </Typography>
                   <Typography
                     style={{
+                      display: isMobile ? 'none' : undefined,
                       fontWeight: airport.emph ? 'bold' : 'normal',
                       color: airport.emph ? palette.warning.main : undefined,
                     }}
@@ -215,6 +218,33 @@ export function Travel() {
                 </div>
               )
             })}
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            display={isMobile ? "flex" : "none"}
+            justifyContent="center"
+            alignItems="center"
+            paddingTop="8px"
+          >
+            <Typography
+              style={{ color: palette.warning.main, fontWeight: 'bold' }}
+            >
+              <StarIcon
+                style={{
+                  width: '1rem',
+                  height: '1rem',
+                  color: palette.warning.main,
+                }}
+              />{' '}
+              <em>Starred airports are recommended</em>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6} sx={{ display: isMobile ? undefined : 'none', marginTop: '1.4rem' }}>
+            <Typography variant="h2" color="secondary" textAlign="center">
+              RENTAL CARS
+            </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography
@@ -232,7 +262,7 @@ export function Travel() {
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
-                    padding: '0 24%',
+                    padding: isMobile ? "0 8px" : '0 24%',
                   }}
                 >
                   <Typography>{cars.name}</Typography>
@@ -249,7 +279,7 @@ export function Travel() {
             item
             xs={12}
             md={6}
-            display="flex"
+            display={isMobile ? "none" : "flex"}
             justifyContent="center"
             alignItems="center"
             paddingTop="8px"

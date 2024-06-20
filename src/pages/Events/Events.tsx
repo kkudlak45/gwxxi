@@ -5,6 +5,7 @@ import moment from 'moment'
 import { Fragment } from 'react/jsx-runtime'
 import { BLUE, CHARCOAL, GREEN } from '../../constants/theme'
 import { PlayArrow } from '@mui/icons-material'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 function getIconSrc(type: EventType) {
   switch (type) {
@@ -33,73 +34,108 @@ function EventBlock({
   event: Event
   showBottom: boolean
 }) {
+  const isMobile = useIsMobile()
+
   return (
-    <div
-      style={{
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'space-between',
-        padding: '0.6rem 0',
-        borderBottom: showBottom ? `2px solid ${CHARCOAL}` : undefined,
-      }}
-    >
-      <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-        <img
-          src={getIconSrc(event.type)}
-          style={{
-            height: '4rem',
-            aspectRatio: 1,
-            borderRadius: '1000px',
-            border: `4px solid ${CHARCOAL}`,
-            padding: '4px',
-          }}
-        />
-        <div style={{ width: '100%' }}>
-          <Typography
-            fontSize="1.4rem"
-            fontFamily="KGRedhands"
-            fontWeight="bold"
-            paddingBottom="0.1rem"
-          >
-            {event.name}
-          </Typography>
-          <Typography width="100%" textAlign="justify">
-            {event.description}
-          </Typography>
-        </div>
-      </div>
+    <Fragment>
       <div
         style={{
-          minWidth: '200px',
+          width: '100%',
           display: 'flex',
-          alignItems: 'flex-end',
-          flexDirection: 'column',
-          justifyContent: 'center',
+          justifyContent: isMobile ? 'center' : 'space-between',
+          padding: '0.6rem 0',
+          borderBottom: showBottom
+            ? isMobile
+              ? undefined
+              : `2px solid ${CHARCOAL}`
+            : undefined,
         }}
       >
-        {event.startTime ? (
-          <Fragment>
-            <Typography fontSize="1.3rem" fontWeight="bold">
-              {moment.unix(event.startTime).format('dddd (MM/DD)')}
+        <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+          <img
+            src={getIconSrc(event.type)}
+            style={{
+              height: '4rem',
+              aspectRatio: 1,
+              borderRadius: '1000px',
+              border: `4px solid ${CHARCOAL}`,
+              padding: '4px',
+            }}
+          />
+
+          <div
+            style={{ width: '100%', display: isMobile ? 'none' : undefined }}
+          >
+            <Typography
+              fontSize="1.4rem"
+              fontFamily="KGRedhands"
+              fontWeight="bold"
+              paddingBottom="0.1rem"
+            >
+              {event.name}
             </Typography>
-            <div style={{ display: 'flex' }}>
-              <Typography>
-                {moment.unix(event.startTime).format('hh:mm A')}
-                {event.endTime &&
-                  ` - ${moment.unix(event.endTime).format('hh:mm A')}`}
+            <Typography width="100%" textAlign="justify">
+              {event.description}
+            </Typography>
+          </div>
+        </div>
+
+        <div
+          style={{
+            minWidth: '200px',
+            display: 'flex',
+            alignItems: isMobile ? 'center' : 'flex-end',
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}
+        >
+          {event.startTime ? (
+            <Fragment>
+              <Typography fontSize="1.3rem" fontWeight="bold">
+                {moment.unix(event.startTime).format('dddd (MM/DD)')}
               </Typography>
-            </div>
-          </Fragment>
-        ) : (
-          <Typography fontSize="1.4rem">Various Times</Typography>
-        )}
+              <div style={{ display: 'flex' }}>
+                <Typography>
+                  {moment.unix(event.startTime).format('hh:mm A')}
+                  {event.endTime &&
+                    ` - ${moment.unix(event.endTime).format('hh:mm A')}`}
+                </Typography>
+              </div>
+            </Fragment>
+          ) : (
+            <Typography fontSize="1.4rem">Various Times</Typography>
+          )}
+        </div>
       </div>
-    </div>
+
+      <div
+        style={{
+          width: '100%',
+          display: isMobile ? undefined : 'none',
+          paddingBottom: "1rem",
+          borderBottom: showBottom ? `2px solid ${CHARCOAL}` : undefined,
+        }}
+      >
+        <Typography
+          fontSize="1.4rem"
+          fontFamily="KGRedhands"
+          fontWeight="bold"
+          paddingBottom="0.1rem"
+          textAlign="center"
+        >
+          {event.name}
+        </Typography>
+        <Typography width="100%" textAlign="center">
+          {event.description}
+        </Typography>
+      </div>
+    </Fragment>
   )
 }
 
 export function Events() {
   const { palette } = useTheme()
+  const isMobile = useIsMobile()
 
   return (
     <div
@@ -108,6 +144,7 @@ export function Events() {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
+        padding: "0px 8px"
       }}
     >
       <Typography variant="h2" textAlign="center" marginTop="2rem">
@@ -130,7 +167,7 @@ export function Events() {
             showBottom={index < SCHEDULE.length - 1}
           />
         ))}
-        <Typography textAlign="center" lineHeight="2rem">
+        <Typography textAlign="center" lineHeight={isMobile ? '1rem' : '2rem'}>
           <em>Tentative schedule subject to change, check back for details.</em>
         </Typography>
       </Section>
@@ -155,7 +192,7 @@ export function Events() {
           to make your weekend in Appalachia unforgettable!
         </Typography>
 
-        <Grid container>
+        <Grid container rowGap="2rem">
           <Grid item xs={12} md={4} textAlign="center">
             <div
               style={{
@@ -262,7 +299,7 @@ export function Events() {
           </Grid>
         </Grid>
 
-        <div style={{ marginTop: '1.2rem' }}>
+        <div style={{ marginTop: '1.2rem', padding: '0 8px' }}>
           <Button
             target="_blank"
             variant="contained"
@@ -271,6 +308,8 @@ export function Events() {
               borderRadius: '64px',
               fontWeight: 'bold',
               fontSize: '1.4rem',
+              lineHeight: '1.6rem',
+              textAlign: 'center',
             }}
             href="https://www.visitmountaineercountry.com/deals/"
           >
