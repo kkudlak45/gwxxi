@@ -3,6 +3,7 @@ import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
+import { CHARCOAL } from '../../constants/theme'
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -18,71 +19,86 @@ const HOTELS = [
   {
     name: 'Appalachian Hotel',
     address: '17600 Veterans Memorial Hwy Kingwood, WV 26537',
-    distance: '30 miles',
+    distance: 30,
     href: 'https://www.appalachianhospitality.com/',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/appalachian.png`,
   },
   {
     name: 'Courtyard by Marriott',
     address: '460 Courtyard St Morgantown, WV 26501',
-    distance: '5 miles',
+    distance: 5,
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718718538441&key=GRP&app=resvlink',
     code: 'GEO',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/courtyard.png`,
   },
   {
     name: 'Hampton Inn & Suites',
     address: '325 Granville Square Morgantown, WV 26501',
-    distance: '4 miles',
+    distance: 4,
+    href: 'https://www.hilton.com/en/hotels/mgwvvhx-hampton-morgantown/',
     code: 'GEO',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hampton.png`,
   },
   {
     name: 'Hilton Garden Inn',
     address: '150 Suncrest Town Centre Dr Morgantown, WV 26505',
-    distance: '7 miles',
+    distance: 7,
     href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWGIGI&groupCode=GEO&arrivaldate=2025-05-21&departuredate=2025-05-26&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
     code: 'GEO',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hilton.png`,
   },
   {
     name: 'Holiday Inn Morgantown',
     address: '1188 Pineview Dr Morgantown, WV 26505',
-    distance: '6 miles',
+    distance: 6,
     href: 'https://www.holidayinn.com/redirect?path=rates&brandCode=HI&localeCode=en&regionCode=1&hotelCode=MGWPD&checkInDate=21&checkInMonthYear=042025&checkOutDate=26&checkOutMonthYear=042025&_PMID=99801505&GPC=GEO&cn=no&viewfullsite=true',
     code: 'GEO',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/holiday.png`,
   },
   {
     name: 'Hotel Morgan',
     address: '127 High St Morgantown, WV 26505',
-    distance: '7 miles',
+    distance: 7,
+    href: 'https://www.hotelmorgan.com/',
     code: '052125DLB',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/morgan.png`,
   },
   {
     name: 'Scholar Morgantown by Hilton',
     address: '345 Chestnut St Morgantown, WV 26505',
-    distance: '7 miles',
+    distance: 7,
     href: 'https://www.hilton.com/en/attend-my-event/geowoodstockmorgantownwv2024/',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/scholar.png`,
   },
   {
     name: 'Residence Inn',
     address: '1046 Willowdale Rd Morgantown, WV 26505',
-    distance: '7 miles',
+    distance: 7,
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718291793348&key=GRP&app=resvlink',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence.png`,
   },
   {
     name: 'La Quinta Inn & Suites',
     address: '5000 Gateway Dr Morgantown, WV 26501',
-    distance: '3 miles',
+    distance: 3,
+    href: 'https://www.wyndhamhotels.com/laquinta/morgantown-west-virginia/la-quinta-morgantown/overview',
     code: '8484yhfjdkkdk',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/laquinta.png`,
   },
   {
     name: 'Modern Homestead',
     address: '52 S Robert Stone Hwy Reedsville, WV 26547',
-    distance: '26 miles',
+    distance: 26,
     href: 'https://hotels.cloudbeds.com/reservation/QApNE4#checkin=2024-06-18&checkout=2024-06-19',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/homestead.png`,
   },
   {
     name: 'The Cranberry',
     address: '2700 Cranberry Square Morgantown, WV 26508',
-    distance: '19 miles',
+    distance: 19,
     code: 'GeoWoodstock',
+    href: 'https://cranberrywv.com/',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry.png`,
   },
 ]
 
@@ -159,6 +175,7 @@ export function Travel() {
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         TRAVEL & LODGING
       </Typography>
+
       <Section style={isMobile ? { textAlign: 'center' } : {}}>
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={12} md={6}>
@@ -363,30 +380,56 @@ export function Travel() {
           Enjoy your stay at one of our host hotels. Check back for additional
           offerings.
         </Typography>
-        <Grid container>
-          {HOTELS.map((item) => {
+        <Grid container justifyContent="center">
+          {HOTELS.sort((h1, h2) => h1.distance - h2.distance).map((item) => {
             return (
               <Grid item xs={12} md={6} key={item.name}>
                 <Grid container>
-                  <StyledGrid item xs={6}>
-                    <img
-                      src={`${import.meta.env.BASE_URL}placeholder.png`}
-                      width="80%"
-                      style={{ aspectRatio: 1 }}
-                    />
+                  <StyledGrid item xs={12} md={4}>
+                    <a href={item.href} target="_blank">
+                      <img
+                        src={item.imgSrc}
+                        width="80%"
+                        style={{
+                          aspectRatio: 1,
+                          borderRadius: '12px',
+                          border: `2px solid ${CHARCOAL}`,
+                          maxWidth: '320px',
+                        }}
+                      />
+                    </a>
                   </StyledGrid>
                   <StyledGrid
                     item
-                    xs={6}
-                    sx={{ flexDirection: 'column', alignItems: 'flex-start' }}
+                    xs={12}
+                    md={8}
+                    sx={{
+                      flexDirection: 'column',
+                      alignItems: { xs: 'center', md: 'flex-start' },
+                      textAlign: { xs: 'center', md: 'start' },
+                    }}
                   >
-                    <Typography fontSize="2rem" fontWeight="bold">
+                    <Typography
+                      fontSize="2rem"
+                      fontWeight="bold"
+                      lineHeight="2.2rem"
+                      marginBottom="0.6rem"
+                    >
                       {item.name}
                     </Typography>
-                    <Typography fontSize="1.2rem">
-                      {item.address} | <em>{item.distance}</em>
+                    <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
+                      {item.address.split("(br)").map((text) => {
+                        return (
+                          <Fragment>
+                            {text}
+                            <br />
+                          </Fragment>
+                        )
+                      })}
                     </Typography>
-                    <Typography fontSize="1.2rem">{item.href}</Typography>
+                    <Typography>
+                      <em>Distance: {item.distance} miles</em>
+                    </Typography>
                   </StyledGrid>
                 </Grid>
               </Grid>
@@ -417,7 +460,7 @@ export function Travel() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2">CAMPGROUNDS</Typography>
+        {/* <Typography variant="h2">CAMPGROUNDS</Typography>
         <Typography>
           Enjoy the rustic atmosphere of wild and wonderful at one of our
           campgrounds. Check back for additional offerings.
@@ -451,7 +494,7 @@ export function Travel() {
               </Grid>
             )
           })}
-        </Grid>
+        </Grid> */}
         <Button
           variant="contained"
           color="warning"
