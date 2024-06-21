@@ -55,10 +55,9 @@ function EventBlock({
           <img
             src={getIconSrc(event.type)}
             style={{
-              height: '4rem',
               width: '4rem',
               aspectRatio: 1,
-              borderRadius: '1000px',
+              borderRadius: '4rem',
               border: `4px solid ${CHARCOAL}`,
               padding: '4px',
             }}
@@ -314,7 +313,7 @@ export function Events() {
             }}
             href="https://www.visitmountaineercountry.com/deals/"
           >
-            Click here for full list of deals and discounts
+            Click here for full list of <br /> deals and discounts
           </Button>
         </div>
       </Section>

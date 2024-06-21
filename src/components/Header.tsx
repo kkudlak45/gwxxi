@@ -77,7 +77,7 @@ function ResponsiveAppBar() {
             href="/"
             style={{
               height: isMobile ? 'auto' : '70%',
-              width: isMobile ? '132px' : 'auto',
+              aspectRatio: 1000 / 345,
               marginTop: '-4px',
             }}
           >
