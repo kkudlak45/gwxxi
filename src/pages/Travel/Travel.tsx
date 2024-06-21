@@ -418,7 +418,7 @@ export function Travel() {
                       {item.name}
                     </Typography>
                     <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
-                      {item.address.split("(br)").map((text) => {
+                      {item.address.split('(br)').map((text) => {
                         return (
                           <Fragment>
                             {text}

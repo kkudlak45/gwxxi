@@ -209,8 +209,19 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElInfo)}
               onClose={handleInfoClose}
             >
-              <MenuItem onClick={handleInfoClose}>Sponsors</MenuItem>
-              <MenuItem onClick={handleInfoClose}>FAQs</MenuItem>
+              {infoPages.map((page) => {
+                return (
+                  <MenuItem key={page.href} onClick={handleInfoClose}>
+                    <a
+                      href={page.href}
+                      target={page.text === 'Shop' ? '_blank' : undefined}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      <Typography textAlign="center">{page.text}</Typography>
+                    </a>
+                  </MenuItem>
+                )
+              })}
             </Menu>
           </Box>
 
