@@ -249,7 +249,7 @@ export function Travel() {
                   style={{
                     display: 'flex',
                     justifyContent: isMobile ? 'center' : 'space-between',
-                    padding: isMobile ? undefined : '0 24%',
+                    padding: isMobile ? undefined : '0 16%',
                   }}
                 >
                   <Typography
@@ -316,7 +316,7 @@ export function Travel() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography
-              padding="0 24%"
+              padding="0 16%"
               textAlign="center"
               lineHeight="1rem"
               paddingBottom="8px"
@@ -331,7 +331,7 @@ export function Travel() {
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
-                    padding: isMobile ? '0 8px' : '0 24%',
+                    padding: isMobile ? '0 8px' : '0 16%',
                   }}
                 >
                   <Typography>{cars.name}</Typography>
@@ -435,9 +435,10 @@ export function Travel() {
                     {item.code && (
                       <Typography>
                         Use code{' '}
-                        <em style={{ fontWeight: 'bold' }}>
-                          {item.code} when booking!
+                        <em style={{ fontWeight: 'bold', marginRight: "3px" }}>
+                          {item.code}
                         </em>
+                        {" when booking!"}
                       </Typography>
                     )}
                     <Typography>
