@@ -12,6 +12,7 @@ export function Morgantown() {
       >
         MORGANTOWN
       </Typography>
+      <Typography>Coming soon...</Typography>
     </Fragment>
   )
 }

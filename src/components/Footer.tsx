@@ -1,5 +1,5 @@
 import { Container, Grid, IconButton, Typography, styled } from '@mui/material'
-import { BLUE } from '../constants/theme'
+import { BLUE, CHARCOAL } from '../constants/theme'
 import { infoPages, pages } from './Header'
 import { Event, Facebook, Mail, People } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
@@ -63,7 +63,7 @@ export default function Footer() {
             }}
           >
             <img
-              src={`${import.meta.env.BASE_URL}footericon.webp`}
+              src={`${import.meta.env.BASE_URL}footericonnobg.webp`}
               style={{
                 borderRadius: '12px',
                 maxWidth: isMobile ? '80%' : '240px',
@@ -145,7 +145,12 @@ export default function Footer() {
             >
               <img
                 src={`${import.meta.env.BASE_URL}mylan.png`}
-                style={{ width: '100%', height: '100%', borderRadius: '12px' }}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '12px',
+                  border: `2px solid ${CHARCOAL}`,
+                }}
               />
             </a>
 
@@ -203,7 +208,12 @@ export default function Footer() {
             >
               <img
                 src={`${import.meta.env.BASE_URL}mylan.png`}
-                style={{ width: '100%', height: '100%', borderRadius: '12px' }}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '12px',
+                  border: `2px solid ${CHARCOAL}`,
+                }}
               />
             </a>
           </Grid>

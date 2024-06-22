@@ -3,7 +3,8 @@ import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
-import { CHARCOAL } from '../../constants/theme'
+import { BLUE, CHARCOAL } from '../../constants/theme'
+import LaunchIcon from '@mui/icons-material/Launch';
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -102,20 +103,20 @@ const HOTELS = [
   },
 ]
 
-const CAMPGROUNDS = [
-  {
-    name: 'cg1',
-    address: '219 Tiano St',
-    distance: '99 mi',
-    href: 'https://www.google.com',
-  },
-  {
-    name: 'cg2',
-    address: '464 Somethin or other',
-    distance: '54 mi',
-    href: 'https://www.google.com',
-  },
-]
+// const CAMPGROUNDS = [
+//   {
+//     name: 'cg1',
+//     address: '219 Tiano St',
+//     distance: '99 mi',
+//     href: 'https://www.google.com',
+//   },
+//   {
+//     name: 'cg2',
+//     address: '464 Somethin or other',
+//     distance: '54 mi',
+//     href: 'https://www.google.com',
+//   },
+// ]
 
 const AIRPORTS = [
   { distance: 9, icao: 'mgw', name: 'Morgantown Municipal Airport' },
@@ -180,8 +181,9 @@ export function Travel() {
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={12} md={6}>
             <img
-              src={`${import.meta.env.BASE_URL}placeholder.png`}
-              width="80%"
+              src={`${import.meta.env.BASE_URL}travel/map.webp`}
+              width="90%"
+              style={{ borderRadius: '16px', border: `2px solid ${CHARCOAL}` }}
             />
           </StyledGrid>
           <StyledGrid
@@ -430,6 +432,24 @@ export function Travel() {
                     <Typography>
                       <em>Distance: {item.distance} miles</em>
                     </Typography>
+                    {item.code && (
+                      <Typography>
+                        Use code{' '}
+                        <em style={{ fontWeight: 'bold' }}>
+                          {item.code} when booking!
+                        </em>
+                      </Typography>
+                    )}
+                    <Typography>
+                      <a
+                        target="_blank"
+                        href={item.href}
+                        style={{ color: BLUE, textDecorationColor: BLUE, display: "flex", alignItems: "center", gap: "2px" }}
+                      >
+                        Link
+                        <LaunchIcon style={{ width: "1rem", height: "1rem" }} />
+                      </a>
+                    </Typography>
                   </StyledGrid>
                 </Grid>
               </Grid>
@@ -453,14 +473,14 @@ export function Travel() {
         </Button>
       </Section>
 
-      <Section
+      {/* <Section
         sx={{
           flexDirection: 'column',
           textAlign: 'center',
           alignItems: 'center',
         }}
       >
-        {/* <Typography variant="h2">CAMPGROUNDS</Typography>
+        <Typography variant="h2">CAMPGROUNDS</Typography>
         <Typography>
           Enjoy the rustic atmosphere of wild and wonderful at one of our
           campgrounds. Check back for additional offerings.
@@ -494,7 +514,7 @@ export function Travel() {
               </Grid>
             )
           })}
-        </Grid> */}
+        </Grid>
         <Button
           variant="contained"
           color="warning"
@@ -510,7 +530,7 @@ export function Travel() {
         >
           CLICK HERE FOR THE FULL LIST OF CAMPGROUNDS
         </Button>
-      </Section>
+      </Section> */}
     </Fragment>
   )
 }

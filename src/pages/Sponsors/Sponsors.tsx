@@ -7,6 +7,7 @@ export function Sponsors() {
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         SPONSORS
       </Typography>
+      <Typography>Coming soon...</Typography>
     </Fragment>
   )
 }

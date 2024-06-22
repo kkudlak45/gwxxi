@@ -25,7 +25,7 @@ function FaqCard({
       display="flex"
       justifyContent="center"
     >
-      <Accordion sx={{ maxWidth: '98%' }}>
+      <Accordion sx={{ width: '90%', maxWidth: '98%' }}>
         <AccordionSummary>
           <Typography variant="h3" fontSize="1rem">
             {question}
@@ -51,18 +51,9 @@ export function Faqs() {
       </Typography>
 
       <Grid container>
-        <FaqCard question="Tempor magna do anim ad eiusmod aliqua fugiat ea anim sit labore?">
+        <FaqCard question="Is this page coming soon??">
           <Typography textAlign={isMobile ? 'center' : 'start'}>
-            Non esse ut dolor commodo occaecat. Cupidatat pariatur sint magna
-            nisi laborum minim eiusmod ut quis reprehenderit voluptate sit.
-            Tempor consectetur fugiat magna aute. Occaecat cupidatat pariatur
-            qui veniam. Quis laboris excepteur Lorem nulla dolor laboris quis
-            labore incididunt. Aliqua dolor nostrud duis dolore. Lorem
-            incididunt id ullamco labore irure ad veniam velit nulla.
-            Reprehenderit in eiusmod incididunt do labore. Reprehenderit do aute
-            ad non exercitation et ea ut sunt Lorem consectetur proident.
-            Ullamco qui ullamco aute velit eiusmod cupidatat magna ea sunt do
-            voluptate pariatur elit.
+            Sure is!
           </Typography>
         </FaqCard>
 
