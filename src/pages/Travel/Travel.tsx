@@ -4,7 +4,7 @@ import { Section } from '../../components/Section'
 import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { BLUE, CHARCOAL } from '../../constants/theme'
-import LaunchIcon from '@mui/icons-material/Launch';
+import LaunchIcon from '@mui/icons-material/Launch'
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -435,20 +435,26 @@ export function Travel() {
                     {item.code && (
                       <Typography>
                         Use code{' '}
-                        <em style={{ fontWeight: 'bold', marginRight: "3px" }}>
+                        <em style={{ fontWeight: 'bold', marginRight: '3px' }}>
                           {item.code}
                         </em>
-                        {" when booking!"}
+                        {' when booking!'}
                       </Typography>
                     )}
                     <Typography>
                       <a
                         target="_blank"
                         href={item.href}
-                        style={{ color: BLUE, textDecorationColor: BLUE, display: "flex", alignItems: "center", gap: "2px" }}
+                        style={{
+                          color: BLUE,
+                          textDecorationColor: BLUE,
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '2px',
+                        }}
                       >
                         Link
-                        <LaunchIcon style={{ width: "1rem", height: "1rem" }} />
+                        <LaunchIcon style={{ width: '1rem', height: '1rem' }} />
                       </a>
                     </Typography>
                   </StyledGrid>

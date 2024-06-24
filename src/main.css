@@ -1,3 +1,8 @@
 body {
   margin: 0px;
 }
+
+a {
+  color: #396b92;
+  text-decoration-color: #396b92;
+}
