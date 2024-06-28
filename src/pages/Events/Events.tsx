@@ -6,6 +6,52 @@ import { Fragment } from 'react/jsx-runtime'
 import { BLUE, CHARCOAL, GREEN } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { Helmet } from 'react-helmet'
+import { Bookmark, DriveEta, FamilyRestroom, Flight, Hiking, PsychologyAlt, Settings, Stars } from '@mui/icons-material'
+
+const cacheTours = [
+  {
+    icon: <PsychologyAlt />,
+    name: "A Mental Challenge",
+    href: "https://coord.info/BMDGCDW",
+  },
+  {
+    icon: <FamilyRestroom />,
+    name: "Family Friendly Finds",
+    href: "https://coord.info/BMDGCF1",
+  },
+  {
+    icon: <Settings />,
+    name: "Gadgets Galore",
+    href: "https://coord.info/BMDGCF4",
+  },
+  {
+    icon: <Hiking />,
+    name: "Hiking in Almost Heaven",
+    href: "https://coord.info/BMDGCEV",
+  },
+  {
+    icon: <Bookmark />,
+    name: "Historic Hides",
+    href: "https://coord.info/BMDGCF7",
+  },
+  {
+    icon: <Stars />,
+    name: "Morgantown Top 10",
+    href: "https://coord.info/BMDGWF1",
+  },
+  null,
+  null,
+  {
+    icon: <DriveEta />,
+    name: "ASPGB to GWXXI",
+    href: "https://coord.info/BMDGCBE",
+  },
+  {
+    icon: <Flight />,
+    name: "Columbus to GWXXI",
+    href: "https://coord.info/BMDGCCV",
+  },
+]
 
 function getIconSrc(type: EventType) {
   switch (type) {
@@ -223,11 +269,24 @@ export function Events() {
                 <Typography variant="h3" color="white" marginTop="1rem">
                   Cache Tours
                 </Typography>
-                <Typography paddingTop="0.6rem" textAlign="start" color="white">
-                  Experience Appalachia from a local! Check back for curated
+                <Typography paddingTop="0.6rem" paddingBottom="1rem" textAlign="start" color="white">
+                  Experience Appalachia from a local! Check out our curated
                   lists of caches great for kids, scenic hikes, must-grab
                   gadgets, and more!
                 </Typography>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                  {cacheTours.map((tour) => {
+                    if (!tour) {
+                      return <br />
+                    }
+                    return (
+                      <a target="_blank" href={tour.href} style={{ color: "white", display: "flex", justifyContent: "center", gap: "4px" }}>
+                        {tour.icon}
+                        <Typography color="white">{tour.name}</Typography>
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
             </Grid>
             <Grid item xs={12} md={4} textAlign="center">
