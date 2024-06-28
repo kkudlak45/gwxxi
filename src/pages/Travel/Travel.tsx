@@ -196,6 +196,7 @@ export function Travel() {
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={12} md={6}>
             <img
+              alt="a map displaying relevant locations within proximity to morgantown including: airports, high points, national parks, state oldests, and other nearby events"
               src={`${import.meta.env.BASE_URL}travel/map.webp`}
               width="90%"
               style={{ borderRadius: '16px', border: `2px solid ${CHARCOAL}` }}
@@ -413,6 +414,7 @@ export function Travel() {
                   <StyledGrid item xs={12} md={4}>
                     <a href={item.href} target="_blank">
                       <img
+                        alt={`an exterior shot of ${item.name}`}
                         src={item.imgSrc}
                         width="80%"
                         style={{

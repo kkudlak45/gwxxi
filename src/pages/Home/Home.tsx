@@ -62,6 +62,7 @@ export function Home() {
       </Helmet>
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <img
+          alt="GeoWoodstock XXI brand logo"
           src={`${import.meta.env.BASE_URL}gwxxi.jpg`}
           style={{
             maxWidth: '100%',
@@ -136,6 +137,7 @@ export function Home() {
           <Grid item xs={12} md={6} width="100%" textAlign="center">
             <video
               autoPlay
+              loop
               muted
               controls
               style={{
@@ -227,6 +229,7 @@ export function Home() {
                     }}
                   >
                     <img
+                      alt={`license plate linking to the ${info.title} page`}
                       className="info-block-image"
                       src={info.imgSrc}
                       style={{
@@ -268,6 +271,7 @@ export function Home() {
             alignItems="center"
           >
             <img
+              alt="license plate linking to the shop page"
               src={shopInfoBlock.imgSrc}
               style={{
                 width: '80%',
@@ -348,6 +352,7 @@ export function Home() {
                 style={{ width: '100%' }}
               >
                 <img
+                  alt="geocaching brand logo"
                   src={`${import.meta.env.BASE_URL}geocachinglogo.png`}
                   style={{ width: '100%' }}
                 />

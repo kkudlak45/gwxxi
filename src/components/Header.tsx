@@ -83,6 +83,7 @@ function ResponsiveAppBar() {
             }}
           >
             <img
+              alt="geowoodstock XXI brand logo linking to the home page"
               src={`${import.meta.env.BASE_URL}headericon.webp`}
               style={{ height: '100%', width: '100%' }}
             />

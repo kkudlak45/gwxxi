@@ -54,6 +54,7 @@ function EventBlock({
       >
         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
           <img
+            alt={`the geocaching ${event.type} icon`}
             src={getIconSrc(event.type)}
             style={{
               width: '4rem',
@@ -238,6 +239,7 @@ export function Events() {
                 }}
               >
                 <img
+                  alt="a man kayaking and a woman paddleboarding on the Monongahela river"
                   src={`${import.meta.env.BASE_URL}eventpictures/kayak.webp`}
                   style={{
                     aspectRatio: 4 / 3,
@@ -272,6 +274,7 @@ export function Events() {
                 }}
               >
                 <img
+                  alt="a family playing mini golf at Coal Country Mini Golf"
                   src={`${import.meta.env.BASE_URL}eventpictures/golf.webp`}
                   style={{
                     aspectRatio: 4 / 3,

@@ -63,6 +63,7 @@ export default function Footer() {
             }}
           >
             <img
+              alt="the GeoWoodstock XXI footer brand icon"
               src={`${import.meta.env.BASE_URL}footericonnobg.webp`}
               style={{
                 borderRadius: '12px',
@@ -144,6 +145,7 @@ export default function Footer() {
               }}
             >
               <img
+                alt="a screenshot of the event location (Mylan Park) on google maps"
                 src={`${import.meta.env.BASE_URL}mylan.png`}
                 style={{
                   width: '100%',
@@ -207,6 +209,7 @@ export default function Footer() {
               }}
             >
               <img
+                alt="a screenshot of the event location (Mylan Park) on google maps"
                 src={`${import.meta.env.BASE_URL}mylan.png`}
                 style={{
                   width: '100%',

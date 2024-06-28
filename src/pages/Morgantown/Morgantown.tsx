@@ -151,6 +151,7 @@ export function Morgantown() {
         <Grid container justifyContent="center" alignItems="center">
           <StyledGrid item xs={12} md={6}>
             <img
+              alt="an overhead view of downtown Morgantown"
               src={`${import.meta.env.BASE_URL}morgantown/morgantown.jpg`}
               width="90%"
               style={{
@@ -224,6 +225,7 @@ export function Morgantown() {
                   {info.title}
                 </Typography>
                 <img
+                  alt={`an image representing ${info.title}`}
                   src={info.imgSrc}
                   draggable={false}
                   style={{
@@ -287,6 +289,7 @@ export function Morgantown() {
                 }}
               >
                 <img
+                  alt={`an image representing ${item.title}`}
                   src={item.imgSrc}
                   style={{
                     aspectRatio: 4 / 3,
@@ -316,6 +319,7 @@ export function Morgantown() {
         <Grid container justifyContent="center" alignItems="center">
           <Grid item xs={12} md={6} display="flex" justifyContent="center">
             <img
+              alt="iconography for the Mountaineer Country CVB"
               src={`${import.meta.env.BASE_URL}morgantown/mcvb.png`}
               style={{ maxWidth: '80%', aspectRatio: 1568 / 790 }}
             />
