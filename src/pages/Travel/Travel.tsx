@@ -110,20 +110,36 @@ const HOTELS = [
   },
 ]
 
-// const CAMPGROUNDS = [
-//   {
-//     name: 'cg1',
-//     address: '219 Tiano St',
-//     distance: '99 mi',
-//     href: 'https://www.google.com',
-//   },
-//   {
-//     name: 'cg2',
-//     address: '464 Somethin or other',
-//     distance: '54 mi',
-//     href: 'https://www.google.com',
-//   },
-// ]
+const CAMPGROUNDS = [
+  {
+    name: 'Sand Springs Campground',
+    address: '1309 Sand Springs Rd, Morgantown, WV 26508',
+    distance: 26,
+    href: 'https://sandspringscampgroundwv.com/',
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/sand_springs.webp`,
+  },
+  {
+    name: 'Chestnut Ridge Park',
+    address: 'Darnell Hollow Rd, Morgantown, WV 26508',
+    distance: 26,
+    href: 'https://reservations.wvstateparks.com/products/camping',
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/chestnut.webp`,
+  },
+  {
+    name: 'Coopers Rock State Park',
+    address: 'McCollum Camping Area, 61 County Line Dr, Bruceton Mills, WV 26525',
+    distance: 28,
+    href: 'https://reservations.wvstateparks.com/products/camping',
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers.webp`,
+  },
+  {
+    name: 'Mylan Park KOA',
+    address: 'A new KOA campground is currently being built only steps away from GeoWoodstock HQ. The campground is scheduled to open in Spring 2025 and we will make an announcement if and when booking is available. No RV reservations for the parking area are being made at this time.',
+    distance: 0,
+    href: 'https://mylanpark.org/koa-campground/',
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/mylankoa.webp`,
+  },
+]
 
 const AIRPORTS = [
   { distance: 9, icao: 'mgw', name: 'Morgantown Municipal Airport' },
@@ -515,45 +531,89 @@ export function Travel() {
         </Button>
       </Section>
 
-      {/* <Section
+      <Section
         sx={{
           flexDirection: 'column',
           textAlign: 'center',
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2">CAMPGROUNDS</Typography>
+        <Typography variant="h2" sx={{ fontSize: { xs: "2.4rem", sm: "3rem" } }}>CAMPGROUNDS</Typography>
         <Typography>
           Enjoy the rustic atmosphere of wild and wonderful at one of our
           campgrounds. Check back for additional offerings.
         </Typography>
         <Grid container>
           {CAMPGROUNDS.map((item) => {
-            return (
-              <Grid item xs={12} md={6} key={item.name}>
-                <Grid container>
-                  <StyledGrid item xs={6}>
+            return (<Grid item xs={12} md={6} key={item.name}>
+              <Grid container>
+                <StyledGrid item xs={12} md={4}>
+                  <a href={item.href} target="_blank">
                     <img
-                      src={`${import.meta.env.BASE_URL}placeholder.png`}
+                      alt={`an exterior shot of ${item.name}`}
+                      src={item.imgSrc}
                       width="80%"
-                      style={{ aspectRatio: 1 }}
+                      style={{
+                        aspectRatio: 1,
+                        borderRadius: '12px',
+                        border: `2px solid ${CHARCOAL}`,
+                        maxWidth: '320px',
+                      }}
                     />
-                  </StyledGrid>
-                  <StyledGrid
-                    item
-                    xs={6}
-                    sx={{ flexDirection: 'column', alignItems: 'flex-start' }}
+                  </a>
+                </StyledGrid>
+                <StyledGrid
+                  item
+                  xs={12}
+                  md={8}
+                  sx={{
+                    flexDirection: 'column',
+                    alignItems: { xs: 'center', md: 'flex-start' },
+                    textAlign: { xs: 'center', md: 'start' },
+                  }}
+                >
+                  <Typography
+                    fontSize="2rem"
+                    fontWeight="bold"
+                    lineHeight="2.2rem"
+                    marginBottom="0.6rem"
                   >
-                    <Typography fontSize="2rem" fontWeight="bold">
-                      {item.name}
-                    </Typography>
-                    <Typography fontSize="1.2rem">
-                      {item.address} | <em>{item.distance}</em>
-                    </Typography>
-                    <Typography fontSize="1.2rem">{item.href}</Typography>
-                  </StyledGrid>
-                </Grid>
+                    {item.name}
+                  </Typography>
+                  <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
+                    {item.address.split('(br)').map((text) => {
+                      return (
+                        <Fragment>
+                          {text}
+                          <br />
+                        </Fragment>
+                      )
+                    })}
+                  </Typography>
+                  <Typography>
+                    <em>Distance: {item.distance} miles</em>
+                  </Typography>
+                  <Typography>
+                    <a
+                      target="_blank"
+                      href={item.href}
+                      style={{
+                        color: BLUE,
+                        textDecorationColor: BLUE,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '2px',
+                      }}
+                    >
+                      Click here to book
+                      <LaunchIcon
+                        style={{ width: '1rem', height: '1rem' }}
+                      />
+                    </a>
+                  </Typography>
+                </StyledGrid>
               </Grid>
+            </Grid>
             )
           })}
         </Grid>
@@ -572,7 +632,7 @@ export function Travel() {
         >
           CLICK HERE FOR THE FULL LIST OF CAMPGROUNDS
         </Button>
-      </Section> */}
+      </Section>
     </Fragment>
   )
 }

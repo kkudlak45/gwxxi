@@ -60,7 +60,7 @@ export function Faqs() {
       </Typography>
 
       <Typography textAlign="center">
-        Here's the top questions asked so far..
+        Here's the top questions asked so far:
       </Typography>
 
       <Section sx={{ flexDirection: 'column', gap: '2rem' }}>
