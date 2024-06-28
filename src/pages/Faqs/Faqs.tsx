@@ -267,9 +267,9 @@ export function Faqs() {
               most northern of the southern states and the most southern of the
               northern states, West Virginia has a rich blend of northern
               attitude and southern charm. With close proximity to most major
-              cities on the East Coast and several international airports,
-              Morgantown will serve as an ideal central location for
-              GeoWoodstock XXI.
+              cities on the East Coast and several international airports,{' '}
+              <a href={`${import.meta.env.BASE_URL}morgantown`}>Morgantown</a>{' '}
+              will serve as an ideal central location for GeoWoodstock XXI.
             </Typography>
           </FaqCard>
 
