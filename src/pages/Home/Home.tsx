@@ -2,6 +2,7 @@ import { Button, Grid, Typography, useTheme } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import PlaceIcon from '@mui/icons-material/Place'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
+import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
 import './Home.css'
 import { BLUE } from '../../constants/theme'
@@ -52,6 +53,13 @@ export function Home() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>GeoWoodstock XXI - Home</title>
+        <meta
+          name="description"
+          content="Join us for GeoWoodstock XXI! The original Mega Geocaching Event is coming to Morgantown, West Virginia on May 24, 2025. Check here for information about the upcoming event"
+        />
+      </Helmet>
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <img
           src={`${import.meta.env.BASE_URL}gwxxi.jpg`}

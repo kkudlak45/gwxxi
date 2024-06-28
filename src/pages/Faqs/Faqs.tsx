@@ -9,6 +9,7 @@ import React from 'react'
 import { Fragment } from 'react/jsx-runtime'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { Section } from '../../components/Section'
+import { Helmet } from 'react-helmet'
 
 const VENUE_LINK =
   'https://www.google.com/maps/place/Hazel+%26+J.W.+Ruby+Community+Center+at+Mylan+Park/@39.6364343,-80.0333398,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e332689:0x54cc7607d958f900!8m2!3d39.636431!4d-80.0312464!16s%2Fg%2F11cn7g375j?entry=ttu'
@@ -46,6 +47,14 @@ export function Faqs() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>GeoWoodstock XXI - Frequently Asked Questions</title>
+        <meta
+          name="description"
+          content="Not finding what you need? Frequently asked questions answered here! Check this page for more information about the upcoming geocaching mega event in Morgantown, West Virginia - GeoWoodstock XXI"
+        />
+      </Helmet>
+
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         {isMobile ? 'FAQS' : 'FREQUENTLY ASKED QUESTIONS'}
       </Typography>
@@ -122,9 +131,10 @@ export function Faqs() {
           <FaqCard question="Is the event wheelchair accessible?">
             <Typography>
               Yep! The main event center is wheelchair accessible, and
-              handicapped parking spaces will be available on a first-come first-served basis. Please have your blue handicap parking pass visible.
-              The best way to guarantee parking close to the venue would be by{' '}
-              purchasing a VIP package with preferred parking.
+              handicapped parking spaces will be available on a first-come
+              first-served basis. Please have your blue handicap parking pass
+              visible. The best way to guarantee parking close to the venue
+              would be by purchasing a VIP package with preferred parking.
             </Typography>
           </FaqCard>
 

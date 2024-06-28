@@ -9,6 +9,7 @@ import {
   platinumSponsors,
   silverSponsors,
 } from './sponsorsConstants'
+import { Helmet } from 'react-helmet'
 
 function SponsorBlock({
   title,
@@ -43,6 +44,14 @@ export function Sponsors() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>GeoWoodstock XXI - Morgantown</title>
+        <meta
+          name="description"
+          content="The GeoWoodstock XXI team wants to thank our excellent sponsors for helping to fund and support the original geocaching Mega Event. Thanks to our sponsors for their contributions to helping us host the event in Wild and Wonderful Morgantown, West Virginia!"
+        />
+      </Helmet>
+
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         SPONSORS
       </Typography>

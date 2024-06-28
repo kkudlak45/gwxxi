@@ -5,6 +5,7 @@ import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { BLUE, CHARCOAL } from '../../constants/theme'
 import LaunchIcon from '@mui/icons-material/Launch'
+import { Helmet } from 'react-helmet'
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -179,6 +180,14 @@ export function Travel() {
 
   return (
     <Fragment>
+      <Helmet>
+        <title>GeoWoodstock XXI - Travel and Lodging</title>
+        <meta
+          name="description"
+          content="Wondering how to get to Morgantown, West Virginia or where to stay on the weekend of GeoWoodstock XXI? Check this page for deals and discounts relating to hotels, campgrounds, airports, flights, and car rentals!"
+        />
+      </Helmet>
+
       <Typography variant="h2" textAlign="center" marginTop="2rem">
         TRAVEL & LODGING
       </Typography>
@@ -477,7 +486,8 @@ export function Travel() {
                     )}
                     {item.phone && (
                       <Typography>
-                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and mention GeoWoodstock.
+                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and
+                        mention GeoWoodstock.
                       </Typography>
                     )}
                   </StyledGrid>
