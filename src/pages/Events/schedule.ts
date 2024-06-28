@@ -6,6 +6,7 @@ export enum EventType {
   LAB = 'Adventure Lab',
   MEGA = 'Mega',
   CITO = 'Cito',
+  NONE = 'None',
 }
 
 export type Event = {
@@ -37,7 +38,7 @@ export const SCHEDULE: Event[] = [
 
   {
     name: 'GeoWoodstock XXI',
-    type: EventType.MEGA,
+    type: EventType.NONE,
     description:
       'Welcoming VIPs for a first look at GeoWoodstock HQ, doors open at 8 a.m. with general admission starting at 10 a.m. Tour the vendors, grab your SWAG, and check out the photo spots before the crowds!',
     startTime: 1748001600,
@@ -48,7 +49,7 @@ export const SCHEDULE: Event[] = [
     name: 'Choose Your Own Adventure',
     type: EventType.LAB,
     description:
-      'Caching, kayaking, or putting, oh my! There are countless adventures in North Central West Virginia, and we want to give you the opportunity to play your way! Check back for more information.',
+      'There are countless adventures in North Central West Virginia, and we want to give you the opportunity to play your way! Whether you want to hike, kayak, or just play a round of mini golf, there is something for the whole family! Check back for more information.',
     startTime: undefined,
     endTime: undefined,
   },
@@ -57,16 +58,16 @@ export const SCHEDULE: Event[] = [
     name: 'Cache The Line',
     type: EventType.CITO,
     description:
-      'Did you know Morgantown is the last point on the Mason-Dixon line? Join us at this historical site for a unique volunteer opportunity, then relax with some authentic mountain music!',
+      'Did you know that Morgantown is the furthest surveyed point on the Mason-Dixon line? Join us at this historical site for a unique volunteer opportunity, then relax with some authentic mountain music!',
     startTime: 1748026800,
-    endTime: 1748034000,
+    endTime: 1748131200,
   },
 
   {
     name: 'GeoWoodstock XXI',
     type: EventType.MEGA,
     description:
-      'Complete with vendors, presentations, and of course, lunch, join us at Mylan Park for the 21st anniversary of the world’s original Mega event, Wild and Wonderful GeoWoodstock XXI!',
+      "The big event! Come browse vendors, listen to presentations, meet other cachers, and enjoy an authentic Appalachian meal. Join us at Mylan Park for the 21st anniversary of the world's original Mega event, Wild and Wonderful GeoWoodstock XXI!",
     startTime: 1748088000,
     endTime: 1748120400,
   },
@@ -75,16 +76,16 @@ export const SCHEDULE: Event[] = [
     name: 'Midnight Madness',
     type: EventType.EVENT,
     description:
-      'Join us for an after-party filled with trackables, games, and entertainment happening at the heart of WVU’s campus.',
+      "Join us for an after-party filled with trackables, games, and entertainment happening at the heart of WVU's campus.",
     startTime: 1748131200,
     endTime: 1748145600,
   },
 
   {
-    name: 'Meet with the Mommas',
+    name: 'Meet The Mommas',
     type: EventType.EVENT,
     description:
-      'You can’t go home hungry! Come meet the mommas before enjoying a day of caching in Marion County.',
+      "You can't go home hungry! Come meet the mommas before enjoying a day of caching in Marion County.",
     startTime: 1748178000,
     endTime: 1748188800,
   },
@@ -93,7 +94,7 @@ export const SCHEDULE: Event[] = [
     name: 'Farewell From The Fort',
     type: EventType.EVENT,
     description:
-      'The weekend can’t be over without one final goodbye. Tour an 18th-century reconstructed fort and sing Country Roads with us as the sun sets on another fantastic GeoWoodstock Weekend.',
+      "The weekend can't be over without 1 final goodbye. Tour an 18th-century reconstructed fort and sing Country Roads with us as the sun sets on another fantastic GeoWoodstock Weekend.",
     startTime: 1748203200,
     endTime: 1748217600,
   },

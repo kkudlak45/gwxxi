@@ -16,21 +16,25 @@ export const theme = createTheme({
       textAlign: 'center',
       fontFamily: 'San Andreas',
       color: GREEN,
+      textTransform: 'uppercase',
     },
     h2: {
       textAlign: 'center',
       fontFamily: 'San Andreas',
       color: BLUE,
+      textTransform: 'uppercase',
     },
     h3: {
       textAlign: 'center',
       fontFamily: 'KGRedHands',
       color: GREEN,
+      textTransform: 'uppercase',
     },
     h4: {
       textAlign: 'center',
       fontFamily: 'KGRedHands',
       color: BLUE,
+      textTransform: 'uppercase',
     },
   },
   palette: {

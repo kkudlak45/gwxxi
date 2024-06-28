@@ -31,7 +31,7 @@ export function FaqCard({
     >
       <Accordion sx={{ width: '90%', maxWidth: '98%' }}>
         <AccordionSummary>
-          <Typography variant="h3" fontSize="1rem" textAlign="start">
+          <Typography fontSize="1.2rem" fontWeight="bold" textAlign="start">
             {question}
           </Typography>
         </AccordionSummary>
@@ -111,7 +111,7 @@ export function Faqs() {
 
           <FaqCard question="Are pets allowed?">
             <Typography>
-              GeoWoodstock XXI will be held in two large indoor and outdoor
+              GeoWoodstock XXI will be held in 2 large indoor and outdoor
               facilities with minimal green space. While pets are welcome to
               attend, we ask cachers to be realistic with the needs of their
               pets. If any animals are disruptive or cause problems for other
@@ -122,8 +122,7 @@ export function Faqs() {
           <FaqCard question="Is the event wheelchair accessible?">
             <Typography>
               Yep! The main event center is wheelchair accessible, and
-              handicapped parking spaces will be available on a first come first
-              served basis. Please have your blue handicap parking pass visible.
+              handicapped parking spaces will be available on a first-come first-served basis. Please have your blue handicap parking pass visible.
               The best way to guarantee parking close to the venue would be by{' '}
               purchasing a VIP package with preferred parking.
             </Typography>
@@ -160,7 +159,7 @@ export function Faqs() {
             <Typography>
               It takes a village to support a Mega and we are so excited you are
               interested in volunteering! Several volunteer opportunities will
-              be available throughout the event weekend, keep an eye out for an
+              be available throughout the event weekend. Keep an eye out for an
               announcement in the spring for more details!
             </Typography>
           </FaqCard>

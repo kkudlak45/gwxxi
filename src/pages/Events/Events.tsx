@@ -1,10 +1,9 @@
-import { Button, Grid, Typography, useTheme } from '@mui/material'
+import { Grid, Typography, useTheme } from '@mui/material'
 import { Section } from '../../components/Section'
 import { Event, EventType, SCHEDULE } from './schedule'
 import moment from 'moment'
 import { Fragment } from 'react/jsx-runtime'
 import { BLUE, CHARCOAL, GREEN } from '../../constants/theme'
-import { PlayArrow } from '@mui/icons-material'
 import { useIsMobile } from '../../hooks/useIsMobile'
 
 function getIconSrc(type: EventType) {
@@ -22,8 +21,9 @@ function getIconSrc(type: EventType) {
     case EventType.CITO:
       return `${import.meta.env.BASE_URL}eventicons/cito.png`
     case EventType.EVENT:
-    default:
       return `${import.meta.env.BASE_URL}eventicons/event.png`
+    default:
+      return `${import.meta.env.BASE_URL}eventicons/calendar.png`
   }
 }
 
@@ -71,6 +71,7 @@ function EventBlock({
               fontFamily="KGRedhands"
               fontWeight="bold"
               paddingBottom="0.1rem"
+              textTransform="uppercase"
             >
               {event.name}
             </Typography>
@@ -204,7 +205,7 @@ export function Events() {
                 height: '100%',
               }}
             >
-              <Typography variant="h3" color="white">
+              <Typography variant="h3" color="white" marginTop="1rem">
                 Cache Tours
               </Typography>
               <Typography paddingTop="0.6rem" textAlign="start" color="white">
@@ -228,30 +229,23 @@ export function Events() {
                   aspectRatio: 4 / 3,
                   width: '100%',
                   borderRadius: '12px',
+                  border: `2px solid ${CHARCOAL}`,
                 }}
               />
               <Typography paddingTop="0.6rem" textAlign="justify">
                 It's not Wild and Wonderful without getting a little wet! For
-                the true terrain junkie, check out the Fairmont Land or Aquatic
-                Trail (F.L.O.A.T. for short)! This 32-piece wherigo geo-art will
-                have you kayaking down the Mon River and hiking the trails
-                around Prickett's Fort State Park. Upon completion of either the
-                land or aquatic sections, you'll earn a limited-edition pathtag!
+                the true terrain junkie, check out the{' '}
+                <a
+                  target="_blank"
+                  href="https://marioncvb.com/blog/float-geocache-trail/"
+                >
+                  Fairmont Land or Aquatic Trail
+                </a>{' '}
+                (F.L.O.A.T. for short)! This 32-piece wherigo geo-art will have
+                you kayaking down the Mon River and hiking the trails around
+                Prickett's Fort State Park. Upon completion of either the land
+                or aquatic sections, you'll earn a limited-edition pathtag!
               </Typography>
-              <a
-                href="https://marioncvb.com/blog/float-geocache-trail/"
-                target="_blank"
-                style={{
-                  marginTop: '0.4rem',
-                  display: 'flex',
-                  justifyContent: 'center',
-                }}
-              >
-                <PlayArrow
-                  sx={{ width: '1.4rem', height: '1.4rem', color: BLUE }}
-                />
-                <Typography sx={{ color: BLUE }}>Learn more here!</Typography>
-              </a>
             </div>
           </Grid>
           <Grid item xs={12} md={4} textAlign="center">
@@ -268,6 +262,7 @@ export function Events() {
                   aspectRatio: 4 / 3,
                   width: '100%',
                   borderRadius: '12px',
+                  border: `2px solid ${CHARCOAL}`,
                 }}
               />
               <Typography paddingTop="0.6rem" textAlign="justify">
@@ -298,24 +293,6 @@ export function Events() {
             </div>
           </Grid>
         </Grid>
-
-        <div style={{ marginTop: '1.2rem', padding: '0 8px' }}>
-          <Button
-            target="_blank"
-            variant="contained"
-            color="warning"
-            sx={{
-              borderRadius: '64px',
-              fontWeight: 'bold',
-              fontSize: '1.4rem',
-              lineHeight: '1.6rem',
-              textAlign: 'center',
-            }}
-            href="https://www.visitmountaineercountry.com/deals/"
-          >
-            Click here for full list of <br /> deals and discounts
-          </Button>
-        </div>
       </Section>
     </div>
   )

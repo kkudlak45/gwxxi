@@ -18,20 +18,20 @@ const InfoBlockStuff = [
     title: 'Travel',
     imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels.webp`,
     href: `${import.meta.env.BASE_URL}travel`,
-    text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as helpful travel information for you to plan your trip to West Virginia!',
+    text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as travel information that will help for you to plan your trip to West Virginia!',
   },
   {
     title: 'Morgantown',
     imgSrc: `${import.meta.env.BASE_URL}homeicons/morgantown.webp`,
     href: `${import.meta.env.BASE_URL}morgantown`,
     // italicize parentheses
-    text: "Welcome to Morgantown, West Virginia, located in the heart of Appalachia. There are tons of great things to explore in the immediate Morgantown area, including Coopers Rock State Park and the state's land-grant institution, West Virginia University (Let's Go Mountaineers).",
+    text: "Welcome to Morgantown, West Virginia, located in the heart of Appalachia. There are tons of great places to explore in the immediate Morgantown area, including Coopers Rock State Park and the state's land-grant institution, West Virginia University (Let's Go Mountaineers).",
   },
   {
     title: 'More Info',
     imgSrc: `${import.meta.env.BASE_URL}homeicons/info.webp`,
     href: `${import.meta.env.BASE_URL}faqs`,
-    text: 'Can’t find what you’re looking for? More info will be updated regularly as the event approaches, so check back for sponsorship information, frequently asked questions, and more!',
+    text: "Can't find what you're looking for? As the event approaches, more information will be added, but in the meantime, check out our frequently asked questions. You can also find more information and ask questions on our Facebook page and community group.",
   },
 ]
 
@@ -154,7 +154,7 @@ export function Home() {
           >
             <Typography
               fontSize={isMobile ? undefined : '1.4rem'}
-              padding="0px 16px 0px 8px"
+              padding={isMobile ? '16px' : '0px 16px 0px 8px'}
               textAlign={isMobile ? 'center' : 'start'}
             >
               {
@@ -173,6 +173,7 @@ export function Home() {
                 borderRadius: '64px',
                 fontWeight: 'bold',
                 fontSize: '1.4rem',
+                textAlign: 'center',
               }}
             >
               Check out the event page
@@ -327,7 +328,7 @@ export function Home() {
               target="_blank"
               href={`${import.meta.env.BASE_URL}sponsors`}
             >
-              {'More Info'}
+              {'Sponsorship'}
             </a>
             {' page for sponsorship information.'}
           </Typography>

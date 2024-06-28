@@ -1,4 +1,4 @@
-import { Button, Grid, Typography, styled } from '@mui/material'
+import { Button, Grid, Typography, styled, useTheme } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import { useIsMobile } from '../../hooks/useIsMobile'
@@ -30,7 +30,7 @@ const carouselItems = [
   {
     title: 'New River Gorge',
     href: 'https://www.nps.gov/neri/index.htm',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/NRG.webp`,
   },
   {
     title: 'Blackwater Falls',
@@ -55,7 +55,7 @@ const carouselItems = [
   {
     title: 'Mothman',
     href: 'https://www.wboy.com/only-on-wboy-com/paranormal-w-va/the-legend-of-mothman-paranormal-w-va',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Mothman.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Mothman.png`,
   },
   {
     title: 'Hatfield McCoy Trails',
@@ -67,18 +67,23 @@ const carouselItems = [
     href: 'https://www.marshall.edu/history-and-traditions/sample-page/historic-buildings-and-monuments/memorial-fountain',
     imgSrc: `${import.meta.env.BASE_URL}morgantown/We_Are_Marshall.jpg`,
   },
+  {
+    title: "WV Tim's Gadgets",
+    href: 'https://www.geocaching.com/play/geotours/berkeley-gadgets',
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/wvtim.png`,
+  },
 ]
 
 const infoBlocks = [
   {
     title: 'West Virginia University',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/WVU.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/WVU.png`,
     href: `${import.meta.env.BASE_URL}events`,
     text: 'WVU is a cornerstone of Morgantown and deeply connected with the town’s (and state’s) identity and vibrancy. Did you know the Walt Disney World monorail is modeled after a people-moving system on campus known as the Personal Rapid Transit? While in town, you’ll have to stop and grab a picture in front of Woodburn Hall, the second most photographed building in the state behind the capitol!',
   },
   {
     title: 'Civil War History',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Civil_War.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Civil_War.png`,
     href: `${import.meta.env.BASE_URL}events`,
     text: "For the history buffs, come explore the only state forged from the Civil War. The city's history is marked by its strategic location and divided loyalties during the war. One key attractions include the Mason-Dixon Historical Park, where the famous boundary line was drawn. Visitors can also explore historic downtown Morgantown, with its preserved architecture and monuments commemorating the region's role in the Civil War. Home of the first land battle of the war and birthplace of Stonewall Jackson, the history runs deep in West Virginia.",
   },
@@ -117,6 +122,7 @@ const carouselBreakpoints = {
 
 export function Morgantown() {
   const isMobile = useIsMobile()
+  const { palette } = useTheme()
 
   return (
     <Fragment>
@@ -128,7 +134,9 @@ export function Morgantown() {
       >
         MORGANTOWN
       </Typography>
-      <Typography variant="h3">Let us show you around!</Typography>
+      <Typography fontSize="2.4rem" variant="h3" padding="8px">
+        LET US SHOW YOU AROUND!
+      </Typography>
 
       <Section style={isMobile ? { textAlign: 'center' } : {}}>
         <Grid container justifyContent="center" alignItems="center">
@@ -136,7 +144,11 @@ export function Morgantown() {
             <img
               src={`${import.meta.env.BASE_URL}morgantown/morgantown.jpg`}
               width="90%"
-              style={{ borderRadius: '16px', border: `2px solid ${CHARCOAL}` }}
+              style={{
+                borderRadius: '16px',
+                border: `2px solid ${CHARCOAL}`,
+                aspectRatio: 1328 / 1062,
+              }}
             />
           </StyledGrid>
           <StyledGrid
@@ -157,6 +169,17 @@ export function Morgantown() {
               or navigating the winding banks of the Monongahela River,
               Morgantown promises an unforgettable journey filled with
               excitement and discovery for geocachers of all levels.
+            </Typography>
+            <Typography>
+              Exploring outside the city, you’ll want to check out all the
+              Mountain State has to offer while you travel for GeoWoodstock
+              weekend. We recommend spending a few days before the event to
+              cache in the eastern panhandle with WVTim or visit the New River
+              Gorge, the newest National Park in the country. In addition to
+              these iconic tourist stops, there are also lesser-known gems such
+              as the state parks in Davis, the historic train in Cass, or the
+              elusive Mothman in Point Pleasant. One week in West Virginia might
+              not be long enough!
             </Typography>
           </StyledGrid>
         </Grid>
@@ -180,11 +203,13 @@ export function Morgantown() {
                 }}
               >
                 <Typography
-                  variant="h4"
+                  variant="h3"
+                  fontSize="2rem"
                   sx={{
                     minHeight: { md: '5rem', xs: undefined },
                     display: 'flex',
-                    alignItems: 'end',
+                    alignItems: 'center',
+                    padding: '0 10%',
                   }}
                 >
                   {info.title}
@@ -215,54 +240,62 @@ export function Morgantown() {
         </Grid>
       </Section>
 
-      <Typography variant="h3">Take a Tour</Typography>
-      <Typography textAlign="center" marginTop="0.4rem" marginBottom="2rem">
-        Spend a few extra days and explore everything the Mountain State has to
-        offer!
-      </Typography>
-      <Carousel
-        responsive={carouselBreakpoints}
-        swipeable
-        draggable
-        infinite
-        autoPlay
-        arrows={false}
-        showDots
-        autoPlaySpeed={5000}
-        keyBoardControl
-        removeArrowOnDeviceType={['xs', 'sm']}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+      <div
+        style={{
+          backgroundColor: palette.grey[200],
+          padding: '1rem 0',
+          margin: '32px 0',
+        }}
       >
-        {carouselItems.map((item) => {
-          return (
-            <div
-              style={{
-                width: '100%',
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: 'column',
-                paddingBottom: '1rem',
-              }}
-            >
-              <img
-                src={item.imgSrc}
+        <Typography variant="h3">Take a Tour</Typography>
+        <Typography textAlign="center" marginTop="0.4rem" marginBottom="2rem">
+          Spend a few extra days and explore everything the Mountain State has
+          to offer!
+        </Typography>
+        <Carousel
+          responsive={carouselBreakpoints}
+          swipeable
+          draggable
+          infinite
+          autoPlay
+          arrows={false}
+          showDots
+          autoPlaySpeed={3000}
+          keyBoardControl
+          removeArrowOnDeviceType={['xs', 'sm']}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          {carouselItems.map((item) => {
+            return (
+              <div
                 style={{
-                  aspectRatio: 4 / 3,
-                  maxWidth: '80%',
-                  borderRadius: '16px',
-                  border: `2px solid ${CHARCOAL}`,
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  flexDirection: 'column',
+                  paddingBottom: '1.6rem',
                 }}
-              />
-              <Typography>
-                <a href={item.href} target="_blank">
-                  {item.title}
-                </a>
-              </Typography>
-            </div>
-          )
-        })}
-      </Carousel>
+              >
+                <img
+                  src={item.imgSrc}
+                  style={{
+                    aspectRatio: 4 / 3,
+                    maxWidth: '80%',
+                    borderRadius: '16px',
+                    border: `2px solid ${CHARCOAL}`,
+                  }}
+                />
+                <Typography>
+                  <a href={item.href} target="_blank">
+                    {item.title}
+                  </a>
+                </Typography>
+              </div>
+            )
+          })}
+        </Carousel>
+      </div>
 
       <Section
         sx={{
@@ -271,29 +304,47 @@ export function Morgantown() {
           textAlign: { xs: 'center', md: 'start' },
         }}
       >
-        <Typography padding="0 16px">
-          We want to showcase what happens when southern hospitality meets
-          Appalachian charm, so we've teamed up with Visit Mountaineer Country
-          CVB to ensure an unforgettable GeoWoodstock weekend for all cachers.
-          Enjoy discounted hotels, along with savings on shopping, dining, and
-          recreational activities throughout the week. Check out our deals page
-          below for more info and to start planning your West Virginia vacation!
-        </Typography>
-        <div style={{ padding: '0 16px' }}>
-          <Button
-            target="_blank"
-            href="http://coord.info/gcanxx1"
-            variant="contained"
-            color="warning"
-            sx={{
-              borderRadius: '64px',
-              fontWeight: 'bold',
-              fontSize: '1.4rem',
-            }}
+        <Grid container justifyContent="center" alignItems="center">
+          <Grid item xs={12} md={6} display="flex" justifyContent="center">
+            <img
+              src={`${import.meta.env.BASE_URL}morgantown/mcvb.png`}
+              style={{ maxWidth: '80%', aspectRatio: 1568 / 790 }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
           >
-            CLICK HERE FOR DEALS AND DISCOUNTS
-          </Button>
-        </div>
+            <Typography padding="0 16px">
+              We want to showcase what happens when southern hospitality meets
+              Appalachian charm, so we've teamed up with Visit Mountaineer
+              Country CVB to ensure an unforgettable GeoWoodstock weekend for
+              all cachers. Enjoy discounted hotels, along with savings on
+              shopping, dining, and recreational activities throughout the week.
+              Check out our deals page below for more info and to start planning
+              your West Virginia vacation!
+            </Typography>
+            <div style={{ padding: '1rem 16px' }}>
+              <Button
+                target="_blank"
+                href="https://www.visitmountaineercountry.com/deals/"
+                variant="contained"
+                color="warning"
+                sx={{
+                  borderRadius: '64px',
+                  fontWeight: 'bold',
+                  fontSize: '1.4rem',
+                }}
+              >
+                CLICK HERE FOR DEALS AND DISCOUNTS
+              </Button>
+            </div>
+          </Grid>
+        </Grid>
       </Section>
 
       <Section sx={{ flexDirection: 'column', gap: '2rem' }}>

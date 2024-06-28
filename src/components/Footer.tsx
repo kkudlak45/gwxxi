@@ -6,14 +6,14 @@ import { useIsMobile } from '../hooks/useIsMobile'
 
 const socials = [
   {
+    alt: 'Event Page',
+    href: 'https://coord.info/gcanxx1',
+    component: <Event />,
+  },
+  {
     alt: 'Facebook',
     href: 'https://www.facebook.com/profile.php?id=61558526174705',
     component: <Facebook />,
-  },
-  {
-    alt: 'Mailing List',
-    href: 'https://geowoodstockxxi.us17.list-manage.com/subscribe?u=8fcc636b5362e252a516c4a10&id=68d2e501c0',
-    component: <Mail />,
   },
   {
     alt: 'Community Group',
@@ -21,9 +21,9 @@ const socials = [
     component: <People />,
   },
   {
-    alt: 'Event Page',
-    href: 'https://coord.info/gcanxx1',
-    component: <Event />,
+    alt: 'Mailing List',
+    href: 'https://geowoodstockxxi.us17.list-manage.com/subscribe?u=8fcc636b5362e252a516c4a10&id=68d2e501c0',
+    component: <Mail />,
   },
 ]
 

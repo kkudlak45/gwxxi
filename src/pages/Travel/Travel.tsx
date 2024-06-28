@@ -21,8 +21,8 @@ const HOTELS = [
     name: 'Appalachian Hotel',
     address: '17600 Veterans Memorial Hwy Kingwood, WV 26537',
     distance: 30,
-    href: 'https://www.appalachianhospitality.com/',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/appalachian.png`,
+    phone: '304-329-7829',
   },
   {
     name: 'Courtyard by Marriott',
@@ -79,27 +79,33 @@ const HOTELS = [
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence.png`,
   },
   {
-    name: 'La Quinta Inn & Suites',
-    address: '5000 Gateway Dr Morgantown, WV 26501',
-    distance: 3,
-    href: 'https://www.wyndhamhotels.com/laquinta/morgantown-west-virginia/la-quinta-morgantown/overview',
-    code: '8484yhfjdkkdk',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/laquinta.png`,
-  },
-  {
-    name: 'Modern Homestead',
-    address: '52 S Robert Stone Hwy Reedsville, WV 26547',
-    distance: 26,
-    href: 'https://hotels.cloudbeds.com/reservation/QApNE4#checkin=2024-06-18&checkout=2024-06-19',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/homestead.png`,
-  },
-  {
     name: 'The Cranberry',
     address: '2700 Cranberry Square Morgantown, WV 26508',
     distance: 19,
     code: 'GeoWoodstock',
     href: 'https://cranberrywv.com/',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry.png`,
+  },
+  {
+    name: 'Lakeview Resort',
+    address: 'One Lakeview Dr, Morgantown, WV 26508',
+    distance: 21,
+    href: 'https://linkprotect.cudasvc.com/url?a=https%3A%2F%2Fwww.lakeviewresort.com%2Freservations%3Fpromo_code%3DGEO52125&c=E,1,gq-fB3OvXlnAOrkLqskxBnwy2poM3PfMu42tD7PtykoqJDTHZXtaZankHTnb0nu9mUw0lRP50z1WMhAkVYEUL3OOon55rYBRYmLRZMY_XUDr&typo=1',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/lakeview.png`,
+  },
+  {
+    name: 'Euro-Suites Hotel',
+    address: '501 Chestnut Ridge Rd, Morgantown, WV 26505',
+    distance: 6,
+    phone: '304-598-1000',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/euro.png`,
+  },
+  {
+    name: 'Quality Inn and Suites',
+    address: '366 Boyers Ave, Morgantown, WV 26505',
+    distance: 4,
+    phone: '304-599-5399',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality.png`,
   },
 ]
 
@@ -120,7 +126,7 @@ const HOTELS = [
 
 const AIRPORTS = [
   { distance: 9, icao: 'mgw', name: 'Morgantown Municipal Airport' },
-  { distance: 36, icao: 'ckb', name: 'Clarksburg International Airport' },
+  { distance: 36, icao: 'ckb', name: 'Clarksburg Airport' },
   {
     distance: 77,
     icao: 'pit',
@@ -150,7 +156,7 @@ const AIRPORTS = [
   { distance: 223, icao: 'bwi', name: 'Baltimore International Airport' },
   { distance: 193, icao: 'cak', name: 'Akron-Canton Airport' },
   { distance: 383, icao: 'clt', name: 'Charlotte International Airport' },
-  { distance: 320, icao: 'cvg', name: 'Cincinatti International Airport' },
+  { distance: 320, icao: 'cvg', name: 'Cincinnati International Airport' },
   { distance: 233, icao: 'mdt', name: 'Harrisburg International Airport' },
   { distance: 273, icao: 'day', name: 'Dayton International Airport' },
   { distance: 339, icao: 'lex', name: 'Lexington Airport' },
@@ -204,12 +210,12 @@ export function Travel() {
             </Typography>
             <Typography>
               {
-                'For those flying, the closest airport is located about an hour north in Pittsburgh. Following I-79, you’ll have the opportunity to explore the home of Mr. Roger’s in Pittsburgh or enjoy the hundreds of caches in the most haunted county in America, Greene County. Looking East, flights into Dulles International Airport will have you driving through the heart of WVTim territory in the Eastern Panhandle. If you enjoy gadget caches, this is a must-do during your visit to West Virginia. Ohio airports such as Cleveland or Columbus are also great options for those looking to explore the Buckeye State. Lastly, for those looking to add another National Park to their map, flying into Charlotte will give you the unique opportunity to check out what wild and wonderful is all about as you travel through Fayetteville.'
+                "For those flying, the closest airport is located about an hour north in Pittsburgh. Following I-79, you'll have the opportunity to explore the home of Mr. Rogers in Pittsburgh or enjoy the hundreds of caches in the most haunted county in America, Greene County. Looking east, flights into Dulles International Airport will have you driving through the heart of WVTim territory in the Eastern Panhandle. If you enjoy gadget caches, this is a must-do during your visit to West Virginia. Ohio airports such as Cleveland or Columbus are also great options for those who want to explore the Buckeye State. Lastly, for those looking to add another National Park to their map, flying into Charlotte will give you the unique opportunity to check out what wild and wonderful is all about as you travel through Fayetteville."
               }
             </Typography>
             <Typography>
               {
-                "Check out our list of host hotels with discounts and rates exclusive to those joining us for GeoWoodstock weekend. We recommend traveling to Morgantown on Wednesday (5/21) and staying until Monday (5/26) to soak up all the caching fun planned. We promise, one weekend won’t be long enough! With side events showcasing the best that north central West Virginia has to offer, you can’t go wrong with staying in Morgantown or Fairmont. We can't wait to see you!"
+                "Check out our list of host hotels with discounts and rates exclusive to those joining us for GeoWoodstock weekend. We recommend traveling to Morgantown on Wednesday (5/21) and staying until Monday (5/26) to soak up all the caching fun planned. We promise, one weekend won't be long enough! With side events showcasing the best that north central West Virginia has to offer, you can't go wrong with staying in Morgantown or Fairmont. We can't wait to see you!"
               }
             </Typography>
           </StyledGrid>
@@ -219,7 +225,7 @@ export function Travel() {
       <Section sx={{ backgroundColor: palette.grey[200] }}>
         <Grid container justifyContent="center" alignItems="flex-start">
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" color="secondary" textAlign="center">
+            <Typography variant="h3" color="secondary" textAlign="center">
               AIRPORTS
             </Typography>
           </Grid>
@@ -229,7 +235,7 @@ export function Travel() {
             md={6}
             sx={{ display: isMobile ? 'none' : undefined }}
           >
-            <Typography variant="h2" color="secondary" textAlign="center">
+            <Typography variant="h3" color="secondary" textAlign="center">
               RENTAL CARS
             </Typography>
           </Grid>
@@ -324,7 +330,15 @@ export function Travel() {
               The following companies are available at most major airports local
               to the area:
             </Typography>
-            {RENTAL_CARS.map((cars) => {
+            {RENTAL_CARS.sort((a, b) => {
+              if (a.name < b.name) {
+                return -1
+              }
+              if (b.name > a.name) {
+                return 1
+              }
+              return 0
+            }).map((cars) => {
               return (
                 <div
                   key={cars.name}
@@ -441,22 +455,31 @@ export function Travel() {
                         {' when booking!'}
                       </Typography>
                     )}
-                    <Typography>
-                      <a
-                        target="_blank"
-                        href={item.href}
-                        style={{
-                          color: BLUE,
-                          textDecorationColor: BLUE,
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '2px',
-                        }}
-                      >
-                        Link
-                        <LaunchIcon style={{ width: '1rem', height: '1rem' }} />
-                      </a>
-                    </Typography>
+                    {item.href && (
+                      <Typography>
+                        <a
+                          target="_blank"
+                          href={item.href}
+                          style={{
+                            color: BLUE,
+                            textDecorationColor: BLUE,
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '2px',
+                          }}
+                        >
+                          Click here to book
+                          <LaunchIcon
+                            style={{ width: '1rem', height: '1rem' }}
+                          />
+                        </a>
+                      </Typography>
+                    )}
+                    {item.phone && (
+                      <Typography>
+                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and mention GeoWoodstock.
+                      </Typography>
+                    )}
                   </StyledGrid>
                 </Grid>
               </Grid>
