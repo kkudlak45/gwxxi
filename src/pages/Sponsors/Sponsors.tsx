@@ -52,7 +52,7 @@ export function Sponsors() {
 
       <Section
         sx={{
-          backgroundColor: palette.grey[400],
+          backgroundColor: palette.grey[200],
           flexDirection: 'column',
           gap: '1rem',
         }}

@@ -10,6 +10,7 @@ import { Travel } from './pages/Travel'
 import { Faqs } from './pages/Faqs'
 import { Sponsors } from './pages/Sponsors'
 import { Morgantown } from './pages/Morgantown'
+import 'react-multi-carousel/lib/styles.css'
 
 function App() {
   return (
