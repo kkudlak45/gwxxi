@@ -215,7 +215,7 @@ export function Sponsors() {
             and receive it in the mail months before the event.{' '}
             <a
               target="_blank"
-              href="https://geowoodstock-xxi.square.site/product/black-diamond-backer/3?cp=true&sa=true&sbp=false&q=false"
+              href="https://geowoodstock-xxi.square.site/product/black-diamond-backer/5?cp=true&sa=true&sbp=false&q=false"
             >
               CLICK HERE FOR MORE INFO
             </a>
