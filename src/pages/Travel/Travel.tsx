@@ -37,7 +37,7 @@ const HOTELS = [
     name: 'Hampton Inn & Suites',
     address: '325 Granville Square Morgantown, WV 26501',
     distance: 4,
-    href: 'https://www.hilton.com/en/hotels/mgwvvhx-hampton-morgantown/',
+    href: 'https://www.hilton.com/en/hotels/mgwtchx-hampton-suites-morgantown-university-town-centre',
     code: 'GEO',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hampton.png`,
   },
