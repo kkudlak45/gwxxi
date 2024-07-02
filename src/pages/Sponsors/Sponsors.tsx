@@ -177,8 +177,8 @@ export function Sponsors() {
           Thank you to all our sponsors! Your support allows guest to have the
           best experience possible. To learn more and consider donating
           yourself, please email{' '}
-          <a href="mailto: contact@GeoWoodstock.com">
-            contact@GeoWoodstock.com
+          <a href="mailto: contact@geowoodstockxxi.com">
+            contact@GeoWoodstockXXI.com
           </a>
           .
         </Typography>

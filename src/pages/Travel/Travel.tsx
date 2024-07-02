@@ -105,7 +105,7 @@ const HOTELS = [
     name: 'Quality Inn and Suites',
     address: '366 Boyers Ave, Morgantown, WV 26505',
     distance: 4,
-    phone: '304-599-5399',
+    href: "https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25",
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality.png`,
   },
 ]
@@ -353,8 +353,7 @@ export function Travel() {
               lineHeight="1rem"
               paddingBottom="8px"
             >
-              The following companies are available at most major airports local
-              to the area:
+              The following companies are available at most major airports nearby:
             </Typography>
             {RENTAL_CARS.sort((a, b) => {
               if (a.name < b.name) {
@@ -580,7 +579,7 @@ export function Travel() {
                   >
                     {item.name}
                   </Typography>
-                  <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
+                  <Typography sx={{ fontSize: item.distance === 0 ? '0.8rem' : { xs: '1rem', md: '1.2rem' } }}>
                     {item.address.split('(br)').map((text) => {
                       return (
                         <Fragment>
