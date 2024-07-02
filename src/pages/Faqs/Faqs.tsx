@@ -201,7 +201,7 @@ export function Faqs() {
         <Grid container>
           <FaqCard question="Is there a host hotel?">
             <Typography>
-              With hundreds of hotels within north-central West Virginia, you
+              With dozens of hotels within north-central West Virginia, you
               {" can't"} go wrong staying anywhere near Interstate 79 in
               Morgantown or Fairmont. Side events and caching opportunities will
               be spread throughout the region, so pick a hotel that best suits
@@ -230,7 +230,7 @@ export function Faqs() {
             </Typography>
           </FaqCard>
 
-          <FaqCard question="Do I need to stay at the event the whole day?">
+          <FaqCard question="Will there be new caches placed?">
             <Typography>
               In addition to the hundreds of nearby geocaches including the{' '}
               <a target="_blank" href="https://coord.info/GC9KGXX">

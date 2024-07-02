@@ -166,11 +166,12 @@ function EventBlock({
         }}
       >
         <Typography
-          fontSize="1.4rem"
+          fontSize="1.2rem"
           fontFamily="KGRedhands"
           fontWeight="bold"
           paddingBottom="0.1rem"
           textAlign="center"
+          textTransform="uppercase"
         >
           {event.name}
         </Typography>

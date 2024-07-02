@@ -80,19 +80,19 @@ const infoBlocks = [
     title: 'West Virginia University',
     imgSrc: `${import.meta.env.BASE_URL}morgantown/WVU.png`,
     href: `${import.meta.env.BASE_URL}events`,
-    text: 'WVU is a cornerstone of Morgantown and deeply connected with the town’s (and state’s) identity and vibrancy. Did you know the Walt Disney World monorail is modeled after a people-moving system on campus known as the Personal Rapid Transit? While in town, you’ll have to stop and grab a picture in front of Woodburn Hall, the second most photographed building in the state behind the capitol!',
+    text: 'WVU is a cornerstone of Morgantown and deeply connected with the town’s (and state’s) identity and vibrancy. Did you know the Walt Disney World monorail is modeled after a people-moving system on campus known as the Personal Rapid Transit? While in town, you’ll have to stop and grab a picture in front of Woodburn Hall, the second most photographed building in the state behind the Capitol!',
   },
   {
     title: 'Civil War History',
     imgSrc: `${import.meta.env.BASE_URL}morgantown/Civil_War.png`,
     href: `${import.meta.env.BASE_URL}events`,
-    text: "For the history buffs, come explore the only state forged from the Civil War. The city's history is marked by its strategic location and divided loyalties during the war. One key attractions include the Mason-Dixon Historical Park, where the famous boundary line was drawn. Visitors can also explore historic downtown Morgantown, with its preserved architecture and monuments commemorating the region's role in the Civil War. Home of the first land battle of the war and birthplace of Stonewall Jackson, the history runs deep in West Virginia.",
+    text: "For the history buffs, come explore the only state forged from the Civil War. The city's history is marked by its strategic location and divided loyalties during the war. One key attraction is the Mason-Dixon Historical Park, where the famous boundary line was drawn. Visitors can also explore historic downtown Morgantown, with its preserved architecture and monuments commemorating the region's role in the Civil War. Home of the first land battle of the war and birthplace of Stonewall Jackson, the history runs deep in West Virginia.",
   },
   {
     title: 'Adventure & Recreation',
     imgSrc: `${import.meta.env.BASE_URL}morgantown/Seneca_Rocks.jpg`,
     href: `${import.meta.env.BASE_URL}events`,
-    text: 'Morgantown serves as a gateway to these incredible natural playgrounds, ensuring endless adventures for every outdoor enthusiast. Coopers Rock State Forest, just a short drive from downtown, boasts breathtaking overlooks, extensive hiking trails, and prime rock-climbing spots. The Monongahela River, flowing gracefully through Morgantown, is perfect for kayaking, offering serene waters and picturesque views. Beyond Morgantown, West Virginia is home to 36 state parks, each with its own unique charm and outdoor activities. Notably, the state proudly hosts the newest National Park in the country, the New River Gorge National Park and Preserve, which promises world-class hiking, rock climbing, and whitewater rafting',
+    text: 'Morgantown serves as a gateway to these incredible natural playgrounds, ensuring endless adventures for every outdoor enthusiast. Coopers Rock State Forest, just a short drive from downtown, boasts breathtaking overlooks, extensive hiking trails, and prime rock-climbing spots. The Monongahela River, flowing gracefully through Morgantown, is perfect for kayaking, offering serene waters and picturesque views. Beyond Morgantown, West Virginia is home to 36 state parks, each with its own unique charm and outdoor activities. Notably, the state proudly hosts the newest National Park in the country, the New River Gorge National Park and Preserve, which promises world-class hiking, rock climbing, and whitewater rafting.',
   },
   {
     title: 'Food & Culture',

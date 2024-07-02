@@ -19,7 +19,7 @@ const InfoBlockStuff = [
     title: 'Travel',
     imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels.webp`,
     href: `${import.meta.env.BASE_URL}travel`,
-    text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as travel information that will help for you to plan your trip to West Virginia!',
+    text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as travel information that will help you to plan your trip to West Virginia!',
   },
   {
     title: 'Morgantown',
