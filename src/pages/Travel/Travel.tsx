@@ -105,7 +105,7 @@ const HOTELS = [
     name: 'Quality Inn and Suites',
     address: '366 Boyers Ave, Morgantown, WV 26505',
     distance: 4,
-    href: "https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25",
+    href: 'https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality.png`,
   },
 ]
@@ -127,14 +127,16 @@ const CAMPGROUNDS = [
   },
   {
     name: 'Coopers Rock State Park',
-    address: 'McCollum Camping Area, 61 County Line Dr, Bruceton Mills, WV 26525',
+    address:
+      'McCollum Camping Area, 61 County Line Dr, Bruceton Mills, WV 26525',
     distance: 28,
     href: 'https://reservations.wvstateparks.com/products/camping',
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers.webp`,
   },
   {
     name: 'Mylan Park KOA',
-    address: 'A new KOA campground is currently being built only steps away from GeoWoodstock HQ. The campground is scheduled to open in Spring 2025 and we will make an announcement if and when booking is available. No RV reservations for the parking area are being made at this time.',
+    address:
+      'A new KOA campground is currently being built only steps away from GeoWoodstock HQ. The campground is scheduled to open in Spring 2025 and we will make an announcement if and when booking is available. No RV reservations for the parking area are being made at this time.',
     distance: 0,
     href: 'https://mylanpark.org/koa-campground/',
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/mylankoa.webp`,
@@ -353,7 +355,8 @@ export function Travel() {
               lineHeight="1rem"
               paddingBottom="8px"
             >
-              The following companies are available at most major airports nearby:
+              The following companies are available at most major airports
+              nearby:
             </Typography>
             {RENTAL_CARS.sort((a, b) => {
               if (a.name < b.name) {
@@ -537,82 +540,93 @@ export function Travel() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2" sx={{ fontSize: { xs: "2.4rem", sm: "3rem" } }}>CAMPGROUNDS</Typography>
+        <Typography
+          variant="h2"
+          sx={{ fontSize: { xs: '2.4rem', sm: '3rem' } }}
+        >
+          CAMPGROUNDS
+        </Typography>
         <Typography>
           Enjoy the rustic atmosphere of wild and wonderful at one of our
           campgrounds. Check back for additional offerings.
         </Typography>
         <Grid container>
           {CAMPGROUNDS.map((item) => {
-            return (<Grid item xs={12} md={6} key={item.name}>
-              <Grid container>
-                <StyledGrid item xs={12} md={4}>
-                  <a href={item.href} target="_blank">
-                    <img
-                      alt={`an exterior shot of ${item.name}`}
-                      src={item.imgSrc}
-                      width="80%"
-                      style={{
-                        aspectRatio: 1,
-                        borderRadius: '12px',
-                        border: `2px solid ${CHARCOAL}`,
-                        maxWidth: '320px',
-                      }}
-                    />
-                  </a>
-                </StyledGrid>
-                <StyledGrid
-                  item
-                  xs={12}
-                  md={8}
-                  sx={{
-                    flexDirection: 'column',
-                    alignItems: { xs: 'center', md: 'flex-start' },
-                    textAlign: { xs: 'center', md: 'start' },
-                  }}
-                >
-                  <Typography
-                    fontSize="2rem"
-                    fontWeight="bold"
-                    lineHeight="2.2rem"
-                    marginBottom="0.6rem"
-                  >
-                    {item.name}
-                  </Typography>
-                  <Typography sx={{ fontSize: item.distance === 0 ? '0.8rem' : { xs: '1rem', md: '1.2rem' } }}>
-                    {item.address.split('(br)').map((text) => {
-                      return (
-                        <Fragment>
-                          {text}
-                          <br />
-                        </Fragment>
-                      )
-                    })}
-                  </Typography>
-                  <Typography>
-                    <em>Distance: {item.distance} miles</em>
-                  </Typography>
-                  <Typography>
-                    <a
-                      target="_blank"
-                      href={item.href}
-                      style={{
-                        color: BLUE,
-                        textDecorationColor: BLUE,
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '2px',
-                      }}
-                    >
-                      Click here to book
-                      <LaunchIcon
-                        style={{ width: '1rem', height: '1rem' }}
+            return (
+              <Grid item xs={12} md={6} key={item.name}>
+                <Grid container>
+                  <StyledGrid item xs={12} md={4}>
+                    <a href={item.href} target="_blank">
+                      <img
+                        alt={`an exterior shot of ${item.name}`}
+                        src={item.imgSrc}
+                        width="80%"
+                        style={{
+                          aspectRatio: 1,
+                          borderRadius: '12px',
+                          border: `2px solid ${CHARCOAL}`,
+                          maxWidth: '320px',
+                        }}
                       />
                     </a>
-                  </Typography>
-                </StyledGrid>
+                  </StyledGrid>
+                  <StyledGrid
+                    item
+                    xs={12}
+                    md={8}
+                    sx={{
+                      flexDirection: 'column',
+                      alignItems: { xs: 'center', md: 'flex-start' },
+                      textAlign: { xs: 'center', md: 'start' },
+                    }}
+                  >
+                    <Typography
+                      fontSize="2rem"
+                      fontWeight="bold"
+                      lineHeight="2.2rem"
+                      marginBottom="0.6rem"
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontSize:
+                          item.distance === 0
+                            ? '0.8rem'
+                            : { xs: '1rem', md: '1.2rem' },
+                      }}
+                    >
+                      {item.address.split('(br)').map((text) => {
+                        return (
+                          <Fragment>
+                            {text}
+                            <br />
+                          </Fragment>
+                        )
+                      })}
+                    </Typography>
+                    <Typography>
+                      <em>Distance: {item.distance} miles</em>
+                    </Typography>
+                    <Typography>
+                      <a
+                        target="_blank"
+                        href={item.href}
+                        style={{
+                          color: BLUE,
+                          textDecorationColor: BLUE,
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '2px',
+                        }}
+                      >
+                        Click here to book
+                        <LaunchIcon style={{ width: '1rem', height: '1rem' }} />
+                      </a>
+                    </Typography>
+                  </StyledGrid>
+                </Grid>
               </Grid>
-            </Grid>
             )
           })}
         </Grid>
