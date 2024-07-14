@@ -108,6 +108,13 @@ const HOTELS = [
     href: 'https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality.png`,
   },
+  {
+    name: 'Alpine Lake Resort',
+    address: '700 W Alpine Dr, Terra Alta, WV 26764',
+    distance: 46,
+    href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine.jpg`,
+  },
 ]
 
 const CAMPGROUNDS = [
