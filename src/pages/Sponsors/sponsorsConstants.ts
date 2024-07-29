@@ -10,6 +10,11 @@ export const platinumSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geocaching.png`,
     href: 'https://geocaching.com',
   },
+  {
+    name: 'MCTAF',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcvb.png`,
+    href: 'https://www.visitmountaineercountry.com/grants/#Grant-Guidelines',
+  },
 ]
 export const goldSponsors = []
 export const silverSponsors = []

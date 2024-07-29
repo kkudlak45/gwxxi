@@ -32,21 +32,23 @@ const carouselBreakpoints = {
   },
 }
 
-function CorporateSponsorBlock({
+export function CorporateSponsorBlock({
   title,
   sponsors,
 }: {
-  title: string
+  title?: string
   sponsors: CorporateSponsor[]
 }) {
   return (
     <div style={{ marginBottom: '3rem' }}>
-      <Typography
-        variant="h3"
-        sx={{ fontSize: '2.4rem', padding: '0 8px', marginBottom: '1rem' }}
-      >
-        {title}
-      </Typography>
+      {title && (
+        <Typography
+          variant="h3"
+          sx={{ fontSize: '2.4rem', padding: '0 8px', marginBottom: '1rem' }}
+        >
+          {title}
+        </Typography>
+      )}
 
       <Carousel
         responsive={carouselBreakpoints}
@@ -120,7 +122,17 @@ function SponsorBlock({
       </Typography>
       {children}
       <Grid container padding="1.4rem 0 1rem 0">
-        {sponsors.sort().map((sponsor) => {
+        {sponsors.sort((a, b) => {
+          const aLower = a.toLowerCase()
+          const bLower = b.toLowerCase()
+
+          if (aLower < bLower) {
+            return -1
+          } else if (aLower > bLower) {
+            return 1
+          }
+          return 0
+        }).map((sponsor) => {
           return (
             <Grid item xs={6} sm={4} md={3}>
               <Typography textAlign="center" fontWeight="bold">

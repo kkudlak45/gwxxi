@@ -112,8 +112,16 @@ const HOTELS = [
     name: 'Alpine Lake Resort',
     address: '700 W Alpine Dr, Terra Alta, WV 26764',
     distance: 46,
+    code: "GEO25",
     href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine.jpg`,
+  },
+  {
+    name: 'Clarksburg Hilton Garden Inn',
+    address: '606 Emily Dr, Clarksburg, WV 26301',
+    distance: 40,
+    href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CKBGIGI&arrivalDate=2025-05-21&departureDate=2025-05-25&groupCode=GEO25&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton.png`,
   },
 ]
 

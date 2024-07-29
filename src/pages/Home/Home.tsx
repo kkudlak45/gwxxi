@@ -7,6 +7,8 @@ import { Section } from '../../components/Section'
 import './Home.css'
 import { BLUE } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
+import { platinumSponsors } from '../Sponsors/sponsorsConstants'
+import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
 
 const InfoBlockStuff = [
   {
@@ -344,21 +346,7 @@ export function Home() {
             </a>
             {' page for sponsorship information.'}
           </Typography>
-          <Grid container marginTop="16px" padding="0 16px">
-            <Grid item xs={12} md={4}>
-              <a
-                href="https://www.geocaching.com"
-                target="_blank"
-                style={{ width: '100%' }}
-              >
-                <img
-                  alt="geocaching brand logo"
-                  src={`${import.meta.env.BASE_URL}geocachinglogo.png`}
-                  style={{ width: '100%' }}
-                />
-              </a>
-            </Grid>
-          </Grid>
+          <CorporateSponsorBlock sponsors={platinumSponsors} />
         </div>
       </Section>
     </Fragment>

@@ -191,6 +191,21 @@ export function Morgantown() {
               elusive Mothman in Point Pleasant. One week in West Virginia might
               not be long enough!
             </Typography>
+            <Button
+              variant="contained"
+              color="warning"
+              sx={{
+                borderRadius: '64px',
+                fontWeight: 'bold',
+                fontSize: '1.4rem',
+                width: 'fit-content',
+                marginTop: '24px',
+              }}
+              href="https://www.visitmountaineercountry.com/Planner/"
+              target="_blank"
+            >
+              CLICK HERE TO PLAN YOUR VISIT
+            </Button>
           </StyledGrid>
         </Grid>
       </Section>
