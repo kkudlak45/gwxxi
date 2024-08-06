@@ -4,11 +4,11 @@ import PlaceIcon from '@mui/icons-material/Place'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
-import './Home.css'
 import { BLUE } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { platinumSponsors } from '../Sponsors/sponsorsConstants'
 import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
+import './Home.css'
 
 const InfoBlockStuff = [
   {
@@ -313,11 +313,13 @@ export function Home() {
         </Grid>
       </Section>
 
-      <Section
-        sx={{
+      <div
+        style={{
           flexDirection: 'column',
           alignItems: 'center',
           gap: '16px',
+          marginTop: "1rem",
+          paddingTop: "1rem",
           backgroundColor: isMobile
             ? palette.grey[200]
             : palette.background.default,
@@ -348,7 +350,7 @@ export function Home() {
           </Typography>
           <CorporateSponsorBlock sponsors={platinumSponsors} />
         </div>
-      </Section>
+      </div>
     </Fragment>
   )
 }
