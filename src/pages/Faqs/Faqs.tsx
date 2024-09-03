@@ -296,7 +296,7 @@ export function Faqs() {
               operational. If you're interested in finding gadget caches but
               don't want to make the drive to Berkley County, a brand new gadget
               GeoTour will be available closer to GeoWoodstock XXI in nearby
-              Marion County starting in October.
+              Marion County.
             </Typography>
           </FaqCard>
 

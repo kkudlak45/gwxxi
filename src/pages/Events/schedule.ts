@@ -10,6 +10,7 @@ export enum EventType {
 }
 
 export type Event = {
+  gccode: string
   name: string
   type: EventType
   description: string
@@ -19,82 +20,86 @@ export type Event = {
 
 export const SCHEDULE: Event[] = [
   {
+    gccode: 'GCANXX0',
     name: 'Country Roads Challenge',
     type: EventType.EVENT,
     description:
-      'Let our Country Roads show you around to 10 of the finest stops Appalachia has to offer. Join us at Coopers Rock State Park to grab your SWAG package, then hit the town for a morning of caching fun in Morgantown. Find all 10 caches to earn a limited-edition coin!',
-    startTime: 1747918800,
+      'Welcome to Wild and Wonderful West Virginia - nowhere is this statement more true than Coopers Rock State Park. Join us for a casual meet and greet while you pick up your registration packet and enjoy the breathtaking views of the Cheat River. At 10 a.m., new caches placed at local businesses throughout Morgantown will be released. Find all 10 and earn a limited edition “Country Roads Challenge” Geocoin. No purchase is necessary to attend but to earn a limited-edition coin, you’ll need to purchase a SWAG package.',
+    startTime: 1747915200,
     endTime: 1747929600,
   },
-
   {
-    name: 'Welcome to Woodstock',
-    type: EventType.CC,
-    description:
-      'Capturing the true spirit of West Virginia, spend your evening in the historic Wharf District grabbing a bite to eat and participating in one of many activities including team trivia and the best escape room on the east coast!',
-    startTime: 1747947600,
-    endTime: 1747962000,
-  },
-
-  {
-    name: 'GeoWoodstock XXI',
-    type: EventType.NONE,
-    description:
-      'Welcoming VIPs for a first look at GeoWoodstock HQ, doors open at 8 a.m. with general admission starting at 10 a.m. Tour the vendors, grab your SWAG, and check out the photo spots before the crowds!',
-    startTime: 1748001600,
-    endTime: 1748034000,
-  },
-
-  {
-    name: 'Choose Your Own Adventure',
-    type: EventType.LAB,
-    description:
-      'There are countless adventures in North Central West Virginia, and we want to give you the opportunity to play your way! Whether you want to hike, kayak, or just play a round of mini golf, there is something for the whole family! Check back for more information.',
-    startTime: undefined,
-    endTime: undefined,
-  },
-
-  {
-    name: 'Cache The Line',
+    gccode: 'GCANXX2',
+    name: 'CITO The Line',
     type: EventType.CITO,
     description:
-      'Did you know that Morgantown is the furthest surveyed point on the Mason-Dixon line? Join us at this historical site for a unique volunteer opportunity, then relax with some authentic mountain music!',
-    startTime: 1748026800,
-    endTime: 1748131200,
+      'Marking the boundaries between West Virginia and Pennsylvania, join us at the furthest western point that Charles Mason and Jeremiah Dixon personally surveyed. These trailblazers embraced the true meaning of Mountaineer spirit, and we’re going to embody that attitude with some trail maintenance and environmental reclamation efforts around the park.',
+    startTime: 1747944000,
+    endTime: 1747951200,
+  },
+  {
+    gccode: 'GCANXX3',
+    name: 'Mountain Music',
+    type: EventType.EVENT,
+    description:
+      'After the CITO, celebrate a job well done with your caching friends as the sun sets over the mountains. Relax with some refreshments and enjoy listening to authentic Appalachian folk  music with a caching concert just for us!',
+    startTime: 1747951200,
+    endTime: 1747958400,
   },
 
   {
+    gccode: 'GCANXX5',
+    name: 'Almost Heaven Adventures',
+    type: EventType.EVENT,
+    description:
+      'A trip to West Virginia isn’t complete without a little adventure. Visit Camp Mountaineer, a scouting reserve complete with a zip-line and COPE course! Spend the morning hiking, caching, and testing your skills on the ropes. A group will also be heading to Fairmont to complete the F.L.O.A.T. series.',
+    startTime: 1748001600,
+    endTime: 1748016000,
+  },
+  {
+    gccode: 'GCATNZJ',
+    name: 'Woodstock on the Wharf',
+    type: EventType.CC,
+    description:
+      'Tucked away in the heart of Morgantown, the Wharf District is a cultural hub for Appalachian culture. Enjoy a craft brew with your caching pals or test your brain at one of the best escape rooms on the east coast. Afterward, enjoy a live presentation and participate in a Geocaching-themed trivia game at the outdoor amphitheater overlooking the Mon. river.',
+    startTime: 1748030400,
+    endTime: 1748044800,
+  },
+
+  {
+    gccode: 'GCANXX1',
     name: 'GeoWoodstock XXI',
     type: EventType.MEGA,
     description:
-      "The big event! Come browse vendors, listen to presentations, meet other cachers, and enjoy an authentic Appalachian meal. Join us at Mylan Park for the 21st anniversary of the world's original Mega event, Wild and Wonderful GeoWoodstock XXI!",
+      'This is it - the BIG event! Whether this is your first event or your 1,000th, welcome to the 21st anniversary of the world’s original Mega event: Wild & Wonderful GeoWoodstock XXI. Spend the day at Mylan Park enjoying vendors, presentations, exhibits, a catered lunch, games, and so much more.',
     startTime: 1748088000,
     endTime: 1748120400,
   },
-
   {
+    gccode: 'GCANXX6',
     name: 'Midnight Madness',
     type: EventType.EVENT,
     description:
-      "Join us for an after-party filled with trackables, games, and entertainment happening at the heart of WVU's campus.",
+      'The party continues with the largest coin and pathtag trading event in the world happening at the WVU Mountainlair until midnight! Enjoy the campus lit up at night as well as a live Geocaching game show, bowling, and other activities.',
     startTime: 1748131200,
     endTime: 1748145600,
   },
 
   {
-    name: 'Meet The Mommas',
+    gccode: 'GCANXX7',
+    name: 'Meet the Mommas',
     type: EventType.EVENT,
     description:
-      "You can't go home hungry! Come meet the mommas before enjoying a day of caching in Marion County.",
-    startTime: 1748178000,
-    endTime: 1748188800,
+      'You can’t go home hungry! Enjoy a hardy pancake breakfast provided by a local scouting organization while you meet with your caching friends and plan for a day of caching in Marion County. A new GeoTour will be available for you to complete, but with hundreds of caches in the county, one day might not be enough!',
+    startTime: 1748174400,
+    endTime: 1748185200,
   },
-
   {
-    name: 'Farewell From The Fort',
+    gccode: 'GCANXX8',
+    name: 'Farewell from the Fort',
     type: EventType.EVENT,
     description:
-      "The weekend can't be over without 1 final goodbye. Tour an 18th-century reconstructed fort and sing Country Roads with us as the sun sets on another fantastic GeoWoodstock Weekend.",
+      'Come explore a 19th-century reconstructed fort and learn about the history of the park from live interpreters while you complete a unique Adventure Lab. Claim your coin for the Middle of Everywhere GeoTour and say a final farewell until next year!',
     startTime: 1748203200,
     endTime: 1748217600,
   },

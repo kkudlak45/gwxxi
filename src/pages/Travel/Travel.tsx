@@ -112,7 +112,7 @@ const HOTELS = [
     name: 'Alpine Lake Resort',
     address: '700 W Alpine Dr, Terra Alta, WV 26764',
     distance: 46,
-    code: "GEO25",
+    code: 'GEO25',
     href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine.jpg`,
   },

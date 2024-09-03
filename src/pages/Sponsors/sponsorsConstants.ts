@@ -1,7 +1,7 @@
 export type CorporateSponsor = {
   name: string
   imgSrc: string
-  href: string
+  href?: string
 }
 
 export const platinumSponsors = [
@@ -11,9 +11,13 @@ export const platinumSponsors = [
     href: 'https://geocaching.com',
   },
   {
-    name: 'MCTAF',
+    name: 'Mountaineer Country CVB',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcvb.png`,
     href: 'https://www.visitmountaineercountry.com/grants/#Grant-Guidelines',
+  },
+  {
+    name: 'Monongalia County Commission',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mon_commission.png`,
   },
 ]
 export const goldSponsors = []
@@ -63,6 +67,11 @@ export const friends = [
   'TrexM8s',
   'Krazy4Catz',
   'Electric Water Boy',
+  'Incomenet',
+  'FLPirate & The Wench',
+  'sduck',
+  'Anonymous',
+  'Anonymous',
 ]
 
 export const blackDiamondBackers = [
@@ -216,4 +225,57 @@ export const blackDiamondBackers = [
   'Electric Water Boy',
   'Crazy_Cache_Lady',
   'Cat-in-the-hat',
+  'Incomenet',
+  'jellicle',
+  'FLPirate',
+  'The Wench',
+  'Snowsox',
+  'Desafio',
+  'Nurse 1',
+  'Samurai6',
+  'Sasamichicken',
+  'Shonda181',
+  'Floridafinder2',
+  'Team T.W.I.S.T.E.D.',
+  'sduck',
+  'anndancy',
+  'georeyna',
+  'FloridaJim',
+  'Buckeyegrrl',
+  'beekayroot',
+  'Turtleladi1020nhubbs',
+  'GS1720',
+  'Pisac',
+  'GArunner',
+  'Crammerfamily',
+  'TeamXMan',
+  'MS.Blonde',
+  'Pisac',
+  'ProfessorZoom',
+  'Cecil-EGCM',
+  'balloop',
+  'SKILLET',
+  'effstop',
+  'BnJBish',
+  'fishgeek',
+  'QUE3NBE3',
+  'BLURRYFAC3',
+  'renruts',
+  'Dlinst84',
+  'Crammerfamily',
+  'Mitovirginia',
+  'Mitovirginia',
+  'Ksullivan',
+  'Turrell2',
+  'DrUnKiN mOnKeYs',
+  'Bigguy14760',
+  'Muskoka Pearl',
+  'Scottish Cavalryman',
+  'Buffalo113',
+  'Fishigfool60',
+  'Gugma',
+  'jst4fun',
+  'jst4fun',
+  'SLAUGY',
+  'Bea-frog',
 ]

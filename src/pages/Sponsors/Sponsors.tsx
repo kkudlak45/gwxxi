@@ -99,6 +99,13 @@ export function CorporateSponsorBlock({
           )
         })}
       </Carousel>
+      {sponsors === platinumSponsors && (
+        <Typography padding="0 16%" textAlign="center">
+          {
+            'This event was made possible by the Monongalia County Tourism Advancement Fund, courtesy of the Monongalia County Commission and the Visit Mountaineer Country Convention and Visitors Bureau.'
+          }
+        </Typography>
+      )}
     </div>
   )
 }
@@ -122,25 +129,27 @@ function SponsorBlock({
       </Typography>
       {children}
       <Grid container padding="1.4rem 0 1rem 0">
-        {sponsors.sort((a, b) => {
-          const aLower = a.toLowerCase()
-          const bLower = b.toLowerCase()
+        {sponsors
+          .sort((a, b) => {
+            const aLower = a.toLowerCase()
+            const bLower = b.toLowerCase()
 
-          if (aLower < bLower) {
-            return -1
-          } else if (aLower > bLower) {
-            return 1
-          }
-          return 0
-        }).map((sponsor) => {
-          return (
-            <Grid item xs={6} sm={4} md={3}>
-              <Typography textAlign="center" fontWeight="bold">
-                {sponsor}
-              </Typography>
-            </Grid>
-          )
-        })}
+            if (aLower < bLower) {
+              return -1
+            } else if (aLower > bLower) {
+              return 1
+            }
+            return 0
+          })
+          .map((sponsor) => {
+            return (
+              <Grid item xs={6} sm={4} md={3}>
+                <Typography textAlign="center" fontWeight="bold">
+                  {sponsor}
+                </Typography>
+              </Grid>
+            )
+          })}
       </Grid>
     </div>
   )

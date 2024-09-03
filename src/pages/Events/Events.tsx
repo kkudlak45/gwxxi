@@ -57,7 +57,7 @@ const cacheTours = [
   },
   {
     icon: <Flight />,
-    name: 'Columbus to GWXXI',
+    name: 'Akron-Canton to GWXXI',
     href: 'https://coord.info/BMDGCCV',
   },
 ]

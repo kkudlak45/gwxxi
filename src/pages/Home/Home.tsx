@@ -318,8 +318,8 @@ export function Home() {
           flexDirection: 'column',
           alignItems: 'center',
           gap: '16px',
-          marginTop: "1rem",
-          paddingTop: "1rem",
+          marginTop: '1rem',
+          paddingTop: '1rem',
           backgroundColor: isMobile
             ? palette.grey[200]
             : palette.background.default,
