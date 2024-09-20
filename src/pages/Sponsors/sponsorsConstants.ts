@@ -13,15 +13,26 @@ export const platinumSponsors = [
   {
     name: 'Mountaineer Country CVB',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcvb.png`,
-    href: 'https://www.visitmountaineercountry.com/grants/#Grant-Guidelines',
+    href: 'https://www.visitmountaineercountry.com',
   },
   {
     name: 'Monongalia County Commission',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mon_commission.png`,
   },
+  {
+    name: 'Pathtags',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/pathtags.png`,
+    href: 'https://www.pathtags.com',
+  },
 ]
 export const goldSponsors = []
-export const silverSponsors = []
+export const silverSponsors = [
+  {
+    name: 'Blackwater Outdoor Adventures',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/boa.png`,
+    href: 'https://www.blackwateroutdooradventures.com/',
+  },
+]
 export const bronzeSponsors = []
 
 export const friends = [
@@ -72,6 +83,16 @@ export const friends = [
   'sduck',
   'Anonymous',
   'Anonymous',
+  'ARealWhit',
+  'railroad',
+  'ghostrider2099',
+  'HntA',
+  'geowoulfe',
+  'Sparticus06',
+  'FORK (Sally)',
+  'FORK (Leif)',
+  'foomanjoo',
+  'Joebids',
 ]
 
 export const blackDiamondBackers = [
@@ -278,4 +299,18 @@ export const blackDiamondBackers = [
   'jst4fun',
   'SLAUGY',
   'Bea-frog',
+  'Dbricks',
+  'ARealWhit',
+  'TNDuke',
+  'Albedo_0.39',
+  'HntA',
+  'SpongeBob CachePants',
+  'Slyann62',
+  'SallySedona',
+  'Sparticus06',
+  'Vip Adventurers',
+  'Pegasusmoon',
+  'foomanjoo',
+  'Joebids',
+  'laci729',
 ]

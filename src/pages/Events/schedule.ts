@@ -52,9 +52,18 @@ export const SCHEDULE: Event[] = [
     name: 'Almost Heaven Adventures',
     type: EventType.EVENT,
     description:
-      'A trip to West Virginia isn’t complete without a little adventure. Visit Camp Mountaineer, a scouting reserve complete with a zip-line and COPE course! Spend the morning hiking, caching, and testing your skills on the ropes. A group will also be heading to Fairmont to complete the F.L.O.A.T. series.',
+      'A trip to West Virginia isn’t complete without a little adventure. Visit Camp Mountaineer, a scouting reserve complete with a zip-line and C.O.P.E. (Challenging Outdoor Personal Experiences) course! Spend the morning hiking, caching, and testing your skills on the ropes. A group will also be heading to Fairmont to complete the F.L.O.A.T. series.',
     startTime: 1748001600,
     endTime: 1748016000,
+  },
+  {
+    gccode: 'GCANXX5',
+    name: 'GeoWoodstock XXI',
+    type: EventType.NONE,
+    description:
+      'Come get a first look at GeoWoodstock XXI, pick up your registration packet, and shop the vendors. Doors open at 8 a.m. for VIPs and Friends of GeoWoodstock, with general admission starting at 10 a.m. This is a great chance to participate in some of the activities without all the crowds.',
+    startTime: 1684850400,
+    endTime: 1684868400,
   },
   {
     gccode: 'GCATNZJ',
@@ -87,7 +96,7 @@ export const SCHEDULE: Event[] = [
 
   {
     gccode: 'GCANXX7',
-    name: 'Meet the Mommas',
+    name: 'Breakfast with the Mommas',
     type: EventType.EVENT,
     description:
       'You can’t go home hungry! Enjoy a hardy pancake breakfast provided by a local scouting organization while you meet with your caching friends and plan for a day of caching in Marion County. A new GeoTour will be available for you to complete, but with hundreds of caches in the county, one day might not be enough!',

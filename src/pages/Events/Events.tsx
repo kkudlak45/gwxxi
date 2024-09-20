@@ -1,7 +1,7 @@
 import { Grid, Typography, useTheme } from '@mui/material'
 import { Section } from '../../components/Section'
 import { Event, EventType, SCHEDULE } from './schedule'
-import moment from 'moment'
+import moment from 'moment-timezone'
 import { Fragment } from 'react/jsx-runtime'
 import { BLUE, CHARCOAL, GREEN } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
@@ -150,13 +150,19 @@ function EventBlock({
           {event.startTime ? (
             <Fragment>
               <Typography fontSize="1.3rem" fontWeight="bold">
-                {moment.unix(event.startTime).format('dddd (MM/DD)')}
+                {moment
+                  .unix(event.startTime)
+                  .tz('Etc/GMT+4')
+                  .format('dddd (MM/DD)')}
               </Typography>
               <div style={{ display: 'flex' }}>
                 <Typography>
-                  {moment.unix(event.startTime).format('hh:mm A')}
+                  {moment
+                    .unix(event.startTime)
+                    .tz('Etc/GMT+4')
+                    .format('hh:mm A')}
                   {event.endTime &&
-                    ` - ${moment.unix(event.endTime).format('hh:mm A')}`}
+                    ` - ${moment.unix(event.endTime).tz('Etc/GMT+4').format('hh:mm A')}`}
                 </Typography>
               </div>
             </Fragment>

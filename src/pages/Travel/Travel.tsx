@@ -123,6 +123,27 @@ const HOTELS = [
     href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CKBGIGI&arrivalDate=2025-05-21&departureDate=2025-05-25&groupCode=GEO25&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton.png`,
   },
+  {
+    name: 'Days Inn & Suites - Bridgeport',
+    address: '112 Tolley Dr, Bridgeport, WV 26330',
+    distance: 38,
+    href: 'http://www.wyndhamhotels.com/hotels/04686?checkInDate=05/22/2025&checkOutDate=05/25/2025&groupCode=052225GEO',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysbgpt.png`,
+  },
+  {
+    name: 'Hampton Inn Morgantown',
+    address: '1053 Van Voorhis Road, Morgantown, WV 26505',
+    distance: 5,
+    href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWVVHX&groupCode=CHHGEO&arrivaldate=2025-05-22&departuredate=2025-05-25&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hamptonmgw.png`,
+  },
+  {
+    name: 'Fairfield Inn & Suites Marriott - Fairmont',
+    address: '27 Southland Dr, Fairmont, WV 26554',
+    distance: 25,
+    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1725645270833&key=GRP&guestreslink2=true',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt.png`,
+  },
 ]
 
 const CAMPGROUNDS = [
