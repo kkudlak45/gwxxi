@@ -62,8 +62,8 @@ export const SCHEDULE: Event[] = [
     type: EventType.NONE,
     description:
       'Come get a first look at GeoWoodstock XXI, pick up your registration packet, and shop the vendors. Doors open at 8 a.m. for VIPs and Friends of GeoWoodstock, with general admission starting at 10 a.m. This is a great chance to participate in some of the activities without all the crowds.',
-    startTime: 1684850400,
-    endTime: 1684868400,
+    startTime: 1748008800,
+    endTime: 1748026800,
   },
   {
     gccode: 'GCATNZJ',

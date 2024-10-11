@@ -134,7 +134,7 @@ function PackageCard({
   buyLink: string
   pkgName: string
 }): JSX.Element {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   return (
     <Grid
       item
@@ -145,8 +145,13 @@ function PackageCard({
       alignItems="center"
       justifyContent="center"
     >
-      <Typography variant="h3" marginBottom="1rem"
-      fontSize={isMobile ? "2.4rem" : "3rem"}>{pkgName} Package</Typography>
+      <Typography
+        variant="h3"
+        marginBottom="1rem"
+        fontSize={isMobile ? '2.4rem' : '3rem'}
+      >
+        {pkgName} Package
+      </Typography>
       <img
         src={imgSrc}
         style={{
@@ -533,7 +538,11 @@ export function Register(): JSX.Element {
             </Typography>
           </FaqCard>
         </Grid>
-        <Typography textAlign="center" padding="0.8rem">Have a question that's not answered here? Send us an email to <a href="mailto:SWAG@GeoWoodstockXXI.com">SWAG@GeoWoodstockXXI.com</a> and we'll get back to you as soon as possible. Thanks!</Typography>
+        <Typography textAlign="center" padding="0.8rem">
+          Have a question that's not answered here? Send us an email to{' '}
+          <a href="mailto:SWAG@GeoWoodstockXXI.com">SWAG@GeoWoodstockXXI.com</a>{' '}
+          and we'll get back to you as soon as possible. Thanks!
+        </Typography>
       </Section>
     </Fragment>
   )

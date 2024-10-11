@@ -128,7 +128,7 @@ function SponsorBlock({
         {title}
       </Typography>
       {children}
-      <Grid container padding="1.4rem 0 1rem 0">
+      <Grid container padding="1.4rem 0 0 0">
         {sponsors
           .sort((a, b) => {
             const aLower = a.toLowerCase()
@@ -205,7 +205,7 @@ export function Sponsors() {
         </Typography>
       </div>
 
-      <Section sx={{ flexDirection: 'column' }}>
+      <Section sx={{ flexDirection: 'column', paddingBottom: 0 }}>
         <SponsorBlock title="Friends of GeoWoodstock XXI" sponsors={friends}>
           <Typography textAlign="center">
             GeoWoodstock wouldn't be possible without the amazing community that

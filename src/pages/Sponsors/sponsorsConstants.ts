@@ -24,6 +24,16 @@ export const platinumSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/pathtags.png`,
     href: 'https://www.pathtags.com',
   },
+  {
+    name: 'Martinsburg CVB',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/martinsburg_cvb.png`,
+    href: 'https://www.TravelWV.com',
+  },
+  {
+    name: 'Marion CVB',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/marion_cvb.png`,
+    href: 'https://www.MarionCVB.com',
+  },
 ]
 export const goldSponsors = []
 export const silverSponsors = [
@@ -33,7 +43,13 @@ export const silverSponsors = [
     href: 'https://www.blackwateroutdooradventures.com/',
   },
 ]
-export const bronzeSponsors = []
+export const bronzeSponsors = [
+  {
+    name: 'Heart of Civil War GeoTrail',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/heart_of_civil_war.png`,
+    href: 'https://www.heartofthecivilwar.org',
+  },
+]
 
 export const friends = [
   'Beafrog',
@@ -93,6 +109,13 @@ export const friends = [
   'FORK (Leif)',
   'foomanjoo',
   'Joebids',
+  'Jimbolaya!',
+  'Eagleblazer',
+  'TakeMeOutdoors',
+  'PA Hawkeye',
+  'igator210',
+  'dagin',
+  'Geocachers of LI',
 ]
 
 export const blackDiamondBackers = [
@@ -313,4 +336,24 @@ export const blackDiamondBackers = [
   'foomanjoo',
   'Joebids',
   'laci729',
+  'CURIOUSKDB',
+  'OneKindWord',
+  'Hurricane 61',
+  'Eagleblazer',
+  'Edwards654',
+  'HistoricalGourmet',
+  'blue&violet',
+  'Firetaz',
+  'beans&franks',
+  'CANTHAI',
+  'Tman109ner',
+  'Turkey819',
+  'Igfrey',
+  'Butterfly_TeamBnB',
+  'simdeb14',
+  'llatnek',
+  'Winelegs',
+  'dagin',
+  'mjg231',
+  'scurvy doggs',
 ]
