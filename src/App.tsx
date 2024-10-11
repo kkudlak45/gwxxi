@@ -10,6 +10,7 @@ import { Travel } from './pages/Travel'
 import { Faqs } from './pages/Faqs'
 import { Sponsors } from './pages/Sponsors'
 import { Morgantown } from './pages/Morgantown'
+import { Register } from './pages/Register'
 import 'react-multi-carousel/lib/styles.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="faqs" element={<Faqs />} />
             <Route path="sponsors" element={<Sponsors />} />
             <Route path="morgantown" element={<Morgantown />} />
+            <Route path="register" element={<Register />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Container>

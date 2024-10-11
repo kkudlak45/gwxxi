@@ -37,6 +37,10 @@ export const pages = [
 
 export const infoPages = [
   {
+    text: 'Register',
+    href: `${import.meta.env.BASE_URL}register`,
+  },
+  {
     text: 'Sponsors',
     href: `${import.meta.env.BASE_URL}sponsors`,
   },
