@@ -481,7 +481,7 @@ export function Register(): JSX.Element {
 
       <Section style={{ flexDirection: 'column' }}>
         <Typography variant="h3" marginBottom="1.4rem">
-          Frequently Asked Quetions
+          Frequently Asked Questions
         </Typography>
         <Grid container>
           <FaqCard question="What is the difference between logging a ‘Will Attend’ and registering? ">
