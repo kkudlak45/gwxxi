@@ -532,9 +532,75 @@ export function Register(): JSX.Element {
           </FaqCard>
           <FaqCard question="When will the store close? ">
             <Typography>
-              The store will open on October 11, 2024, and close in February
-              2025. The Black Diamond Backer pre-event fundraiser will be
-              available until November 22, 2025.
+              Black Diamond Backer shirts are available for purchase until
+              November 29, 2024. All other registration items should be
+              purchased before January 31, 2025. Some items may be available in
+              limited quantities at the event in May.
+            </Typography>
+          </FaqCard>
+
+          <FaqCard question="Can VIPs bring guests into preferred areas?">
+            <Typography>
+              Yes - those attending in the same party will have the opportunity
+              to travel together to preferred lines and VIP-only areas.
+            </Typography>
+          </FaqCard>
+          <FaqCard question="How does the Country Roads Challenge work?">
+            <Typography>
+              10 caches will be published around Mountaineer Country starting at
+              10 a.m. on Thursday (5/22/25). Passports will be available in all
+              paid registration levels and available on Thursday at the Country
+              Roads Challenge kickoff event or during package pickup at Mylan
+              Park. Participants will have all weekend to find all 10 caches to
+              claim a limited-edition trackable coin, courtesy of Visit
+              Mountaineer Country. After Sunday, coins can be claimed on a
+              first-come, first-served basis at the visitor center. For more
+              information, please visit the event page for the Country Roads
+              Challenge Kickoff (
+              <a target="_blank" href="https://coord.info/GCANXX0">
+                GCANXX0
+              </a>
+              ).
+            </Typography>
+          </FaqCard>
+          <FaqCard question="How do I get my Friends of GeoWoodstock coin?">
+            <Typography>
+              By becoming a Friend of GeoWoodstock XXI, you'll receive a
+              beautiful golden coin, minted only for our highest supporters.
+              This coin will be available with your registration package when
+              you pick up your SWAG. If you have already purchased a Friends of
+              GeoWoodstock supporter package, but are unable to attend the
+              event, please email{' '}
+              <a href="mailto:info@GeoWoodstockXXI.com">
+                info@GeoWoodstockXXI.com
+              </a>{' '}
+              for assistance.
+            </Typography>
+          </FaqCard>
+          <FaqCard question="When will we get to see the bonus coin included in the VIP package?">
+            <Typography>
+              You'll see what this coin truly looks like when you pick up your
+              package in May, but trust us, this is a special coin design you'll
+              want to add to your collection.
+            </Typography>
+          </FaqCard>
+          <FaqCard question="Can I register at the free level and upgrade later?">
+            <Typography>
+              We are encouraging all attendees to register through the online
+              store, even if this is at the free level. If you know you are
+              likely to purchase a SWAG package, there is no need to register at
+              the free level and upgrade later, simply make one purchasing
+              decision when you are ready.
+            </Typography>
+          </FaqCard>
+          <FaqCard question="What's for lunch?">
+            <Typography>
+              Lunch will be held at Mylan Park on Saturday (5/24/25) from 11
+              a.m. to 2 p.m. The primary lunch option will be pepperoni rolls
+              and WV hotdogs, staples for the area. Gluten-free options are
+              similar, with the hot dog buns and pasta being gluten-free.
+              Vegetarian options include a black bean burger as well as a fruit
+              cup.
             </Typography>
           </FaqCard>
         </Grid>

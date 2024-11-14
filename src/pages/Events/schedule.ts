@@ -24,7 +24,7 @@ export const SCHEDULE: Event[] = [
     name: 'Country Roads Challenge',
     type: EventType.EVENT,
     description:
-      'Welcome to Wild and Wonderful West Virginia - nowhere is this statement more true than Coopers Rock State Park. Join us for a casual meet and greet while you pick up your registration packet and enjoy the breathtaking views of the Cheat River. At 10 a.m., new caches placed at local businesses throughout Morgantown will be released. Find all 10 and earn a limited edition “Country Roads Challenge” Geocoin. No purchase is necessary to attend but to earn a limited-edition coin, you’ll need to purchase a SWAG package.',
+      "Welcome to Wild and Wonderful West Virginia - nowhere is this statement more true than Coopers Rock State Park. Join us for a casual meet and greet while you pick up your Country Roads Challenge playing card and enjoy the breathtaking views of the Cheat River. At 10 a.m., new caches placed at local businesses throughout Morgantown will be released. Find all 10 and earn a limited edition “Country Roads Challenge” Geocoin. No purchase is necessary to attend but to be guaranteed a limited-edition coin, you'll need to purchase a SWAG package.",
     startTime: 1747915200,
     endTime: 1747929600,
   },
@@ -33,7 +33,7 @@ export const SCHEDULE: Event[] = [
     name: 'CITO The Line',
     type: EventType.CITO,
     description:
-      'Marking the boundaries between West Virginia and Pennsylvania, join us at the furthest western point that Charles Mason and Jeremiah Dixon personally surveyed. These trailblazers embraced the true meaning of Mountaineer spirit, and we’re going to embody that attitude with some trail maintenance and environmental reclamation efforts around the park.',
+      'Marking the boundary between West Virginia and Pennsylvania, join us at the furthest western point that Charles Mason and Jeremiah Dixon personally surveyed. These trailblazers embraced the true meaning of Mountaineer spirit, and we’re going to embody that attitude with some trail maintenance and environmental reclamation efforts around the park.',
     startTime: 1747944000,
     endTime: 1747951200,
   },

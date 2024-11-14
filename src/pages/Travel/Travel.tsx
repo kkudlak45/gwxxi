@@ -170,17 +170,27 @@ const CAMPGROUNDS = [
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers.webp`,
   },
   {
-    name: 'Mylan Park KOA',
-    address:
-      'A new KOA campground is currently being built only steps away from GeoWoodstock HQ. The campground is scheduled to open in Spring 2025 and we will make an announcement if and when booking is available. No RV reservations for the parking area are being made at this time.',
-    distance: 0,
-    href: 'https://mylanpark.org/koa-campground/',
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/mylankoa.webp`,
+    name: 'Camp Mountaineer',
+    address: '187 Camp Mountaineer Rd, Morgantown, WV 26508',
+    phone: '304-366-3940',
+    distance: 16,
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/camp_mountaineer.png`,
   },
 ]
 
+const MYLAN_KOA = {
+  name: 'Mylan Park KOA',
+  distance: 0,
+  href: 'https://mylanpark.org/koa-campground/',
+  imgSrc: `${import.meta.env.BASE_URL}campgrounds/mylankoa.webp`,
+}
+
 const AIRPORTS = [
-  { distance: 9, icao: 'mgw', name: 'Morgantown Municipal Airport' },
+  {
+    distance: 9,
+    icao: 'mgw',
+    name: 'Morgantown Municipal Airport',
+  },
   { distance: 36, icao: 'ckb', name: 'Clarksburg Airport' },
   {
     distance: 77,
@@ -313,42 +323,42 @@ export function Travel() {
               }
               return 0
             }).map((airport) => {
+              const divStyling = {
+                display: 'flex',
+                justifyContent: isMobile ? 'center' : 'space-between',
+                padding: isMobile ? undefined : '0 16%',
+              }
               return (
-                <div
-                  key={airport.name}
-                  style={{
-                    display: 'flex',
-                    justifyContent: isMobile ? 'center' : 'space-between',
-                    padding: isMobile ? undefined : '0 16%',
-                  }}
-                >
-                  <Typography
-                    style={{
-                      fontWeight: 'bold',
-                      color: airport.emph ? palette.warning.main : undefined,
-                    }}
-                  >
-                    {airport.emph && (
-                      <StarIcon
-                        style={{
-                          width: '1rem',
-                          height: '1rem',
-                          color: palette.warning.main,
-                        }}
-                      />
-                    )}
-                    {airport.name} <em>({airport.icao.toUpperCase()})</em>
-                  </Typography>
-                  <Typography
-                    style={{
-                      display: isMobile ? 'none' : undefined,
-                      fontWeight: airport.emph ? 'bold' : 'normal',
-                      color: airport.emph ? palette.warning.main : undefined,
-                    }}
-                  >
-                    {airport.distance} miles
-                  </Typography>
-                </div>
+                <Fragment>
+                  <div key={airport.name} style={divStyling}>
+                    <Typography
+                      style={{
+                        fontWeight: 'bold',
+                        color: airport.emph ? palette.warning.main : undefined,
+                      }}
+                    >
+                      {airport.emph && (
+                        <StarIcon
+                          style={{
+                            width: '1rem',
+                            height: '1rem',
+                            color: palette.warning.main,
+                          }}
+                        />
+                      )}
+                      {airport.name} <em>({airport.icao.toUpperCase()})</em>
+                    </Typography>
+                    <Typography
+                      style={{
+                        display: isMobile ? 'none' : undefined,
+                        fontWeight: airport.emph ? 'bold' : 'normal',
+                        color: airport.emph ? palette.warning.main : undefined,
+                      }}
+                    >
+                      {airport.distance} miles
+                    </Typography>
+                  </div>
+                </Fragment>
               )
             })}
           </Grid>
@@ -357,6 +367,7 @@ export function Travel() {
             xs={12}
             md={6}
             display={isMobile ? 'flex' : 'none'}
+            flexDirection="column"
             justifyContent="center"
             alignItems="center"
             paddingTop="8px"
@@ -372,6 +383,11 @@ export function Travel() {
                 }}
               />{' '}
               <em>Starred airports are recommended</em>
+            </Typography>
+            <Typography fontStyle="italic" fontWeight="bold" textAlign="center">
+              {
+                '🚨 Update: United Airlines now offers direct flights from IAD and ORD to MGW.'
+              }
             </Typography>
           </Grid>
           <Grid
@@ -427,6 +443,7 @@ export function Travel() {
             xs={12}
             md={6}
             display={isMobile ? 'none' : 'flex'}
+            flexDirection={'column'}
             justifyContent="center"
             alignItems="center"
             paddingTop="8px"
@@ -442,6 +459,10 @@ export function Travel() {
                 }}
               />{' '}
               <em>Starred airports are recommended</em>
+            </Typography>
+            <Typography fontStyle="italic" fontWeight="bold" textAlign="center">
+              🚨 Update: United Airlines now offers direct flights <br />
+              from IAD and ORD to MGW.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}></Grid>
@@ -644,22 +665,32 @@ export function Travel() {
                     <Typography>
                       <em>Distance: {item.distance} miles</em>
                     </Typography>
-                    <Typography>
-                      <a
-                        target="_blank"
-                        href={item.href}
-                        style={{
-                          color: BLUE,
-                          textDecorationColor: BLUE,
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '2px',
-                        }}
-                      >
-                        Click here to book
-                        <LaunchIcon style={{ width: '1rem', height: '1rem' }} />
-                      </a>
-                    </Typography>
+                    {item.href && (
+                      <Typography>
+                        <a
+                          target="_blank"
+                          href={item.href}
+                          style={{
+                            color: BLUE,
+                            textDecorationColor: BLUE,
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '2px',
+                          }}
+                        >
+                          Click here to book
+                          <LaunchIcon
+                            style={{ width: '1rem', height: '1rem' }}
+                          />
+                        </a>
+                      </Typography>
+                    )}
+                    {item.phone && (
+                      <Typography>
+                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and
+                        mention GeoWoodstock.
+                      </Typography>
+                    )}
                   </StyledGrid>
                 </Grid>
               </Grid>
@@ -681,6 +712,100 @@ export function Travel() {
         >
           CLICK HERE FOR THE FULL LIST OF CAMPGROUNDS
         </Button>
+      </Section>
+
+      <Section
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          backgroundColor: palette.grey[200],
+          gap: '16px',
+        }}
+      >
+        <Grid container alignItems="center" justifyContent="center">
+          {isMobile && (
+            <Typography fontSize="2rem" fontWeight="bold">
+              {MYLAN_KOA.name}
+            </Typography>
+          )}
+          <Grid
+            item
+            xs={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <a href={MYLAN_KOA.href} style={{ width: '80%' }} target="_blank">
+              <img
+                className="info-block-image"
+                src={MYLAN_KOA.imgSrc}
+                style={{
+                  width: '100%',
+                  margin: isMobile ? '1rem 0' : '0rem 1rem',
+                  borderRadius: '16px',
+                  border: '1px solid black',
+                }}
+              />
+            </a>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={8}
+            display="flex"
+            padding={{ xs: '0 1rem', md: '0 4rem 0 2rem' }}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            {!isMobile && (
+              <Typography
+                fontSize="2rem"
+                fontWeight="bold"
+                marginBottom="1.2rem"
+              >
+                {MYLAN_KOA.name}
+              </Typography>
+            )}
+            <Typography
+              textAlign={{ xs: 'center', md: 'start' }}
+              fontSize={{ xs: '1rem', md: '1.4rem' }}
+            >
+              A new KOA campground is under construction at Mylan Park and is
+              scheduled to be completed in time for GeoWoodstock XXI. At this
+              time, no RV reservations for the parking area are being made.
+              Reservations for the new KOA will be available in March 2025.
+              Please{' '}
+              <a
+                target="_blank"
+                href="https://www.geocaching.com/live/geocache/GCANXX1/log"
+              >
+                mark your intention to attend
+              </a>{' '}
+              and join our mailing list to be notified when bookings are
+              available.
+            </Typography>
+            <Button
+              target="_blank"
+              href={
+                'https://geowoodstockxxi.us17.list-manage.com/subscribe?u=8fcc636b5362e252a516c4a10&id=68d2e501c0'
+              }
+              variant="contained"
+              color="warning"
+              sx={{
+                borderRadius: '64px',
+                fontWeight: 'bold',
+                fontSize: '1.4rem',
+                marginTop: '1rem',
+                textAlign: 'center',
+              }}
+            >
+              Sign up for our {isMobile ? <br /> : <Fragment />} mailing list
+            </Button>
+          </Grid>
+        </Grid>
       </Section>
     </Fragment>
   )

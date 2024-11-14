@@ -47,6 +47,11 @@ export const silverSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/maltese.png`,
     href: 'https://www.geocaching.com/p/?guid=2227f7b2-ff37-4847-a1a3-743405f02419&wid=1345141b-666e-4f6b-80ea-b5b36146f51d&ds=2',
   },
+  {
+    name: 'Mylan Park',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mylanPark.png`,
+    href: 'https://mylanpark.org',
+  },
 ]
 export const bronzeSponsors = [
   {
@@ -132,6 +137,8 @@ export const friends = [
   'LostandFound28',
   'peachy1276',
   'cokelover',
+  'Chembrat',
+  '2getherbetter',
 ]
 
 export const blackDiamondBackers = [
@@ -404,4 +411,27 @@ export const blackDiamondBackers = [
   'Thelanes',
   'mathqtpi',
   'cokelover',
+  'SmilingBee',
+  'Strek2',
+  '2getherbetter',
+  'DVC1',
+  'theghostcachers',
+  'theghostcachers',
+  'CamzJ',
+  'Rooper3',
+  'Piglet404',
+  'BOHICA_Bear',
+  'kevins2betsey',
+  'kevins2betsey',
+  "Scrappin'mama",
+  'quadguy47',
+  'Offspringin',
+  'Mike463',
+  'sasamichicken',
+  'Timeage',
+  'tigercash',
+  'Lighthouse Puppets',
+  'crystaloops',
+  'CubmasterP351',
+  'Allysmom24',
 ]

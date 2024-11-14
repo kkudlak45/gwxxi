@@ -41,8 +41,8 @@ const InfoBlockStuff = [
 const shopInfoBlock = {
   title: 'Shop',
   imgSrc: `${import.meta.env.BASE_URL}homeicons/shop.webp`,
-  href: 'https://geowoodstock-xxi.square.site/s/shop',
-  text: 'Want to help support the event and showcase your love for GeoWoodstock? Our store currently has a pre-event fundraiser opportunity as well as the Friends of GeoWoodstock program. The full store to register and purchase SWAG will be available this fall.',
+  href: 'https://www.GeoWoodstockXXI.com/Register',
+  text: 'Registration for GeoWoodstock XXI is now open, and with packages ranging from free to VIP, there is something for everyone. Check out the trackables, shirts, pathtags, and more available for pre-order until January 31, 2025. All individuals are encouraged to attend, and with \u00e1 la carte options, you can make the right package for you! Thanks for supporting GeoWoodstock XXI!',
 }
 
 export function Home() {
@@ -272,15 +272,18 @@ export function Home() {
             justifyContent="center"
             alignItems="center"
           >
-            <img
-              alt="license plate linking to the shop page"
-              src={shopInfoBlock.imgSrc}
-              style={{
-                width: '80%',
-                margin: '0rem 1rem',
-                borderRadius: '16px',
-              }}
-            />
+            <a href={shopInfoBlock.href} style={{ width: '80%' }}>
+              <img
+                className="info-block-image"
+                alt="license plate linking to the shop page"
+                src={shopInfoBlock.imgSrc}
+                style={{
+                  width: '100%',
+                  margin: '0rem 1rem',
+                  borderRadius: '16px',
+                }}
+              />
+            </a>
           </Grid>
           <Grid
             item
@@ -296,7 +299,6 @@ export function Home() {
               {shopInfoBlock.text}
             </Typography>
             <Button
-              target="_blank"
               href={shopInfoBlock.href}
               variant="contained"
               color="warning"
