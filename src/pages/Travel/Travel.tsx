@@ -144,6 +144,20 @@ const HOTELS = [
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1725645270833&key=GRP&guestreslink2=true',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt.png`,
   },
+  {
+    name: 'Sonesta Essential - Fairmont',
+    address: '20 Southland Dr, Fairmont, WV 26554',
+    distance: 26,
+    href: 'https://www.sonesta.com/sonesta-essential/wv/fairmont/sonesta-essential-fairmont?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestafmt.png`,
+  },
+  {
+    name: 'Sonesta Essential - Morgantown',
+    address: '15 Lawless Rd, Morgantown, WV 26501',
+    distance: 5,
+    href: 'https://www.sonesta.com/sonesta-essential/wv/morgantown/sonesta-essential-morgantown?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestamgw.png`,
+  },
 ]
 
 const CAMPGROUNDS = [
@@ -608,94 +622,96 @@ export function Travel() {
           campgrounds. Check back for additional offerings.
         </Typography>
         <Grid container>
-          {CAMPGROUNDS.map((item) => {
-            return (
-              <Grid item xs={12} md={6} key={item.name}>
-                <Grid container>
-                  <StyledGrid item xs={12} md={4}>
-                    <a href={item.href} target="_blank">
-                      <img
-                        alt={`an exterior shot of ${item.name}`}
-                        src={item.imgSrc}
-                        width="80%"
-                        style={{
-                          aspectRatio: 1,
-                          borderRadius: '12px',
-                          border: `2px solid ${CHARCOAL}`,
-                          maxWidth: '320px',
-                        }}
-                      />
-                    </a>
-                  </StyledGrid>
-                  <StyledGrid
-                    item
-                    xs={12}
-                    md={8}
-                    sx={{
-                      flexDirection: 'column',
-                      alignItems: { xs: 'center', md: 'flex-start' },
-                      textAlign: { xs: 'center', md: 'start' },
-                    }}
-                  >
-                    <Typography
-                      fontSize="2rem"
-                      fontWeight="bold"
-                      lineHeight="2.2rem"
-                      marginBottom="0.6rem"
-                    >
-                      {item.name}
-                    </Typography>
-                    <Typography
+          {CAMPGROUNDS.sort((h1, h2) => h1.distance - h2.distance).map(
+            (item) => {
+              return (
+                <Grid item xs={12} md={6} key={item.name}>
+                  <Grid container>
+                    <StyledGrid item xs={12} md={4}>
+                      <a href={item.href} target="_blank">
+                        <img
+                          alt={`an exterior shot of ${item.name}`}
+                          src={item.imgSrc}
+                          width="80%"
+                          style={{
+                            aspectRatio: 1,
+                            borderRadius: '12px',
+                            border: `2px solid ${CHARCOAL}`,
+                            maxWidth: '320px',
+                          }}
+                        />
+                      </a>
+                    </StyledGrid>
+                    <StyledGrid
+                      item
+                      xs={12}
+                      md={8}
                       sx={{
-                        fontSize:
-                          item.distance === 0
-                            ? '0.8rem'
-                            : { xs: '1rem', md: '1.2rem' },
+                        flexDirection: 'column',
+                        alignItems: { xs: 'center', md: 'flex-start' },
+                        textAlign: { xs: 'center', md: 'start' },
                       }}
                     >
-                      {item.address.split('(br)').map((text) => {
-                        return (
-                          <Fragment>
-                            {text}
-                            <br />
-                          </Fragment>
-                        )
-                      })}
-                    </Typography>
-                    <Typography>
-                      <em>Distance: {item.distance} miles</em>
-                    </Typography>
-                    {item.href && (
-                      <Typography>
-                        <a
-                          target="_blank"
-                          href={item.href}
-                          style={{
-                            color: BLUE,
-                            textDecorationColor: BLUE,
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '2px',
-                          }}
-                        >
-                          Click here to book
-                          <LaunchIcon
-                            style={{ width: '1rem', height: '1rem' }}
-                          />
-                        </a>
+                      <Typography
+                        fontSize="2rem"
+                        fontWeight="bold"
+                        lineHeight="2.2rem"
+                        marginBottom="0.6rem"
+                      >
+                        {item.name}
                       </Typography>
-                    )}
-                    {item.phone && (
-                      <Typography>
-                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and
-                        mention GeoWoodstock.
+                      <Typography
+                        sx={{
+                          fontSize:
+                            item.distance === 0
+                              ? '0.8rem'
+                              : { xs: '1rem', md: '1.2rem' },
+                        }}
+                      >
+                        {item.address.split('(br)').map((text) => {
+                          return (
+                            <Fragment>
+                              {text}
+                              <br />
+                            </Fragment>
+                          )
+                        })}
                       </Typography>
-                    )}
-                  </StyledGrid>
+                      <Typography>
+                        <em>Distance: {item.distance} miles</em>
+                      </Typography>
+                      {item.href && (
+                        <Typography>
+                          <a
+                            target="_blank"
+                            href={item.href}
+                            style={{
+                              color: BLUE,
+                              textDecorationColor: BLUE,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '2px',
+                            }}
+                          >
+                            Click here to book
+                            <LaunchIcon
+                              style={{ width: '1rem', height: '1rem' }}
+                            />
+                          </a>
+                        </Typography>
+                      )}
+                      {item.phone && (
+                        <Typography>
+                          Call <a href={`Tel:${item.phone}`}>{item.phone}</a>{' '}
+                          and mention GeoWoodstock.
+                        </Typography>
+                      )}
+                    </StyledGrid>
+                  </Grid>
                 </Grid>
-              </Grid>
-            )
-          })}
+              )
+            },
+          )}
         </Grid>
         <Button
           variant="contained"

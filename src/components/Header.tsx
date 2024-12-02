@@ -11,7 +11,6 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
-import { Alert } from '@mui/material'
 
 export const pages = [
   {
@@ -252,7 +251,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
 
-      <Alert variant="filled" severity="error">
+      {/* <Alert variant="filled" severity="error">
         The last day to purchase your Black Diamond Backer shirt is{' '}
         <em>November 29, 2024</em>. This pre-event fundraiser is the only item
         available for shipping and makes an excellent holiday gift for that
@@ -265,7 +264,7 @@ function ResponsiveAppBar() {
         >
           Shop now!
         </a>
-      </Alert>
+      </Alert> */}
     </AppBar>
   )
 }
