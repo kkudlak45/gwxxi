@@ -216,7 +216,7 @@ export function Sponsors() {
             programming or signage.{' '}
             <a
               target="_blank"
-              href="https://geowoodstock-xxi.square.site/product/friends-of-geowoodstock/2?cp=true&sa=true&sbp=false&q=false"
+              href="https://geowoodstockxxi.myshopify.com/products/friend-of-geowoodstock"
             >
               CLICK HERE FOR MORE INFO
             </a>
@@ -234,12 +234,9 @@ export function Sponsors() {
             the event while caching? Our Black Diamond Backer fundraiser allows
             you to customize a trackable t-shirt with your Geocaching username
             and receive it in the mail months before the event.{' '}
-            <a
-              target="_blank"
-              href="https://geowoodstock-xxi.square.site/product/black-diamond-backer/5?cp=true&sa=true&sbp=false&q=false"
-            >
-              CLICK HERE FOR MORE INFO
-            </a>
+            <strong>
+              THIS PACKAGE IS NO LONGER FOR SALE
+            </strong>
           </Typography>
         </SponsorBlock>
       </Section>

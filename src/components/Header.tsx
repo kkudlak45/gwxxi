@@ -31,7 +31,7 @@ export const pages = [
   },
   {
     text: 'Shop',
-    href: 'https://geowoodstock-xxi.square.site/s/shop',
+    href: 'https://geowoodstockxxi.myshopify.com/collections/all',
   },
 ]
 

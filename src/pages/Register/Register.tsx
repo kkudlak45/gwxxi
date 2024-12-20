@@ -261,7 +261,7 @@ export function Register(): JSX.Element {
 
         <Button
           target="_blank"
-          href="https://geowoodstock-xxi.square.site/"
+          href="https://geowoodstockxxi.myshopify.com/collections/all"
           variant="contained"
           color="warning"
           sx={{
@@ -441,22 +441,22 @@ export function Register(): JSX.Element {
           <PackageCard
             pkgName="Cardinal"
             imgSrc={`${import.meta.env.BASE_URL}register/Cardinal_Package.png`}
-            buyLink="https://geowoodstock-xxi.square.site/product/cardinal-package/8?cp=true&sa=false&sbp=false&q=false&category_id=CREWA5XSR5KULNZGU67W4RQU"
+            buyLink="https://geowoodstockxxi.myshopify.com/products/cardinal-package"
           />
           <PackageCard
             pkgName="Brook Trout"
             imgSrc={`${import.meta.env.BASE_URL}register/Brook_Trout_Package.png`}
-            buyLink="https://geowoodstock-xxi.square.site/product/brook-trout-package/12?cp=true&sa=false&sbp=false&q=false&category_id=CREWA5XSR5KULNZGU67W4RQU"
+            buyLink="https://geowoodstockxxi.myshopify.com/products/brook-trout-package"
           />
           <PackageCard
             pkgName="Black Bear"
             imgSrc={`${import.meta.env.BASE_URL}register/Black_Bear_Package.png`}
-            buyLink="https://geowoodstock-xxi.square.site/product/black-bear-package/10?cp=true&sa=false&sbp=false&q=false&category_id=CREWA5XSR5KULNZGU67W4RQU"
+            buyLink="https://geowoodstockxxi.myshopify.com/products/black-bear-package"
           />
           <PackageCard
             pkgName="Mountaineer"
             imgSrc={`${import.meta.env.BASE_URL}register/Mountaineer_Package.png`}
-            buyLink="https://geowoodstock-xxi.square.site/product/mountaineer-vip-package/11?cp=true&sa=false&sbp=false&q=false&category_id=CREWA5XSR5KULNZGU67W4RQU"
+            buyLink="https://geowoodstockxxi.myshopify.com/products/mountaineer-vip-package"
           />
           <Grid
             item
