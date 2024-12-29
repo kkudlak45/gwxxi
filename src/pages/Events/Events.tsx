@@ -12,6 +12,7 @@ import {
   FamilyRestroom,
   Flight,
   Hiking,
+  OpenInNew,
   PsychologyAlt,
   Settings,
   Stars,
@@ -71,7 +72,7 @@ function getIconSrc(type: EventType) {
     case EventType.MEGA:
       return `${import.meta.env.BASE_URL}eventicons/mega.png`
     case EventType.GPS:
-      return `${import.meta.env.BASE_URL}eventicons/gps.jpg`
+      return `${import.meta.env.BASE_URL}eventicons/gpsmaze.png`
     case EventType.LAB:
       return `${import.meta.env.BASE_URL}eventicons/lab.png`
     case EventType.CITO:
@@ -108,30 +109,39 @@ function EventBlock({
         }}
       >
         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <img
-            alt={`the geocaching ${event.type} icon`}
-            src={getIconSrc(event.type)}
-            style={{
-              width: '4rem',
-              aspectRatio: 1,
-              borderRadius: '4rem',
-              border: `4px solid ${CHARCOAL}`,
-              padding: '4px',
-            }}
-          />
+          <a href={`https://coord.info/${event.gccode}`} target="_blank">
+            <img
+              alt={`the geocaching ${event.type} icon`}
+              src={getIconSrc(event.type)}
+              style={{
+                width: '4rem',
+                aspectRatio: 1,
+                borderRadius: '4rem',
+                border: `4px solid ${CHARCOAL}`,
+                padding: '4px',
+              }}
+            />
+          </a>
 
           <div
             style={{ width: '100%', display: isMobile ? 'none' : undefined }}
           >
-            <Typography
-              fontSize="1.4rem"
-              fontFamily="KGRedhands"
-              fontWeight="bold"
-              paddingBottom="0.1rem"
-              textTransform="uppercase"
+            <a
+              href={`https://coord.info/${event.gccode}`}
+              style={{ textDecoration: 'none' }}
+              target="_blank"
             >
-              {event.name}
-            </Typography>
+              <Typography
+                fontSize="1.4rem"
+                fontFamily="KGRedhands"
+                fontWeight="bold"
+                paddingBottom="0.1rem"
+                textTransform="uppercase"
+              >
+                {event.name}
+                <OpenInNew sx={{ paddingLeft: '4px' }} />
+              </Typography>
+            </a>
             <Typography width="100%" textAlign="justify">
               {event.description}
             </Typography>
@@ -224,12 +234,11 @@ export function Events() {
           EVENTS & ACTIVITES
         </Typography>
         <Typography textAlign="center" fontSize="1.2rem" marginTop="0.8rem">
-          With 8 events spanning from Thursday (5/22) to Sunday (5/25), there's
+          With 10 events spanning from Thursday (5/22) to Sunday (5/25), there's
           never a dull moment when caching in West Virginia. Explore an
           18th-century reconstructed fort, listen to some authentic mountain
           music, or enjoy a craft brew with your caching buddies - the
-          possibilities are endless!{' '}
-          <em>Side events will be available starting January 1, 2025.</em>
+          possibilities are endless!
         </Typography>
 
         <Section sx={{ flexDirection: 'column' }}>
@@ -240,14 +249,14 @@ export function Events() {
               showBottom={index < SCHEDULE.length - 1}
             />
           ))}
-          <Typography
+          {/* <Typography
             textAlign="center"
             lineHeight={isMobile ? '1rem' : '2rem'}
           >
             <em>
               Tentative schedule subject to change, check back for details.
             </em>
-          </Typography>
+          </Typography> */}
         </Section>
 
         <Section

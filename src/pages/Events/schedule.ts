@@ -33,7 +33,7 @@ export const SCHEDULE: Event[] = [
     name: 'CITO The Line',
     type: EventType.CITO,
     description:
-      'Marking the boundary between West Virginia and Pennsylvania, join us at the furthest western point that Charles Mason and Jeremiah Dixon personally surveyed. These trailblazers embraced the true meaning of Mountaineer spirit, and we’re going to embody that attitude with some trail maintenance and environmental reclamation efforts around the park.',
+      'Marking the boundary between West Virginia and Pennsylvania, join us at the westernmost point that Charles Mason and Jeremiah Dixon personally surveyed. These trailblazers embraced the true meaning of Mountaineer spirit, and we’re going to embody that attitude with some trail maintenance and environmental reclamation efforts around the park.',
     startTime: 1747944000,
     endTime: 1747951200,
   },
@@ -57,11 +57,20 @@ export const SCHEDULE: Event[] = [
     endTime: 1748016000,
   },
   {
-    gccode: 'GCANXX5',
+    gccode: 'GCANXX1',
     name: 'GeoWoodstock XXI',
     type: EventType.NONE,
     description:
       'Come get a first look at GeoWoodstock XXI, pick up your registration packet, and shop the vendors. Doors open at 8 a.m. for VIPs and Friends of GeoWoodstock, with general admission starting at 10 a.m. This is a great chance to participate in some of the activities without all the crowds.',
+    startTime: 1748008800,
+    endTime: 1748026800,
+  },
+  {
+    gccode: 'GCANAAA',
+    name: 'GPS Adventures Maze Exhibit',
+    type: EventType.GPS,
+    description:
+      'One of the rarest icons in all of Geocaching is making an appearance at GeoWoodstock XXI! This is a must-see during your time at the event. VIPs and Friends of GeoWoodstock can tour the exhibit starting at 8 a.m. with general admission starting at 10 a.m. This is a great chance to participate in some of the activities without all the crowds.',
     startTime: 1748008800,
     endTime: 1748026800,
   },
@@ -81,6 +90,15 @@ export const SCHEDULE: Event[] = [
     type: EventType.MEGA,
     description:
       'This is it - the BIG event! Whether this is your first event or your 1,000th, welcome to the 21st anniversary of the world’s original Mega event: Wild & Wonderful GeoWoodstock XXI. Spend the day at Mylan Park enjoying vendors, presentations, exhibits, a catered lunch, games, and so much more.',
+    startTime: 1748088000,
+    endTime: 1748120400,
+  },
+  {
+    gccode: 'GCANAAA',
+    name: 'GPS Adventures Maze Exhibit',
+    type: EventType.GPS,
+    description:
+      'One of the rarest and most sought-after icons in the game, the GPS Adventures Maze Exhibit, will make an exciting appearance at GeoWoodstock XXI in Morgantown, WV! This unique, interactive exhibit offers geocachers of all levels the chance to explore the history, tools, and techniques of this global adventure, while also earning the coveted icon by completing the maze and signing the log.',
     startTime: 1748088000,
     endTime: 1748120400,
   },

@@ -234,9 +234,7 @@ export function Sponsors() {
             the event while caching? Our Black Diamond Backer fundraiser allows
             you to customize a trackable t-shirt with your Geocaching username
             and receive it in the mail months before the event.{' '}
-            <strong>
-              THIS PACKAGE IS NO LONGER FOR SALE
-            </strong>
+            <strong>THIS PACKAGE IS NO LONGER FOR SALE</strong>
           </Typography>
         </SponsorBlock>
       </Section>

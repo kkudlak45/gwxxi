@@ -222,7 +222,7 @@ export function Faqs() {
 
           <FaqCard question="How many days should I plan to attend?">
             <Typography>
-              With 8 events spanning from Thursday {'(5/22)'} to Sunday{' '}
+              With 10 events spanning from Thursday {'(5/22)'} to Sunday{' '}
               {'(5/25)'}, and hundreds of nearby caches, you’ll want to plan to
               spend as many days as you can in the area. We recommend traveling
               in on Wednesday {'(5/21)'} and leaving on Monday {'(5/26)'} to

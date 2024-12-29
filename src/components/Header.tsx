@@ -11,6 +11,7 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
+import { Alert } from '@mui/material'
 
 export const pages = [
   {
@@ -251,20 +252,17 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
 
-      {/* <Alert variant="filled" severity="error">
-        The last day to purchase your Black Diamond Backer shirt is{' '}
-        <em>November 29, 2024</em>. This pre-event fundraiser is the only item
-        available for shipping and makes an excellent holiday gift for that
-        special cacher. Inventory is limited, so don't delay snagging yours
-        because once they're gone, they're gone!{' '}
+      <Alert variant="filled" severity="warning">
+        Registration for GeoWoodstock XXI will close on January 31, 2025. Please
+        consider helping support the event by registering and buying coins,
+        SWAG, and other items.{' '}
         <a
-          href={'https://geowoodstock-xxi.square.site/s/shop'}
-          target="_blank"
+          href={`${import.meta.env.BASE_URL}register`}
           style={{ color: 'lightblue' }}
         >
-          Shop now!
+          Click here to register.
         </a>
-      </Alert> */}
+      </Alert>
     </AppBar>
   )
 }
