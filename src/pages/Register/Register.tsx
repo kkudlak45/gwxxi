@@ -257,6 +257,11 @@ export function Register(): JSX.Element {
               not be shipped after the event.
             </Typography>
           </li>
+          <li>
+            <Typography>
+              All sales are final and no refunds will be issued for any reason.
+            </Typography>
+          </li>
         </ul>
 
         <Button

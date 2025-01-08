@@ -210,7 +210,6 @@ function EventBlock({
 
 export function Events() {
   const { palette } = useTheme()
-  const isMobile = useIsMobile()
 
   return (
     <Fragment>

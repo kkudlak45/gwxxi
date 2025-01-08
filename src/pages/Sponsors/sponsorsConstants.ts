@@ -50,7 +50,13 @@ export const platinumSponsors = [
     href: 'https://www.retiredmonkey.com/',
   },
 ]
-export const goldSponsors = []
+export const goldSponsors = [
+  {
+    name: 'Geoswag / Oakcoins',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
+    href: 'https://geoswag.com/',
+  },
+]
 export const silverSponsors = [
   {
     name: 'Blackwater Outdoor Adventures',
@@ -78,6 +84,21 @@ export const bronzeSponsors = [
     name: 'GeocacheTalk',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gctalk.png`,
     href: 'http://geocachetalk.com/',
+  },
+  {
+    name: 'Gears & Gadgets',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gearsngadgets.png`,
+    href: 'https://www.gadgetsgeo.com/',
+  },
+  {
+    name: 'Cachly',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachly.png`,
+    href: 'https://www.cachly.com/',
+  },
+  {
+    name: 'NYGO',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/nygo.png`,
+    href: 'https://en.wikipedia.org/wiki/New_York_(state)',
   },
 ]
 
@@ -170,6 +191,15 @@ export const friends = [
   'yanksfanjeff03',
   'Anonymous',
   'Anonymous',
+  'The Soto Clan',
+  'Offspringin',
+  'tela42499',
+  'chihuahuak94me',
+  '_JohnnyCache',
+  '4SwansT',
+  'Buckeyecacher111',
+  'Data Wrangler',
+  'Snotrocketjl',
 ]
 
 export const blackDiamondBackers = [
