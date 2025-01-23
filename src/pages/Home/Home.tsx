@@ -13,26 +13,26 @@ import './Home.css'
 const InfoBlockStuff = [
   {
     title: 'Schedule',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/events.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/events_320x320.webp`,
     href: `${import.meta.env.BASE_URL}events`,
     text: "With 8 events spanning from Thursday (5/22) to Sunday (5/25), there's never a dull moment when caching in West Virginia. Explore an 18th-century reconstructed fort, listen to some authentic mountain music, or enjoy a craft brew with your caching buddies - the possibilities are endless!",
   },
   {
     title: 'Travel',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels_320x320.webp`,
     href: `${import.meta.env.BASE_URL}travel`,
     text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as travel information that will help you to plan your trip to West Virginia!',
   },
   {
     title: 'Morgantown',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/morgantown.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/morgantown_320x320.webp`,
     href: `${import.meta.env.BASE_URL}morgantown`,
     // italicize parentheses
     text: "Welcome to Morgantown, West Virginia, located in the heart of Appalachia. There are tons of great places to explore in the immediate Morgantown area, including Coopers Rock State Park and the state's land-grant institution, West Virginia University (Let's Go Mountaineers).",
   },
   {
     title: 'More Info',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/info.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}homeicons/info_320x320.webp`,
     href: `${import.meta.env.BASE_URL}faqs`,
     text: "Can't find what you're looking for? As the event approaches, more information will be added, but in the meantime, check out our frequently asked questions. You can also find more information and ask questions on our Facebook page and community group.",
   },
@@ -40,7 +40,7 @@ const InfoBlockStuff = [
 
 const shopInfoBlock = {
   title: 'Shop',
-  imgSrc: `${import.meta.env.BASE_URL}homeicons/shop.webp`,
+  imgSrc: `${import.meta.env.BASE_URL}homeicons/shop_400x400.webp`,
   href: 'https://www.GeoWoodstockXXI.com/Register',
   text: 'Registration for GeoWoodstock XXI is now open, and with packages ranging from free to VIP, there is something for everyone. Check out the trackables, shirts, pathtags, and more available for pre-order until January 31, 2025. All individuals are encouraged to attend, and with \u00e1 la carte options, you can make the right package for you! Thanks for supporting GeoWoodstock XXI!',
 }
@@ -65,7 +65,7 @@ export function Home() {
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <img
           alt="GeoWoodstock XXI brand logo"
-          src={`${import.meta.env.BASE_URL}gwxxi.jpg`}
+          src={`${import.meta.env.BASE_URL}gwxxi${isMobile ? '_360x243' : ''}.jpg`}
           style={{
             maxWidth: '100%',
             maxHeight: '50vh',

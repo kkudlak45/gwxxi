@@ -66,21 +66,21 @@ const cacheTours = [
 function getIconSrc(type: EventType) {
   switch (type) {
     case EventType.CC:
-      return `${import.meta.env.BASE_URL}eventicons/communitycelebration.png`
+      return `${import.meta.env.BASE_URL}eventicons/communitycelebration_64x64.png`
     case EventType.GIGA:
-      return `${import.meta.env.BASE_URL}eventicons/giga.png`
+      return `${import.meta.env.BASE_URL}eventicons/giga_64x64.png`
     case EventType.MEGA:
-      return `${import.meta.env.BASE_URL}eventicons/mega.png`
+      return `${import.meta.env.BASE_URL}eventicons/mega_64x64.png`
     case EventType.GPS:
-      return `${import.meta.env.BASE_URL}eventicons/gpsmaze.png`
+      return `${import.meta.env.BASE_URL}eventicons/gpsmaze_64x64.png`
     case EventType.LAB:
-      return `${import.meta.env.BASE_URL}eventicons/lab.png`
+      return `${import.meta.env.BASE_URL}eventicons/lab_64x64.png`
     case EventType.CITO:
-      return `${import.meta.env.BASE_URL}eventicons/cito.png`
+      return `${import.meta.env.BASE_URL}eventicons/cito_64x64.png`
     case EventType.EVENT:
-      return `${import.meta.env.BASE_URL}eventicons/event.png`
+      return `${import.meta.env.BASE_URL}eventicons/event_64x64.png`
     default:
-      return `${import.meta.env.BASE_URL}eventicons/calendar.png`
+      return `${import.meta.env.BASE_URL}eventicons/calendar_64x64.png`
   }
 }
 

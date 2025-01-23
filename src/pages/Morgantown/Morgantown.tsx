@@ -21,82 +21,82 @@ const carouselItems = [
   {
     title: 'Almost Heaven Swings',
     href: 'https://wvtourism.com/west-virginias-most-instagrammable-views',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Almost_Heaven_Swings.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Almost_Heaven_Swings_320x240.webp`,
   },
   {
     title: 'WV Waterfall Trail',
     href: 'https://wvtourism.com/west-virginia-waterfall-trail',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Waterfall_Trail.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Waterfall_Trail_320x240.jpg`,
   },
   {
     title: 'New River Gorge',
     href: 'https://www.nps.gov/neri/index.htm',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/NRG.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/NRG_320x240.webp`,
   },
   {
     title: 'Blackwater Falls',
     href: 'https://wvtourism.com/company/blackwater-falls-state-park',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Blackwater_Falls.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Blackwater_Falls_320x240.jpg`,
   },
   {
     title: 'Dolly Sods',
     href: 'https://www.fs.usda.gov/recarea/mnf/recarea/?recid=12366',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Dolly_Sods.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Dolly_Sods_320x240.jpg`,
   },
   {
     title: 'Greenbrier Hotel',
     href: 'https://www.smithsonianmag.com/history/the-town-that-kept-its-nuclear-bunker-a-secret-for-three-decades-180984107',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/The_Greenbrier.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/The_Greenbrier_320x240.jpg`,
   },
   {
     title: "Harper's Ferry",
     href: 'https://www.battlefields.org/learn/topics/john-browns-harpers-ferry-raid',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Harpers_Ferry.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Harpers_Ferry_320x240.webp`,
   },
   {
     title: 'Mothman',
     href: 'https://www.wboy.com/only-on-wboy-com/paranormal-w-va/the-legend-of-mothman-paranormal-w-va',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Mothman.png`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Mothman_320x240.png`,
   },
   {
     title: 'Hatfield McCoy Trails',
     href: 'https://trailsheaven.com',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/HMT.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/HMT_320x240.jpg`,
   },
   {
     title: 'We Are Marshall',
     href: 'https://www.marshall.edu/history-and-traditions/sample-page/historic-buildings-and-monuments/memorial-fountain',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/We_Are_Marshall.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/We_Are_Marshall_320x240.jpg`,
   },
   {
     title: "WV Tim's Gadgets",
     href: 'https://www.geocaching.com/play/geotours/berkeley-gadgets',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/wvtim.png`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/wvtim_320x240.png`,
   },
 ]
 
 const infoBlocks = [
   {
     title: 'West Virginia University',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/WVU.png`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/WVU_540x540.png`,
     href: `${import.meta.env.BASE_URL}events`,
     text: 'WVU is a cornerstone of Morgantown and deeply connected with the town’s (and state’s) identity and vibrancy. Did you know the Walt Disney World monorail is modeled after a people-moving system on campus known as the Personal Rapid Transit? While in town, you’ll have to stop and grab a picture in front of Woodburn Hall, the second most photographed building in the state behind the Capitol!',
   },
   {
     title: 'Civil War History',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Civil_War.png`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Civil_War_540x540.png`,
     href: `${import.meta.env.BASE_URL}events`,
     text: "For the history buffs, come explore the only state forged from the Civil War. The city's history is marked by its strategic location and divided loyalties during the war. One key attraction is the Mason-Dixon Historical Park, where the famous boundary line was drawn. Visitors can also explore historic downtown Morgantown, with its preserved architecture and monuments commemorating the region's role in the Civil War. Home of the first land battle of the war and birthplace of Stonewall Jackson, the history runs deep in West Virginia.",
   },
   {
     title: 'Adventure & Recreation',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Seneca_Rocks.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Seneca_Rocks_540x540.jpg`,
     href: `${import.meta.env.BASE_URL}events`,
     text: 'Morgantown serves as a gateway to these incredible natural playgrounds, ensuring endless adventures for every outdoor enthusiast. Coopers Rock State Forest, just a short drive from downtown, boasts breathtaking overlooks, extensive hiking trails, and prime rock-climbing spots. The Monongahela River, flowing gracefully through Morgantown, is perfect for kayaking, offering serene waters and picturesque views. Beyond Morgantown, West Virginia is home to 36 state parks, each with its own unique charm and outdoor activities. Notably, the state proudly hosts the newest National Park in the country, the New River Gorge National Park and Preserve, which promises world-class hiking, rock climbing, and whitewater rafting.',
   },
   {
     title: 'Food & Culture',
-    imgSrc: `${import.meta.env.BASE_URL}morgantown/Pepperoni_Roll.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}morgantown/Pepperoni_Roll_540x540.jpg`,
     href: `${import.meta.env.BASE_URL}events`,
     text: "West Virginia's rich Italian heritage, stemming from the influx of Italian immigrants who came to work in the coal mines, has left an indelible mark on the state's culture, most deliciously embodied in the creation of the pepperoni roll. This beloved snack, originally designed as a convenient and hearty meal for miners, reflects the blend of Italian culinary traditions and Appalachian ingenuity. The town is also the birthplace of the legendary actor Don Knotts, a cherished figure who adds to the region's vibrant historical tapestry. The Italian influence in West Virginia is a testament to the enduring spirit and contributions of its immigrant communities.",
   },
@@ -152,7 +152,7 @@ export function Morgantown() {
           <StyledGrid item xs={12} md={6}>
             <img
               alt="an overhead view of downtown Morgantown"
-              src={`${import.meta.env.BASE_URL}morgantown/morgantown.jpg`}
+              src={`${import.meta.env.BASE_URL}morgantown/morgantown${isMobile ? '_360x203' : ''}.jpg`}
               width="90%"
               style={{
                 borderRadius: '16px',
@@ -335,7 +335,7 @@ export function Morgantown() {
           <Grid item xs={12} md={6} display="flex" justifyContent="center">
             <img
               alt="iconography for the Mountaineer Country CVB"
-              src={`${import.meta.env.BASE_URL}morgantown/mcvb.png`}
+              src={`${import.meta.env.BASE_URL}morgantown/mcvb_${isMobile ? '320x161' : '600x302'}.png`}
               style={{ maxWidth: '80%', aspectRatio: 1568 / 790 }}
             />
           </Grid>

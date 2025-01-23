@@ -49,6 +49,11 @@ export const platinumSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/monkey.png`,
     href: 'https://www.retiredmonkey.com/',
   },
+  {
+    name: 'Explore Houma',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/explorehouma_200x200.png`,
+    href: 'https://explorehouma.com',
+  },
 ]
 export const goldSponsors = [
   {
@@ -72,6 +77,11 @@ export const silverSponsors = [
     name: 'Mylan Park',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mylanPark.png`,
     href: 'https://mylanpark.org',
+  },
+  {
+    name: 'Crunch Time',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/crunchTime.png`,
+    href: 'https://crunchtimewv.com',
   },
 ]
 export const bronzeSponsors = [

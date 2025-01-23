@@ -22,7 +22,7 @@ const HOTELS = [
     name: 'Appalachian Hotel',
     address: '17600 Veterans Memorial Hwy Kingwood, WV 26537',
     distance: 30,
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/appalachian.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/appalachian_200x200.png`,
     phone: '304-329-7829',
   },
   {
@@ -31,7 +31,7 @@ const HOTELS = [
     distance: 5,
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718718538441&key=GRP&app=resvlink',
     code: 'GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/courtyard.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/courtyard_200x200.png`,
   },
   {
     name: 'Hampton Inn & Suites',
@@ -39,7 +39,7 @@ const HOTELS = [
     distance: 4,
     href: 'https://www.hilton.com/en/hotels/mgwtchx-hampton-suites-morgantown-university-town-centre',
     code: 'GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hampton.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hampton_200x200.png`,
   },
   {
     name: 'Hilton Garden Inn',
@@ -47,7 +47,7 @@ const HOTELS = [
     distance: 7,
     href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWGIGI&groupCode=GEO&arrivaldate=2025-05-21&departuredate=2025-05-26&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
     code: 'GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hilton.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hilton_200x200.png`,
   },
   {
     name: 'Holiday Inn Morgantown',
@@ -55,7 +55,7 @@ const HOTELS = [
     distance: 6,
     href: 'https://www.holidayinn.com/redirect?path=rates&brandCode=HI&localeCode=en&regionCode=1&hotelCode=MGWPD&checkInDate=21&checkInMonthYear=042025&checkOutDate=26&checkOutMonthYear=042025&_PMID=99801505&GPC=GEO&cn=no&viewfullsite=true',
     code: 'GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/holiday.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/holiday_200x200.png`,
   },
   {
     name: 'Hotel Morgan',
@@ -63,21 +63,21 @@ const HOTELS = [
     distance: 7,
     href: 'https://www.hotelmorgan.com/',
     code: '052125DLB',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/morgan.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/morgan_200x200.png`,
   },
   {
     name: 'Scholar Morgantown by Hilton',
     address: '345 Chestnut St Morgantown, WV 26505',
     distance: 7,
     href: 'https://www.hilton.com/en/attend-my-event/geowoodstockmorgantownwv2024/',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/scholar.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/scholar_200x200.png`,
   },
   {
     name: 'Residence Inn',
     address: '1046 Willowdale Rd Morgantown, WV 26505',
     distance: 7,
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718291793348&key=GRP&app=resvlink',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence_200x200.png`,
   },
   {
     name: 'The Cranberry',
@@ -85,28 +85,28 @@ const HOTELS = [
     distance: 19,
     code: 'GeoWoodstock',
     href: 'https://cranberrywv.com/',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry_200x200.png`,
   },
   {
     name: 'Lakeview Resort',
     address: 'One Lakeview Dr, Morgantown, WV 26508',
     distance: 21,
     href: 'https://linkprotect.cudasvc.com/url?a=https%3A%2F%2Fwww.lakeviewresort.com%2Freservations%3Fpromo_code%3DGEO52125&c=E,1,gq-fB3OvXlnAOrkLqskxBnwy2poM3PfMu42tD7PtykoqJDTHZXtaZankHTnb0nu9mUw0lRP50z1WMhAkVYEUL3OOon55rYBRYmLRZMY_XUDr&typo=1',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/lakeview.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/lakeview_200x200.png`,
   },
   {
     name: 'Euro-Suites Hotel',
     address: '501 Chestnut Ridge Rd, Morgantown, WV 26505',
     distance: 6,
     phone: '304-598-1000',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/euro.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/euro_200x200.png`,
   },
   {
     name: 'Quality Inn and Suites',
     address: '366 Boyers Ave, Morgantown, WV 26505',
     distance: 4,
     href: 'https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality_200x200.png`,
   },
   {
     name: 'Alpine Lake Resort',
@@ -114,49 +114,56 @@ const HOTELS = [
     distance: 46,
     code: 'GEO25',
     href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine.jpg`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine_200x200.jpg`,
   },
   {
     name: 'Clarksburg Hilton Garden Inn',
     address: '606 Emily Dr, Clarksburg, WV 26301',
     distance: 40,
     href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CKBGIGI&arrivalDate=2025-05-21&departureDate=2025-05-25&groupCode=GEO25&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton_200x200.png`,
   },
   {
     name: 'Days Inn & Suites - Bridgeport',
     address: '112 Tolley Dr, Bridgeport, WV 26330',
     distance: 38,
     href: 'http://www.wyndhamhotels.com/hotels/04686?checkInDate=05/22/2025&checkOutDate=05/25/2025&groupCode=052225GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysbgpt.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysbgpt_200x200.png`,
   },
   {
     name: 'Hampton Inn Morgantown',
     address: '1053 Van Voorhis Road, Morgantown, WV 26505',
     distance: 5,
     href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWVVHX&groupCode=CHHGEO&arrivaldate=2025-05-22&departuredate=2025-05-25&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hamptonmgw.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hamptonmgw_200x200.png`,
   },
   {
     name: 'Fairfield Inn & Suites Marriott - Fairmont',
     address: '27 Southland Dr, Fairmont, WV 26554',
     distance: 25,
     href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1725645270833&key=GRP&guestreslink2=true',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt_200x200.png`,
   },
   {
     name: 'Sonesta Essential - Fairmont',
     address: '20 Southland Dr, Fairmont, WV 26554',
     distance: 26,
     href: 'https://www.sonesta.com/sonesta-essential/wv/fairmont/sonesta-essential-fairmont?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestafmt.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestafmt_200x200.png`,
   },
   {
     name: 'Sonesta Essential - Morgantown',
     address: '15 Lawless Rd, Morgantown, WV 26501',
     distance: 5,
     href: 'https://www.sonesta.com/sonesta-essential/wv/morgantown/sonesta-essential-morgantown?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestamgw.png`,
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestamgw_200x200.png`,
+  },
+  {
+    name: 'Candlewood Suites',
+    address: '7200 Willie G Ave, Morgantown, WV 26501',
+    distance: 2,
+    href: 'https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.candlewoodsuites.com%2fredirect%3fpath%3dhd%26brandCode%3dCW%26localeCode%3den%26hotelCode%3dMGWCW%26rateCode%3dAE81N%26_PMID%3d99502056%26corporateNumber%3d787055017%26cn%3dno%26viewfullsite%3dtrue&c=E,1,d_fZLobDxZT_wlLxPBU2xAtLCQPNIf8G0w2--BpY0HdXZ6hKgrFUKtkxmyCVu6C3_iSKroBPodZR_BE0By7g3k5aWkJpjpCoaJzPQhjbLazCmlk,&typo=1&ancr_add=1',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/candlewood_200x200.png`,
   },
 ]
 
@@ -166,14 +173,14 @@ const CAMPGROUNDS = [
     address: '1309 Sand Springs Rd, Morgantown, WV 26508',
     distance: 26,
     href: 'https://sandspringscampgroundwv.com/',
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/sand_springs.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/sand_springs_200x200.webp`,
   },
   {
     name: 'Chestnut Ridge Park',
     address: 'Darnell Hollow Rd, Morgantown, WV 26508',
     distance: 26,
     href: 'https://reservations.wvstateparks.com/products/camping',
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/chestnut.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/chestnut_200x200.webp`,
   },
   {
     name: 'Coopers Rock State Park',
@@ -181,14 +188,14 @@ const CAMPGROUNDS = [
       'McCollum Camping Area, 61 County Line Dr, Bruceton Mills, WV 26525',
     distance: 28,
     href: 'https://reservations.wvstateparks.com/products/camping',
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers.webp`,
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers_200x200.webp`,
   },
   {
     name: 'Camp Mountaineer',
     address: '187 Camp Mountaineer Rd, Morgantown, WV 26508',
     phone: '304-366-3940',
     distance: 16,
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/camp_mountaineer.png`,
+    imgSrc: `${import.meta.env.BASE_URL}campgrounds/camp_mountaineer_200x200.png`,
   },
 ]
 
@@ -789,19 +796,14 @@ export function Travel() {
               textAlign={{ xs: 'center', md: 'start' }}
               fontSize={{ xs: '1rem', md: '1.4rem' }}
             >
-              A new KOA campground is under construction at Mylan Park and is
-              scheduled to be completed in time for GeoWoodstock XXI. At this
-              time, no RV reservations for the parking area are being made.
-              Reservations for the new KOA will be available in March 2025.
-              Please{' '}
+              A new KOA campground is under construction at Mylan Park and we will make announcements as they are received. At this time, no RV reservations for the parking area are being made. Please{' '}
               <a
                 target="_blank"
                 href="https://www.geocaching.com/live/geocache/GCANXX1/log"
               >
                 mark your intention to attend
               </a>{' '}
-              and join our mailing list to be notified when bookings are
-              available.
+              and join our mailing list to be notified when bookings are available.
             </Typography>
             <Button
               target="_blank"

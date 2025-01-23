@@ -322,7 +322,7 @@ export function Register(): JSX.Element {
                 a limited-edition trackable Geocoin.
               </Fragment>
             }
-            imgSrc={`${import.meta.env.BASE_URL}register/CRC_Coin.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/CRC_Coin_200x200.webp`}
             imgAlt="picture of the country roads challenge trackable coin"
           />
 
@@ -331,7 +331,7 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI Trackable Geocoin"
             text="The official GeoWoodstock XXI trackable Geocoin is truly a celebration of all things West Virginia. This movable coin features Signal the Frog zipping through the skies with Appalachian iconography filling the picturesque landscape."
-            imgSrc={`${import.meta.env.BASE_URL}register/Main_Event_Coin.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/Main_Event_Coin_200x200.webp`}
             imgAlt="picture of the trackable coin for the main Geowoodstock XXI event"
           />
 
@@ -340,7 +340,7 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI Event Shirt"
             text="Locally sourced in Davis, WV, this tri-blend super soft unisex t-shirt is not only comfy, but stylish too!"
-            imgSrc={`${import.meta.env.BASE_URL}register/Event_Shirt.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/Event_Shirt_200x200.webp`}
             imgAlt="picture of the shirt made for the event"
           />
 
@@ -349,7 +349,7 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI Event Pathtag"
             text="The official GeoWoodstock XXI event Pathtag features the New River Gorge National Park and is a must have for your collection."
-            imgSrc={`${import.meta.env.BASE_URL}register/Event_Pathtag.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/Event_Pathtag_200x200.webp`}
             imgAlt="picture of the pathtag for the event"
           />
 
@@ -358,7 +358,7 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI Pathtag Set (7)"
             text="This year’s event Pathtag set contains 7 tags, each depicting a different side event from GeoWoodstock XXI weekend."
-            imgSrc={`${import.meta.env.BASE_URL}register/Pathtag_Set.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/Pathtag_Set_200x200.webp`}
             imgAlt="Picture of all 7 pathtags for the event"
           />
 
@@ -367,7 +367,7 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI VIP Trackable Geocoin"
             text="Keeping with the country roads theme, this trackable Geocoin celebrates our VIPs and is only available in the Mountaineer package."
-            imgSrc={`${import.meta.env.BASE_URL}register/VIP_Coin.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}register/VIP_Coin_200x200.webp`}
             imgAlt="picture of the trackable VIP coin"
           />
 
