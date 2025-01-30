@@ -156,12 +156,12 @@ export function Faqs() {
             </Typography>
           </FaqCard>
 
-          <FaqCard question="Will GWXXI be a Giga-event?">
+          <FaqCard question="Will GWXXI be a GIGA event?">
             <Typography>
-              Giga-event status is awarded by Geocaching HQ at 3,000 Will Attend
-              logs. While we are expecting a large crowd, we hope to plan a
-              great event regardless of total attendees. It is solely in the
-              hands of geocachers logging their intention to attend GWXXI.
+              As of January 31, 2025, GeoWoodstock XXI is officially America's
+              2nd GIGA event and the 13th ever! This rare event type is reserved
+              for only the largest of geocaching gatherings, with over 5,000
+              attendees. This year's event is going to be BIG!
             </Typography>
           </FaqCard>
 

@@ -40,7 +40,7 @@ const InfoBlockStuff = [
 
 const shopInfoBlock = {
   title: 'Shop',
-  imgSrc: `${import.meta.env.BASE_URL}homeicons/shop_400x400.webp`,
+  imgSrc: `${import.meta.env.BASE_URL}homeicons/giga_400x400.gif`,
   href: 'https://www.GeoWoodstockXXI.com/Register',
   text: 'Registration for GeoWoodstock XXI is now open, and with packages ranging from free to VIP, there is something for everyone. Check out the trackables, shirts, pathtags, and more available for pre-order until January 31, 2025. All individuals are encouraged to attend, and with \u00e1 la carte options, you can make the right package for you! Thanks for supporting GeoWoodstock XXI!',
 }
@@ -80,7 +80,7 @@ export function Home() {
           textAlign="center"
           fontSize={isMobile ? '2.4rem' : undefined}
         >
-          {'JOIN US FOR THE MEGA IN THE MOUNTAINS!'}
+          {'JOIN US FOR THE GIGA IN THE MOUNTAINS!'}
         </Typography>
         <Typography
           textAlign="center"
