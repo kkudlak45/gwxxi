@@ -796,14 +796,17 @@ export function Travel() {
               textAlign={{ xs: 'center', md: 'start' }}
               fontSize={{ xs: '1rem', md: '1.4rem' }}
             >
-              A new KOA campground is under construction at Mylan Park and we will make announcements as they are received. At this time, no RV reservations for the parking area are being made. Please{' '}
+              A new KOA campground is under construction at Mylan Park and we
+              will make announcements as they are received. At this time, no RV
+              reservations for the parking area are being made. Please{' '}
               <a
                 target="_blank"
                 href="https://www.geocaching.com/live/geocache/GCANXX1/log"
               >
                 mark your intention to attend
               </a>{' '}
-              and join our mailing list to be notified when bookings are available.
+              and join our mailing list to be notified when bookings are
+              available.
             </Typography>
             <Button
               target="_blank"

@@ -87,7 +87,7 @@ export const SCHEDULE: Event[] = [
   {
     gccode: 'GCANXX1',
     name: 'GeoWoodstock XXI',
-    type: EventType.MEGA,
+    type: EventType.GIGA,
     description:
       'This is it - the BIG event! Whether this is your first event or your 1,000th, welcome to the 21st anniversary of the world’s original Mega event: Wild & Wonderful GeoWoodstock XXI. Spend the day at Mylan Park enjoying vendors, presentations, exhibits, a catered lunch, games, and so much more.',
     startTime: 1748088000,
