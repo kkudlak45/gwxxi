@@ -1,8 +1,8 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { Section } from '../../components/Section'
 import moment from 'moment'
 
-const ATTEND_LOGS = 3169
+const ATTEND_LOGS = 3201
 const COUNTRIES = 21
 
 const formatter = new Intl.NumberFormat('en-US')
@@ -17,9 +17,24 @@ function InfoBlock({
   children: React.ReactNode
 }) {
   return (
-    <Grid item xs={2}>
-      <Typography variant="h2">{number}</Typography>
-      <Typography variant="h2">{title}</Typography>
+    <Grid
+      item
+      xs={12}
+      md={2}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      textAlign="center"
+      margin="2rem 0"
+      gap="1rem"
+    >
+      <div>
+        <Typography variant="h2">{number}</Typography>
+        <Typography variant="h2" fontSize="2rem">
+          {title}
+        </Typography>
+      </div>
       <Typography>{description}</Typography>
     </Grid>
   )
@@ -28,9 +43,12 @@ function InfoBlock({
 export function Numbers() {
   return (
     <Section>
-      <Grid container>
-        <Grid item xs={1}></Grid>
-
+      <Grid
+        container
+        display="flex"
+        justifyContent="space-between"
+        alignItems="flex-start"
+      >
         <InfoBlock
           number={moment('2025-05-24').diff(moment(), 'days').toFixed(0)}
           title="days"
@@ -44,22 +62,14 @@ export function Numbers() {
         >
           <Typography>
             You won't want to miss the largest annual Geocaching event in the
-            U.S.
+            U.S.{' '}
+            <a
+              href="https://www.geocaching.com/live/geocache/GCANXX1/log"
+              target="_blank"
+            >
+              Click here to log a will attend
+            </a>
           </Typography>
-          <Button
-            target="_blank"
-            href="https://www.geocaching.com/live/geocache/GCANXX1/log"
-            variant="contained"
-            color="warning"
-            sx={{
-              borderRadius: '64px',
-              fontWeight: 'bold',
-              fontSize: '1.4rem',
-              textAlign: 'center',
-            }}
-          >
-            Click here to log a will attend
-          </Button>
         </InfoBlock>
 
         <InfoBlock
@@ -79,8 +89,6 @@ export function Numbers() {
           Pre-registrants represent all 50 states of the U.S. plus the District
           of Columbia!
         </InfoBlock>
-
-        <Grid item xs={1}></Grid>
       </Grid>
     </Section>
   )
