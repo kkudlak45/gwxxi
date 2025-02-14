@@ -9,6 +9,7 @@ import { useIsMobile } from '../../hooks/useIsMobile'
 import { platinumSponsors } from '../Sponsors/sponsorsConstants'
 import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
 import './Home.css'
+import { Numbers } from './Numbers'
 
 const InfoBlockStuff = [
   {
@@ -42,7 +43,7 @@ const shopInfoBlock = {
   title: 'Shop',
   imgSrc: `${import.meta.env.BASE_URL}homeicons/giga_400x400.gif`,
   href: 'https://www.GeoWoodstockXXI.com/Register',
-  text: 'Registration for GeoWoodstock XXI is now open, and with packages ranging from free to VIP, there is something for everyone. Check out the trackables, shirts, pathtags, and more available for pre-order until January 31, 2025. All individuals are encouraged to attend, and with \u00e1 la carte options, you can make the right package for you! Thanks for supporting GeoWoodstock XXI!',
+  text: 'At this time, registration for GeoWoodstock XXI is now closed. Some coins, shirts, and other items including the exclusive GIGA coin are still available for purchase with very limited availability. All remaining items may be available for purchase at the event. Thanks for supporting GeoWoodstock XXI!',
 }
 
 export function Home() {
@@ -59,7 +60,7 @@ export function Home() {
         <title>GeoWoodstock XXI - Home</title>
         <meta
           name="description"
-          content="Join us for GeoWoodstock XXI! The original Mega Geocaching Event is coming to Morgantown, West Virginia on May 24, 2025. Check here for information about the upcoming event"
+          content="Join us for GeoWoodstock XXI! The original Mega Geocaching Event is coming to Morgantown, West Virginia on May 24, 2025. Check here for information about the upcoming event. This event is now the second giga event ever in America!"
         />
       </Helmet>
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
@@ -314,6 +315,8 @@ export function Home() {
           </Grid>
         </Grid>
       </Section>
+
+      <Numbers />
 
       <div
         style={{

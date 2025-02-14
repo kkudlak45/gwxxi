@@ -213,10 +213,11 @@ export function Faqs() {
 
           <FaqCard question="Can I camp at GeoWoodstock XXI?">
             <Typography>
-              The best spot to camp in the area is at Coopers Rock State Park. A
-              new KOA campground at Mylan Park is scheduled to be opened in
-              2025, and bookings will be available as soon as possible. Check
-              back later for updates!
+              The best spot to camp in the area is at Coopers Rock State Park.
+              Please check the Travel & Lodging page for a full list of local
+              accommodations and partners. At this time, the KOA will not be
+              ready for the event and no RV camping will be allowed in Mylan
+              Park.
             </Typography>
           </FaqCard>
 

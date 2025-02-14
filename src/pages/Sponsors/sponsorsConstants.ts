@@ -61,6 +61,11 @@ export const goldSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
     href: 'https://geoswag.com/',
   },
+  {
+    name: 'Belmont County',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/belmont.png`,
+    href: 'https://www.visitbelmontcounty.com',
+  },
 ]
 export const silverSponsors = [
   {
@@ -82,6 +87,11 @@ export const silverSponsors = [
     name: 'Crunch Time',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/crunchTime.png`,
     href: 'https://crunchtimewv.com',
+  },
+  {
+    name: 'XSCAPE',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/xscape.png`,
+    href: 'https://www.escape.cool',
   },
 ]
 export const bronzeSponsors = [
@@ -109,6 +119,26 @@ export const bronzeSponsors = [
     name: 'NYGO',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/nygo.png`,
     href: 'https://en.wikipedia.org/wiki/New_York_(state)',
+  },
+  {
+    name: 'CACHETHELINE',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachetheline.png`,
+    href: 'https://www.youtube.com/channel/UCZ2CBS4upyqZlZza6b1z9og',
+  },
+  {
+    name: 'Cache Craft',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachecraft.png`,
+    href: 'https://www.cachecraftnj.com/',
+  },
+  {
+    name: 'Loving WV',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/loving.png`,
+    href: 'https://www.lovingwv.com/',
+  },
+  {
+    name: 'Wooden Nickel',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/woodenfiver.png`,
+    href: 'https://woodennickelgeocoins.com/',
   },
 ]
 
@@ -210,6 +240,19 @@ export const friends = [
   'Buckeyecacher111',
   'Data Wrangler',
   'Snotrocketjl',
+  'Fishing Gal',
+  'obarshay',
+  'Sialis',
+  'Bigguy14760',
+  'Love2bAlive',
+  'Better With SAGE',
+  'APC2',
+  'Chris K in Geauga',
+  'leenie222',
+  'nomad721',
+  'Odyssey Gifts',
+  'gearguru',
+  'kevins2betsey',
 ]
 
 export const blackDiamondBackers = [

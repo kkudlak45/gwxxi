@@ -11,7 +11,6 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
-import { Alert } from '@mui/material'
 
 export const pages = [
   {
@@ -252,7 +251,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
 
-      <Alert variant="filled" severity="warning">
+      {/* <Alert variant="filled" severity="warning">
         Registration for GeoWoodstock XXI will close on January 31, 2025. Please
         consider helping support the event by registering and buying coins,
         SWAG, and other items.{' '}
@@ -262,7 +261,7 @@ function ResponsiveAppBar() {
         >
           Click here to register.
         </a>
-      </Alert>
+      </Alert> */}
     </AppBar>
   )
 }

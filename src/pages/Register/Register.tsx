@@ -222,7 +222,7 @@ export function Register(): JSX.Element {
           helps ensure GeoWoodstock XXI will be the best event possible. Check
           out what’s available below, and when you’re ready, click the Shop icon
           above to visit our store. Registration options will be available
-          starting October 11, 2024, and end in February 2025.
+          starting October 11, 2024, and close on January 31, 2025.
         </Typography>
         <br />
         <Typography textAlign="start" width="100%">
