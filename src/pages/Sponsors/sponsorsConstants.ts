@@ -66,6 +66,11 @@ export const goldSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/belmont.png`,
     href: 'https://www.visitbelmontcounty.com',
   },
+  {
+    name: 'McClumsy',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcclumsy.png`,
+    href: 'https://mcclumsy.com',
+  },
 ]
 export const silverSponsors = [
   {
@@ -253,6 +258,17 @@ export const friends = [
   'Odyssey Gifts',
   'gearguru',
   'kevins2betsey',
+  'Anonymous',
+  'ElectricCorgi',
+  'fam2go',
+  'OwenfromKC',
+  'Me & Bucky',
+  'Cluehunter',
+  'AThrillofTheHunt',
+  'KingOfCrows',
+  'Axlfire',
+  'steelersrull',
+  'emilyjen',
 ]
 
 export const blackDiamondBackers = [

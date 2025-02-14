@@ -165,6 +165,20 @@ const HOTELS = [
     href: 'https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.candlewoodsuites.com%2fredirect%3fpath%3dhd%26brandCode%3dCW%26localeCode%3den%26hotelCode%3dMGWCW%26rateCode%3dAE81N%26_PMID%3d99502056%26corporateNumber%3d787055017%26cn%3dno%26viewfullsite%3dtrue&c=E,1,d_fZLobDxZT_wlLxPBU2xAtLCQPNIf8G0w2--BpY0HdXZ6hKgrFUKtkxmyCVu6C3_iSKroBPodZR_BE0By7g3k5aWkJpjpCoaJzPQhjbLazCmlk,&typo=1&ancr_add=1',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/candlewood_200x200.png`,
   },
+  {
+    name: 'Days Inn - Fairmont',
+    address: '166 Middletown Road, Fairmont, West Virginia 26554',
+    distance: 26,
+    href: 'https://www.wyndhamhotels.com/days-inn/fairmont-west-virginia/days-inn-fairmont/overview?CID=LC:iqv0j1dklijly45:12149&iata=00093796',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysfmnt.png`,
+  },
+  {
+    name: 'Fairfield Inn and Suites',
+    address: '161 Lewis Dr, Morgantown, WV 26501',
+    distance: 3,
+    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1739390655872&key=GRP&guestreslink2=true&app=resvlink',
+    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/fairfieldmgw.png`,
+  },
 ]
 
 const CAMPGROUNDS = [

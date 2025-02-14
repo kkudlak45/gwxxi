@@ -1,5 +1,5 @@
 import { Container, Grid, IconButton, Typography, styled } from '@mui/material'
-import { BLUE, CHARCOAL } from '../constants/theme'
+import { BLUE } from '../constants/theme'
 import { infoPages, pages } from './Header'
 import { Event, Facebook, Mail, People } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
@@ -132,30 +132,20 @@ export default function Footer() {
               marginTop: isMobile ? '1rem' : undefined,
             }}
           >
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/place/Mylan+Park/@39.6364966,-80.0339881,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e350f2f:0xad6f29585796b9fe!8m2!3d39.6364925!4d-80.0314132!16s%2Fg%2F1tl1jk4c?entry=ttu"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9400.605678906746!2d-80.03521567883406!3d39.63810638345896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883579357e350f2f%3A0xad6f29585796b9fe!2sMylan%20Park!5e0!3m2!1sen!2sus!4v1739558531179!5m2!1sen!2sus"
+              width="600"
+              height="450"
               style={{
                 display: isMobile ? undefined : 'none',
-                maxWidth: isMobile ? '80%' : '240px',
-                maxHeight: isMobile ? '80%' : '240px',
+                maxWidth: '80%',
+                maxHeight: '80%',
                 width: 'auto',
                 height: 'auto',
-                aspectRatio: 1,
+                aspectRatio: '1',
               }}
-            >
-              <img
-                alt="a screenshot of the event location (Mylan Park) on google maps"
-                src={`${import.meta.env.BASE_URL}mylan.png`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '12px',
-                  border: `2px solid ${CHARCOAL}`,
-                }}
-              />
-            </a>
-
+              loading="lazy"
+            ></iframe>
             <div
               style={{
                 display: 'flex',
@@ -196,9 +186,10 @@ export default function Footer() {
               </div>
             </div>
 
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/place/Mylan+Park/@39.6364966,-80.0339881,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e350f2f:0xad6f29585796b9fe!8m2!3d39.6364925!4d-80.0314132!16s%2Fg%2F1tl1jk4c?entry=ttu"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9400.605678906746!2d-80.03521567883406!3d39.63810638345896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883579357e350f2f%3A0xad6f29585796b9fe!2sMylan%20Park!5e0!3m2!1sen!2sus!4v1739558531179!5m2!1sen!2sus"
+              width="600"
+              height="450"
               style={{
                 display: isMobile ? 'none' : undefined,
                 maxWidth: isMobile ? '80%' : '240px',
@@ -207,18 +198,8 @@ export default function Footer() {
                 height: 'auto',
                 aspectRatio: 1,
               }}
-            >
-              <img
-                alt="a screenshot of the event location (Mylan Park) on google maps"
-                src={`${import.meta.env.BASE_URL}mylan.png`}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '12px',
-                  border: `2px solid ${CHARCOAL}`,
-                }}
-              />
-            </a>
+              loading="lazy"
+            ></iframe>
           </Grid>
         </Grid>
       </Container>
