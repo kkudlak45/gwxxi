@@ -54,13 +54,14 @@ export const platinumSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/explorehouma_200x200.png`,
     href: 'https://explorehouma.com',
   },
-]
-export const goldSponsors = [
   {
     name: 'Geoswag / Oakcoins',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
     href: 'https://geoswag.com/',
   },
+]
+
+export const goldSponsors = [
   {
     name: 'Belmont County',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/belmont.png`,
@@ -98,6 +99,26 @@ export const silverSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/xscape.png`,
     href: 'https://www.escape.cool',
   },
+  {
+    name: 'Space Coast Geo-Store',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/spacecoast.png`,
+    href: 'https://spacecoastgeostore.com/',
+  },
+  {
+    name: 'Cache Craft',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachecraft.png`,
+    href: 'https://www.cachecraftnj.com/',
+  },
+  {
+    name: 'Odyssey Gifts',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/odyssey.png`,
+    href: 'https://www.odysseydragons.com/',
+  },
+  {
+    name: 'Wizard 3D',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/wizard3d.png`,
+    href: 'https://www.facebook.com/p/Wizard-3D-61556558757315/',
+  },
 ]
 export const bronzeSponsors = [
   {
@@ -131,11 +152,6 @@ export const bronzeSponsors = [
     href: 'https://www.youtube.com/channel/UCZ2CBS4upyqZlZza6b1z9og',
   },
   {
-    name: 'Cache Craft',
-    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachecraft.png`,
-    href: 'https://www.cachecraftnj.com/',
-  },
-  {
     name: 'Loving WV',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/loving.png`,
     href: 'https://www.lovingwv.com/',
@@ -144,6 +160,16 @@ export const bronzeSponsors = [
     name: 'Wooden Nickel',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/woodenfiver.png`,
     href: 'https://woodennickelgeocoins.com/',
+  },
+  {
+    name: 'ArtEdCrafted',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artedcrafted.png`,
+    href: 'https://artedcrafted.com/?srsltid=AfmBOoqdP0VtlTRXovNhnaer9STaEn_hF05BAqG-Yk5JPumDjkKZ1yfI',
+  },
+  {
+    name: 'Artisinal',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artisinal.png`,
+    href: 'https://www.example.com/',
   },
 ]
 
