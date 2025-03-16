@@ -17,6 +17,7 @@ import { MorgantownLive } from './pages/Guide/Tabs/MorgantownLive'
 import { Experiences } from './pages/Guide/Tabs/Experiences'
 import { EventActivities } from './pages/Guide/Tabs/EventActivities'
 import { EventInformation } from './pages/Guide/Tabs/EventInformation'
+import { EVENT_GUIDE_PAGES } from './pages/Guide/pages'
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
               <Route path="experiences" element={<Experiences />} />
               <Route path="activities" element={<EventActivities />} />
               <Route path="info" element={<EventInformation />} />
+              {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
+                // @ts-ignore
+                <Route path={p.route} element={<p.component />} />
+              ))}
               <Route path="*" element={<Navigate to="/" />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />
