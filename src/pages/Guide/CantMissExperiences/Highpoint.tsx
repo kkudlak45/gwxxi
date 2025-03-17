@@ -26,7 +26,6 @@ export function Highpoint() {
         <br />
         <br />
         <Subheader>Accessing the Summit</Subheader>
-        <br />
         <Typography>
           Spruce Knob is located 3 hours southeast of Morgantown. Take U.S. 33
           south from Seneca Rocks to Briery Gap Road (33/4). This is signed on
@@ -46,7 +45,6 @@ export function Highpoint() {
         <br />
         <br />
         <Subheader>Caches at the summit</Subheader>
-        <br />
         <Typography>
           Along the trail to the lookout tower, there is a Traditional (GCH3CD -
           Spruce Knob) and an EarthCache (GC19AXJ - Spruce Knob - West Virginia
@@ -57,7 +55,6 @@ export function Highpoint() {
         <br />
         <br />
         <Subheader>Bonus Info - Hoye Crest & Mount Davis</Subheader>
-        <br />
         <Typography>
           Hoye Crest is the highest point in Maryland, but it gets a special
           mention here since the trailhead is in West Virginia. Parking is
@@ -91,6 +88,7 @@ export function Highpoint() {
           </a>
           )
         </Typography>
+        <br />
       </GuideBody>
     </Fragment>
   )

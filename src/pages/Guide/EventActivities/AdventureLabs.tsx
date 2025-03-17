@@ -21,7 +21,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>25 years of Geocaching (30)</Subheader>
-        <br />
         <Typography>
           Located at GeoWoodstock HQ within Mylan Park, come participate in an
           interactive timeline recounting the history of Geocaching. Similar to
@@ -40,7 +39,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Treasures of our Town (5)</Subheader>
-        <br />
         <Typography>
           Have you ever completed an Adventure Lab while listening to a podcast?
           Join Seemyshell and the Geocaching Vlogger at 12:15 pm on the Joe
@@ -54,7 +52,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Country Roads Challenge (10)</Subheader>
-        <br />
         <Typography>
           <a href="/guide/challenge">The Country Roads Challenge</a>, presented
           by Visit Mountaineer Country, is a 10-stop adventure through the local
@@ -78,7 +75,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Adventure Lab Puzzle (10)</Subheader>
-        <br />
         <Typography>
           Who doesn't enjoy a good puzzle? Starting at 10 am on Friday (5/23),
           explore the Wharf District to collect clues and solve a puzzle that
@@ -98,7 +94,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Cryptid Search (5)</Subheader>
-        <br />
         <Typography>
           During{' '}
           <a target="_blank" href="https://www.geocaching.com/geocache/GCANXX6">
@@ -114,7 +109,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Prickett's Fort Tour (5)</Subheader>
-        <br />
         <Typography>
           During{' '}
           <a
@@ -133,7 +127,6 @@ export function AdventureLabs() {
         <br />
 
         <Subheader>Adventures in Appalachia (600)</Subheader>
-        <br />
         <Typography>
           As if those aren't enough, our team put together the{' '}
           <a href="/guide/adventures">
