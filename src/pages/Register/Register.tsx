@@ -125,62 +125,62 @@ function PictureCard({
 //   )
 // }
 
-function PackageCard({
-  imgSrc,
-  buyLink,
-  pkgName,
-}: {
-  imgSrc: string
-  buyLink: string
-  pkgName: string
-}): JSX.Element {
-  const isMobile = useIsMobile()
-  return (
-    <Grid
-      item
-      xs={12}
-      md={6}
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Typography
-        variant="h3"
-        marginBottom="1rem"
-        fontSize={isMobile ? '2.4rem' : '3rem'}
-      >
-        {pkgName} Package
-      </Typography>
-      <img
-        src={imgSrc}
-        style={{
-          aspectRatio: 1,
-          width: '100%',
-          maxWidth: '640px',
-          borderRadius: '12px',
-        }}
-      />
-      <Button
-        target="_blank"
-        href={buyLink}
-        variant="contained"
-        color="warning"
-        sx={{
-          marginTop: '0.5rem',
-          borderRadius: '64px',
-          fontWeight: 'bold',
-          fontSize: '1.4rem',
-          textAlign: 'center',
-          maxWidth: '480px',
-          marginBottom: '3rem',
-        }}
-      >
-        Purchase {pkgName} Package
-      </Button>
-    </Grid>
-  )
-}
+// function PackageCard({
+//   imgSrc,
+//   buyLink,
+//   pkgName,
+// }: {
+//   imgSrc: string
+//   buyLink: string
+//   pkgName: string
+// }): JSX.Element {
+//   const isMobile = useIsMobile()
+//   return (
+//     <Grid
+//       item
+//       xs={12}
+//       md={6}
+//       display="flex"
+//       flexDirection="column"
+//       alignItems="center"
+//       justifyContent="center"
+//     >
+//       <Typography
+//         variant="h3"
+//         marginBottom="1rem"
+//         fontSize={isMobile ? '2.4rem' : '3rem'}
+//       >
+//         {pkgName} Package
+//       </Typography>
+//       <img
+//         src={imgSrc}
+//         style={{
+//           aspectRatio: 1,
+//           width: '100%',
+//           maxWidth: '640px',
+//           borderRadius: '12px',
+//         }}
+//       />
+//       <Button
+//         target="_blank"
+//         href={buyLink}
+//         variant="contained"
+//         color="warning"
+//         sx={{
+//           marginTop: '0.5rem',
+//           borderRadius: '64px',
+//           fontWeight: 'bold',
+//           fontSize: '1.4rem',
+//           textAlign: 'center',
+//           maxWidth: '480px',
+//           marginBottom: '3rem',
+//         }}
+//       >
+//         Purchase {pkgName} Package
+//       </Button>
+//     </Grid>
+//   )
+// }
 
 export function Register(): JSX.Element {
   const isMobile = useIsMobile()
