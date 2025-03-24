@@ -59,6 +59,11 @@ export const platinumSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
     href: 'https://geoswag.com/',
   },
+  {
+    name: "Dick's Sporting Goods",
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/dicks_200x200.png`,
+    href: 'https://www.dickssportinggoods.com/',
+  },
 ]
 
 export const goldSponsors = [
@@ -118,6 +123,11 @@ export const silverSponsors = [
     name: 'Wizard 3D',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/wizard3d.png`,
     href: 'https://www.facebook.com/p/Wizard-3D-61556558757315/',
+  },
+  {
+    name: 'Poky Dot',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/pokydot_200x193.png`,
+    href: 'https://www.facebook.com/ThePokyDot/',
   },
 ]
 export const bronzeSponsors = [

@@ -2,8 +2,8 @@ import { Grid, Typography } from '@mui/material'
 import { Section } from '../../components/Section'
 import moment from 'moment'
 
-const ATTEND_LOGS = 3201
-const COUNTRIES = 21
+const ATTEND_LOGS = 3304
+const COUNTRIES = 23
 
 const formatter = new Intl.NumberFormat('en-US')
 
@@ -73,7 +73,7 @@ export function Numbers() {
         </InfoBlock>
 
         <InfoBlock
-          number={formatter.format(Math.ceil(ATTEND_LOGS * 1.5))}
+          number={formatter.format(Math.ceil(ATTEND_LOGS * 1.6))}
           title="Estimated Attendees"
         >
           Whether or not you find a lot of geocaches on May 24th, you'll

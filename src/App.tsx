@@ -13,11 +13,9 @@ import { Morgantown } from './pages/Morgantown'
 import { Register } from './pages/Register'
 import 'react-multi-carousel/lib/styles.css'
 import { Guide } from './pages/Guide/Guide'
-import { MorgantownLive } from './pages/Guide/Tabs/MorgantownLive'
-import { Experiences } from './pages/Guide/Tabs/Experiences'
-import { EventActivities } from './pages/Guide/Tabs/EventActivities'
-import { EventInformation } from './pages/Guide/Tabs/EventInformation'
 import { EVENT_GUIDE_PAGES } from './pages/Guide/pages'
+import { GeoTour } from './pages/Guide/EventActivities/GeoTour'
+import { Live } from './pages/Guide/Live'
 
 function App() {
   return (
@@ -33,12 +31,10 @@ function App() {
             <Route path="sponsors" element={<Sponsors />} />
             <Route path="morgantown" element={<Morgantown />} />
             <Route path="register" element={<Register />} />
+            <Route path="geotour" element={<GeoTour />} />
+            <Route path="live" element={<Live />} />
             <Route path="guide" element={<Guide />} />
             <Route path="guide/*">
-              <Route path="morgantown" element={<MorgantownLive />} />
-              <Route path="experiences" element={<Experiences />} />
-              <Route path="activities" element={<EventActivities />} />
-              <Route path="info" element={<EventInformation />} />
               {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
                 // @ts-ignore
                 <Route path={p.route} element={<p.component />} />

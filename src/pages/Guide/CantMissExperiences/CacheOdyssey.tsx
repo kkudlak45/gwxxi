@@ -15,13 +15,20 @@ export function CacheOdyssey() {
       <GuideBody>
         <Typography>
           The newly released Cache Odyssey series is a must-do while traveling
-          to and from GeoWoodstock XXI, and luckily, West Virginia’s Cache
+          to and from GeoWoodstock XXI, and luckily, West Virginia's Cache
           Odyssey is right here in Morgantown! This fun cache will bring you to
           Camp Muffly, located just off Interstate 79 south of the big event.
           This park is well known for its 4-H camps, but it is also home to
           festivals, group gatherings, casual picnics, and the newly built pool.
           This is the place to be during the summer.
         </Typography>
+
+        <br />
+
+        <img
+          src="/eventguide/cantmiss/cacheodyssey_800x600.jpg"
+          style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 600' }}
+        />
 
         <br />
         <br />
@@ -31,7 +38,7 @@ export function CacheOdyssey() {
           <li>
             <Typography>
               This should be a fairly quick and easy grab compared to some of
-              the other ‘must-do’ caches in the area. It’s a terrain 1 and very
+              the other ‘must-do' caches in the area. It's a terrain 1 and very
               handicap accessible.
             </Typography>
           </li>
@@ -39,7 +46,7 @@ export function CacheOdyssey() {
             <Typography>
               You will need to do some research beforehand to solve for the lock
               combination. What year did West Virginia join the Union? (Hint,
-              it’s during the Civil War.)
+              it's during the Civil War.)
             </Typography>
           </li>
           <li>
@@ -86,7 +93,7 @@ export function CacheOdyssey() {
         <Subheader>Where can you find another one?</Subheader>
         <Typography>
           Here's the best part—there's a Cache Odyssey hidden in every state!
-          That’s right! From coast to coast, every state in America is part of
+          That's right! From coast to coast, every state in America is part of
           this grand adventure. Once you track down the one closest to you, why
           stop there?
         </Typography>

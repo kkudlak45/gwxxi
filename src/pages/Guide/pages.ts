@@ -9,7 +9,6 @@ import { AdventureLabs } from './EventActivities/AdventureLabs'
 import { Adventures } from './EventActivities/Adventures'
 import { CountryRoadsChallenge } from './EventActivities/CountryRoadsChallenge'
 import { CryptidQuest } from './EventActivities/CryptidQuest'
-import { GeoTour } from './EventActivities/GeoTour'
 import { Activities } from './EventInformation/Activities'
 import { Games } from './EventInformation/Games'
 import { Parking } from './EventInformation/Parking'
@@ -174,8 +173,7 @@ export const EVENT_ACTIVITIES_PAGES: EventGuidePage[] = [
   },
   {
     title: 'Middle of Everywhere GeoTour',
-    route: 'geotour',
-    component: GeoTour,
+    route: '/geotour',
   },
   {
     title: 'Adventures in Appalachia Geo-Art',

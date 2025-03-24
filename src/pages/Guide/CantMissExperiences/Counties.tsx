@@ -5,8 +5,17 @@ import { Typography } from '@mui/material'
 import React from 'react'
 import { Subheader } from '../Subheader'
 
-export function BoldKol({ children }: { children: React.ReactNode }) {
-  return <strong style={{ fontFamily: 'Kollektif-Bold' }}>{children}</strong>
+export function BoldKol(
+  props: React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLElement>,
+    HTMLElement
+  >,
+) {
+  return (
+    <strong {...props} style={{ fontFamily: 'Kollektif-Bold', ...props.style }}>
+      {props.children}
+    </strong>
+  )
 }
 
 export function Counties() {
