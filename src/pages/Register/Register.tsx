@@ -87,43 +87,43 @@ function PictureCard({
   )
 }
 
-function NonPictureCard({
-  title,
-  children,
-}: {
-  title: string
-  children: React.ReactNode
-}): JSX.Element {
-  const isMobile = useIsMobile()
+// function NonPictureCard({
+//   title,
+//   children,
+// }: {
+//   title: string
+//   children: React.ReactNode
+// }): JSX.Element {
+//   const isMobile = useIsMobile()
 
-  return (
-    <Grid item xs={6}>
-      <div
-        style={{
-          borderRadius: '12px',
-          padding: '0rem 0.6rem',
-          height: '100%',
-          textAlign: 'left',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-        <Typography
-          variant="h3"
-          fontSize={isMobile ? '1.4rem' : '1.6rem'}
-          fontWeight="bold"
-          textAlign="center"
-          marginTop="0.8rem"
-          marginBottom="0.6rem"
-        >
-          {title}
-        </Typography>
-        {children}
-      </div>
-    </Grid>
-  )
-}
+//   return (
+//     <Grid item xs={6}>
+//       <div
+//         style={{
+//           borderRadius: '12px',
+//           padding: '0rem 0.6rem',
+//           height: '100%',
+//           textAlign: 'left',
+//           display: 'flex',
+//           flexDirection: 'column',
+//           alignItems: 'center',
+//         }}
+//       >
+//         <Typography
+//           variant="h3"
+//           fontSize={isMobile ? '1.4rem' : '1.6rem'}
+//           fontWeight="bold"
+//           textAlign="center"
+//           marginTop="0.8rem"
+//           marginBottom="0.6rem"
+//         >
+//           {title}
+//         </Typography>
+//         {children}
+//       </div>
+//     </Grid>
+//   )
+// }
 
 function PackageCard({
   imgSrc,
@@ -211,18 +211,15 @@ export function Register(): JSX.Element {
 
       <Section style={sectionStyles}>
         <Typography>
-          GeoWoodstock XXI is a free-to-attend event, but registering everyone
-          in your party helps the event organizers prepare for an accurate
-          number of attendees. Paid registration options are also available for
-          additional activities such as the Country Roads Challenge and catered
-          lunch. In addition to activities, paid registration options also
-          include souvenirs to remember your time in Almost Heaven such as
-          trackable Geocoins, Pathtags, a shirt, and much more. Not only are
-          these nice keepsakes from the event, but your financial contribution
-          helps ensure GeoWoodstock XXI will be the best event possible. Check
-          out what’s available below, and when you’re ready, click the Shop icon
-          above to visit our store. Registration options will be available
-          starting October 11, 2024, and close on January 31, 2025.
+          GeoWoodstock XXI is free to attend, but SWAG sales such as Geocoins,
+          shirts, and Pathtags help fund the event and all the additional
+          activities. These souvenirs not only allow you to remember your time
+          in Almost Heaven, but they also help contribute to making GeoWoodstock
+          XXI the best event possible. Check out what's available below, and
+          when you're ready, click the Shop icon above to visit our store. These
+          items will be available in very limited quantities until April 25, and
+          once they sell out, they may not be available for purchase at the main
+          event.
         </Typography>
         <br />
         <Typography textAlign="start" width="100%">
@@ -231,26 +228,37 @@ export function Register(): JSX.Element {
         <ul style={{ textAlign: 'start', margin: '0.5rem 4px' }}>
           <li>
             <Typography>
-              When selecting package options for your group, please ensure each
-              individual registers, even if it’s just the free option. After
-              completing each individual registration, click “add to cart”
-              before processing the next, even if you are purchasing multiples
-              of the same package. (For example, a family of 4 that caches
-              together under one username might purchase Black Bear and Brook
-              Trout packages for the adults, but two Rhododendron packages for
-              the kids. This ensures everyone gets an individual name badge and
-              helps us accurately estimate attendees.)
+              Individual items are still available for purchase until April 25.
+              The deadline to order a prepackaged registration bundle was Jan.
+              31. At this time, we've sold out of all packages, but a minimal
+              number of individual items are still in stock.
             </Typography>
           </li>
           <li>
             <Typography>
-              Colors as shown in the graphics below are not exact and could be
-              subject to change.
+              All orders placed after the Jan. 31 pre-registration deadline will
+              still include a name badge, event program, and wooden nickel,
+              while supplies last.
             </Typography>
           </li>
           <li>
             <Typography>
-              Packages are only available for in-person pickup on Friday
+              If you would still like to take advantage of VIP perks such as
+              preferred parking and early access to GeoWoodstock HQ, you may
+              still purchase the 'Friends of GeoWoodstock' package, while
+              supplies last.
+            </Typography>
+          </li>
+          <li>
+            <Typography>
+              If you previously made a purchase but want to buy additional
+              items, please use the same name and contact information and we
+              will include all items together during package pickup.
+            </Typography>
+          </li>
+          <li>
+            <Typography>
+              Pre-ordered SWAG is only available for in-person pickup on Friday
               (5/23/25) and Saturday (5/24/25) at Mylan Park in Morgantown, WV.
               If you are unable to attend, you can designate another attendee to
               pick up your package on your behalf. Registration packages will
@@ -284,54 +292,10 @@ export function Register(): JSX.Element {
 
       <Section style={{ ...sectionStyles, textAlign: 'start' }}>
         <Grid container maxWidth="800px" alignItems="center">
-          <NonPictureCard title="Badge & Lanyard">
-            <Typography>
-              {
-                'GeoWoodstock is all about meeting new people, so let them know who you are with a custom name badge and lanyard!*'
-              }
-            </Typography>
-            <Typography fontSize="0.8rem" fontStyle="italic" marginTop="0.6rem">
-              {
-                '*Name badges in the rhododendron package will not be customized.'
-              }
-            </Typography>
-          </NonPictureCard>
-          <NonPictureCard title="Event Program">
-            <Typography>
-              {
-                'Stay up to date on everything GeoWoodstock XXI with the event program. This easy-to-carry book contains event information, maps, sponsors, and even a few games to play!'
-              }
-            </Typography>
-          </NonPictureCard>
-
-          <Grid item xs={12} marginBottom="2rem"></Grid>
-
-          <PictureCard
-            title="Country Roads Challenge Passport"
-            text={
-              <Fragment>
-                Presented by{' '}
-                <a
-                  href="https://www.VisitMountaineerCountry.com"
-                  target="_blank"
-                >
-                  VisitMountaineerCountry.com
-                </a>
-                , this 10-stop tour will bring you to some of the best spots to
-                eat, shop, and play in Mountaineer Country. Visit all 10 to earn
-                a limited-edition trackable Geocoin.
-              </Fragment>
-            }
-            imgSrc={`${import.meta.env.BASE_URL}register/CRC_Coin_200x200.webp`}
-            imgAlt="picture of the country roads challenge trackable coin"
-          />
-
-          <Grid item xs={12} marginBottom="1rem"></Grid>
-
           <PictureCard
             title="GeoWoodstock XXI Trackable Geocoin"
             text="The official GeoWoodstock XXI trackable Geocoin is truly a celebration of all things West Virginia. This movable coin features Signal the Frog zipping through the skies with Appalachian iconography filling the picturesque landscape."
-            imgSrc={`${import.meta.env.BASE_URL}register/Main_Event_Coin_200x200.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/2_200x200.png`}
             imgAlt="picture of the trackable coin for the main Geowoodstock XXI event"
           />
 
@@ -340,147 +304,47 @@ export function Register(): JSX.Element {
           <PictureCard
             title="GeoWoodstock XXI Event Shirt"
             text="Locally sourced in Davis, WV, this tri-blend super soft unisex t-shirt is not only comfy, but stylish too!"
-            imgSrc={`${import.meta.env.BASE_URL}register/Event_Shirt_200x200.webp`}
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/4_200x200.png`}
             imgAlt="picture of the shirt made for the event"
           />
 
           <Grid item xs={12} marginBottom="1rem"></Grid>
 
           <PictureCard
-            title="GeoWoodstock XXI Event Pathtag"
-            text="The official GeoWoodstock XXI event Pathtag features the New River Gorge National Park and is a must have for your collection."
-            imgSrc={`${import.meta.env.BASE_URL}register/Event_Pathtag_200x200.webp`}
-            imgAlt="picture of the pathtag for the event"
-          />
-
-          <Grid item xs={12} marginBottom="1rem"></Grid>
-
-          <PictureCard
-            title="GeoWoodstock XXI Pathtag Set (7)"
-            text="This year’s event Pathtag set contains 7 tags, each depicting a different side event from GeoWoodstock XXI weekend."
-            imgSrc={`${import.meta.env.BASE_URL}register/Pathtag_Set_200x200.webp`}
+            title="Event Pathtag Set (8)"
+            text="This year's event Pathtag set contains 8 tags, each depicting a different side event from GeoWoodstock XXI weekend."
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/5_200x200.png`}
             imgAlt="Picture of all 7 pathtags for the event"
           />
 
           <Grid item xs={12} marginBottom="1rem"></Grid>
 
           <PictureCard
-            title="GeoWoodstock XXI VIP Trackable Geocoin"
-            text="Keeping with the country roads theme, this trackable Geocoin celebrates our VIPs and is only available in the Mountaineer package."
-            imgSrc={`${import.meta.env.BASE_URL}register/VIP_Coin_200x200.webp`}
-            imgAlt="picture of the trackable VIP coin"
+            title="Meal Ticket"
+            text="Lunch will be served at Mylan Park on Saturday, May 24, 2025, from 11 am to 2 pm. The menu includes an authentic Appalachian meal complete with pepperoni rolls and WV hotdogs, as well as additional sides and a drink. Vegetarian and gluten-free options will be available as well."
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/6_200x200.png`}
+            imgAlt=""
           />
 
           <Grid item xs={12} marginBottom="1rem"></Grid>
 
-          <NonPictureCard title="Wooden Nickel">
-            <Typography>
-              {
-                'Are you feeling lucky? Collect as many wooden nickels as you can for a chance to win prizes at GeoWoodstock HQ!'
-              }
-            </Typography>
-          </NonPictureCard>
-          <NonPictureCard title="Drawstring Bag">
-            <Typography>
-              {
-                'Keep all your GeoWoodstock XXI SWAG safe with this easy to carry bag. It even has a pouch for your water bottle and snacks.'
-              }
-            </Typography>
-          </NonPictureCard>
+          <PictureCard
+            title="GIGA Geocoin"
+            text="Celebrating America's 2nd GIGA, this two-piece trackable Geocoin features Signal the Frog conducting an iconic weekend in Appalachia! A very limited number of these are being made, so don't miss out on your chance to grab this collector's item."
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/3_200x200.png`}
+            imgAlt=""
+          />
 
           <Grid item xs={12} marginBottom="1rem"></Grid>
 
-          <NonPictureCard title="Catered Meal Ticket">
-            <Typography>
-              {
-                'Lunch will be served at Mylan Park on Saturday, May 24, 2025, from 11 a.m. to 2 p.m. The menu includes an authentic Appalachian meal complete with pepperoni rolls and WV hotdogs, as well as additional sides and a drink. Vegetarian and gluten-free options will be available as well.'
-              }
-            </Typography>
-          </NonPictureCard>
-          <NonPictureCard title="Dry Bag">
-            <Typography>
-              {
-                'Keep all your caching gear dry while exploring all that wild & wonderful West Virginia has to offer!'
-              }
-            </Typography>
-          </NonPictureCard>
+          <PictureCard
+            title="Friends of GeoWoodstock"
+            text="This limited-edition gold-plated Geocoin is only available with a generous $100 donation. In addition, enjoy VIP perks such as preferred parking and early line access as well as having your name listed on the official Friends of GeoWoodstock banner."
+            imgSrc={`${import.meta.env.BASE_URL}updatedregister/7_200x200.png`}
+            imgAlt=""
+          />
 
           <Grid item xs={12} marginBottom="1rem"></Grid>
-
-          <NonPictureCard title="GeoWoodstock XXI BONUS Trackable Geocoin">
-            <Typography>
-              {
-                "We can't spoil all the surprises, but trust us, you'll want this very special coin in your collection. (We'll give you a hint, it may or may not spin.)"
-              }
-            </Typography>
-          </NonPictureCard>
-          <NonPictureCard title="VIP Lounge Access">
-            <Typography>
-              {
-                'Need to take a break from all the fun? Pull up a chair in the VIP lounge, grab some water, and chat with your caching buddies in an exclusive space just for you.'
-              }
-            </Typography>
-          </NonPictureCard>
-
-          <Grid item xs={12} marginBottom="1rem"></Grid>
-
-          <NonPictureCard title="VIP Parking (at all applicable events)">
-            <Typography>
-              {
-                'Purchasing the Mountaineer Package is the best way to ensure a parking spot close to the main event and all other side events, when available. Handicapped spots will be available first-come, first-served, but VIP parking guarantees your spot.'
-              }
-            </Typography>
-          </NonPictureCard>
-          <NonPictureCard title="VIP Preferred Lines">
-            <Typography>
-              {
-                'Be treated like a true VIP and get early access to GeoWoodstock HQ as well as skip all the lines for package pickup, lunch, and additional activities. The only thing that is missing is the red carpet.'
-              }
-            </Typography>
-          </NonPictureCard>
-        </Grid>
-      </Section>
-
-      <Section style={sectionStyles}>
-        <Grid container>
-          <PackageCard
-            pkgName="Cardinal"
-            imgSrc={`${import.meta.env.BASE_URL}register/Cardinal_Package.png`}
-            buyLink="https://geowoodstockxxi.myshopify.com/products/cardinal-package"
-          />
-          <PackageCard
-            pkgName="Brook Trout"
-            imgSrc={`${import.meta.env.BASE_URL}register/Brook_Trout_Package.png`}
-            buyLink="https://geowoodstockxxi.myshopify.com/products/brook-trout-package"
-          />
-          <PackageCard
-            pkgName="Black Bear"
-            imgSrc={`${import.meta.env.BASE_URL}register/Black_Bear_Package.png`}
-            buyLink="https://geowoodstockxxi.myshopify.com/products/black-bear-package"
-          />
-          <PackageCard
-            pkgName="Mountaineer"
-            imgSrc={`${import.meta.env.BASE_URL}register/Mountaineer_Package.png`}
-            buyLink="https://geowoodstockxxi.myshopify.com/products/mountaineer-vip-package"
-          />
-          <Grid
-            item
-            xs={12}
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <img
-              src={`${import.meta.env.BASE_URL}register/Package_Comparison.png`}
-              style={{
-                aspectRatio: 1,
-                width: '100%',
-                maxWidth: '640px',
-                borderRadius: '12px',
-              }}
-            />
-          </Grid>
         </Grid>
       </Section>
 
@@ -489,38 +353,23 @@ export function Register(): JSX.Element {
           Frequently Asked Questions
         </Typography>
         <Grid container>
-          <FaqCard question="What is the difference between logging a ‘Will Attend’ and registering? ">
+          <FaqCard question="Do I need to register for GeoWoodstock?">
             <Typography>
-              Logging a 'Will Attend' on the event page (
+              While this is a free-to-attend event, your support is greatly
+              appreciated. No purchase is necessary, but please log a Will
+              Attend for{' '}
               <a target="_blank" href="https://coord.info/gcanxx1">
                 GCANXX1
-              </a>
-              ) is the first step, but to get an accurate count of attendees,
-              you are encouraged to register each individual attendee through
-              the online store. In addition, you can also purchase event
-              merchandise and SWAG to help support the event.
+              </a>{' '}
+              to let us know you are planning on joining the fun in Morgantown.
             </Typography>
           </FaqCard>
-          <FaqCard question="What registration package options are available?">
+          <FaqCard question="When and where can I pick up my registration package?">
             <Typography>
-              There are 5 options to choose from ranging from a free option to
-              VIP. Registration packages have the option to include a name
-              badge, lanyard, event coin, Pathtag set, event shirt, lunch
-              ticket, Country Roads Challenge passport, and so much more.
-            </Typography>
-          </FaqCard>
-          <FaqCard question="When and where can I pick up my registration package? ">
-            <Typography>
-              {
-                'Registration packages can be picked up on Friday (5/23/25) or Saturday (5/24/25) at GeoWoodstock HQ. Country Roads Challenge passports will be available on Thursday (5/22) at the morning side event.'
-              }
-            </Typography>
-          </FaqCard>
-          <FaqCard question="Can someone else pick my registration package up for me?">
-            <Typography>
-              With expressed permission from the individual who purchased the
-              package, SWAG can be picked up by others if you are unable to
-              attend the event. Registration packages will not be mailed out.
+              Registration packages can be picked up on Friday (5/23/25) or
+              Saturday (5/24/25) at GeoWoodstock HQ. Country Roads Challenge
+              passports will be available on Thursday (5/22) at the morning side
+              event.
             </Typography>
           </FaqCard>
           <FaqCard question="How do I get preferred parking?">
@@ -535,37 +384,12 @@ export function Register(): JSX.Element {
               to request an ADA parking pass.
             </Typography>
           </FaqCard>
-          <FaqCard question="When will the store close? ">
-            <Typography>
-              Black Diamond Backer shirts are available for purchase until
-              November 29, 2024. All other registration items should be
-              purchased before January 31, 2025. Some items may be available in
-              limited quantities at the event in May.
-            </Typography>
-          </FaqCard>
-
-          <FaqCard question="Can VIPs bring guests into preferred areas?">
+          <FaqCard question="Can VIPs and Friends of GeoWoodstock brings guests into preferred areas?">
             <Typography>
               Yes - those attending in the same party will have the opportunity
-              to travel together to preferred lines and VIP-only areas.
-            </Typography>
-          </FaqCard>
-          <FaqCard question="How does the Country Roads Challenge work?">
-            <Typography>
-              10 caches will be published around Mountaineer Country starting at
-              10 a.m. on Thursday (5/22/25). Passports will be available in all
-              paid registration levels and available on Thursday at the Country
-              Roads Challenge kickoff event or during package pickup at Mylan
-              Park. Participants will have all weekend to find all 10 caches to
-              claim a limited-edition trackable coin, courtesy of Visit
-              Mountaineer Country. After Sunday, coins can be claimed on a
-              first-come, first-served basis at the visitor center. For more
-              information, please visit the event page for the Country Roads
-              Challenge Kickoff (
-              <a target="_blank" href="https://coord.info/GCANXX0">
-                GCANXX0
-              </a>
-              ).
+              to travel together to preferred lines and VIP-only areas. Please
+              have everyone in your group arrive together and in one car, if
+              possible. Only one parking spot will be reserved per VIP
             </Typography>
           </FaqCard>
           <FaqCard question="How do I get my Friends of GeoWoodstock coin?">
@@ -582,20 +406,18 @@ export function Register(): JSX.Element {
               for assistance.
             </Typography>
           </FaqCard>
-          <FaqCard question="When will we get to see the bonus coin included in the VIP package?">
+          <FaqCard question="Can someone else pick my registration package up for me?">
             <Typography>
-              You'll see what this coin truly looks like when you pick up your
-              package in May, but trust us, this is a special coin design you'll
-              want to add to your collection.
+              With expressed permission from the individual who purchased the
+              package, SWAG can be picked up by others if you are unable to
+              attend the event. Registration packages will not be mailed out.
             </Typography>
           </FaqCard>
-          <FaqCard question="Can I register at the free level and upgrade later?">
+
+          <FaqCard question="When will the store close?">
             <Typography>
-              We are encouraging all attendees to register through the online
-              store, even if this is at the free level. If you know you are
-              likely to purchase a SWAG package, there is no need to register at
-              the free level and upgrade later, simply make one purchasing
-              decision when you are ready.
+              The final day to pre-order any SWAG items will be April 25. Some
+              items may be available in limited quantities at the event in May.
             </Typography>
           </FaqCard>
           <FaqCard question="What's for lunch?">

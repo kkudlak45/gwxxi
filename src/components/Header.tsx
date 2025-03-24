@@ -11,6 +11,8 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
+import { Alert } from '@mui/material'
+import { BoldKol } from '../pages/Guide/CantMissExperiences/Counties'
 
 export const pages = [
   {
@@ -251,17 +253,17 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
 
-      {/* <Alert variant="filled" severity="warning">
-        Registration for GeoWoodstock XXI will close on January 31, 2025. Please
-        consider helping support the event by registering and buying coins,
-        SWAG, and other items.{' '}
+      <Alert variant="filled" severity="warning">
+        Your last chance to buy individual SWAG items such as Geocoins, shirts,
+        Pathtags, meal tickets, and more is <BoldKol>April 25</BoldKol>. Some
+        items may not be available for purchase at the event.{' '}
         <a
           href={`${import.meta.env.BASE_URL}register`}
           style={{ color: 'lightblue' }}
         >
-          Click here to register.
+          Click here to shop.
         </a>
-      </Alert> */}
+      </Alert>
     </AppBar>
   )
 }
