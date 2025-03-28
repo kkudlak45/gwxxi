@@ -319,7 +319,9 @@ export function GeoTour() {
                 <em>*8 - 10 am is for VIPs and Friends of GeoWoodstock only</em>
               </Typography>
             </li>
-            <li>Saturday (5/24) from 8 am - 5 pm</li>
+            <li>
+              <Typography>Saturday (5/24) from 8 am - 5 pm</Typography>
+            </li>
           </ul>
 
           <br />
@@ -332,7 +334,9 @@ export function GeoTour() {
             )
           </Typography>
           <ul style={{ margin: 0 }}>
-            <li>Sunday (5/25) from 8 - 11 am</li>
+            <li>
+              <Typography>Sunday (5/25) from 8 - 11 am</Typography>
+            </li>
           </ul>
 
           <br />
@@ -345,7 +349,9 @@ export function GeoTour() {
             )
           </Typography>
           <ul style={{ margin: 0 }}>
-            <li>Sunday (5/25) from 4 - 7 pm</li>
+            <li>
+              <Typography>Sunday (5/25) from 4 - 7 pm</Typography>
+            </li>
           </ul>
         </div>
 

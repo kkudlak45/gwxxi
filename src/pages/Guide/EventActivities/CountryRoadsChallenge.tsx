@@ -101,7 +101,7 @@ export function CountryRoadsChallenge() {
           Additionally, you can download and print a passport by{' '}
           <a
             target="_blank"
-            href={`${import.meta.env.BASE_URL}public/eventguide/eventactivities/Country Roads Challenge Passport.pdf`}
+            href={`${import.meta.env.BASE_URL}eventguide/eventactivities/Country Roads Challenge Passport.pdf`}
           >
             clicking here
           </a>
@@ -114,7 +114,7 @@ export function CountryRoadsChallenge() {
         <br />
 
         <BigOrangeButton
-          href={`${import.meta.env.BASE_URL}public/eventguide/eventactivities/Country Roads Challenge Passport.pdf`}
+          href={`${import.meta.env.BASE_URL}eventguide/eventactivities/Country Roads Challenge Passport.pdf`}
         >
           DOWNLOAD YOUR PASSPORT
         </BigOrangeButton>
