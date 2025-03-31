@@ -171,6 +171,17 @@ export function Activities() {
         <br />
         <br />
 
+        <Subheader>Quilt Raffle</Subheader>
+        <Typography>
+          Celebrating 21 years of GeoWoodstock, check out our Country Roads
+          inspired quilt located near the welcome table. A very limited number
+          of raffle tickets are available for purchase in the event store for $5
+          each. The drawing will take place during the closing ceremony at 5 pm.
+        </Typography>
+
+        <br />
+        <br />
+
         <Subheader>Let's go caching!</Subheader>
         <Typography>
           There will be dozens of new caches places throughout the park

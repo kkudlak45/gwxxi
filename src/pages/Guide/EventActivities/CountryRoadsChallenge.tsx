@@ -460,7 +460,7 @@ export function CountryRoadsChallenge() {
         <br />
 
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=1Sg1az2wM2acIRqBInjXnsm0nUsc1FfE&hl=en&ehbc=2E312F"
+          src="https://www.google.com/maps/d/embed?mid=1hrYhwHR92d73RXnjczVB2DZLVfMWTpY&ehbc=2E312F"
           width="640"
           height="480"
           style={{

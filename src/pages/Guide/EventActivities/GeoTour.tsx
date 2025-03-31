@@ -70,7 +70,7 @@ function GCDisplay({
       </div>
       <Typography textAlign="start">
         {title} (
-        <a target="_blank" href={`coord.info/${gcCode}`}>
+        <a target="_blank" href={`https://coord.info/${gcCode}`}>
           {gcCode}
         </a>
         )
@@ -90,7 +90,10 @@ export function GeoTour() {
       />
 
       <GuideBody>
-        <p>image</p>
+        <img
+          src="/eventguide/eventactivities/moegeotour_600x600.png"
+          style={{ maxWidth: '600px', width: '100%', aspectRatio: 1 }}
+        />
         <br />
         <Typography>
           Full of history, culture, and recreational opportunities, Marion
@@ -120,8 +123,14 @@ export function GeoTour() {
         <Typography>
           You can pick up an official Middle of Everywhere GeoTour booklet by
           visiting the Marion County CVB table at Mylan Park during GeoWoodstock
-          XXI. Alternatively, you may print out a passport by clicking the link
-          provided.
+          XXI. Alternatively, you may print out a passport by{' '}
+          <a
+            target="_blank"
+            href="/eventguide/eventactivities/Middle of Everywhere GeoTour Passport.pdf"
+          >
+            clicking the link provided
+          </a>
+          .
         </Typography>
         <br />
 
@@ -271,7 +280,7 @@ export function GeoTour() {
         <br />
 
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=1Sg1az2wM2acIRqBInjXnsm0nUsc1FfE&hl=en&ehbc=2E312F"
+          src="https://www.google.com/maps/d/embed?mid=1Uq0nN5zMAMeijaMEG2VJgsjMjOB6PVY&ehbc=2E312F"
           width="640"
           height="480"
           style={{
@@ -307,7 +316,7 @@ export function GeoTour() {
         <div>
           <Typography fontFamily="KGRedHands">
             GeoWoodstock XXI (
-            <a target="_blank" href="coord.info/gcanxx1">
+            <a target="_blank" href="https://coord.info/gcanxx1">
               GCANXX1
             </a>
             )
@@ -328,7 +337,7 @@ export function GeoTour() {
 
           <Typography fontFamily="KGRedHands">
             Breakfast with the Mommas (
-            <a target="_blank" href="coord.info/GCANXX7">
+            <a target="_blank" href="https://coord.info/GCANXX7">
               GCANXX7
             </a>
             )
@@ -343,7 +352,7 @@ export function GeoTour() {
 
           <Typography fontFamily="KGRedHands">
             Farewell from the Fort (
-            <a target="_blank" href="coord.info/GCANXX8">
+            <a target="_blank" href="https://coord.info/GCANXX8">
               GCANXX8
             </a>
             )

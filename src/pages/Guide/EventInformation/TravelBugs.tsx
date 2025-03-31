@@ -199,6 +199,8 @@ export function TravelBugs() {
             be closed when all TB's are gone, or by 4 PM.
           </Typography>
         </div>
+
+        <br />
       </GuideBody>
     </Fragment>
   )
