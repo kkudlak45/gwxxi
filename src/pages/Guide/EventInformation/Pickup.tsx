@@ -55,7 +55,7 @@ export function Pickup() {
           (Please note: 8 - 10 am on Friday (5/23) is for VIPs and Friends of
           GeoWoodstock only. General admission to the event starts at 10 am).{' '}
           <BoldKol>
-            All items must be picked up before 3 p.m. on Saturday (5/24).
+            All items must be picked up before 3 pm on Saturday (5/24).
           </BoldKol>
         </Typography>
         <br />
@@ -95,10 +95,12 @@ export function Pickup() {
           organized by your first and last name provided when purchasing.
         </Typography>
         <br />
-        <Typography>
-          Upon receipt of the items, you'll be asked to sign to confirm you've
-          received the correct items and package.
-        </Typography>
+        <div style={{ width: '100%' }}>
+          <Typography>
+            Upon receipt of the items, you'll be asked to sign to confirm you've
+            received the correct items and package.
+          </Typography>
+        </div>
         <br />
         <br />
 
@@ -199,7 +201,7 @@ export function Pickup() {
           <PictureCard
             title="GWXXI Critters Trackable Set"
             text="$30"
-            imgSrc="/eventguide/info/store/eventcoin.png"
+            imgSrc="/eventguide/info/store/critters.png"
           />
           <PictureCard
             title="Raffle Tickets"

@@ -86,6 +86,13 @@ export function Oldest() {
 
         <br />
 
+        <img
+          src="/eventguide/cantmiss/howtorental_800x800.jpeg"
+          style={{ width: '100%', maxWidth: '600px', aspectRatio: '1' }}
+        />
+
+        <br />
+
         <Typography>
           That being said, traveling along the Hatfield-McCoy Trails can be a
           lot of fun, but be careful as you will be traveling along steep trails

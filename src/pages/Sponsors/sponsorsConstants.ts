@@ -181,6 +181,11 @@ export const bronzeSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artisinal.png`,
     href: 'https://www.example.com/',
   },
+  {
+    name: 'BAC Country Rentals LLC',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
+    href: 'https://baccountryatvrentals.com/',
+  },
 ]
 
 export const friends = [

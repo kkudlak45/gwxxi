@@ -1,7 +1,7 @@
 import { Fragment } from 'react/jsx-runtime'
 import { GuideHeader } from '../GuideHeader'
 import { GuideBody } from '../GuideBody'
-import { Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { BoldKol } from '../CantMissExperiences/Counties'
 import { Subheader } from '../Subheader'
 
@@ -53,139 +53,139 @@ export function Rental() {
 
         <Subheader>Where to rent kayaks and bikes</Subheader>
 
-        <div>
-          <div>
-            <Typography>
-              <BoldKol>MORGANTOWN ADVENTURE OUTFITTERS</BoldKol>
-            </Typography>
-            <Typography>
-              Web:{' '}
-              <a
-                href="https://adventurewv.wvu.edu/resources/morgantown-adventure-outfitters"
-                target="_blank"
-              >
-                https://adventurewv.wvu.edu/resources/morgantown-adventure-outfitters
-              </a>
-            </Typography>
-            <Typography>
-              Email: <a href="mailto:mao@mail.wvu.edu">mao@mail.wvu.edu</a>
-            </Typography>
-            <Typography>
-              Phone: <a href="tel:+3042937407">304-293-7407</a>
-            </Typography>
-          </div>
+        <Typography>
+          <BoldKol>MORGANTOWN ADVENTURE OUTFITTERS</BoldKol>
+        </Typography>
+        <Typography textOverflow="ellipsis" whiteSpace="nowrap" maxWidth="100%">
+          Web:{' '}
+          <a
+            href="https://adventurewv.wvu.edu/resources/morgantown-adventure-outfitters"
+            target="_blank"
+          >
+            https://adventurewv.wvu.edu/resources/morgantown-adventure-outfitters
+          </a>
+        </Typography>
+        <Typography>
+          Email: <a href="mailto:mao@mail.wvu.edu">mao@mail.wvu.edu</a>
+        </Typography>
+        <Typography>
+          Phone: <a href="tel:+3042937407">304-293-7407</a>
+        </Typography>
 
-          <br />
+        <br />
 
-          <div>
-            <Typography>
-              <BoldKol>EXPLORE WV</BoldKol>
-            </Typography>
-            <Typography>
-              Email:{' '}
-              <a href="mailto:mao@explorewvmore@gmail.com">
-                explorewvmore@gmail.com
-              </a>
-            </Typography>
-            <Typography>
-              Phone: <a href="tel:+3045669613">304-566-9613</a>
-            </Typography>
-          </div>
-        </div>
+        <Typography>
+          <BoldKol>EXPLORE WV</BoldKol>
+        </Typography>
+        <Typography>
+          Email:{' '}
+          <a href="mailto:mao@explorewvmore@gmail.com">
+            explorewvmore@gmail.com
+          </a>
+        </Typography>
+        <Typography>
+          Phone: <a href="tel:+3045669613">304-566-9613</a>
+        </Typography>
 
         <br />
         <br />
+        <br />
 
-        <Subheader>Kayaking Trails</Subheader>
-        <div>
-          <div>
-            <Typography>
-              <BoldKol>MONONGAHELA RIVER TRAIL</BoldKol>
-            </Typography>
-            <Typography>
-              Over 40 geocaches line the bank of the river
-            </Typography>
-            <Typography>
-              Parking and Launch: N 39° 28.883 W 80° 08.438
-            </Typography>
-            <Typography>
-              Mid-series Kayak Takeout: N 39° 31.778 W 80° 07.280
-            </Typography>
-            <Typography>
-              Prickett's Fort Boat Ramp: N 39° 31.095 W 80° 05.500
-            </Typography>
-            <Typography>
-              Final take-out Parking: N 39° 31.070 W 80° 05.540
-            </Typography>
-          </div>
+        <Grid container justifyContent="space-evenly" rowSpacing={6}>
+          <Grid item xs={12} md={7}>
+            <Subheader>Kayaking Trails</Subheader>
+            <Grid container rowSpacing={2} justifyContent="space-evenly">
+              <Grid item xs={12} md={6}>
+                <Typography>
+                  <BoldKol>MONONGAHELA RIVER TRAIL</BoldKol>
+                </Typography>
+                <Typography>
+                  Over 40 geocaches line the bank of the river
+                </Typography>
+                <Typography>
+                  Parking and Launch: N 39° 28.883 W 80° 08.438
+                </Typography>
+                <Typography>
+                  Mid-series Kayak Takeout: N 39° 31.778 W 80° 07.280
+                </Typography>
+                <Typography>
+                  Prickett's Fort Boat Ramp: N 39° 31.095 W 80° 05.500
+                </Typography>
+                <Typography>
+                  Final take-out Parking: N 39° 31.070 W 80° 05.540
+                </Typography>
+              </Grid>
 
-          <br />
+              <Grid item xs={12} md={6}>
+                <Typography>
+                  <BoldKol>BIG SANDY TRAIL</BoldKol>
+                </Typography>
+                <Typography>9 geocaches line the banks of Big Sandy</Typography>
+                <Typography>
+                  See cache page{' '}
+                  <a target="_blank" href="https://coord.info/GC9W4TH">
+                    GC9W4TH
+                  </a>{' '}
+                  for launch location
+                </Typography>
+              </Grid>
+            </Grid>
+          </Grid>
 
-          <div>
+          <Grid item xs={12} md={4}>
+            <Subheader>Bike Trails</Subheader>
             <Typography>
-              <BoldKol>BIG SANDY TRAIL</BoldKol>
-            </Typography>
-            <Typography>9 geocaches line the banks of Big Sandy</Typography>
-            <Typography>
-              See cache page{' '}
-              <a target="_blank" href="https://coord.info/GC9W4TH">
-                GC9W4TH
+              Point Marion:{' '}
+              <a target="_blank" href="https://coord.info/GCAVDQN">
+                GCAVDQN
               </a>{' '}
-              for launch location
+              -{' '}
+              <a target="_blank" href="https://coord.info/GCAFRK0">
+                GCAFRK0
+              </a>{' '}
+              and{' '}
+              <a target="_blank" href="https://coord.info/GCAV08F">
+                GCAV08F
+              </a>{' '}
+              -{' '}
+              <a target="_blank" href="https://coord.info/GCAXYRD">
+                GCAXYRD
+              </a>
             </Typography>
-          </div>
-        </div>
+            <Typography>
+              Morgantown:{' '}
+              <a target="_blank" href="https://coord.info/GC7354R">
+                GC7354R
+              </a>{' '}
+              -{' '}
+              <a target="_blank" href="https://coord.info/GC25TDY">
+                GC25TDY
+              </a>{' '}
+              and{' '}
+              <a target="_blank" href="https://coord.info/GCAY731">
+                GCAY731
+              </a>{' '}
+              -{' '}
+              <a target="_blank" href="https://coord.info/GCT3B6">
+                GCT3B6
+              </a>
+            </Typography>
+            <Typography>
+              Fairmont:{' '}
+              <a target="_blank" href="https://coord.info/GC6FGMH">
+                GC6FGMH
+              </a>{' '}
+              -{' '}
+              <a target="_blank" href="https://coord.info/GCAC39E">
+                GCAC39E
+              </a>
+            </Typography>
+          </Grid>
+        </Grid>
+        <div></div>
 
         <br />
         <br />
-
-        <Subheader>Bike Trails</Subheader>
-        <Typography>
-          Point Marion:{' '}
-          <a target="_blank" href="https://coord.info/GCAVDQN">
-            GCAVDQN
-          </a>{' '}
-          -{' '}
-          <a target="_blank" href="https://coord.info/GCAFRK0">
-            GCAFRK0
-          </a>{' '}
-          and{' '}
-          <a target="_blank" href="https://coord.info/GCAV08F">
-            GCAV08F
-          </a>{' '}
-          -{' '}
-          <a target="_blank" href="https://coord.info/GCAXYRD">
-            GCAXYRD
-          </a>
-        </Typography>
-        <Typography>
-          Morgantown:{' '}
-          <a target="_blank" href="https://coord.info/GC7354R">
-            GC7354R
-          </a>{' '}
-          -{' '}
-          <a target="_blank" href="https://coord.info/GC25TDY">
-            GC25TDY
-          </a>{' '}
-          and{' '}
-          <a target="_blank" href="https://coord.info/GCAY731">
-            GCAY731
-          </a>{' '}
-          -{' '}
-          <a target="_blank" href="https://coord.info/GCT3B6">
-            GCT3B6
-          </a>
-        </Typography>
-        <Typography>
-          Fairmont:{' '}
-          <a target="_blank" href="https://coord.info/GC6FGMH">
-            GC6FGMH
-          </a>{' '}
-          -{' '}
-          <a target="_blank" href="https://coord.info/GCAC39E">
-            GCAC39E
-          </a>
-        </Typography>
 
         <br />
 

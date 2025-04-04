@@ -104,8 +104,7 @@ export function Parking() {
             and does not permit non-service animals. The shuttle will run for
             one hour following the closing of HQ on both Friday (5/23) and
             Saturday (5/24). If staying until the end of the event, we recommend
-            one person retrieve the car and pick the others up at HQ to allow
-            for.
+            one person retrieve the car and pick the others up at HQ.
           </Typography>
         </div>
 

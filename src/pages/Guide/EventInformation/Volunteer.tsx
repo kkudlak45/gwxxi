@@ -1,7 +1,7 @@
 import { Fragment } from 'react/jsx-runtime'
 import { GuideHeader } from '../GuideHeader'
 import { GuideBody } from '../GuideBody'
-import { Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 import { Subheader } from '../Subheader'
 import { BigOrangeButton } from '../BigOrangeButton'
 
@@ -63,133 +63,135 @@ export function Volunteer() {
         <br />
         <br />
 
-        <Subheader>Event Venue Setup & Take Down</Subheader>
-        <Typography>
-          Help with setting up and taking down the main venue. Work will be
-          physical but tasks may vary. Expect to set up chairs, tables, game
-          area, banners, maze, and whatever else we will need help with.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Welcome / Information Table</Subheader>
-        <Typography>
-          Greet guests with a warm welcome and assist them by answering any
-          questions they have. Hand out information about the area. It would be
-          helpful if you have a good understanding of the side events, the event
-          area and the Morgantown area when volunteering for this task.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Registration and SWAG pickup</Subheader>
-        <Typography>Help with the following:</Typography>
-        <ol>
-          <li>
+        <Grid
+          container
+          rowSpacing={8}
+          columnSpacing={12}
+          justifyContent="center"
+        >
+          <Grid item xs={12} md={6}>
+            <Subheader>Event Venue Setup & Take Down</Subheader>
             <Typography>
-              Line management: Focused on keeping an eye on when the next
-              volunteer is ready for another customer.
+              Help with setting up and taking down the main venue. Work will be
+              physical but tasks may vary. Expect to set up chairs, tables, game
+              area, banners, maze, and whatever else we will need help with.
             </Typography>
-          </li>
-          <li>
+
+            <br />
+            <br />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Subheader>Welcome / Information Table</Subheader>
             <Typography>
-              Name finders: Help ID a person's package and then send them with
-              another volunteer to find their package.
+              Greet guests with a warm welcome and assist them by answering any
+              questions they have. Hand out information about the area. It would
+              be helpful if you have a good understanding of the side events,
+              the event area and the Morgantown area when volunteering for this
+              task.
             </Typography>
-          </li>
-          <li>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Subheader>Registration and SWAG pickup</Subheader>
+            <Typography>Help with the following:</Typography>
+            <ol>
+              <li>
+                <Typography>
+                  Line management: Focused on keeping an eye on when the next
+                  volunteer is ready for another customer.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Name finders: Help ID a person's package and then send them
+                  with another volunteer to find their package.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Store manager: These people will oversee the store purchases
+                  with help from a member of the GW lead crew.
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  Help walk people through their packages/materials and send
+                  them on their way.
+                </Typography>
+              </li>
+            </ol>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Subheader>GPS Adventures Maze Exhibit</Subheader>
             <Typography>
-              Store manager: These people will oversee the store purchases with
-              help from a member of the GW lead crew.
+              You will help with any needs related to the GPS Adventure Maze
+              experience. Such as being a greeter, a dark room assistor and
+              guest flow controller.
             </Typography>
-          </li>
-          <li>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Subheader>VIP Lounge</Subheader>
             <Typography>
-              Help walk people through their packages/materials and send them on
-              their way.
+              Help with any needs related to the VIP area. Such as restocking
+              items, greeting guests and crowd control. Answer questions about
+              the venue and weekend.
             </Typography>
-          </li>
-        </ol>
+          </Grid>
 
-        <br />
+          <Grid item xs={12} md={6}>
+            <Subheader>Travel Bug Exchange</Subheader>
+            <Typography>
+              Handing out tickets and helping to bag TB's for location if
+              necessary. You will likely be sitting for this.
+            </Typography>
+          </Grid>
 
-        <Subheader>GPS Adventures Maze Exhibit</Subheader>
-        <Typography>
-          You will help with any needs related to the GPS Adventure Maze
-          experience. Such as being a greeter, a dark room assistor and guest
-          flow controller.
-        </Typography>
+          <Grid item xs={12} md={6}>
+            <Subheader>Games Area</Subheader>
+            <Typography>
+              Help with running any of the 4 games, wooden nickel redemption
+              (Plinko, Dice, Prize Wheel, Film Canisters).
+            </Typography>
+          </Grid>
 
-        <br />
-        <br />
+          <Grid item xs={12} md={6}>
+            <Subheader>Photo Opportunities</Subheader>
+            <Typography>
+              Assist guests with taking pics and setting up props. Answer guest
+              questions about the venue and weekend.
+            </Typography>
+          </Grid>
 
-        <Subheader>VIP Lounge</Subheader>
-        <Typography>
-          Help with any needs related to the VIP area. Such as restocking items,
-          greeting guests and crowd control. Answer questions about the venue
-          and weekend.
-        </Typography>
+          <Grid item xs={12} md={6}>
+            <Subheader>Vendors and Exhibitors</Subheader>
+            <Typography>
+              Help attendees, such as direct to restrooms, or where to find
+              specific vendors. Help vendors if they need a bathroom break,
+              lunch break or a break (you may need to be a runner for lunches).
+              Having a good knowledge of the main event area is important.
+            </Typography>
+          </Grid>
 
-        <br />
-        <br />
+          <Grid item xs={12} md={6}>
+            <Subheader>Lunch Area</Subheader>
+            <Typography>
+              Collect meal tickets/ direct lines/ restock drink area/ restock
+              chip area/ clean tables between guests & empty trash cans if
+              needed.
+            </Typography>
+          </Grid>
 
-        <Subheader>Travel Bug Exchange</Subheader>
-        <Typography>
-          Handing out tickets and helping to bag TB's for location if necessary.
-          You will likely be sitting for this.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Games Area</Subheader>
-        <Typography>
-          Help with running any of the 4 games, wooden nickel redemption
-          (Plinko, Dice, Prize Wheel, Film Canisters).
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Photo Opportunities</Subheader>
-        <Typography>
-          Assist guests with taking pics and setting up props. Answer guest
-          questions about the venue and weekend.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Vendors and Exhibitors</Subheader>
-        <Typography>
-          Help attendees, such as direct to restrooms, or where to find specific
-          vendors. Help vendors if they need a bathroom break, lunch break or a
-          break (you may need to be a runner for lunches). Having a good
-          knowledge of the main event area is important.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Lunch Area</Subheader>
-        <Typography>
-          Collect meal tickets/ direct lines/ restock drink area/ restock chip
-          area/ clean tables between guests & empty trash cans if needed.
-        </Typography>
-
-        <br />
-        <br />
-
-        <Subheader>Onsite Adventure Labs </Subheader>
-        <Typography>
-          General duties include helping people move smoothly through the
-          adventure lab stages and exhibit, reporting any maintenance issues
-          with any physical stages
-        </Typography>
-
-        <br />
+          <Grid item xs={12} md={6}>
+            <Subheader>Onsite Adventure Labs </Subheader>
+            <Typography>
+              General duties include helping people move smoothly through the
+              adventure lab stages and exhibit, reporting any maintenance issues
+              with any physical stages
+            </Typography>
+          </Grid>
+        </Grid>
       </GuideBody>
     </Fragment>
   )

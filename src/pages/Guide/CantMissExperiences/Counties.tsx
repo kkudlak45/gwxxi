@@ -43,36 +43,37 @@ export function Counties() {
           style={{ width: '100%', aspectRatio: '800 / 699', maxWidth: '800px' }}
         />
 
-        <div style={{ textAlign: 'center' }}>
-          <Typography>
-            <BoldKol>Red Route</BoldKol> - This route primarily uses U.S. Route
-            50 and WV Route 2 to pick up counties in the northwestern part of
-            the state, including the northern panhandle.
-          </Typography>
-          <Typography>
-            <BoldKol>Orange Route</BoldKol> - This route uses U.S. Route 119
-            through the western part of the state, then picks up Interstates 77
-            and 64 to complete the Ohio River counties.
-          </Typography>
-          <Typography>
-            <BoldKol>Green Route</BoldKol> - Taking you through the coalfields
-            of southern West Virginia, caches here are far apart and limited
-            cell reception. U.S. Routes 119 and 52 will be your friends here.
-          </Typography>
-          <Typography>
-            <BoldKol>Yellow Route</BoldKol> - This loop takes you to the Eastern
-            Panhandle, and primarily uses Interstates 68 and 81.
-          </Typography>
-          <Typography>
-            <BoldKol>Blue Route</BoldKol> - This route offers some of the most
-            scenic (and mountainous) views of West Virginia. You'll pass by
-            landmarks such as Spruce Knob (
-            <a href="/guide/GCH3CD">West Virginia's highest point</a>), Seneca
-            Rocks, and the New River Gorge National Park! This route uses a
-            variety of roads - use caution during planning as to not skip a
-            county!
-          </Typography>
-        </div>
+        <br />
+        <br />
+
+        <Typography>
+          <BoldKol>Red Route</BoldKol> - This route primarily uses U.S. Route 50
+          and WV Route 2 to pick up counties in the northwestern part of the
+          state, including the northern panhandle.
+        </Typography>
+        <Typography>
+          <BoldKol>Orange Route</BoldKol> - This route uses U.S. Route 119
+          through the western part of the state, then picks up Interstates 77
+          and 64 to complete the Ohio River counties.
+        </Typography>
+        <Typography>
+          <BoldKol>Green Route</BoldKol> - Taking you through the coalfields of
+          southern West Virginia, caches here are far apart and limited cell
+          reception. U.S. Routes 119 and 52 will be your friends here.
+        </Typography>
+        <Typography>
+          <BoldKol>Yellow Route</BoldKol> - This loop takes you to the Eastern
+          Panhandle, and primarily uses Interstates 68 and 81.
+        </Typography>
+        <Typography>
+          <BoldKol>Blue Route</BoldKol> - This route offers some of the most
+          scenic (and mountainous) views of West Virginia. You'll pass by
+          landmarks such as Spruce Knob (
+          <a href="/guide/GCH3CD">West Virginia's highest point</a>), Seneca
+          Rocks, and the New River Gorge National Park! This route uses a
+          variety of roads - use caution during planning as to not skip a
+          county!
+        </Typography>
 
         <br />
         <br />

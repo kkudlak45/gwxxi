@@ -270,10 +270,10 @@ export function CountryRoadsChallenge() {
           location="Cryptid Mountain Mini Golf"
         >
           <Typography>
-            Cupcake Me Home is a delicious cafe serving up specialty cupcakes,
-            coffees, lunch specials, and twists on the WV favorite Pepperoni
-            Roll. Cupcake Me Home has a cozy, hometown feel that is inviting to
-            all guests. Savor some of the best bites in Preston County here!
+            Looking to try something wild, wonderful, and... weird? You'll find
+            fun and wonder at Cryptid Mountain Mini Golf. West Virginia has a
+            vast history of folklore and storytelling, so see our local
+            "monsters" while you mini golf under black light!
           </Typography>
         </CacheInfoBlock>
 

@@ -47,10 +47,23 @@ export function Highpoint() {
         <Subheader>Caches at the summit</Subheader>
         <Typography>
           Along the trail to the lookout tower, there is a Traditional (GCH3CD -
-          Spruce Knob) and an EarthCache (GC19AXJ - Spruce Knob - West Virginia
-          High Point). For extra fun, check out (GC222A - Top of WV), which is a
-          0.6 mile walk along the Huckleberry Trail. As you descend Spruce Knob,
-          be sure to check out (GCGMFR - WV's Highest Lake)!
+          <a target="_blank" href="https://coord.info/GCH3CD">
+            Spruce Knob
+          </a>
+          ) and an EarthCache (GC19AXJ -{' '}
+          <a target="_blank" href="https://coord.info/GC19AXJ">
+            Spruce Knob - West Virginia High Point
+          </a>
+          ). For extra fun, check out (GC222A -{' '}
+          <a target="_blank" href="https://coord.info/GC222A">
+            Top of WV
+          </a>
+          ), which is a 0.6 mile walk along the Huckleberry Trail. As you
+          descend Spruce Knob, be sure to check out (GCGMFR -{' '}
+          <a target="_blank" href="https://coord.info/GCGMFR">
+            WV's Highest Lake
+          </a>
+          )!
         </Typography>
         <br />
         <br />

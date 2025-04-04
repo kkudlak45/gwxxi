@@ -19,7 +19,7 @@ function SpeakerEvent({
       <Typography>
         <BoldKol>{title}</BoldKol> | {place}
       </Typography>
-      {children}
+      <Typography>{children}</Typography>
       <br />
       <br />
     </div>
