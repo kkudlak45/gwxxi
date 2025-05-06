@@ -80,22 +80,19 @@ export function Guide() {
 
         <div style={{ height: '1rem' }} />
 
-        <video
-          autoPlay
-          loop
-          muted
-          controls
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/t4rLKTv-HZ0?si=Oi1Ybty4EQ-fmV5a&amp;autoplay=1&amp;mute=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
           style={{
             padding: isMobile ? '0px 8px' : '0px 8px 0px 16px',
             width: isMobile ? 'calc(100% - 32px)' : 'calc(60% - 24px)',
           }}
-        >
-          <source
-            src={`${import.meta.env.BASE_URL}gwvideo.mp4`}
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        ></iframe>
 
         <div style={{ height: '1rem' }} />
 

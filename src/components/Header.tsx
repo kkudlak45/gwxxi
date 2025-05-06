@@ -11,8 +11,6 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
-import { Alert } from '@mui/material'
-import { BoldKol } from '../pages/Guide/CantMissExperiences/Counties'
 
 export const pages = [
   {
@@ -32,20 +30,20 @@ export const pages = [
     href: `${import.meta.env.BASE_URL}morgantown`,
   },
   {
-    text: 'Shop',
-    href: 'https://geowoodstockxxi.myshopify.com/collections/all',
-  },
-]
-
-export const infoPages = [
-  {
     text: 'Guide',
     href: `${import.meta.env.BASE_URL}guide`,
   },
-  {
-    text: 'Register',
-    href: `${import.meta.env.BASE_URL}register`,
-  },
+  // {
+  //   text: 'Shop',
+  //   href: 'https://geowoodstockxxi.myshopify.com/collections/all',
+  // },
+]
+
+export const infoPages = [
+  // {
+  //   text: 'Register',
+  //   href: `${import.meta.env.BASE_URL}register`,
+  // },
   {
     text: 'Sponsors',
     href: `${import.meta.env.BASE_URL}sponsors`,
@@ -257,7 +255,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
 
-      <Alert variant="filled" severity="warning">
+      {/* <Alert variant="filled" severity="warning">
         Your last chance to buy individual SWAG items such as Geocoins, shirts,
         Pathtags, meal tickets, and more is <BoldKol>April 25</BoldKol>. Some
         items may not be available for purchase at the event.{' '}
@@ -267,7 +265,7 @@ function ResponsiveAppBar() {
         >
           Click here to shop.
         </a>
-      </Alert>
+      </Alert> */}
     </AppBar>
   )
 }

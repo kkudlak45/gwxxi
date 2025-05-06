@@ -77,6 +77,11 @@ export const goldSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcclumsy.png`,
     href: 'https://mcclumsy.com',
   },
+  {
+    name: 'West Virginia University',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/wvu.png`,
+    href: 'https://go.wvu.edu',
+  },
 ]
 export const silverSponsors = [
   {
@@ -185,6 +190,11 @@ export const bronzeSponsors = [
     name: 'BAC Country Rentals LLC',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
     href: 'https://baccountryatvrentals.com/',
+  },
+  {
+    name: 'The Thrifty Mountaineer',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/thrifty_200x168.png`,
+    href: 'https://thethriftymountaineer.com/',
   },
 ]
 
@@ -310,6 +320,34 @@ export const friends = [
   'Axlfire',
   'steelersrull',
   'emilyjen',
+  'Babynubbins',
+  'TyroneShoelaces',
+  'HEHolley80',
+  'SwiftlyGolden',
+  'sasamichicken',
+  'Jeff_toughsearch',
+  'CuriousGeorge59',
+  'CatladySue411',
+  'Ashtonomical',
+  'wvcoalcat',
+  'MarkMetl',
+  'MamaCobb',
+  'AnnScout',
+  'Team Libra',
+  'kevins2betsey',
+  'Granny Davis',
+  'Superchucklez',
+  'Team Melver',
+  'Esteveban',
+  'B52DGunner',
+  'Rain.Grebes',
+  'Sargenv',
+  'HappyF33t3',
+  'Littlest.Hal2',
+  'The Border Reivers',
+  'TeamXMan',
+  'Ruralharvest',
+  'automatopotato',
 ]
 
 export const blackDiamondBackers = [

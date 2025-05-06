@@ -214,12 +214,12 @@ export function Sponsors() {
             available in any registration package. In addition, your Geocaching
             name will be listed on the event website and in any applicable event
             programming or signage.{' '}
-            <a
+            {/* <a
               target="_blank"
               href="https://geowoodstockxxi.myshopify.com/products/friend-of-geowoodstock"
             >
               CLICK HERE FOR MORE INFO
-            </a>
+            </a> */}
           </Typography>
         </SponsorBlock>
       </Section>
@@ -233,8 +233,7 @@ export function Sponsors() {
             Want to share your excitement for GeoWoodstock XXI and help promote
             the event while caching? Our Black Diamond Backer fundraiser allows
             you to customize a trackable t-shirt with your Geocaching username
-            and receive it in the mail months before the event.{' '}
-            <strong>THIS PACKAGE IS NO LONGER FOR SALE</strong>
+            and receive it in the mail months before the event.
           </Typography>
         </SponsorBlock>
       </Section>

@@ -151,9 +151,9 @@ export function CountryRoadsChallenge() {
           some familiar-looking decorations (we can't give away all our
           surprises, can we).{' '}
           <strong style={{ fontFamily: 'KGRedHands', fontSize: '0.9rem' }}>
-            The caches will not be placed until Thursday (5/23) morning and will
-            have a lock combination provided by the cache pages - so please do
-            not try to search for the caches before 10 am on Thursday (5/22).
+            The caches will not be placed until Thursday (5/22) morning and some
+            will have a lock combination provided by the cache pages - so please
+            do not try to search for the caches before 10 am on Thursday (5/22).
           </strong>{' '}
           When placing these caches, our team strived to keep them mobility
           friendly. While they might not all be terrain 1, they won't require

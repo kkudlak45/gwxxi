@@ -7,7 +7,7 @@ import { Subheader } from '../Subheader'
 export function Oldest() {
   return (
     <Fragment>
-      <GuideHeader title="WV OLDEST" subTitle="Rent an ATV to go find GCF30!" />
+      <GuideHeader title="WV OLDEST" subTitle="Rent an ATV to go find GC3F0!" />
 
       <GuideBody>
         <Typography>

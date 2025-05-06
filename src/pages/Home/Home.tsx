@@ -138,22 +138,15 @@ export function Home() {
           sx={{ width: '100%' }}
         >
           <Grid item xs={12} md={6} width="100%" textAlign="center">
-            <video
-              autoPlay
-              loop
-              muted
-              controls
-              style={{
-                padding: isMobile ? '0px 8px' : '0px 8px 0px 16px',
-                width: isMobile ? 'calc(100% - 32px)' : 'calc(100% - 24px)',
-              }}
-            >
-              <source
-                src={`${import.meta.env.BASE_URL}gwvideo.mp4`}
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/t4rLKTv-HZ0?si=Oi1Ybty4EQ-fmV5a&amp;autoplay=1&amp;mute=1"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </Grid>
           <Grid
             item
@@ -264,7 +257,7 @@ export function Home() {
           gap: '16px',
         }}
       >
-        <Grid container alignItems="center" justifyContent="cemter">
+        {/* <Grid container alignItems="center" justifyContent="cemter">
           <Grid
             item
             xs={12}
@@ -313,10 +306,9 @@ export function Home() {
               Shop now
             </Button>
           </Grid>
-        </Grid>
+        </Grid> */}
+        <Numbers />
       </Section>
-
-      <Numbers />
 
       <div
         style={{

@@ -5,6 +5,30 @@ import { Subheader } from '../Subheader'
 import { Grid, Typography } from '@mui/material'
 import { BoldKol } from '../CantMissExperiences/Counties'
 
+function PackageCard({ imgSrc }: { imgSrc: string }): JSX.Element {
+  return (
+    <Grid
+      item
+      xs={12}
+      md={6}
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <img
+        src={imgSrc}
+        style={{
+          aspectRatio: 1,
+          width: '100%',
+          maxWidth: '640px',
+          borderRadius: '12px',
+        }}
+      />
+    </Grid>
+  )
+}
+
 function PictureCard({
   title,
   text,
@@ -213,6 +237,33 @@ export function Pickup() {
         <Typography>
           <em>* Prices include tax</em>
         </Typography>
+        <br />
+        <br />
+        <br />
+
+        <Grid container justifyContent="center" rowSpacing={6}>
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Black_Bear_Package.png`}
+          />
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Brook_Trout_Package.png`}
+          />
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Cardinal_Package.png`}
+          />
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Mountaineer_Package.png`}
+          />
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Rhodo_Package.png`}
+          />
+          <PackageCard
+            imgSrc={`${import.meta.env.BASE_URL}register/Package_Comparison.png`}
+          />
+        </Grid>
+
+        <br />
+        <br />
         <br />
       </GuideBody>
     </Fragment>

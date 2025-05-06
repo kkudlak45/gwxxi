@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material'
 import { Section } from '../../components/Section'
 import moment from 'moment'
 
-const ATTEND_LOGS = 3342
+const ATTEND_LOGS = 3408
 const COUNTRIES = 23
 
 const formatter = new Intl.NumberFormat('en-US')

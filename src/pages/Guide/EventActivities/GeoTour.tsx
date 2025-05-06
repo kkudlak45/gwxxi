@@ -120,7 +120,7 @@ export function GeoTour() {
         </Typography>
         <br />
         {/* TODO - need the passport link */}
-        <Typography>
+        <Typography zIndex="9999">
           You can pick up an official Middle of Everywhere GeoTour booklet by
           visiting the Marion County CVB table at Mylan Park during GeoWoodstock
           XXI. Alternatively, you may print out a passport by{' '}

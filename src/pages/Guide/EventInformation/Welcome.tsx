@@ -272,6 +272,88 @@ export function Welcome() {
         </Typography>
 
         <br />
+
+        <Subheader>CAN I BRING MY GEO-PUP?</Subheader>
+
+        <Typography>
+          Dogs are welcome at all events during GeoWoodstock XXI weekend,
+          including the main event. We simply ask owners to be realistic with
+          the expectations and needs of their pets. Not all events are suited
+          for all types of animals, and if anyone (K-9 cachers included) is
+          causing a disruption for guests, they will be asked to leave.
+        </Typography>
+
+        <br />
+
+        <Typography>
+          The main event will have a pup watering hole, sponsored by Team
+          Maltese. Most of the main event will be inside a large warehouse-like
+          building, but there are some grassy areas for them to enjoy. Please
+          note that dogs will not be allowed on the shuttle, so if you are
+          bringing a dog, you will need to park in one of the main lots, which
+          could require a short walk. If you have a service dog and need special
+          accommodations such as ADA parking, please email{' '}
+          <a href="mailto:info@GeoWoodstockXXI.com">info@GeoWoodstockXXI.com</a>
+          .
+        </Typography>
+
+        <br />
+
+        <Typography>
+          Midnight Madness is our only side event that features an inside venue.
+          Unfortunately due to University policies, dogs are not permitted
+          inside the Mountainlair. If it is nice that evening, we are planning
+          on incorporating the green space just outside the Lair for some
+          Pathtag trading under the stars. This is a large astroturf field, but
+          this is a nice option for our K-9 cacher friends.
+        </Typography>
+
+        <br />
+
+        <Typography>
+          If you have any other questions or concerns about traveling with a
+          dog, please don't hesitate to reach out. For the most part, you won't
+          have any problems with your geo-pup while attending West Virginia, but
+          we do ask for owners to be respectful of all attendees, spaces, and
+          events. These types of large events aren't designed for dogs, and thus
+          might not be the best experience for some, so please know the needs of
+          your dog and thoroughly think through if they would enjoy being
+          surrounded by 5,000+ of their closest caching friends.
+        </Typography>
+
+        <br />
+
+        <Subheader>HOW MANY ICONS CAN I GET AT GEOWOODSTOCK XXI?</Subheader>
+
+        <Typography>
+          GeoWoodstock XXI promises to be an iconic weekend of caching in West
+          Virginia. You'll have the opportunity to find several of the rarest
+          icons in the game including GIGA, GPS Adventures Maze Exhibit,
+          Locationless, and Community Celebration Event.
+        </Typography>
+
+        <br />
+
+        <Typography>
+          On the day of the main event, you'll have the opportunity to collect
+          12 different cache types within Mylan Park. Our team is working hard
+          to create some memorable caches for the event that you won't want to
+          miss.
+        </Typography>
+
+        <br />
+
+        <Typography>
+          If you want to try for a busy day, the cache types that will be
+          available include: Traditional, Multi, Mystery, Letterbox-Hybrid,
+          Wherigo, Earthcache, Virtual, Locationless, GIGA, GPS Adventures Maze
+          Exhibit, Adventure Lab, event. While getting more rare icons is
+          exciting, our team is strongly discouraging making a trip to nearby
+          webcams or hosting additional events as they will subtract from your
+          experience on the day of the main event.
+        </Typography>
+
+        <br />
       </GuideBody>
     </Fragment>
   )
