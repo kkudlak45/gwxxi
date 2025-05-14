@@ -23,11 +23,13 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-multi-carousel": "^2.8.5",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "react-vertical-timeline-component": "^3.5.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
     "@vitejs/plugin-react": "^4.2.1",

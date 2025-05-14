@@ -106,7 +106,7 @@ export function Counties() {
               on our Country Roads, why not listen to the{' '}
               <a
                 target="_blank"
-                href="https://open.spotify.com/playlist/4UNOOo6u2GjGR54XVRSmSx?si=540fd2878b4b4d9e&pt=a1ae5d26feec7507a9955ad42990a7e8"
+                href="https://open.spotify.com/playlist/4UNOOo6u2GjGR54XVRSmSx"
               >
                 official GeoWoodstock XXI playlist
               </a>

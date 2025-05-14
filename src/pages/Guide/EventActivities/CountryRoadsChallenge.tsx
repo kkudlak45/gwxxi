@@ -189,9 +189,7 @@ export function CountryRoadsChallenge() {
           If you're looking for some song recommendations, check out our{' '}
           <a
             target="_blank"
-            href={
-              'https://open.spotify.com/playlist/4UNOOo6u2GjGR54XVRSmSx?si=540fd2878b4b4d9e&pt=a1ae5d26feec7507a9955ad42990a7e8'
-            }
+            href={'https://open.spotify.com/playlist/4UNOOo6u2GjGR54XVRSmSx'}
           >
             Spotify playlist
           </a>{' '}
