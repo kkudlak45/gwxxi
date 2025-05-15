@@ -12,6 +12,7 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import './Live.css'
 
 function GCLink({ gcCode }: { gcCode: string }): JSX.Element {
   return <a href={`https://coord.info/${gcCode}`}>{gcCode}</a>
@@ -21,11 +22,182 @@ function hours(n: number): number {
   return n * 60 * 60
 }
 
-const START_TS = 1746763200 // set this to 00:00 thursday
+const START_TS = 1747281600 // set this to 00:00 thursday
 
 type EventNameAndTime = { name: React.ReactNode; timeOffset: number }
 
 const THURSDAY: EventNameAndTime[] = [
+  {
+    name: (
+      <Typography>
+        START: Country Roads Challenge Kickoff Event (
+        <GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(8),
+  },
+  {
+    name: <Typography>Country Roads Challenge caches publish</Typography>,
+    timeOffset: hours(10),
+  },
+  {
+    name: (
+      <Typography>
+        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(12),
+  },
+  {
+    name: (
+      <Typography>
+        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(16),
+  },
+  {
+    name: (
+      <Typography>
+        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(18) - 1,
+  },
+  {
+    name: (
+      <Typography>
+        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(18),
+  },
+  {
+    name: (
+      <Typography>
+        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(20),
+  },
+]
+
+// @ts-ignore
+const FRIDAY: EventNameAndTime[] = [
+  {
+    name: (
+      <Typography>
+        START: Country Roads Challenge Kickoff Event (
+        <GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(8),
+  },
+  {
+    name: <Typography>Country Roads Challenge caches publish</Typography>,
+    timeOffset: hours(10),
+  },
+  {
+    name: (
+      <Typography>
+        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(12),
+  },
+  {
+    name: (
+      <Typography>
+        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(16),
+  },
+  {
+    name: (
+      <Typography>
+        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(18) - 1,
+  },
+  {
+    name: (
+      <Typography>
+        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(18),
+  },
+  {
+    name: (
+      <Typography>
+        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(20),
+  },
+]
+
+// @ts-ignore
+const SATURDAY: EventNameAndTime[] = [
+  {
+    name: (
+      <Typography>
+        START: Country Roads Challenge Kickoff Event (
+        <GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(8),
+  },
+  {
+    name: <Typography>Country Roads Challenge caches publish</Typography>,
+    timeOffset: hours(10),
+  },
+  {
+    name: (
+      <Typography>
+        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+      </Typography>
+    ),
+    timeOffset: hours(12),
+  },
+  {
+    name: (
+      <Typography>
+        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(16),
+  },
+  {
+    name: (
+      <Typography>
+        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
+      </Typography>
+    ),
+    timeOffset: hours(18) - 1,
+  },
+  {
+    name: (
+      <Typography>
+        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(18),
+  },
+  {
+    name: (
+      <Typography>
+        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
+      </Typography>
+    ),
+    timeOffset: hours(20),
+  },
+]
+
+// @ts-ignore
+const SUNDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
@@ -94,15 +266,38 @@ enum TimelineItemState {
   FUTURE,
 }
 
-function TimelineItem({ e }: { e: EventNameAndTime }): JSX.Element {
+function TimelineItem({
+  e,
+  itemState,
+}: {
+  e: EventNameAndTime
+  itemState: TimelineItemState
+}): JSX.Element {
   const time = moment.unix(START_TS + e.timeOffset)
   const { palette } = useTheme()
   return (
     <VerticalTimelineElement
       date={time.format('hh a')}
-      // contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-      contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+      contentStyle={{
+        background: 'lightgrey',
+        color: 'black',
+        border: `1px solid ${CHARCOAL}`,
+        borderRadius: '8px',
+        fontFamily: 'Kollektif-Bold',
+      }}
+      iconStyle={{
+        background:
+          itemState === TimelineItemState.FUTURE
+            ? 'lightgrey'
+            : palette.primary.main,
+        boxShadow: 'none',
+        border: `4px solid ${CHARCOAL}`,
+        animation:
+          itemState === TimelineItemState.CURRENT
+            ? 'pulse 2s infinite'
+            : 'none',
+      }}
+      contentArrowStyle={{ borderRight: `7px solid  ${palette.primary.main}` }}
     >
       {e.name}
     </VerticalTimelineElement>
@@ -113,7 +308,15 @@ export function Live() {
   const [currentDay, setCurrentDay] = useState(TabNames.THURSDAY)
 
   useEffect(() => {
-    document.documentElement.setAttribute('style', '--line-color: #000000')
+    document.documentElement.setAttribute('style', '--line-color-mine: #000000')
+  }, [])
+
+  const [currentTime, setCurrentTime] = useState(moment().unix())
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setCurrentTime(moment().unix())
+    }, 1000)
+    return () => window.clearInterval(interval)
   }, [])
 
   return (
@@ -151,6 +354,7 @@ export function Live() {
           well as an interactive live schedule to help keep track of everything.
         </Typography>
         <br />
+        {/* @ts-ignore */}
         <BigOrangeButton href="/guide" target="">
           Check out our event guide
         </BigOrangeButton>
@@ -163,7 +367,13 @@ export function Live() {
           activity, or presentation, so you'll never miss what's happening.{' '}
         </Typography>
         <br />
-        <Tabs value={currentDay} onChange={(_, v) => setCurrentDay(v)}>
+        <Tabs
+          value={currentDay}
+          onChange={(_, v) => setCurrentDay(v)}
+          centered
+          variant="scrollable"
+          scrollButtons="auto"
+        >
           <Tab label="thursday (5/22)" />
           <Tab label="friday (5/23)" />
           <Tab label="saturday (5/24)" />
@@ -171,9 +381,9 @@ export function Live() {
         </Tabs>
         <br />
         <VerticalTimeline>
-          {THURSDAY.map((e) => (
-            <TimelineItem e={e} />
-          ))}
+          {THURSDAY.map((e) => {
+            return <TimelineItem e={e} itemState={TimelineItemState.PAST} />
+          })}
         </VerticalTimeline>
         <br />
         <br />
