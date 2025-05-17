@@ -319,6 +319,8 @@ export function Live() {
     return () => window.clearInterval(interval)
   }, [])
 
+  console.log(currentTime)
+
   return (
     <Fragment>
       <GuideHeader
@@ -335,7 +337,7 @@ export function Live() {
           }}
         >
           <iframe
-            src="https://rss.app/embed/v1/list/teWIkmMyFOfgVZ8Q"
+            src="https://rss.app/embed/v1/list/XS66jHN66Zm64YwN"
             style={{
               width: '100%',
               height: '40vh',

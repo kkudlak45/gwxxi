@@ -33,7 +33,7 @@ function CacheInfoBlock({
         marginBottom="0.2rem"
       >
         {title} (
-        <a target="_blank" href={`coord.info/${gcCode}`}>
+        <a target="_blank" href={`https://coord.info/${gcCode}`}>
           {gcCode}
         </a>
         ) - <em>{location}</em>
