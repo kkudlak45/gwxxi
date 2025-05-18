@@ -4,7 +4,7 @@ import { GuideHeader } from './GuideHeader'
 import { Subheader } from './Subheader'
 import { Tab, Tabs, Typography, useTheme } from '@mui/material'
 import { BigOrangeButton } from './BigOrangeButton'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { CHARCOAL } from '../../constants/theme'
 import moment from 'moment'
 import {
@@ -82,13 +82,12 @@ const THURSDAY: EventNameAndTime[] = [
   },
 ]
 
-// @ts-ignore
 const FRIDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        START: Country Roads Challenge Kickoff Event (
-        <GCLink gcCode="GCANXX0" />)
+        START: Almost Heaven Adventures (
+        <GCLink gcCode="GCANXX5" />)
       </Typography>
     ),
     timeOffset: hours(8),
@@ -273,13 +272,13 @@ function TimelineItem({
   e: EventNameAndTime
   itemState: TimelineItemState
 }): JSX.Element {
-  const time = moment.unix(START_TS + e.timeOffset)
+  const time = moment.unix(START_TS + e.timeOffset + 1)
   const { palette } = useTheme()
   return (
     <VerticalTimelineElement
       date={time.format('hh a')}
       contentStyle={{
-        background: 'lightgrey',
+        // background: 'lightgrey',
         color: 'black',
         border: `1px solid ${CHARCOAL}`,
         borderRadius: '8px',
@@ -320,6 +319,20 @@ export function Live() {
   }, [])
 
   console.log(currentTime)
+
+  const timelineItems = useMemo(() => {
+    switch (currentDay) {
+      case TabNames.THURSDAY:
+        return THURSDAY
+      case TabNames.FRIDAY:
+        return FRIDAY
+      case TabNames.SATURDAY:
+        return SATURDAY
+      case TabNames.SUNDAY:
+      default:
+        return SUNDAY
+    }
+  }, [currentDay])
 
   return (
     <Fragment>
@@ -376,14 +389,14 @@ export function Live() {
           variant="scrollable"
           scrollButtons="auto"
         >
-          <Tab label="thursday (5/22)" />
-          <Tab label="friday (5/23)" />
-          <Tab label="saturday (5/24)" />
-          <Tab label="sunday (5/25)" />
+          <Tab label="thursday (5/22)" value={TabNames.THURSDAY} />
+          <Tab label="friday (5/23)" value={TabNames.FRIDAY} />
+          <Tab label="saturday (5/24)" value={TabNames.SATURDAY} />
+          <Tab label="sunday (5/25)" value={TabNames.SUNDAY} />
         </Tabs>
         <br />
         <VerticalTimeline>
-          {THURSDAY.map((e) => {
+          {timelineItems.map((e) => {
             return <TimelineItem e={e} itemState={TimelineItemState.PAST} />
           })}
         </VerticalTimeline>
