@@ -15,7 +15,11 @@ import 'react-vertical-timeline-component/style.min.css'
 import './Live.css'
 
 function GCLink({ gcCode }: { gcCode: string }): JSX.Element {
-  return <a href={`https://coord.info/${gcCode}`}>{gcCode}</a>
+  return (
+    <a target="_blank" href={`https://coord.info/${gcCode}`}>
+      {gcCode}
+    </a>
+  )
 }
 
 function hours(n: number): number {
@@ -24,61 +28,44 @@ function hours(n: number): number {
 
 const START_TS = 1747281600 // set this to 00:00 thursday
 
-type EventNameAndTime = { name: React.ReactNode; timeOffset: number }
+type EventNameAndTime = {
+  name: React.ReactNode
+  startTimeOffset: number
+  endTimeOffset?: number
+}
 
 const THURSDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        START: Country Roads Challenge Kickoff Event (
+        Country Roads Challenge Kickoff Event (
         <GCLink gcCode="GCANXX0" />)
       </Typography>
     ),
-    timeOffset: hours(8),
+    startTimeOffset: hours(8),
+    endTimeOffset: hours(12),
   },
   {
     name: <Typography>Country Roads Challenge caches publish</Typography>,
-    timeOffset: hours(10),
+    startTimeOffset: hours(10),
   },
   {
     name: (
       <Typography>
-        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+        CITO the Line (<GCLink gcCode="GCANXX2" />)
       </Typography>
     ),
-    timeOffset: hours(12),
+    startTimeOffset: hours(16),
+    endTimeOffset: hours(18) - 1,
   },
   {
     name: (
       <Typography>
-        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+        Mountain Music (<GCLink gcCode="GCANXX3" />)
       </Typography>
     ),
-    timeOffset: hours(16),
-  },
-  {
-    name: (
-      <Typography>
-        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
-      </Typography>
-    ),
-    timeOffset: hours(18) - 1,
-  },
-  {
-    name: (
-      <Typography>
-        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(18),
-  },
-  {
-    name: (
-      <Typography>
-        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(20),
+    startTimeOffset: hours(18),
+    endTimeOffset: hours(20),
   },
 ]
 
@@ -86,169 +73,146 @@ const FRIDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        START: Almost Heaven Adventures (
+        Almost Heaven Adventures (
         <GCLink gcCode="GCANXX5" />)
       </Typography>
     ),
-    timeOffset: hours(8),
+    startTimeOffset: hours(8 + 24),
+    endTimeOffset: hours(12 + 24),
   },
   {
-    name: <Typography>Country Roads Challenge caches publish</Typography>,
-    timeOffset: hours(10),
-  },
-  {
-    name: (
-      <Typography>
-        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
-      </Typography>
-    ),
-    timeOffset: hours(12),
+    name: <Typography>VIPs & Friends of GeoWoodstock Sneak Peek</Typography>,
+    startTimeOffset: hours(8 + 24),
+    endTimeOffset: hours(10 + 24),
   },
   {
     name: (
       <Typography>
-        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+        GPS Adventures Maze Exhibit (<GCLink gcCode="GCANAAA" />)
       </Typography>
     ),
-    timeOffset: hours(16),
+    startTimeOffset: hours(8 + 24),
+    endTimeOffset: hours(15 + 24),
+  },
+  {
+    name: <Typography>Wharf Adventure Puzzle Publishes</Typography>,
+    startTimeOffset: hours(10 + 24),
+  },
+  {
+    name: <Typography>General Admission to GeoWoodstock HQ</Typography>,
+    startTimeOffset: hours(10 + 24),
+    endTimeOffset: hours(15 + 24),
   },
   {
     name: (
       <Typography>
-        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
+        Woodstock On The Wharf (<GCLink gcCode="GCATNZJ" />)
       </Typography>
     ),
-    timeOffset: hours(18) - 1,
-  },
-  {
-    name: (
-      <Typography>
-        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(18),
-  },
-  {
-    name: (
-      <Typography>
-        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(20),
+    startTimeOffset: hours(16 + 24),
+    endTimeOffset: hours(20 + 24),
   },
 ]
 
-// @ts-ignore
 const SATURDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        START: Country Roads Challenge Kickoff Event (
-        <GCLink gcCode="GCANXX0" />)
+        GeoWoodstock XXI opens (<GCLink gcCode="GCANXX1" />)
       </Typography>
     ),
-    timeOffset: hours(8),
-  },
-  {
-    name: <Typography>Country Roads Challenge caches publish</Typography>,
-    timeOffset: hours(10),
+    startTimeOffset: hours(8 + 2 * 24),
   },
   {
     name: (
       <Typography>
-        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+        GPS Adventures Maze Exhibit opens (<GCLink gcCode="GCANAAA" />)
       </Typography>
     ),
-    timeOffset: hours(12),
+    startTimeOffset: hours(8 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Puzzle Factory</Typography>,
+    startTimeOffset: hours(9 + 2 * 24),
+  },
+  {
+    name: <Typography>Group Photo</Typography>,
+    startTimeOffset: hours(10 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Earthcache Writing 101</Typography>,
+    startTimeOffset: hours(11 + 2 * 24),
+  },
+  {
+    name: <Typography>Lunch</Typography>,
+    startTimeOffset: hours(11 + 2 * 24),
+    endTimeOffset: hours(14 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Geocaching 201</Typography>,
+    startTimeOffset: hours(12 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Treasures of our Town LIVE</Typography>,
+    startTimeOffset: hours(12 + 2 * 24) + 15 * 60,
+  },
+  {
+    name: <Typography>Speaker Series: County Caching Panel</Typography>,
+    startTimeOffset: hours(13 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Introduction to Pathtags</Typography>,
+    startTimeOffset: hours(14 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Gadget Caches</Typography>,
+    startTimeOffset: hours(14 + 2 * 24) + 15 * 60,
+  },
+  {
+    name: <Typography>Speaker Series: Challenge Chat</Typography>,
+    startTimeOffset: hours(15 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Cache Odyssey</Typography>,
+    startTimeOffset: hours(16 + 2 * 24),
+  },
+  {
+    name: <Typography>Speaker Series: Reviewer & Lackey Panel</Typography>,
+    startTimeOffset: hours(16 + 2 * 24),
+  },
+  {
+    name: <Typography>Closing Ceremony</Typography>,
+    startTimeOffset: hours(17 + 2 * 24),
   },
   {
     name: (
       <Typography>
-        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
+        Midnight Madness (<GCLink gcCode="GCANXX6" />)
       </Typography>
     ),
-    timeOffset: hours(16),
-  },
-  {
-    name: (
-      <Typography>
-        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
-      </Typography>
-    ),
-    timeOffset: hours(18) - 1,
-  },
-  {
-    name: (
-      <Typography>
-        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(18),
-  },
-  {
-    name: (
-      <Typography>
-        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(20),
+    startTimeOffset: hours(20 + 2 * 24),
+    endTimeOffset: hours(24 + 2 * 24),
   },
 ]
 
-// @ts-ignore
 const SUNDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        START: Country Roads Challenge Kickoff Event (
-        <GCLink gcCode="GCANXX0" />)
+        Breakfast With The Mommas (<GCLink gcCode="GCANXX7" />)
       </Typography>
     ),
-    timeOffset: hours(8),
-  },
-  {
-    name: <Typography>Country Roads Challenge caches publish</Typography>,
-    timeOffset: hours(10),
+    startTimeOffset: hours(8 + 3 * 24),
+    endTimeOffset: hours(11 + 3 * 24),
   },
   {
     name: (
       <Typography>
-        END: Country Roads Challenge Kickoff Event (<GCLink gcCode="GCANXX0" />)
+        Farewell From The Fort (<GCLink gcCode="GCANXX8" />)
       </Typography>
     ),
-    timeOffset: hours(12),
-  },
-  {
-    name: (
-      <Typography>
-        START: CITO the Line (<GCLink gcCode="GCANXX2" />)
-      </Typography>
-    ),
-    timeOffset: hours(16),
-  },
-  {
-    name: (
-      <Typography>
-        END: CITO the Line (<GCLink gcCode="GCANXX2" />)
-      </Typography>
-    ),
-    timeOffset: hours(18) - 1,
-  },
-  {
-    name: (
-      <Typography>
-        START: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(18),
-  },
-  {
-    name: (
-      <Typography>
-        END: Mountain Music (<GCLink gcCode="GCANXX3" />)
-      </Typography>
-    ),
-    timeOffset: hours(20),
+    startTimeOffset: hours(16 + 3 * 24),
+    endTimeOffset: hours(20 + 3 * 24),
   },
 ]
 
@@ -266,19 +230,20 @@ enum TimelineItemState {
 }
 
 function TimelineItem({
-  e,
+  content,
+  timeOffset,
   itemState,
 }: {
-  e: EventNameAndTime
+  content: React.ReactNode
+  timeOffset: number
   itemState: TimelineItemState
 }): JSX.Element {
-  const time = moment.unix(START_TS + e.timeOffset + 1)
+  const time = moment.unix(START_TS + timeOffset + 1)
   const { palette } = useTheme()
   return (
     <VerticalTimelineElement
-      date={time.format('hh a')}
+      date={time.format('hh:mm a')}
       contentStyle={{
-        // background: 'lightgrey',
         color: 'black',
         border: `1px solid ${CHARCOAL}`,
         borderRadius: '8px',
@@ -298,7 +263,7 @@ function TimelineItem({
       }}
       contentArrowStyle={{ borderRight: `7px solid  ${palette.primary.main}` }}
     >
-      {e.name}
+      {content}
     </VerticalTimelineElement>
   )
 }
@@ -397,7 +362,13 @@ export function Live() {
         <br />
         <VerticalTimeline>
           {timelineItems.map((e) => {
-            return <TimelineItem e={e} itemState={TimelineItemState.PAST} />
+            return (
+              <TimelineItem
+                timeOffset={e.startTimeOffset}
+                content={e.name}
+                itemState={TimelineItemState.PAST}
+              />
+            )
           })}
         </VerticalTimeline>
         <br />
