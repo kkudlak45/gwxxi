@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material'
 import { Section } from '../../components/Section'
 import moment from 'moment'
 
-const ATTEND_LOGS = 3408
+const ATTEND_LOGS = 3569
 const COUNTRIES = 23
 
 const formatter = new Intl.NumberFormat('en-US')
@@ -50,10 +50,10 @@ export function Numbers() {
         alignItems="flex-start"
       >
         <InfoBlock
-          number={moment('2025-05-24').diff(moment(), 'days').toFixed(0)}
+          number={Math.abs(moment('2025-05-24').diff(moment(), 'days')).toFixed(0)}
           title="days"
         >
-          <Typography>until GeoWoodstock XXI</Typography>
+          <Typography>since GeoWoodstock XXI</Typography>
         </InfoBlock>
 
         <InfoBlock

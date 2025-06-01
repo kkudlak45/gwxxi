@@ -41,18 +41,16 @@ const InfoBlockStuff = [
 
 const shopInfoBlock = {
   title: 'Shop',
-  imgSrc: `${import.meta.env.BASE_URL}homeicons/giga_400x400.gif`,
+  imgSrc: `${import.meta.env.BASE_URL}homeicons/shop_400x400.webp`,
   href: 'https://www.GeoWoodstockXXI.com/Register',
-  text: 'At this time, registration for GeoWoodstock XXI is now closed. Some coins, shirts, and other items including the exclusive GIGA coin are still available for purchase with very limited availability. All remaining items may be available for purchase at the event. Thanks for supporting GeoWoodstock XXI!',
+  text: 'The official GeoWoodstock XXI has reopened! Now is your chance to buy geocoins, pathtags, event shirts, and more! All items are in limited quantities and will be shipped to the address provided. The store will only be available for a limited time, so if you missed any GWXXI SWAG, this is your FINAL chance.',
 }
 
 export function Home() {
   const isMobile = useIsMobile()
   const { palette } = useTheme()
 
-  const infoBlocks = isMobile
-    ? [...InfoBlockStuff, shopInfoBlock]
-    : InfoBlockStuff
+  const infoBlocks = InfoBlockStuff
 
   return (
     <Fragment>
@@ -139,6 +137,7 @@ export function Home() {
         >
           <Grid item xs={12} md={6} width="100%" textAlign="center">
             <iframe
+              style={{ maxWidth: "100%" }}
               width="560"
               height="315"
               src="https://www.youtube.com/embed/t4rLKTv-HZ0?si=Oi1Ybty4EQ-fmV5a&amp;autoplay=1&amp;mute=1"
@@ -187,6 +186,58 @@ export function Home() {
           </Grid>
         </Grid>
       </Section>
+
+      <Section>
+        <Grid container alignItems="center" justifyContent="cemter">
+          <Grid
+            item
+            xs={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <a href={shopInfoBlock.href} style={{ width: '80%' }}>
+              <img
+                className="info-block-image"
+                alt="license plate linking to the shop page"
+                src={shopInfoBlock.imgSrc}
+                style={{
+                  width: '100%',
+                  margin: isMobile ? "0rem" : '0rem 1rem',
+                  borderRadius: '16px',
+                }}
+              />
+            </a>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={8}
+            display="flex"
+            padding={{ xs: "1rem", md: "0 4rem 0 2rem"}}
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <Typography textAlign={{ xs: "center", md: "start"}} fontSize={{ xs: "1rem", md: "1.4rem"}}>
+              {shopInfoBlock.text}
+            </Typography>
+            <Button
+              href={shopInfoBlock.href}
+              variant="contained"
+              color="warning"
+              sx={{
+                borderRadius: '64px',
+                fontWeight: 'bold',
+                fontSize: '1.4rem',
+                marginTop: '1rem',
+              }}
+            >
+              Shop now
+            </Button>
+          </Grid>
+        </Grid></Section>
 
       <Section>
         <Grid container sx={{ width: '100%' }}>
@@ -257,56 +308,6 @@ export function Home() {
           gap: '16px',
         }}
       >
-        {/* <Grid container alignItems="center" justifyContent="cemter">
-          <Grid
-            item
-            xs={12}
-            md={4}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <a href={shopInfoBlock.href} style={{ width: '80%' }}>
-              <img
-                className="info-block-image"
-                alt="license plate linking to the shop page"
-                src={shopInfoBlock.imgSrc}
-                style={{
-                  width: '100%',
-                  margin: '0rem 1rem',
-                  borderRadius: '16px',
-                }}
-              />
-            </a>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={8}
-            display="flex"
-            padding="0 4rem 0 2rem"
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          >
-            <Typography textAlign="start" fontSize="1.4rem">
-              {shopInfoBlock.text}
-            </Typography>
-            <Button
-              href={shopInfoBlock.href}
-              variant="contained"
-              color="warning"
-              sx={{
-                borderRadius: '64px',
-                fontWeight: 'bold',
-                fontSize: '1.4rem',
-                marginTop: '1rem',
-              }}
-            >
-              Shop now
-            </Button>
-          </Grid>
-        </Grid> */}
         <Numbers />
       </Section>
 

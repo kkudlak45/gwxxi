@@ -33,10 +33,10 @@ export const pages = [
     text: 'Guide',
     href: `${import.meta.env.BASE_URL}guide`,
   },
-  // {
-  //   text: 'Shop',
-  //   href: 'https://geowoodstockxxi.myshopify.com/collections/all',
-  // },
+  {
+    text: 'Shop',
+    href: 'https://geowoodstockxxi.myshopify.com/collections/all',
+  },
 ]
 
 export const infoPages = [

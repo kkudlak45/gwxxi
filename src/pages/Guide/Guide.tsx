@@ -89,6 +89,7 @@ export function Guide() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           style={{
+            maxWidth: "100%",
             padding: isMobile ? '0px 8px' : '0px 8px 0px 16px',
             width: isMobile ? 'calc(100% - 32px)' : 'calc(60% - 24px)',
           }}
