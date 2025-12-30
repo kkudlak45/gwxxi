@@ -301,8 +301,8 @@ export function Register(): JSX.Element {
               While this is a free-to-attend event, your support is greatly
               appreciated. No purchase is necessary, but please log a Will
               Attend for{' '}
-              <a target="_blank" href="https://coord.info/gcanxx1">
-                GCANXX1
+              <a target="_blank" href="https://coord.info/GCBEBMA">
+                GCBEBMA
               </a>{' '}
               to let us know you are planning on joining the fun in Morgantown.
             </Typography>

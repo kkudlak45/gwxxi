@@ -100,11 +100,13 @@ export function CorporateSponsorBlock({
         })}
       </Carousel>
       {sponsors === platinumSponsors && (
-        <Typography padding="0 16%" textAlign="center">
-          {
-            'This event was made possible by the Monongalia County Tourism Advancement Fund, courtesy of the Monongalia County Commission and the Visit Mountaineer Country Convention and Visitors Bureau.'
-          }
-        </Typography>
+        <em>
+          <Typography padding="0 16%" textAlign="center">
+            {
+              'This event was made possible by the Monongalia County Tourism Advancement Fund, courtesy of the Monongalia County Commission and the Visit Mountaineer Country Convention and Visitors Bureau.'
+            }
+          </Typography>
+        </em>
       )}
     </div>
   )

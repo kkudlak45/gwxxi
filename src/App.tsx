@@ -24,24 +24,26 @@ function App() {
         <Header />
         <Container maxWidth="xl" sx={{ padding: '8px 0px' }}>
           <Routes>
-            <Route index element={<Home />} />
-            <Route path="events" element={<Events />} />
-            <Route path="travel" element={<Travel />} />
-            <Route path="faqs" element={<Faqs />} />
-            <Route path="sponsors" element={<Sponsors />} />
-            <Route path="morgantown" element={<Morgantown />} />
-            <Route path="register" element={<Register />} />
-            <Route path="geotour" element={<GeoTour />} />
-            <Route path="live" element={<Live />} />
-            <Route path="guide" element={<Guide />} />
-            <Route path="guide/*">
-              {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
-                // @ts-ignore
-                <Route path={p.route} element={<p.component />} />
-              ))}
+            <Route path="events">
+              <Route index element={<Home />} />
+              <Route path="schedule" element={<Events />} />
+              <Route path="travel" element={<Travel />} />
+              <Route path="faqs" element={<Faqs />} />
+              <Route path="sponsors" element={<Sponsors />} />
+              <Route path="morgantown" element={<Morgantown />} />
+              <Route path="register" element={<Register />} />
+              <Route path="geotour" element={<GeoTour />} />
+              <Route path="live" element={<Live />} />
+              <Route path="guide" element={<Guide />} />
+              <Route path="guide/*">
+                {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
+                  // @ts-ignore
+                  <Route path={p.route} element={<p.component />} />
+                ))}
+                <Route path="*" element={<Navigate to="/" />} />
+              </Route>
               <Route path="*" element={<Navigate to="/" />} />
             </Route>
-            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Container>
         <Footer />

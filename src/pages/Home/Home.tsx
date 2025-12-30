@@ -4,38 +4,37 @@ import PlaceIcon from '@mui/icons-material/Place'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
-import { BLUE } from '../../constants/theme'
+import { BLUE, CHARCOAL } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { platinumSponsors } from '../Sponsors/sponsorsConstants'
 import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
 import './Home.css'
 import { Numbers } from './Numbers'
+import { BigOrangeButton } from '../Guide/BigOrangeButton'
+
+const BANNER_CODE = `<p style="text-align:center"><a target="_blank" href="https://coord.info/GCBEBMA"><img src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png" style="height:135px;width:600px;max-width:670px;"/></a></p>`
 
 const InfoBlockStuff = [
   {
-    title: 'Schedule',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/events_320x320.webp`,
-    href: `${import.meta.env.BASE_URL}events`,
-    text: "With 8 events spanning from Thursday (5/22) to Sunday (5/25), there's never a dull moment when caching in West Virginia. Explore an 18th-century reconstructed fort, listen to some authentic mountain music, or enjoy a craft brew with your caching buddies - the possibilities are endless!",
+    title: 'Pre-Event Puzzles',
+    imgSrc: `${import.meta.env.BASE_URL}home/Home1.png`,
+    text: 'Warm up before the main event with a series of puzzles released in the weeks leading up to CacheMore. Solve them solo or with your team to earn bragging rights, unlock bonus clues, and gain a strategic edge before the weekend begins.',
   },
   {
-    title: 'Travel',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/hotels_320x320.webp`,
-    href: `${import.meta.env.BASE_URL}travel`,
-    text: 'Whether you’re coming from across the country, or just down the road, let us show you what Appalachian hospitality is all about. Check out a full list of our hotel partners as well as travel information that will help you to plan your trip to West Virginia!',
+    title: 'Tech Team Challenge',
+    imgSrc: `${import.meta.env.BASE_URL}home/Home2.png`,
+    text: 'Attendees can join a team for a city-wide escape-room adventure testing Cache AI. Teams will explore Mountaineer Country, find Adventure Labs, solve puzzles, and decode transmissions as the story unfolds. Can you complete the circuit?',
   },
   {
-    title: 'Morgantown',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/morgantown_320x320.webp`,
-    href: `${import.meta.env.BASE_URL}morgantown`,
+    title: 'CacheMore Trading Card Challenge',
+    imgSrc: `${import.meta.env.BASE_URL}home/home3.png`,
     // italicize parentheses
-    text: "Welcome to Morgantown, West Virginia, located in the heart of Appalachia. There are tons of great places to explore in the immediate Morgantown area, including Coopers Rock State Park and the state's land-grant institution, West Virginia University (Let's Go Mountaineers).",
+    text: 'Create your own trackable trading card to swap with others and drop in caches. But these cards are more than collectibles; hidden within the full event set is a mystery. Be the first to solve it and find the bonus cache to win a special FTF prize!',
   },
   {
-    title: 'More Info',
-    imgSrc: `${import.meta.env.BASE_URL}homeicons/info_320x320.webp`,
-    href: `${import.meta.env.BASE_URL}faqs`,
-    text: "Can't find what you're looking for? As the event approaches, more information will be added, but in the meantime, check out our frequently asked questions. You can also find more information and ask questions on our Facebook page and community group.",
+    title: 'Mountaineer Country GeoTour',
+    imgSrc: `${import.meta.env.BASE_URL}home/Home4.png`,
+    text: "Explore Mountaineer Country like you're a local with this new official GeoTour. Expanding on the Country Roads Challenge, this 20-stop GeoTour will feature 10 brand-new gadget caches and a trackable Geocoin!",
   },
 ]
 
@@ -63,8 +62,8 @@ export function Home() {
       </Helmet>
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <img
-          alt="GeoWoodstock XXI brand logo"
-          src={`${import.meta.env.BASE_URL}gwxxi${isMobile ? '_360x243' : ''}.jpg`}
+          alt="CacheMore brand logo"
+          src={`${import.meta.env.BASE_URL}cachemore/branding/logobig.png`}
           style={{
             maxWidth: '100%',
             maxHeight: '50vh',
@@ -74,21 +73,13 @@ export function Home() {
           }}
         />
         <Typography
-          variant="h3"
-          marginBottom="24px"
-          textAlign="center"
-          fontSize={isMobile ? '2.4rem' : undefined}
-        >
-          {'JOIN US FOR THE GIGA IN THE MOUNTAINS!'}
-        </Typography>
-        <Typography
           textAlign="center"
           fontWeight="bold"
           fontSize={isMobile ? '1.4rem' : '2rem'}
           lineHeight="2.2rem"
           padding="0 8px"
         >
-          {'GeoWoodstock XXI (GCANXX1)'}
+          {'CacheMore 2026 (GCBEBMA)'}
         </Typography>
         <Typography
           textAlign="center"
@@ -126,6 +117,34 @@ export function Home() {
           />
           {'May 22 - 25, 2025'}
         </Typography>
+
+        <br />
+        <br />
+
+        <Typography
+          variant="h3"
+          marginBottom="24px"
+          textAlign="center"
+          fontSize={isMobile ? '2.4rem' : undefined}
+          textTransform="none"
+        >
+          {'Do you have what it takes to crack the CacheMore code?'}
+        </Typography>
+
+        {/* TODO - link */}
+        <Typography textAlign="justify" lineHeight="1.6rem" fontSize="1.1rem">
+          Geocaching is on the brink of its most ambitious evolution as a
+          renowned coder known as RUBATOSE unveils Cache AI, a cutting-edge
+          system designed to deliver faster finds, easier puzzles, and fewer
+          DNFs. Rally your friends, form your team, and hit the ground running
+          as you search for caches, gather clues, and race the clock to unravel
+          a mystery that unfolds in real time. As each discovery feeds new
+          information back into the system, the challenges grow more complex and
+          the signals more cryptic, hinting that something isn't quite behaving
+          as expected. Your mission is simple: participate, collaborate, and
+          uncover the truth hidden within the test ... the fate of Geocaching
+          may depend on it. <a href="">Learn More</a>
+        </Typography>
       </Section>
 
       <Section sx={{ backgroundColor: palette.grey[200] }}>
@@ -135,22 +154,93 @@ export function Home() {
           alignItems="center"
           sx={{ width: '100%' }}
         >
-          <Grid item xs={12} md={6} width="100%" textAlign="center">
-            <iframe
-              style={{ maxWidth: "100%" }}
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/t4rLKTv-HZ0?si=Oi1Ybty4EQ-fmV5a&amp;autoplay=1&amp;mute=1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+          <Grid
+            item
+            xs={12}
+            md={5}
+            width="100%"
+            display="flex"
+            justifyContent="center"
+          >
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(2, 1fr)',
+                placeItems: 'center center',
+                width: 'fit-content',
+                gap: '16px',
+              }}
+            >
+              <a
+                target="_blank"
+                href="https://cachemore.store/products/register1"
+              >
+                <img
+                  className="info-block-image"
+                  src="/home/nexus.png"
+                  style={{
+                    height: '144px',
+                    aspectRatio: '1',
+                    borderRadius: '8px',
+                    border: `1px solid ${CHARCOAL}`,
+                    boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                  }}
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://cachemore.store/products/register2"
+              >
+                <img
+                  className="info-block-image"
+                  src="/home/byte.png"
+                  style={{
+                    height: '144px',
+                    aspectRatio: '1',
+                    borderRadius: '8px',
+                    border: `1px solid ${CHARCOAL}`,
+                    boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                  }}
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://cachemore.store/products/register0"
+              >
+                <img
+                  className="info-block-image"
+                  src="/home/generalregistration.png"
+                  style={{
+                    height: '144px',
+                    aspectRatio: '1',
+                    borderRadius: '8px',
+                    border: `1px solid ${CHARCOAL}`,
+                    boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                  }}
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://cachemore.store/products/register3"
+              >
+                <img
+                  className="info-block-image"
+                  src="/home/doublecrossed.png"
+                  style={{
+                    height: '144px',
+                    aspectRatio: '1',
+                    borderRadius: '8px',
+                    border: `1px solid ${CHARCOAL}`,
+                    boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                  }}
+                />
+              </a>
+            </div>
           </Grid>
           <Grid
             item
             xs={12}
-            md={6}
+            md={7}
             width="100%"
             display="flex"
             flexDirection="column"
@@ -162,16 +252,16 @@ export function Home() {
               padding={isMobile ? '16px' : '0px 16px 0px 8px'}
               textAlign={isMobile ? 'center' : 'start'}
             >
-              {
-                'Nestled in the heart of Appalachia, West Virginia is any geocacher’s gateway to the great outdoors. There is a reason the Mountain State is known as Almost Heaven, and we can’t wait to showcase the world-class adventures, friendly culture, and unique experiences West Virginia has to offer. Join us for a weekend of Geocaching greatness, as we celebrate the 25th anniversary of the hobby with the world’s original Mega event: '
-              }
-              <em style={{ fontWeight: 'bold' }}>
-                Wild and Wonderful GeoWoodstock XXI.
-              </em>
+              This year's event is free to attend, however, to participate in
+              most of the activities and get the best experience possible, we
+              highly recommend registering for a team. Choose your side, connect
+              with other cachers, and work together to crack the CacheMore code.
+              Registration comes with a variety of Geocoins, trackable items,
+              shirts, and Pathtags that you won't be able to get anywhere else.
             </Typography>
             <Button
               target="_blank"
-              href="http://coord.info/gcanxx1"
+              href="http://coord.info/GCBEBMA"
               variant="contained"
               color="warning"
               sx={{
@@ -181,63 +271,24 @@ export function Home() {
                 textAlign: 'center',
               }}
             >
-              Check out the event page
+              Click here to register
             </Button>
           </Grid>
         </Grid>
       </Section>
 
-      <Section>
-        <Grid container alignItems="center" justifyContent="cemter">
-          <Grid
-            item
-            xs={12}
-            md={4}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <a href={shopInfoBlock.href} style={{ width: '80%' }}>
-              <img
-                className="info-block-image"
-                alt="license plate linking to the shop page"
-                src={shopInfoBlock.imgSrc}
-                style={{
-                  width: '100%',
-                  margin: isMobile ? "0rem" : '0rem 1rem',
-                  borderRadius: '16px',
-                }}
-              />
-            </a>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={8}
-            display="flex"
-            padding={{ xs: "1rem", md: "0 4rem 0 2rem"}}
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          >
-            <Typography textAlign={{ xs: "center", md: "start"}} fontSize={{ xs: "1rem", md: "1.4rem"}}>
-              {shopInfoBlock.text}
-            </Typography>
-            <Button
-              href={shopInfoBlock.href}
-              variant="contained"
-              color="warning"
-              sx={{
-                borderRadius: '64px',
-                fontWeight: 'bold',
-                fontSize: '1.4rem',
-                marginTop: '1rem',
-              }}
-            >
-              Shop now
-            </Button>
-          </Grid>
-        </Grid></Section>
+      <br />
+      <br />
+
+      <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
+        <Typography variant="h3" width="80%" marginBottom="1.6rem">
+          Join our mailing list to stay up to date on important announcements,
+          event details, and things to do while caching in West Virginia!
+        </Typography>
+        <BigOrangeButton href="https://geowoodstockxxi.us17.list-manage.com/subscribe?u=8fcc636b5362e252a516c4a10&id=68d2e501c0">
+          Join the CacheMore Mailing List!
+        </BigOrangeButton>
+      </Section>
 
       <Section>
         <Grid container sx={{ width: '100%' }}>
@@ -264,31 +315,25 @@ export function Home() {
                     alignItems: 'center',
                   }}
                 >
-                  <a
-                    href={info.href}
+                  <img
+                    src={info.imgSrc}
                     style={{
-                      maxWidth: '80%',
-                      maxHeight: '100%',
-                      width: 'auto',
-                      height: 'auto',
-                      aspectRatio: 1,
-                      marginTop: '16px',
+                      width: '80%',
+                      height: '100%',
+                      borderRadius: '12px',
                     }}
+                  />
+                  <Typography
+                    variant="h4"
+                    fontSize="1.2rem"
+                    textAlign="center"
+                    sx={{ padding: isMobile ? '16px' : '16px 16px 0px 16px' }}
                   >
-                    <img
-                      alt={`license plate linking to the ${info.title} page`}
-                      className="info-block-image"
-                      src={info.imgSrc}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        borderRadius: '12px',
-                      }}
-                    />
-                  </a>
+                    {info.title}
+                  </Typography>
                   <Typography
                     textAlign={isMobile ? 'center' : 'start'}
-                    sx={{ padding: isMobile ? '16px' : '16px 16px 0px 16px' }}
+                    sx={{ padding: isMobile ? '1rem' : '0.4rem 1rem 0px 1rem' }}
                   >
                     {info.text}
                   </Typography>
@@ -299,18 +344,6 @@ export function Home() {
         </Grid>
       </Section>
 
-      <Section
-        sx={{
-          display: { xs: 'none', md: 'flex' },
-          flexDirection: 'column',
-          alignItems: 'center',
-          backgroundColor: palette.grey[200],
-          gap: '16px',
-        }}
-      >
-        <Numbers />
-      </Section>
-
       <div
         style={{
           flexDirection: 'column',
@@ -318,12 +351,10 @@ export function Home() {
           gap: '16px',
           marginTop: '1rem',
           paddingTop: '1rem',
-          backgroundColor: isMobile
-            ? palette.grey[200]
-            : palette.background.default,
+          backgroundColor: palette.grey[200],
         }}
       >
-        <Typography variant="h2">PLATINUM SPONSORS</Typography>
+        <Typography variant="h2">THANK YOU TO OUR SPONSORS</Typography>
         <div
           style={{
             justifyContent: 'flex-start',
@@ -333,14 +364,14 @@ export function Home() {
         >
           <Typography textAlign="center">
             {
-              'Thank you to our incredible sponsors for helping make GeoWoodstock XXI a reality! Want to help support the largest gathering of geocachers in North America?'
+              'Thank you to our incredible sponsors for helping make CacheMore 2026 a reality!'
             }
             <br />
             {'Check out our '}
             <a
               style={{ color: BLUE }}
               target="_blank"
-              href={`${import.meta.env.BASE_URL}sponsors`}
+              href={`${import.meta.env.BASE_URL}events/sponsors`}
             >
               {'Sponsorship'}
             </a>
@@ -349,6 +380,30 @@ export function Home() {
           <CorporateSponsorBlock sponsors={platinumSponsors} />
         </div>
       </div>
+      <br />
+      <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
+        <Typography textAlign="center">
+          Want to share your excitement and let the world know you're heading to
+          West Virginia for CacheMore 2026?
+          <br /> Copy and paste the following HTML code to your Geocaching
+          Profile!
+        </Typography>
+
+        <pre style={{ width: '80%' }}>
+          <code style={{ textAlign: 'center', textWrap: 'wrap' }}>
+            {BANNER_CODE}
+          </code>
+        </pre>
+
+        <p style={{ textAlign: 'center' }}>
+          <a target="_blank" href="https://coord.info/GCBEBMA">
+            <img
+              src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png"
+              style={{ height: '135px', width: '600px', maxWidth: '670px' }}
+            />
+          </a>
+        </p>
+      </Section>
     </Fragment>
   )
 }

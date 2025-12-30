@@ -133,7 +133,7 @@ function EventBlock({
             >
               <Typography
                 fontSize="1.4rem"
-                fontFamily="KGRedhands"
+                // fontFamily="KGRedhands"
                 fontWeight="bold"
                 paddingBottom="0.1rem"
                 textTransform="uppercase"
@@ -192,7 +192,7 @@ function EventBlock({
       >
         <Typography
           fontSize="1.2rem"
-          fontFamily="KGRedhands"
+          // fontFamily="KGRedhands"
           fontWeight="bold"
           paddingBottom="0.1rem"
           textAlign="center"

@@ -118,7 +118,7 @@ const SATURDAY: EventNameAndTime[] = [
   {
     name: (
       <Typography>
-        GeoWoodstock XXI opens (<GCLink gcCode="GCANXX1" />)
+        GeoWoodstock XXI opens (<GCLink gcCode="GCBEBMA" />)
       </Typography>
     ),
     startTimeOffset: hours(8 + 2 * 24),
@@ -247,7 +247,7 @@ function TimelineItem({
         color: 'black',
         border: `1px solid ${CHARCOAL}`,
         borderRadius: '8px',
-        fontFamily: 'Kollektif-Bold',
+        fontFamily: 'Quicksand-Bold',
       }}
       iconStyle={{
         background:

@@ -1,40 +1,45 @@
 import { createTheme } from '@mui/material'
 
-export const GREEN = '#687659'
-export const BLUE = '#396B92'
-export const CHARCOAL = '#2C2A29'
-export const RED = '#7F3E42'
-export const YELLOW = '#BB8346'
+export const BLUE = '#37769d'
+export const WHITE = '#EBF5F7'
+export const GREEN = '#496865'
+export const BROWN = '#B1856C'
+export const CHARCOAL = '#474c59'
+export const RED = '#a44344'
+export const BLACK = '#091a24'
+export const SILVER = '#c4c4c4'
+export const BRONZE = '#8d7244'
+export const YELLOW = '#d5af34'
 
 export const theme = createTheme({
   typography: {
-    fontFamily: 'Kollektif',
+    fontFamily: 'Quicksand',
     allVariants: {
       color: CHARCOAL,
     },
     h1: {
       textAlign: 'center',
-      fontFamily: 'San Andreas',
+      fontFamily: 'TradeGothic',
       color: GREEN,
       textTransform: 'uppercase',
     },
     h2: {
       textAlign: 'center',
-      fontFamily: 'San Andreas',
+      fontFamily: 'TradeGothic',
       color: BLUE,
       textTransform: 'uppercase',
     },
     h3: {
       textAlign: 'center',
-      fontFamily: 'KGRedHands',
+      fontFamily: 'TradeGothic',
       color: GREEN,
-      textTransform: 'uppercase',
+      textTransform: 'none',
     },
     h4: {
       textAlign: 'center',
-      fontFamily: 'KGRedHands',
+      fontFamily: 'TradeGothic',
       color: BLUE,
-      textTransform: 'uppercase',
+      textTransform: 'none',
     },
   },
   palette: {

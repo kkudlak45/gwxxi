@@ -316,8 +316,8 @@ export function GeoTour() {
         <div>
           <Typography fontFamily="KGRedHands">
             GeoWoodstock XXI (
-            <a target="_blank" href="https://coord.info/gcanxx1">
-              GCANXX1
+            <a target="_blank" href="https://coord.info/GCBEBMA">
+              GCBEBMA
             </a>
             )
           </Typography>

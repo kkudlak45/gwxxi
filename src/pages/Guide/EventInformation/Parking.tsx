@@ -70,7 +70,7 @@ export function Parking() {
         <Subheader>Where can I park?</Subheader>
         <Typography>
           Please review the event page for{' '}
-          <a target="_blank" href="http://coord.info/GCANXX1">
+          <a target="_blank" href="http://coord.info/GCBEBMA">
             GeoWoodstock XXI
           </a>{' '}
           for an interactive map and waypoints for parking areas. We strongly

@@ -57,7 +57,7 @@ export const SCHEDULE: Event[] = [
     endTime: 1748016000,
   },
   {
-    gccode: 'GCANXX1',
+    gccode: 'GCBEBMA',
     name: 'GeoWoodstock XXI',
     type: EventType.NONE,
     description:
@@ -85,7 +85,7 @@ export const SCHEDULE: Event[] = [
   },
 
   {
-    gccode: 'GCANXX1',
+    gccode: 'GCBEBMA',
     name: 'GeoWoodstock XXI',
     type: EventType.GIGA,
     description:

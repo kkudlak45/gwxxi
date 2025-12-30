@@ -9,34 +9,33 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
-import { ArrowDropDown } from '@mui/icons-material'
 import { useIsMobile } from '../hooks/useIsMobile'
 
 export const pages = [
   {
     text: 'Home',
-    href: `${import.meta.env.BASE_URL}`,
-  },
-  {
-    text: 'Events & Activities',
     href: `${import.meta.env.BASE_URL}events`,
   },
   {
-    text: 'Travel & Lodging',
-    href: `${import.meta.env.BASE_URL}travel`,
+    text: 'Schedule',
+    href: `${import.meta.env.BASE_URL}events/schedule`,
   },
   {
-    text: 'Morgantown',
-    href: `${import.meta.env.BASE_URL}morgantown`,
+    text: 'Info',
+    href: `${import.meta.env.BASE_URL}events/information`,
   },
   {
-    text: 'Guide',
-    href: `${import.meta.env.BASE_URL}guide`,
+    text: 'Activities',
+    href: `${import.meta.env.BASE_URL}events/activities`,
   },
   {
-    text: 'Shop',
-    href: 'https://geowoodstockxxi.myshopify.com/collections/all',
+    text: 'Register',
+    href: `${import.meta.env.BASE_URL}events/register`,
   },
+  // {
+  //   text: 'Shop',
+  //   href: 'https://geowoodstockxxi.myshopify.com/collections/all',
+  // },
 ]
 
 export const infoPages = [
@@ -92,7 +91,7 @@ function ResponsiveAppBar() {
           >
             <img
               alt="geowoodstock XXI brand logo linking to the home page"
-              src={`${import.meta.env.BASE_URL}headericon.webp`}
+              src={`${import.meta.env.BASE_URL}cachemore/branding/logosimple.png`}
               style={{ height: '100%', width: '100%' }}
             />
           </a>
@@ -132,7 +131,7 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {[...pages, ...infoPages].map((page) => (
+              {[...pages].map((page) => (
                 <MenuItem
                   key={page.text}
                   href={page.href}
@@ -157,7 +156,7 @@ function ResponsiveAppBar() {
               justifyContent: 'center',
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page, i) => (
               <Button
                 key={page.text}
                 target={page.text === 'Shop' ? '_blank' : undefined}
@@ -169,7 +168,7 @@ function ResponsiveAppBar() {
                   color: 'white',
                   display: 'block',
                   textAlign: 'center',
-                  borderRight: '2px solid white',
+                  borderRight: i < pages.length - 1 ? '2px solid white' : '',
                   borderRadius: '0px',
                   paddingLeft: '1.2rem',
                   paddingRight: '1.2rem',
@@ -178,7 +177,7 @@ function ResponsiveAppBar() {
                 {page.text}
               </Button>
             ))}
-            <Button
+            {/* <Button
               key="info"
               style={{ fontSize: '1.1rem !important' }}
               onClick={handleInfo}
@@ -232,14 +231,14 @@ function ResponsiveAppBar() {
                   </MenuItem>
                 )
               })}
-            </Menu>
+            </Menu> */}
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'block' } }}>
             <Button
               variant="contained"
               color="warning"
-              href="https://coord.info/gcanxx1"
+              href="https://coord.info/GCBEBMA"
               target="_blank"
               sx={{
                 width: '200px',
@@ -249,7 +248,7 @@ function ResponsiveAppBar() {
                 textAlign: 'center',
               }}
             >
-              Log your will attend! GCANXX1
+              Log your will attend! GCBEBMA
             </Button>
           </Box>
         </Toolbar>

@@ -147,7 +147,7 @@ export function Faqs() {
               traveling with a family or a group, please have each active player{' '}
               <a
                 target="_blank"
-                href="https://www.geocaching.com/live/geocache/GCANXX1/log"
+                href="https://www.geocaching.com/live/geocache/GCBEBMA/log"
               >
                 log a Will Attend
               </a>{' '}

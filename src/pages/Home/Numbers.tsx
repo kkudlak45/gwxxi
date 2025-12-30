@@ -50,7 +50,9 @@ export function Numbers() {
         alignItems="flex-start"
       >
         <InfoBlock
-          number={Math.abs(moment('2025-05-24').diff(moment(), 'days')).toFixed(0)}
+          number={Math.abs(moment('2025-05-24').diff(moment(), 'days')).toFixed(
+            0,
+          )}
           title="days"
         >
           <Typography>since GeoWoodstock XXI</Typography>
@@ -64,7 +66,7 @@ export function Numbers() {
             You won't want to miss the largest annual Geocaching event in the
             U.S.{' '}
             <a
-              href="https://www.geocaching.com/live/geocache/GCANXX1/log"
+              href="https://www.geocaching.com/live/geocache/GCBEBMA/log"
               target="_blank"
             >
               Click here to log a will attend

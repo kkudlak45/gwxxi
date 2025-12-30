@@ -7,7 +7,7 @@ import { useIsMobile } from '../hooks/useIsMobile'
 const socials = [
   {
     alt: 'Event Page',
-    href: 'https://coord.info/gcanxx1',
+    href: 'https://coord.info/GCBEBMA',
     component: <Event />,
   },
   {
@@ -85,7 +85,7 @@ export default function Footer() {
             >
               <Typography
                 variant="h4"
-                style={{ color: 'white', fontFamily: 'San Andreas' }}
+                style={{ color: 'white' }}
                 fontSize="1.8rem"
                 textAlign="start"
               >
@@ -156,7 +156,7 @@ export default function Footer() {
             >
               <Typography
                 variant="h4"
-                style={{ color: 'white', fontFamily: 'San Andreas' }}
+                style={{ color: 'white' }}
                 fontSize="1.8em"
                 textAlign="end"
               >
