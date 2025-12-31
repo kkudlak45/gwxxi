@@ -40,7 +40,7 @@ export const SCHEDULE: Event[] = [
   {
     gccode: 'GCBEBMA',
     name: 'CacheMore 2026',
-    type: EventType.MEGA,
+    type: EventType.EVENT,
     // TODO:
     description:
       'CacheMore 2026 is the all-day main event where the weekend’s story comes together and the community takes center stage. Meet fellow cachers, attend live sessions, tackle Adventure Labs, shop vendors, enjoy food trucks, trade cards, and get puzzle assistance as you work toward cracking the CacheMore Code. Registration packages will be available for pickup throughout the day.',

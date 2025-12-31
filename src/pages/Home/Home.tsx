@@ -17,22 +17,26 @@ const InfoBlockStuff = [
   {
     title: 'Pre-Event Puzzles',
     imgSrc: `${import.meta.env.BASE_URL}home/Home1.png`,
+    href: "/events/2026/puzzles",
     text: 'Warm up before the main event with a series of puzzles released in the weeks leading up to CacheMore. Solve them solo or with your team to earn bragging rights, unlock bonus clues, and gain a strategic edge before the weekend begins.',
   },
   {
     title: 'Tech Team Challenge',
     imgSrc: `${import.meta.env.BASE_URL}home/Home2.png`,
+    href: "/events/2026/teams",
     text: 'Attendees can join a team for a city-wide escape-room adventure testing Cache AI. Teams will explore Mountaineer Country, find Adventure Labs, solve puzzles, and decode transmissions as the story unfolds. Can you complete the circuit?',
   },
   {
     title: 'CacheMore Trading Card Challenge',
     imgSrc: `${import.meta.env.BASE_URL}home/home3.png`,
+    href: "/events/2026/trading-cards",
     // italicize parentheses
     text: 'Create your own trackable trading card to swap with others and drop in caches. But these cards are more than collectibles; hidden within the full event set is a mystery. Be the first to solve it and find the bonus cache to win a special FTF prize!',
   },
   {
     title: 'Mountaineer Country GeoTour',
     imgSrc: `${import.meta.env.BASE_URL}home/Home4.png`,
+    href: "/projects/vmc-gt",
     text: "Explore Mountaineer Country like you're a local with this new official GeoTour. Expanding on the Country Roads Challenge, this 20-stop GeoTour will feature 10 brand-new gadget caches and a trackable Geocoin!",
   },
 ]
@@ -264,7 +268,7 @@ export function Home() {
             </Typography>
             <Button
               target="_blank"
-              href="http://coord.info/GCBEBMA"
+              href="https://cachemore.store/collections/cachemore-2026"
               variant="contained"
               color="warning"
               sx={{
@@ -318,14 +322,17 @@ export function Home() {
                     alignItems: 'center',
                   }}
                 >
-                  <img
-                    src={info.imgSrc}
-                    style={{
-                      width: '80%',
-                      height: '100%',
-                      borderRadius: '12px',
-                    }}
-                  />
+                  <a href={info.href} style={{ width: "80%" }}>
+                    <img
+                      src={info.imgSrc}
+                      className='info-block-image'
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '12px',
+                      }}
+                    />
+                  </a>
                   <Typography
                     variant="h4"
                     fontSize="1.2rem"
@@ -338,7 +345,7 @@ export function Home() {
                     textAlign={isMobile ? 'center' : 'start'}
                     sx={{ padding: isMobile ? '1rem' : '0.4rem 1rem 0px 1rem' }}
                   >
-                    {info.text}
+                    {info.text}{' '}<a href={info.href}>Learn More</a>
                   </Typography>
                 </div>
               </Grid>

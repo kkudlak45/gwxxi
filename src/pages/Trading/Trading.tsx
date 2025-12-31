@@ -119,7 +119,7 @@ export function Trading() {
           <a target="_blank" href="/projects/vmc-gt">
             GeoTour
           </a>{' '}
-          caches because you never know what cardW you might find.
+          caches because you never know what card you might find.
         </Justified>
         <br />
         <Typography>A few helpful notes to aid in this year’s hunt:</Typography>

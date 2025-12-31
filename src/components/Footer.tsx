@@ -93,7 +93,7 @@ export default function Footer() {
               </Typography>
               <div style={isMobile ? { textAlign: 'center' } : {}}>
                 <Typography style={{ color: 'white' }}>
-                  Geocaching MEGA-Event
+                  Geocaching Event
                 </Typography>
                 <Typography style={{ color: 'white' }}>
                   Morgantown, West Virginia

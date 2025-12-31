@@ -288,7 +288,7 @@ export function Travel() {
           <StyledGrid item xs={12} md={6}>
             <img
               alt="a map displaying relevant locations within proximity to morgantown including: airports, high points, national parks, state oldests, and other nearby events"
-              src={`${import.meta.env.BASE_URL}travel/map.webp`}
+              src={`${import.meta.env.BASE_URL}travel/map.png`}
               width="90%"
               style={{ borderRadius: '16px', border: `2px solid ${CHARCOAL}` }}
             />

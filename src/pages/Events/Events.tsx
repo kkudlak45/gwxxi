@@ -176,11 +176,12 @@ export function Events() {
           EVENTS & ACTIVITES
         </Typography>
         <Typography textAlign="center" fontSize="1.2rem" marginTop="0.8rem">
-          With 10 events spanning from Thursday (5/22) to Sunday (5/25), there's
-          never a dull moment when caching in West Virginia. Explore an
-          18th-century reconstructed fort, listen to some authentic mountain
-          music, or enjoy a craft brew with your caching buddies - the
-          possibilities are endless!
+          With five events, three days of fun, and one epic Geocaching mystery,
+          you won’t want to miss the inaugural CacheMore event. Join us Friday
+          morning (6/26) to grab your registration pack and spend the next 36
+          hours exploring Morgantown, trading cards, and puzzling as you and
+          your team work to crack the CacheMore code. Arrive early and dive into
+          as many events as possible before things wrap up on Sunday (6/28).
         </Typography>
 
         <Section sx={{ flexDirection: 'column' }}>

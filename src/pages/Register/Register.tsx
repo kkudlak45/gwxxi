@@ -336,7 +336,7 @@ export function Register(): JSX.Element {
               can’t find and no puzzle you can’t solve.
             </Typography>
             <br />
-            <BigOrangeButton href="https://cachemore.store/products/register1">
+            <BigOrangeButton href="https://cachemore.store/products/register3">
               Click here to become a Double-Crossed Agent
             </BigOrangeButton>
           </Grid>
@@ -413,7 +413,7 @@ export function Register(): JSX.Element {
               else. In addition, your name will also be added to our website as
               well as on select signage at the event.
             </Typography>
-            <BigOrangeButton href="https://cachemore.store/products/trading-cards">
+            <BigOrangeButton href="https://cachemore.store/products/friend-of-cachemore">
               Become a Friend of CacheMore
             </BigOrangeButton>
           </Grid>
