@@ -115,7 +115,7 @@ export function Home() {
               width: isMobile ? '1.8rem' : '2.4rem',
             }}
           />
-          {'May 22 - 25, 2025'}
+          {'June 26 - 28, 2026'}
         </Typography>
 
         <br />
@@ -143,7 +143,7 @@ export function Home() {
           the signals more cryptic, hinting that something isn't quite behaving
           as expected. Your mission is simple: participate, collaborate, and
           uncover the truth hidden within the test ... the fate of Geocaching
-          may depend on it. <a href="">Learn More</a>
+          may depend on it. <a href="/events/2026/about">Learn More</a>
         </Typography>
       </Section>
 
@@ -371,7 +371,7 @@ export function Home() {
             <a
               style={{ color: BLUE }}
               target="_blank"
-              href={`${import.meta.env.BASE_URL}events/sponsors`}
+              href={`${import.meta.env.BASE_URL}events/2026/sponsors`}
             >
               {'Sponsorship'}
             </a>

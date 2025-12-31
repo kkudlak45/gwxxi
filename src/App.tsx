@@ -16,6 +16,7 @@ import { Guide } from './pages/Guide/Guide'
 import { EVENT_GUIDE_PAGES } from './pages/Guide/pages'
 import { GeoTour } from './pages/Guide/EventActivities/GeoTour'
 import { Live } from './pages/Guide/Live'
+import { Expect } from './pages/expect/Expect'
 
 function App() {
   return (
@@ -25,24 +26,27 @@ function App() {
         <Container maxWidth="xl" sx={{ padding: '8px 0px' }}>
           <Routes>
             <Route path="events">
-              <Route index element={<Home />} />
-              <Route path="schedule" element={<Events />} />
-              <Route path="travel" element={<Travel />} />
-              <Route path="faqs" element={<Faqs />} />
-              <Route path="sponsors" element={<Sponsors />} />
-              <Route path="morgantown" element={<Morgantown />} />
-              <Route path="register" element={<Register />} />
-              <Route path="geotour" element={<GeoTour />} />
-              <Route path="live" element={<Live />} />
-              <Route path="guide" element={<Guide />} />
-              <Route path="guide/*">
-                {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
-                  // @ts-ignore
-                  <Route path={p.route} element={<p.component />} />
-                ))}
-                <Route path="*" element={<Navigate to="/" />} />
+              <Route path="2026">
+                <Route index element={<Home />} />
+                <Route path="schedule" element={<Events />} />
+                <Route path="travel" element={<Travel />} />
+                <Route path="faqs" element={<Faqs />} />
+                <Route path="sponsors" element={<Sponsors />} />
+                <Route path="about" element={<Expect />} />
+                {/* <Route path="morgantown" element={<Morgantown />} /> */}
+                <Route path="register" element={<Register />} />
+                {/* <Route path="geotour" element={<GeoTour />} /> */}
+                {/* <Route path="live" element={<Live />} /> */}
+                {/* <Route path="guide" element={<Guide />} /> */}
+                {/* <Route path="guide/*">
+                  {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
+                    // @ts-ignore
+                    <Route path={p.route} element={<p.component />} />
+                  ))}
+                  <Route path="*" element={<Navigate to="/" />} />
+                </Route> */}
+                <Route path="*" element={<Navigate to="/events/2026" />} />
               </Route>
-              <Route path="*" element={<Navigate to="/" />} />
             </Route>
           </Routes>
         </Container>

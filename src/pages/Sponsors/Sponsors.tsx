@@ -3,10 +3,8 @@ import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import {
   blackDiamondBackers,
-  bronzeSponsors,
   friends,
   goldSponsors,
-  platinumSponsors,
   silverSponsors,
   CorporateSponsor,
 } from './sponsorsConstants'
@@ -99,7 +97,7 @@ export function CorporateSponsorBlock({
           )
         })}
       </Carousel>
-      {sponsors === platinumSponsors && (
+      {sponsors === goldSponsors && (
         <em>
           <Typography padding="0 16%" textAlign="center">
             {
@@ -174,7 +172,12 @@ export function Sponsors() {
         SPONSORS
       </Typography>
       <Typography textAlign="center" marginBottom="1rem">
-        A special thanks for supporting GeoWoodstock XXI.
+        Thank you to the geocaching community and our sponsors for supporting
+        CacheMore. Your contributions help make this event possible and ensure
+        we can continue offering quality experiences for attendees. We
+        appreciate the partnership and commitment that drives CacheMore forward.
+        To learn more and consider donating yourself, please email{' '}
+        <a href="mailto:contact@CacheMore.com">contact@CacheMore.com</a>.
       </Typography>
 
       <div
@@ -183,19 +186,19 @@ export function Sponsors() {
           backgroundColor: palette.grey[200],
         }}
       >
-        <CorporateSponsorBlock
+        {/* <CorporateSponsorBlock
           title="Platinum Sponsors"
           sponsors={platinumSponsors}
-        />
+        /> */}
         <CorporateSponsorBlock title="Gold Sponsors" sponsors={goldSponsors} />
         <CorporateSponsorBlock
           title="Silver Sponsors"
           sponsors={silverSponsors}
         />
-        <CorporateSponsorBlock
+        {/* <CorporateSponsorBlock
           title="Bronze Sponsors"
           sponsors={bronzeSponsors}
-        />
+        /> */}
         <Typography textAlign="center">
           Thank you to all our sponsors! Your support allows guest to have the
           best experience possible. To learn more and consider donating
@@ -208,25 +211,19 @@ export function Sponsors() {
       </div>
 
       <Section sx={{ flexDirection: 'column', paddingBottom: 0 }}>
-        <SponsorBlock title="Friends of GeoWoodstock XXI" sponsors={friends}>
+        <SponsorBlock title="Friends of CacheMore 2026" sponsors={friends}>
           <Typography textAlign="center">
-            GeoWoodstock wouldn't be possible without the amazing community that
+            CacheMore wouldn't be possible without the amazing community that
             makes it happen. Help support the event by becoming a 'Friend of
-            GeoWoodstock' and receive a limited-edition geocoin that won't be
+            CacheMore’ and receive a limited-edition geocoin that won't be
             available in any registration package. In addition, your Geocaching
             name will be listed on the event website and in any applicable event
-            programming or signage.{' '}
-            {/* <a
-              target="_blank"
-              href="https://geowoodstockxxi.myshopify.com/products/friend-of-geowoodstock"
-            >
-              CLICK HERE FOR MORE INFO
-            </a> */}
+            programming or signage.
           </Typography>
         </SponsorBlock>
       </Section>
 
-      <Section sx={{ flexDirection: 'column' }}>
+      {/* <Section sx={{ flexDirection: 'column' }}>
         <SponsorBlock
           title="Black Diamond Backers"
           sponsors={blackDiamondBackers}
@@ -238,7 +235,7 @@ export function Sponsors() {
             and receive it in the mail months before the event.
           </Typography>
         </SponsorBlock>
-      </Section>
+      </Section> */}
     </Fragment>
   )
 }

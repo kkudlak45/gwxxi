@@ -21,13 +21,13 @@ export const theme = createTheme({
       textAlign: 'center',
       fontFamily: 'TradeGothic',
       color: GREEN,
-      textTransform: 'uppercase',
+      textTransform: 'none',
     },
     h2: {
       textAlign: 'center',
       fontFamily: 'TradeGothic',
       color: BLUE,
-      textTransform: 'uppercase',
+      textTransform: 'none',
     },
     h3: {
       textAlign: 'center',

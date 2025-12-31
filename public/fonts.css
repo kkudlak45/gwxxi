@@ -29,6 +29,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('/fonts/quicksand/Quicksand_Bold.otf');
+}
 /* 
 @font-face {
   font-family: "Quicksand";
@@ -95,7 +100,4 @@
   src: url('/fonts/Quicksand.ttf');
 }
 
-@font-face {
-  font-family: 'Quicksand-Bold';
-  src: url('/fonts/Quicksand-Bold.ttf');
-} */
+*/

@@ -258,7 +258,7 @@ export function Events() {
           </Typography> */}
         </Section>
 
-        <Section
+        {/* <Section
           sx={{
             backgroundColor: palette.grey[200],
             flexDirection: 'column',
@@ -414,7 +414,7 @@ export function Events() {
               </div>
             </Grid>
           </Grid>
-        </Section>
+        </Section> */}
       </div>
     </Fragment>
   )

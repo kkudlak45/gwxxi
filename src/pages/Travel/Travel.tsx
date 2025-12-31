@@ -3,9 +3,10 @@ import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
-import { BLUE, CHARCOAL } from '../../constants/theme'
+import { BLUE, CHARCOAL, RED } from '../../constants/theme'
 import LaunchIcon from '@mui/icons-material/Launch'
 import { Helmet } from 'react-helmet'
+import { BigOrangeButton } from '../Guide/BigOrangeButton'
 
 const StyledGrid = styled(Grid)(() => {
   return {
@@ -19,166 +20,163 @@ const StyledGrid = styled(Grid)(() => {
 
 const HOTELS = [
   {
-    name: 'Appalachian Hotel',
-    address: '17600 Veterans Memorial Hwy Kingwood, WV 26537',
-    distance: 30,
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/appalachian_200x200.png`,
-    phone: '304-329-7829',
-  },
-  {
     name: 'Courtyard by Marriott',
     address: '460 Courtyard St Morgantown, WV 26501',
     distance: 5,
-    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718718538441&key=GRP&app=resvlink',
+    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1764170778089&key=GRP&app=resvlink&_branch_match_id=1522249708767540740&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXTywo0MtNLCrKzC8p0UvOz9UvSi3OyczLtgdK2ALZZSCOWmaKraG5mYmhuYG5uYWBhaVadmqlrXtQgFpdUWpaKlB3Xnp8UlF%2BeXFqka1rSnoqAJEv1kpeAAAA',
     code: 'GEO',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/courtyard_200x200.png`,
+    color: BLUE,
   },
   {
     name: 'Hampton Inn & Suites',
     address: '325 Granville Square Morgantown, WV 26501',
     distance: 4,
-    href: 'https://www.hilton.com/en/hotels/mgwtchx-hampton-suites-morgantown-university-town-centre',
-    code: 'GEO',
+    href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MGWTCHX&arrivalDate=2026-06-25&departureDate=2026-06-29&groupCode=CHH6GO&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
+    code: '6GO',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hampton_200x200.png`,
+    color: RED,
   },
   {
     name: 'Hilton Garden Inn',
     address: '150 Suncrest Town Centre Dr Morgantown, WV 26505',
     distance: 7,
-    href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWGIGI&groupCode=GEO&arrivaldate=2025-05-21&departuredate=2025-05-26&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
-    code: 'GEO',
+    href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=MGWGIGI&arrivalDate=2026-06-25&departureDate=2026-06-28&groupCode=GEOC&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
+    code: 'GEOC',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hilton_200x200.png`,
+    color: BLUE,
   },
   {
-    name: 'Holiday Inn Morgantown',
+    name: 'Holiday Inn',
     address: '1188 Pineview Dr Morgantown, WV 26505',
     distance: 6,
-    href: 'https://www.holidayinn.com/redirect?path=rates&brandCode=HI&localeCode=en&regionCode=1&hotelCode=MGWPD&checkInDate=21&checkInMonthYear=042025&checkOutDate=26&checkOutMonthYear=042025&_PMID=99801505&GPC=GEO&cn=no&viewfullsite=true',
-    code: 'GEO',
+    href: 'https://www.ihg.com/holidayinn/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=MGWPD&qCiD=25&qCiMy=052026&qCoD=29&qCoMy=052026&qGrpCd=GSE&setPMCookies=true&qSHBrC=HI&qDest=1188%20Pineview%20Drive,%20Morgantown,%20WV,%20US&showApp=true&adjustMonth=false&srb_u=1&qRmFltr=',
+    code: 'GSE',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/holiday_200x200.png`,
+    color: RED,
   },
-  {
-    name: 'Hotel Morgan',
-    address: '127 High St Morgantown, WV 26505',
-    distance: 7,
-    href: 'https://www.hotelmorgan.com/',
-    code: '052125DLB',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/morgan_200x200.png`,
-  },
-  {
-    name: 'Scholar Morgantown by Hilton',
-    address: '345 Chestnut St Morgantown, WV 26505',
-    distance: 7,
-    href: 'https://www.hilton.com/en/attend-my-event/geowoodstockmorgantownwv2024/',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/scholar_200x200.png`,
-  },
-  {
-    name: 'Residence Inn',
-    address: '1046 Willowdale Rd Morgantown, WV 26505',
-    distance: 7,
-    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718291793348&key=GRP&app=resvlink',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence_200x200.png`,
-  },
-  {
-    name: 'The Cranberry',
-    address: '2700 Cranberry Square Morgantown, WV 26508',
-    distance: 19,
-    code: 'GeoWoodstock',
-    href: 'https://cranberrywv.com/',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry_200x200.png`,
-  },
-  {
-    name: 'Lakeview Resort',
-    address: 'One Lakeview Dr, Morgantown, WV 26508',
-    distance: 21,
-    href: 'https://linkprotect.cudasvc.com/url?a=https%3A%2F%2Fwww.lakeviewresort.com%2Freservations%3Fpromo_code%3DGEO52125&c=E,1,gq-fB3OvXlnAOrkLqskxBnwy2poM3PfMu42tD7PtykoqJDTHZXtaZankHTnb0nu9mUw0lRP50z1WMhAkVYEUL3OOon55rYBRYmLRZMY_XUDr&typo=1',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/lakeview_200x200.png`,
-  },
-  {
-    name: 'Euro-Suites Hotel',
-    address: '501 Chestnut Ridge Rd, Morgantown, WV 26505',
-    distance: 6,
-    phone: '304-598-1000',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/euro_200x200.png`,
-  },
-  {
-    name: 'Quality Inn and Suites',
-    address: '366 Boyers Ave, Morgantown, WV 26505',
-    distance: 4,
-    href: 'https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality_200x200.png`,
-  },
-  {
-    name: 'Alpine Lake Resort',
-    address: '700 W Alpine Dr, Terra Alta, WV 26764',
-    distance: 46,
-    code: 'GEO25',
-    href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine_200x200.jpg`,
-  },
-  {
-    name: 'Clarksburg Hilton Garden Inn',
-    address: '606 Emily Dr, Clarksburg, WV 26301',
-    distance: 40,
-    href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CKBGIGI&arrivalDate=2025-05-21&departureDate=2025-05-25&groupCode=GEO25&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton_200x200.png`,
-  },
-  {
-    name: 'Days Inn & Suites - Bridgeport',
-    address: '112 Tolley Dr, Bridgeport, WV 26330',
-    distance: 38,
-    href: 'http://www.wyndhamhotels.com/hotels/04686?checkInDate=05/22/2025&checkOutDate=05/25/2025&groupCode=052225GEO',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysbgpt_200x200.png`,
-  },
-  {
-    name: 'Hampton Inn Morgantown',
-    address: '1053 Van Voorhis Road, Morgantown, WV 26505',
-    distance: 5,
-    href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWVVHX&groupCode=CHHGEO&arrivaldate=2025-05-22&departuredate=2025-05-25&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hamptonmgw_200x200.png`,
-  },
-  {
-    name: 'Fairfield Inn & Suites Marriott - Fairmont',
-    address: '27 Southland Dr, Fairmont, WV 26554',
-    distance: 25,
-    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1725645270833&key=GRP&guestreslink2=true',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt_200x200.png`,
-  },
-  {
-    name: 'Sonesta Essential - Fairmont',
-    address: '20 Southland Dr, Fairmont, WV 26554',
-    distance: 26,
-    href: 'https://www.sonesta.com/sonesta-essential/wv/fairmont/sonesta-essential-fairmont?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestafmt_200x200.png`,
-  },
-  {
-    name: 'Sonesta Essential - Morgantown',
-    address: '15 Lawless Rd, Morgantown, WV 26501',
-    distance: 5,
-    href: 'https://www.sonesta.com/sonesta-essential/wv/morgantown/sonesta-essential-morgantown?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestamgw_200x200.png`,
-  },
-  {
-    name: 'Candlewood Suites',
-    address: '7200 Willie G Ave, Morgantown, WV 26501',
-    distance: 2,
-    href: 'https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.candlewoodsuites.com%2fredirect%3fpath%3dhd%26brandCode%3dCW%26localeCode%3den%26hotelCode%3dMGWCW%26rateCode%3dAE81N%26_PMID%3d99502056%26corporateNumber%3d787055017%26cn%3dno%26viewfullsite%3dtrue&c=E,1,d_fZLobDxZT_wlLxPBU2xAtLCQPNIf8G0w2--BpY0HdXZ6hKgrFUKtkxmyCVu6C3_iSKroBPodZR_BE0By7g3k5aWkJpjpCoaJzPQhjbLazCmlk,&typo=1&ancr_add=1',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/candlewood_200x200.png`,
-  },
-  {
-    name: 'Days Inn - Fairmont',
-    address: '166 Middletown Road, Fairmont, West Virginia 26554',
-    distance: 26,
-    href: 'https://www.wyndhamhotels.com/days-inn/fairmont-west-virginia/days-inn-fairmont/overview?CID=LC:iqv0j1dklijly45:12149&iata=00093796',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysfmnt.png`,
-  },
-  {
-    name: 'Fairfield Inn and Suites',
-    address: '161 Lewis Dr, Morgantown, WV 26501',
-    distance: 3,
-    href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1739390655872&key=GRP&guestreslink2=true&app=resvlink',
-    imgSrc: `${import.meta.env.BASE_URL}hotelpictures/fairfieldmgw.png`,
-  },
+  // {
+  //   name: 'Hotel Morgan',
+  //   address: '127 High St Morgantown, WV 26505',
+  //   distance: 7,
+  //   href: 'https://www.hotelmorgan.com/',
+  //   code: '052125DLB',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/morgan_200x200.png`,
+  // },
+  // {
+  //   name: 'Scholar Morgantown by Hilton',
+  //   address: '345 Chestnut St Morgantown, WV 26505',
+  //   distance: 7,
+  //   href: 'https://www.hilton.com/en/attend-my-event/geowoodstockmorgantownwv2024/',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/scholar_200x200.png`,
+  // },
+  // {
+  //   name: 'Residence Inn',
+  //   address: '1046 Willowdale Rd Morgantown, WV 26505',
+  //   distance: 7,
+  //   href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1718291793348&key=GRP&app=resvlink',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/residence_200x200.png`,
+  // },
+  // {
+  //   name: 'The Cranberry',
+  //   address: '2700 Cranberry Square Morgantown, WV 26508',
+  //   distance: 19,
+  //   code: 'GeoWoodstock',
+  //   href: 'https://cranberrywv.com/',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/cranberry_200x200.png`,
+  // },
+  // {
+  //   name: 'Lakeview Resort',
+  //   address: 'One Lakeview Dr, Morgantown, WV 26508',
+  //   distance: 21,
+  //   href: 'https://linkprotect.cudasvc.com/url?a=https%3A%2F%2Fwww.lakeviewresort.com%2Freservations%3Fpromo_code%3DGEO52125&c=E,1,gq-fB3OvXlnAOrkLqskxBnwy2poM3PfMu42tD7PtykoqJDTHZXtaZankHTnb0nu9mUw0lRP50z1WMhAkVYEUL3OOon55rYBRYmLRZMY_XUDr&typo=1',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/lakeview_200x200.png`,
+  // },
+  // {
+  //   name: 'Euro-Suites Hotel',
+  //   address: '501 Chestnut Ridge Rd, Morgantown, WV 26505',
+  //   distance: 6,
+  //   phone: '304-598-1000',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/euro_200x200.png`,
+  // },
+  // {
+  //   name: 'Quality Inn and Suites',
+  //   address: '366 Boyers Ave, Morgantown, WV 26505',
+  //   distance: 4,
+  //   href: 'https://www.choicehotels.com/west-virginia/morgantown/quality-inn-hotels/wv017/rates?hotel=WV017&pu=no&ratePlanCode=LVMC&checkInDate=2025-05-24&checkOutDate=2025-05-25',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/quality_200x200.png`,
+  // },
+  // {
+  //   name: 'Alpine Lake Resort',
+  //   address: '700 W Alpine Dr, Terra Alta, WV 26764',
+  //   distance: 46,
+  //   code: 'GEO25',
+  //   href: 'https://www.myhms4.com/myres/bh/search.do?hotelCode=21166&Group=Geo25',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/alpine_200x200.jpg`,
+  // },
+  // {
+  //   name: 'Clarksburg Hilton Garden Inn',
+  //   address: '606 Emily Dr, Clarksburg, WV 26301',
+  //   distance: 40,
+  //   href: 'https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=CKBGIGI&arrivalDate=2025-05-21&departureDate=2025-05-25&groupCode=GEO25&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/ckb_hilton_200x200.png`,
+  // },
+  // {
+  //   name: 'Days Inn & Suites - Bridgeport',
+  //   address: '112 Tolley Dr, Bridgeport, WV 26330',
+  //   distance: 38,
+  //   href: 'http://www.wyndhamhotels.com/hotels/04686?checkInDate=05/22/2025&checkOutDate=05/25/2025&groupCode=052225GEO',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysbgpt_200x200.png`,
+  // },
+  // {
+  //   name: 'Hampton Inn Morgantown',
+  //   address: '1053 Van Voorhis Road, Morgantown, WV 26505',
+  //   distance: 5,
+  //   href: 'https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=MGWVVHX&groupCode=CHHGEO&arrivaldate=2025-05-22&departuredate=2025-05-25&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/hamptonmgw_200x200.png`,
+  // },
+  // {
+  //   name: 'Fairfield Inn & Suites Marriott - Fairmont',
+  //   address: '27 Southland Dr, Fairmont, WV 26554',
+  //   distance: 25,
+  //   href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1725645270833&key=GRP&guestreslink2=true',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/mariottfmnt_200x200.png`,
+  // },
+  // {
+  //   name: 'Sonesta Essential - Fairmont',
+  //   address: '20 Southland Dr, Fairmont, WV 26554',
+  //   distance: 26,
+  //   href: 'https://www.sonesta.com/sonesta-essential/wv/fairmont/sonesta-essential-fairmont?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestafmt_200x200.png`,
+  // },
+  // {
+  //   name: 'Sonesta Essential - Morgantown',
+  //   address: '15 Lawless Rd, Morgantown, WV 26501',
+  //   distance: 5,
+  //   href: 'https://www.sonesta.com/sonesta-essential/wv/morgantown/sonesta-essential-morgantown?isGroupCode=true&groupCode=GEO&checkin=2025-05-23&checkout=2025-05-25',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/sonestamgw_200x200.png`,
+  // },
+  // {
+  //   name: 'Candlewood Suites',
+  //   address: '7200 Willie G Ave, Morgantown, WV 26501',
+  //   distance: 2,
+  //   href: 'https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.candlewoodsuites.com%2fredirect%3fpath%3dhd%26brandCode%3dCW%26localeCode%3den%26hotelCode%3dMGWCW%26rateCode%3dAE81N%26_PMID%3d99502056%26corporateNumber%3d787055017%26cn%3dno%26viewfullsite%3dtrue&c=E,1,d_fZLobDxZT_wlLxPBU2xAtLCQPNIf8G0w2--BpY0HdXZ6hKgrFUKtkxmyCVu6C3_iSKroBPodZR_BE0By7g3k5aWkJpjpCoaJzPQhjbLazCmlk,&typo=1&ancr_add=1',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/candlewood_200x200.png`,
+  // },
+  // {
+  //   name: 'Days Inn - Fairmont',
+  //   address: '166 Middletown Road, Fairmont, West Virginia 26554',
+  //   distance: 26,
+  //   href: 'https://www.wyndhamhotels.com/days-inn/fairmont-west-virginia/days-inn-fairmont/overview?CID=LC:iqv0j1dklijly45:12149&iata=00093796',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/daysfmnt.png`,
+  // },
+  // {
+  //   name: 'Fairfield Inn and Suites',
+  //   address: '161 Lewis Dr, Morgantown, WV 26501',
+  //   distance: 3,
+  //   href: 'https://www.marriott.com/event-reservations/reservation-link.mi?id=1739390655872&key=GRP&guestreslink2=true&app=resvlink',
+  //   imgSrc: `${import.meta.env.BASE_URL}hotelpictures/fairfieldmgw.png`,
+  // },
 ]
 
 const CAMPGROUNDS = [
@@ -189,13 +187,13 @@ const CAMPGROUNDS = [
     href: 'https://sandspringscampgroundwv.com/',
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/sand_springs_200x200.webp`,
   },
-  {
-    name: 'Chestnut Ridge Park',
-    address: 'Darnell Hollow Rd, Morgantown, WV 26508',
-    distance: 26,
-    href: 'https://reservations.wvstateparks.com/products/camping',
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/chestnut_200x200.webp`,
-  },
+  // {
+  //   name: 'Chestnut Ridge Park',
+  //   address: 'Darnell Hollow Rd, Morgantown, WV 26508',
+  //   distance: 26,
+  //   href: 'https://reservations.wvstateparks.com/products/camping',
+  //   imgSrc: `${import.meta.env.BASE_URL}campgrounds/chestnut_200x200.webp`,
+  // },
   {
     name: 'Coopers Rock State Park',
     address:
@@ -204,13 +202,13 @@ const CAMPGROUNDS = [
     href: 'https://reservations.wvstateparks.com/products/camping',
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/coopers_200x200.webp`,
   },
-  {
-    name: 'Camp Mountaineer',
-    address: '187 Camp Mountaineer Rd, Morgantown, WV 26508',
-    phone: '304-366-3940',
-    distance: 16,
-    imgSrc: `${import.meta.env.BASE_URL}campgrounds/camp_mountaineer_200x200.png`,
-  },
+  // {
+  //   name: 'Camp Mountaineer',
+  //   address: '187 Camp Mountaineer Rd, Morgantown, WV 26508',
+  //   phone: '304-366-3940',
+  //   distance: 16,
+  //   imgSrc: `${import.meta.env.BASE_URL}campgrounds/camp_mountaineer_200x200.png`,
+  // },
 ]
 
 const AIRPORTS = [
@@ -276,7 +274,7 @@ export function Travel() {
         <title>GeoWoodstock XXI - Travel and Lodging</title>
         <meta
           name="description"
-          content="Wondering how to get to Morgantown, West Virginia or where to stay on the weekend of GeoWoodstock XXI? Check this page for deals and discounts relating to hotels, campgrounds, airports, flights, and car rentals!"
+          content="Wondering how to get to Morgantown, West Virginia or where to stay on the weekend of CacheMore 2026? Check this page for deals and discounts relating to hotels, campgrounds, airports, flights, and car rentals!"
         />
       </Helmet>
 
@@ -301,30 +299,31 @@ export function Travel() {
             sx={{ flexDirection: 'column', gap: '1rem' }}
           >
             <Typography>
-              {
-                'Welcome to Wild and Wonderful, West Virginia. Come for the day, or make a week out of it; there are endless adventures when caching in West Virginia. '
-              }
-              <em>
-                {
-                  '(Travel time is greatly dependent on how many caches you stop for.)'
-                }
-              </em>
+              Located in the heart of Appalachia, Morgantown is your perfect
+              long-weekend destination for a Geocaching adventure. With hundreds
+              of caches in and around the city, scenic riverside trails, and a
+              lively college-town energy, Morgantown offers a compact,
+              cache-packed experience without the long drives.
             </Typography>
             <Typography>
-              {
-                "For those flying, the closest airport is located about an hour north in Pittsburgh. Following I-79, you'll have the opportunity to explore the home of Mr. Rogers in Pittsburgh or enjoy the hundreds of caches in the most haunted county in America, Greene County. Looking east, flights into Dulles International Airport will have you driving through the heart of WVTim territory in the Eastern Panhandle. If you enjoy gadget caches, this is a must-do during your visit to West Virginia. Ohio airports such as Cleveland or Columbus are also great options for those who want to explore the Buckeye State. Lastly, for those looking to add another National Park to their map, flying into Charlotte will give you the unique opportunity to check out what wild and wonderful is all about as you travel through Fayetteville."
-              }
+              For those flying in from the East Coast, Pittsburgh International
+              Airport is the closest major hub, just over an hour north and an
+              easy drive down I-79 straight into Morgantown. Travelers from the
+              DC region can also reach the city with a smooth ride from Dulles
+              via I-68.
             </Typography>
             <Typography>
-              {
-                "Check out our list of host hotels with discounts and rates exclusive to those joining us for GeoWoodstock weekend. We recommend traveling to Morgantown on Wednesday (5/21) and staying until Monday (5/26) to soak up all the caching fun planned. We promise, one weekend won't be long enough! With side events showcasing the best that north central West Virginia has to offer, you can't go wrong with staying in Morgantown or Fairmont. We can't wait to see you!"
-              }
+              Check out our list of host hotels featuring exclusive CacheMore
+              rates. We recommend arriving Thursday (6/25) and staying through
+              Sunday (6/28) to enjoy the full slate of events and all the
+              Geocaching Morgantown has to offer. One weekend won’t feel like
+              enough, but it’s a great place to start. We can’t wait to see you!
             </Typography>
           </StyledGrid>
         </Grid>
       </Section>
 
-      <Section sx={{ backgroundColor: palette.grey[200] }}>
+      {/* <Section sx={{ backgroundColor: palette.grey[200] }}>
         <Grid container justifyContent="center" alignItems="flex-start">
           <Grid item xs={12} md={6}>
             <Typography variant="h3" color="secondary" textAlign="center">
@@ -495,7 +494,7 @@ export function Travel() {
           </Grid>
           <Grid item xs={12} md={6}></Grid>
         </Grid>
-      </Section>
+      </Section> */}
 
       <Section
         sx={{
@@ -504,102 +503,120 @@ export function Travel() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h2">HOTELS</Typography>
+        <Typography variant="h2">Stay in one of our host hotels!</Typography>
         <Typography>
-          Enjoy your stay at one of our host hotels. Check back for additional
-          offerings.
+          We’ve partnered with four local Morgantown hotels to offer discounted
+          rates for CacheMore teams. Staying in your designated team hotel makes
+          it easy to meet fellow participants, collaborate on puzzles, and
+          strategize between events. These hotels become a hub for teamwork,
+          late-night planning sessions, and sharing discoveries as you navigate
+          the Signal Symposium together. There might even be some special
+          surprises here as well!
         </Typography>
+        <br />
         <Grid container justifyContent="center">
-          {HOTELS.sort((h1, h2) => h1.distance - h2.distance).map((item) => {
-            return (
-              <Grid item xs={12} md={6} key={item.name}>
-                <Grid container>
-                  <StyledGrid item xs={12} md={4}>
-                    <a href={item.href} target="_blank">
-                      <img
-                        alt={`an exterior shot of ${item.name}`}
-                        src={item.imgSrc}
-                        width="80%"
-                        style={{
-                          aspectRatio: 1,
-                          borderRadius: '12px',
-                          border: `2px solid ${CHARCOAL}`,
-                          maxWidth: '320px',
-                        }}
-                      />
-                    </a>
-                  </StyledGrid>
-                  <StyledGrid
-                    item
-                    xs={12}
-                    md={8}
-                    sx={{
-                      flexDirection: 'column',
-                      alignItems: { xs: 'center', md: 'flex-start' },
-                      textAlign: { xs: 'center', md: 'start' },
-                    }}
-                  >
-                    <Typography
-                      fontSize="2rem"
-                      fontWeight="bold"
-                      lineHeight="2.2rem"
-                      marginBottom="0.6rem"
-                    >
-                      {item.name}
-                    </Typography>
-                    <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}>
-                      {item.address.split('(br)').map((text) => {
-                        return (
-                          <Fragment>
-                            {text}
-                            <br />
-                          </Fragment>
-                        )
-                      })}
-                    </Typography>
-                    <Typography>
-                      <em>Distance: {item.distance} miles</em>
-                    </Typography>
-                    {item.code && (
-                      <Typography>
-                        Use code{' '}
-                        <em style={{ fontWeight: 'bold', marginRight: '3px' }}>
-                          {item.code}
-                        </em>
-                        {' when booking!'}
-                      </Typography>
-                    )}
-                    {item.href && (
-                      <Typography>
-                        <a
-                          target="_blank"
-                          href={item.href}
+          {HOTELS
+            // .sort((h1, h2) => h1.distance - h2.distance)
+            .map((item) => {
+              return (
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  key={item.name}
+                  backgroundColor={`${item.color}44`}
+                >
+                  <Grid container>
+                    <StyledGrid item xs={12} md={4}>
+                      <a href={item.href} target="_blank">
+                        <img
+                          alt={`an exterior shot of ${item.name}`}
+                          src={item.imgSrc}
+                          width="80%"
                           style={{
-                            color: BLUE,
-                            textDecorationColor: BLUE,
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '2px',
+                            aspectRatio: 1,
+                            borderRadius: '12px',
+                            border: `2px solid ${CHARCOAL}`,
+                            maxWidth: '320px',
                           }}
-                        >
-                          Click here to book
-                          <LaunchIcon
-                            style={{ width: '1rem', height: '1rem' }}
-                          />
-                        </a>
+                        />
+                      </a>
+                    </StyledGrid>
+                    <StyledGrid
+                      item
+                      xs={12}
+                      md={8}
+                      sx={{
+                        flexDirection: 'column',
+                        alignItems: { xs: 'center', md: 'flex-start' },
+                        textAlign: { xs: 'center', md: 'start' },
+                      }}
+                    >
+                      <Typography
+                        fontSize="2rem"
+                        fontWeight="bold"
+                        lineHeight="2.2rem"
+                        marginBottom="0.6rem"
+                      >
+                        {item.name}
                       </Typography>
-                    )}
-                    {item.phone && (
+                      <Typography
+                        sx={{ fontSize: { xs: '1rem', md: '1.2rem' } }}
+                      >
+                        {item.address.split('(br)').map((text) => {
+                          return (
+                            <Fragment>
+                              {text}
+                              <br />
+                            </Fragment>
+                          )
+                        })}
+                      </Typography>
                       <Typography>
-                        Call <a href={`Tel:${item.phone}`}>{item.phone}</a> and
-                        mention GeoWoodstock.
+                        <em>Distance: {item.distance} miles</em>
                       </Typography>
-                    )}
-                  </StyledGrid>
+                      {item.code && (
+                        <Typography>
+                          Use code{' '}
+                          <em
+                            style={{ fontWeight: 'bold', marginRight: '3px' }}
+                          >
+                            {item.code}
+                          </em>
+                          {' when booking!'}
+                        </Typography>
+                      )}
+                      {item.href && (
+                        <Typography>
+                          <a
+                            target="_blank"
+                            href={item.href}
+                            style={{
+                              color: BLUE,
+                              textDecorationColor: BLUE,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '2px',
+                            }}
+                          >
+                            Click here to book
+                            <LaunchIcon
+                              style={{ width: '1rem', height: '1rem' }}
+                            />
+                          </a>
+                        </Typography>
+                      )}
+                      {item.phone && (
+                        <Typography>
+                          Call <a href={`Tel:${item.phone}`}>{item.phone}</a>{' '}
+                          and mention GeoWoodstock.
+                        </Typography>
+                      )}
+                    </StyledGrid>
+                  </Grid>
                 </Grid>
-              </Grid>
-            )
-          })}
+              )
+            })}
         </Grid>
         <Button
           variant="contained"
@@ -631,10 +648,32 @@ export function Travel() {
         >
           CAMPGROUNDS
         </Typography>
-        <Typography>
-          Enjoy the rustic atmosphere of wild and wonderful at one of our
-          campgrounds. Check back for additional offerings.
-        </Typography>
+
+        <Grid
+          container
+          backgroundColor={palette.grey[200]}
+          padding="2rem 1rem"
+          alignItems="center"
+        >
+          <Grid item xs={3}>
+            <img src="/travel/koa.png" />
+          </Grid>
+          <Grid item xs={9}>
+            <Typography textAlign="justify">
+              Want to stay off the grid? The KOA at Mylan Park is officially
+              open, and with new facilities and beautiful lodging options, we
+              expect this venue to fill up quickly. Be steps away from the event
+              and enjoy a special bonfire event on Saturday (6/27) night!
+            </Typography>
+            <br />
+            <BigOrangeButton href="https://koa.com/campgrounds/morgantown/?gad_source=1&gad_campaignid=23019580968&gbraid=0AAAAA9cPXpEV1MIDQKq4pAcqiQUf7MVXn&gclid=CjwKCAiAxc_JBhA2EiwAFVs7XOzvhRkYoy9YUXOXvlOffi2ZvSNG-boiFtiwiH5TWdmYD6Q8sBuJaBoCv5MQAvD_BwE">
+              Click here to check out the KOA
+            </BigOrangeButton>
+          </Grid>
+        </Grid>
+
+        <br />
+
         <Grid container>
           {CAMPGROUNDS.sort((h1, h2) => h1.distance - h2.distance).map(
             (item) => {

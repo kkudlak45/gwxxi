@@ -10,27 +10,28 @@ import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { useIsMobile } from '../hooks/useIsMobile'
+import { ArrowDropDown } from '@mui/icons-material'
 
 export const pages = [
   {
     text: 'Home',
-    href: `${import.meta.env.BASE_URL}events`,
+    href: `${import.meta.env.BASE_URL}events/2026`,
   },
   {
     text: 'Schedule',
-    href: `${import.meta.env.BASE_URL}events/schedule`,
+    href: `${import.meta.env.BASE_URL}events/2026/schedule`,
   },
-  {
-    text: 'Info',
-    href: `${import.meta.env.BASE_URL}events/information`,
-  },
+  // {
+  //   text: 'Info',
+  //   href: `${import.meta.env.BASE_URL}events/2026/information`,
+  // },
   {
     text: 'Activities',
-    href: `${import.meta.env.BASE_URL}events/activities`,
+    href: `${import.meta.env.BASE_URL}events/2026/activities`,
   },
   {
     text: 'Register',
-    href: `${import.meta.env.BASE_URL}events/register`,
+    href: 'https://cachemore.store/collections/cachemore-2026',
   },
   // {
   //   text: 'Shop',
@@ -39,17 +40,25 @@ export const pages = [
 ]
 
 export const infoPages = [
-  // {
-  //   text: 'Register',
-  //   href: `${import.meta.env.BASE_URL}register`,
-  // },
   {
-    text: 'Sponsors',
-    href: `${import.meta.env.BASE_URL}sponsors`,
+    text: 'Registration',
+    href: `${import.meta.env.BASE_URL}events/2026/register`,
+  },
+  {
+    text: 'Travel & Lodging',
+    href: `${import.meta.env.BASE_URL}events/2026/travel`,
+  },
+  {
+    text: 'What to Expect',
+    href: `${import.meta.env.BASE_URL}events/2026/about`,
   },
   {
     text: 'FAQs',
-    href: `${import.meta.env.BASE_URL}faqs`,
+    href: `${import.meta.env.BASE_URL}events/2026/faqs`,
+  },
+  {
+    text: 'Sponsors',
+    href: `${import.meta.env.BASE_URL}events/2026/sponsors`,
   },
 ]
 
@@ -81,7 +90,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ height: '84px', maxHeight: '84px' }}>
           <a
-            href="/"
+            href="/events"
             style={{
               height: isMobile ? 'auto' : '70%',
               maxHeight: '70%',
@@ -177,7 +186,7 @@ function ResponsiveAppBar() {
                 {page.text}
               </Button>
             ))}
-            {/* <Button
+            <Button
               key="info"
               style={{ fontSize: '1.1rem !important' }}
               onClick={handleInfo}
@@ -207,7 +216,7 @@ function ResponsiveAppBar() {
               id="menu-appbar"
               anchorEl={anchorElInfo}
               anchorOrigin={{
-                vertical: 'top',
+                vertical: 'bottom',
                 horizontal: 'right',
               }}
               keepMounted
@@ -220,18 +229,18 @@ function ResponsiveAppBar() {
             >
               {infoPages.map((page) => {
                 return (
-                  <MenuItem key={page.href} onClick={handleInfoClose}>
-                    <a
-                      href={page.href}
-                      target={page.text === 'Shop' ? '_blank' : undefined}
-                      style={{ textDecoration: 'none', color: 'inherit' }}
-                    >
+                  <a
+                    href={page.href}
+                    target={page.text === 'Shop' ? '_blank' : undefined}
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                  >
+                    <MenuItem key={page.href} onClick={handleInfoClose}>
                       <Typography textAlign="center">{page.text}</Typography>
-                    </a>
-                  </MenuItem>
+                    </MenuItem>
+                  </a>
                 )
               })}
-            </Menu> */}
+            </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'block' } }}>
