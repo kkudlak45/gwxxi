@@ -53,12 +53,13 @@ function EventBlock({
             : undefined,
         }}
       >
-        <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '16px', alignItems: 'start' }}>
           <a href={`https://coord.info/${event.gccode}`} target="_blank">
             <img
               alt={`the geocaching ${event.type} icon`}
               src={getIconSrc(event.type)}
               style={{
+                marginTop: isMobile ? 0 : "0.8rem",
                 width: '4rem',
                 aspectRatio: 1,
                 borderRadius: '4rem',
@@ -99,7 +100,8 @@ function EventBlock({
             display: 'flex',
             alignItems: isMobile ? 'center' : 'flex-end',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: isMobile ? 'center' : 'start',
+            paddingTop: isMobile ? '0' : '1.6rem'
           }}
         >
           {event.startTime ? (
@@ -187,7 +189,7 @@ export function Events() {
         <Section sx={{ flexDirection: 'column' }}>
           {SCHEDULE.map((event, index) => (
             <EventBlock
-              key={event.description}
+              key={event.name}
               event={event}
               showBottom={index < SCHEDULE.length - 1}
             />

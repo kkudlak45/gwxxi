@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -115,242 +115,243 @@ function ResponsiveAppBar() {
   }
 
   return (
-    <AppBar position="static" sx={{ width: '100%' }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ height: '84px', maxHeight: '84px' }}>
-          <a
-            href="/events/2026"
-            style={{
-              height: isMobile ? 'auto' : '70%',
-              maxHeight: '70%',
-              aspectRatio: 1000 / 345,
-              marginTop: '-4px',
-            }}
-          >
-            <img
-              alt="geowoodstock XXI brand logo linking to the home page"
-              src={`${import.meta.env.BASE_URL}cachemore/branding/logosimple.png`}
-              style={{ height: '100%', width: '100%' }}
-            />
-          </a>
-
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: 'flex', md: 'none' },
-              justifyContent: 'flex-end',
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
+    <Fragment>
+      <AppBar position="fixed" sx={{ width: '100%' }}>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters sx={{ height: '84px', maxHeight: '84px' }}>
+            <a
+              href="/events/2026"
+              style={{
+                height: isMobile ? 'auto' : '70%',
+                maxHeight: '70%',
+                aspectRatio: 1000 / 345,
+                marginTop: '-4px',
+              }}
             >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              <img
+                alt="geowoodstock XXI brand logo linking to the home page"
+                src={`${import.meta.env.BASE_URL}cachemore/branding/logosimple.png`}
+                style={{ height: '100%', width: '100%' }}
+              />
+            </a>
+
+            <Box
               sx={{
-                display: { xs: 'block', md: 'none' },
+                flexGrow: 1,
+                display: { xs: 'flex', md: 'none' },
+                justifyContent: 'flex-end',
               }}
             >
-              {[...pages, ...infoPages, ...activityPages].map((page) => (
-                <a
-                  href={page.href}
-                  target={page.text === 'Shop' ? '_blank' : undefined}
-                  style={{ textDecoration: 'none', color: 'inherit' }}
-                >
-                  <MenuItem
-                    key={page.text}
-                    href={page.href}
-                    onClick={handleCloseNavMenu}
-                  >
-                    <Typography textAlign="center">{page.text}</Typography>
-                  </MenuItem>
-                </a>
-              ))}
-            </Menu>
-          </Box>
-
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: 'none', md: 'flex' },
-              justifyContent: 'center',
-            }}
-          >
-            {pages.map((page) => (
-              <Button
-                key={page.text}
-                target={page.text === 'Shop' ? '_blank' : undefined}
-                href={page.href}
-                onClick={handleCloseNavMenu}
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'left',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'left',
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
                 sx={{
-                  my: 2,
-                  fontSize: '1.1rem',
-                  color: 'white',
-                  display: 'block',
-                  textAlign: 'center',
-                  borderRight: '2px solid white',
-                  borderRadius: '0px',
-                  paddingLeft: '1.2rem',
-                  paddingRight: '1.2rem',
+                  display: { xs: 'block', md: 'none' },
                 }}
               >
-                {page.text}
+                {[...pages, ...infoPages, ...activityPages].map((page) => (
+                  <a
+                    href={page.href}
+                    target={page.text === 'Shop' ? '_blank' : undefined}
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                  >
+                    <MenuItem
+                      key={page.text}
+                      href={page.href}
+                      onClick={handleCloseNavMenu}
+                    >
+                      <Typography textAlign="center">{page.text}</Typography>
+                    </MenuItem>
+                  </a>
+                ))}
+              </Menu>
+            </Box>
+
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: 'none', md: 'flex' },
+                justifyContent: 'center',
+              }}
+            >
+              {pages.map((page) => (
+                <Button
+                  key={page.text}
+                  target={page.text === 'Shop' ? '_blank' : undefined}
+                  href={page.href}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    my: 2,
+                    fontSize: '1.1rem',
+                    color: 'white',
+                    display: 'block',
+                    textAlign: 'center',
+                    borderRight: '2px solid white',
+                    borderRadius: '0px',
+                    paddingLeft: '1.2rem',
+                    paddingRight: '1.2rem',
+                  }}
+                >
+                  {page.text}
+                </Button>
+              ))}
+
+              <Button
+                key="info"
+                style={{ fontSize: '1.1rem !important' }}
+                onClick={handleActivities}
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'flex',
+                  paddingLeft: '1rem',
+                  textAlign: 'center',
+                  borderRight: '2px solid white',
+                }}
+                endIcon={
+                  <ArrowDropDown
+                    sx={{
+                      marginLeft: '-0.5rem',
+                      marginTop: '-0.2rem',
+                      height: '1.4rem',
+                      width: '1.4rem',
+                    }}
+                  />
+                }
+              >
+                <Typography color="white" fontSize="1.1rem">
+                  Activities
+                </Typography>
               </Button>
-            ))}
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElActivities}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElActivities)}
+                onClose={handleActivitiesClose}
+              >
+                {activityPages.map((page) => {
+                  return (
+                    <a
+                      href={page.href}
+                      target={page.text === 'Shop' ? '_blank' : undefined}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      <MenuItem key={page.href} onClick={handleActivitiesClose}>
+                        <Typography textAlign="center">{page.text}</Typography>
+                      </MenuItem>
+                    </a>
+                  )
+                })}
+              </Menu>
 
-            <Button
-              key="info"
-              style={{ fontSize: '1.1rem !important' }}
-              onClick={handleActivities}
-              sx={{
-                my: 2,
-                color: 'white',
-                display: 'flex',
-                paddingLeft: '1rem',
-                textAlign: 'center',
-                borderRight: '2px solid white',
-              }}
-              endIcon={
-                <ArrowDropDown
-                  sx={{
-                    marginLeft: '-0.5rem',
-                    marginTop: '-0.2rem',
-                    height: '1.4rem',
-                    width: '1.4rem',
-                  }}
-                />
-              }
-            >
-              <Typography color="white" fontSize="1.1rem">
-                Activities
-              </Typography>
-            </Button>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElActivities}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElActivities)}
-              onClose={handleActivitiesClose}
-            >
-              {activityPages.map((page) => {
-                return (
-                  <a
-                    href={page.href}
-                    target={page.text === 'Shop' ? '_blank' : undefined}
-                    style={{ textDecoration: 'none', color: 'inherit' }}
-                  >
-                    <MenuItem key={page.href} onClick={handleActivitiesClose}>
-                      <Typography textAlign="center">{page.text}</Typography>
-                    </MenuItem>
-                  </a>
-                )
-              })}
-            </Menu>
+              <Button
+                key="info"
+                style={{ fontSize: '1.1rem !important' }}
+                onClick={handleInfo}
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'flex',
+                  paddingLeft: '1rem',
+                  textAlign: 'center',
+                }}
+                endIcon={
+                  <ArrowDropDown
+                    sx={{
+                      marginLeft: '-0.5rem',
+                      marginTop: '-0.2rem',
+                      height: '1.4rem',
+                      width: '1.4rem',
+                    }}
+                  />
+                }
+              >
+                <Typography color="white" fontSize="1.1rem">
+                  Info
+                </Typography>
+              </Button>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElInfo}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: 'top',
+                  horizontal: 'right',
+                }}
+                open={Boolean(anchorElInfo)}
+                onClose={handleInfoClose}
+              >
+                {infoPages.map((page) => {
+                  return (
+                    <a
+                      href={page.href}
+                      target={page.text === 'Shop' ? '_blank' : undefined}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      <MenuItem key={page.href} onClick={handleInfoClose}>
+                        <Typography textAlign="center">{page.text}</Typography>
+                      </MenuItem>
+                    </a>
+                  )
+                })}
+              </Menu>
+            </Box>
 
-            <Button
-              key="info"
-              style={{ fontSize: '1.1rem !important' }}
-              onClick={handleInfo}
-              sx={{
-                my: 2,
-                color: 'white',
-                display: 'flex',
-                paddingLeft: '1rem',
-                textAlign: 'center',
-              }}
-              endIcon={
-                <ArrowDropDown
-                  sx={{
-                    marginLeft: '-0.5rem',
-                    marginTop: '-0.2rem',
-                    height: '1.4rem',
-                    width: '1.4rem',
-                  }}
-                />
-              }
-            >
-              <Typography color="white" fontSize="1.1rem">
-                Info
-              </Typography>
-            </Button>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElInfo}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElInfo)}
-              onClose={handleInfoClose}
-            >
-              {infoPages.map((page) => {
-                return (
-                  <a
-                    href={page.href}
-                    target={page.text === 'Shop' ? '_blank' : undefined}
-                    style={{ textDecoration: 'none', color: 'inherit' }}
-                  >
-                    <MenuItem key={page.href} onClick={handleInfoClose}>
-                      <Typography textAlign="center">{page.text}</Typography>
-                    </MenuItem>
-                  </a>
-                )
-              })}
-            </Menu>
-          </Box>
+            <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'block' } }}>
+              <Button
+                variant="contained"
+                color="warning"
+                href="https://coord.info/GCBEBMA"
+                target="_blank"
+                sx={{
+                  width: '200px',
+                  borderRadius: '64px',
+                  fontWeight: 'bold',
+                  lineHeight: '1rem',
+                  textAlign: 'center',
+                }}
+              >
+                Log your will attend! GCBEBMA
+              </Button>
+            </Box>
+          </Toolbar>
+        </Container>
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'block' } }}>
-            <Button
-              variant="contained"
-              color="warning"
-              href="https://coord.info/GCBEBMA"
-              target="_blank"
-              sx={{
-                width: '200px',
-                borderRadius: '64px',
-                fontWeight: 'bold',
-                lineHeight: '1rem',
-                textAlign: 'center',
-              }}
-            >
-              Log your will attend! GCBEBMA
-            </Button>
-          </Box>
-        </Toolbar>
-      </Container>
-
-      {/* <Alert variant="filled" severity="warning">
+        {/* <Alert variant="filled" severity="warning">
         Your last chance to buy individual SWAG items such as Geocoins, shirts,
         Pathtags, meal tickets, and more is <BoldKol>April 25</BoldKol>. Some
         items may not be available for purchase at the event.{' '}
@@ -361,7 +362,9 @@ function ResponsiveAppBar() {
           Click here to shop.
         </a>
       </Alert> */}
-    </AppBar>
+      </AppBar>
+      <div style={{ height: '84px' }} />
+    </Fragment>
   )
 }
 export default ResponsiveAppBar
