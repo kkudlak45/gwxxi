@@ -1,7 +1,6 @@
 import { Button, Grid, Typography, styled, useTheme } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
-import StarIcon from '@mui/icons-material/Star'
 import { useIsMobile } from '../../hooks/useIsMobile'
 import { BLUE, CHARCOAL, RED } from '../../constants/theme'
 import LaunchIcon from '@mui/icons-material/Launch'
@@ -27,6 +26,7 @@ const HOTELS = [
     code: 'GEO',
     imgSrc: `${import.meta.env.BASE_URL}hotelpictures/courtyard_200x200.png`,
     color: BLUE,
+    phone: undefined,
   },
   {
     name: 'Hampton Inn & Suites',
@@ -186,6 +186,7 @@ const CAMPGROUNDS = [
     distance: 26,
     href: 'https://sandspringscampgroundwv.com/',
     imgSrc: `${import.meta.env.BASE_URL}campgrounds/sand_springs_200x200.webp`,
+    phone: undefined,
   },
   // {
   //   name: 'Chestnut Ridge Park',
@@ -211,58 +212,58 @@ const CAMPGROUNDS = [
   // },
 ]
 
-const AIRPORTS = [
-  {
-    distance: 9,
-    icao: 'mgw',
-    name: 'Morgantown Municipal Airport',
-  },
-  { distance: 36, icao: 'ckb', name: 'Clarksburg Airport' },
-  {
-    distance: 77,
-    icao: 'pit',
-    name: 'Pittsburgh International Airport',
-    emph: true,
-  },
-  {
-    distance: 204,
-    icao: 'cmh',
-    name: 'Columbus International Airport',
-    emph: true,
-  },
-  {
-    distance: 206,
-    icao: 'cle',
-    name: 'Cleveland International Airport',
-    emph: true,
-  },
-  { distance: 158, icao: 'crw', name: 'West Virginia International Airport' },
-  {
-    distance: 211,
-    icao: 'iad',
-    name: 'Dulles International Airport',
-    emph: true,
-  },
-  { distance: 222, icao: 'dca', name: 'Washington National Airport' },
-  { distance: 223, icao: 'bwi', name: 'Baltimore International Airport' },
-  { distance: 193, icao: 'cak', name: 'Akron-Canton Airport' },
-  { distance: 383, icao: 'clt', name: 'Charlotte International Airport' },
-  { distance: 320, icao: 'cvg', name: 'Cincinnati International Airport' },
-  { distance: 233, icao: 'mdt', name: 'Harrisburg International Airport' },
-  { distance: 273, icao: 'day', name: 'Dayton International Airport' },
-  { distance: 339, icao: 'lex', name: 'Lexington Airport' },
-]
+// const AIRPORTS = [
+//   {
+//     distance: 9,
+//     icao: 'mgw',
+//     name: 'Morgantown Municipal Airport',
+//   },
+//   { distance: 36, icao: 'ckb', name: 'Clarksburg Airport' },
+//   {
+//     distance: 77,
+//     icao: 'pit',
+//     name: 'Pittsburgh International Airport',
+//     emph: true,
+//   },
+//   {
+//     distance: 204,
+//     icao: 'cmh',
+//     name: 'Columbus International Airport',
+//     emph: true,
+//   },
+//   {
+//     distance: 206,
+//     icao: 'cle',
+//     name: 'Cleveland International Airport',
+//     emph: true,
+//   },
+//   { distance: 158, icao: 'crw', name: 'West Virginia International Airport' },
+//   {
+//     distance: 211,
+//     icao: 'iad',
+//     name: 'Dulles International Airport',
+//     emph: true,
+//   },
+//   { distance: 222, icao: 'dca', name: 'Washington National Airport' },
+//   { distance: 223, icao: 'bwi', name: 'Baltimore International Airport' },
+//   { distance: 193, icao: 'cak', name: 'Akron-Canton Airport' },
+//   { distance: 383, icao: 'clt', name: 'Charlotte International Airport' },
+//   { distance: 320, icao: 'cvg', name: 'Cincinnati International Airport' },
+//   { distance: 233, icao: 'mdt', name: 'Harrisburg International Airport' },
+//   { distance: 273, icao: 'day', name: 'Dayton International Airport' },
+//   { distance: 339, icao: 'lex', name: 'Lexington Airport' },
+// ]
 
-const RENTAL_CARS = [
-  { name: 'Enterprise', link: 'enterprise.com' },
-  { name: 'Avis', link: 'avis.com' },
-  { name: 'Hertz', link: 'hertz.com' },
-  { name: 'Budget', link: 'budget.com' },
-  { name: 'Alamo', link: 'alamo.com' },
-  { name: 'Dollar', link: 'dollar.com' },
-  { name: 'National', link: 'nationalcar.com' },
-  { name: 'Sixt', link: 'sixt.com' },
-]
+// const RENTAL_CARS = [
+//   { name: 'Enterprise', link: 'enterprise.com' },
+//   { name: 'Avis', link: 'avis.com' },
+//   { name: 'Hertz', link: 'hertz.com' },
+//   { name: 'Budget', link: 'budget.com' },
+//   { name: 'Alamo', link: 'alamo.com' },
+//   { name: 'Dollar', link: 'dollar.com' },
+//   { name: 'National', link: 'nationalcar.com' },
+//   { name: 'Sixt', link: 'sixt.com' },
+// ]
 
 export function Travel() {
   const { palette } = useTheme()
@@ -524,7 +525,7 @@ export function Travel() {
                   xs={12}
                   md={6}
                   key={item.name}
-                  backgroundColor={`${item.color}44`}
+                  sx={{ backgroundColor: `${item.color}44` }}
                 >
                   <Grid container>
                     <StyledGrid item xs={12} md={4}>
@@ -651,14 +652,14 @@ export function Travel() {
 
         <Grid
           container
-          backgroundColor={palette.grey[200]}
+          sx={{ backgroundColor: palette.grey[200] }}
           padding="2rem 1rem"
           alignItems="center"
         >
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <img src="/travel/koa.png" />
           </Grid>
-          <Grid item xs={9}>
+          <Grid item xs={12} md={9}>
             <Typography textAlign="justify">
               Want to stay off the grid? The KOA at Mylan Park is officially
               open, and with new facilities and beautiful lodging options, we

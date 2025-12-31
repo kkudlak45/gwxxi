@@ -1,11 +1,10 @@
 import { Grid, Typography } from '@mui/material'
-import { Fragment } from 'react/jsx-runtime'
 import { Justified } from '../Team/Team'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
 
 export function Trading() {
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Typography variant="h2" marginTop="2rem">
         Create Your Own CacheMore 2026 Trading Card
       </Typography>
@@ -188,6 +187,6 @@ export function Trading() {
 
       <br />
       <br />
-    </Fragment>
+    </div>
   )
 }

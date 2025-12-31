@@ -60,7 +60,7 @@ function App() {
                 <Route path="*" element={<Navigate to="/events/2026" />} />
               </Route>
             </Route>
-            
+
             <Route path="*" element={<Navigate to="/events/2026" />} />
           </Routes>
         </Container>

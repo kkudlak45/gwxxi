@@ -1,5 +1,4 @@
 import { styled, Typography } from '@mui/material'
-import { Fragment } from 'react/jsx-runtime'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
 import { Section } from '../../components/Section'
 
@@ -14,7 +13,7 @@ export const GoodSection = styled(Section)({
 
 export function Team() {
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Typography variant="h2" marginTop="2rem">
         Tech Team Challenge
       </Typography>
@@ -260,6 +259,6 @@ export function Team() {
 
       <br />
       <br />
-    </Fragment>
+    </div>
   )
 }

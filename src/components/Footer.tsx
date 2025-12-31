@@ -64,7 +64,7 @@ export default function Footer() {
           >
             <img
               alt="the GeoWoodstock XXI footer brand icon"
-              src={`${import.meta.env.BASE_URL}footericonnobg.webp`}
+              src={`${import.meta.env.BASE_URL}cachemore/branding/logobig.png`}
               style={{
                 borderRadius: '12px',
                 maxWidth: isMobile ? '80%' : '240px',
@@ -89,17 +89,17 @@ export default function Footer() {
                 fontSize="1.8rem"
                 textAlign="start"
               >
-                GEOWOODSTOCK XXI
+                CacheMore 2026
               </Typography>
               <div style={isMobile ? { textAlign: 'center' } : {}}>
                 <Typography style={{ color: 'white' }}>
-                  Geocaching GIGA-Event
+                  Geocaching MEGA-Event
                 </Typography>
                 <Typography style={{ color: 'white' }}>
                   Morgantown, West Virginia
                 </Typography>
                 <Typography style={{ color: 'white' }}>
-                  May 22 - 25, 2025
+                  June 26 - 28, 2025
                 </Typography>
               </div>
               <div style={{ display: 'flex', gap: '4px', marginLeft: '-8px' }}>

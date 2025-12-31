@@ -1,8 +1,6 @@
 import { Grid, Typography, useTheme } from '@mui/material'
-import { Fragment } from 'react/jsx-runtime'
 import { Section } from '../../components/Section'
 import {
-  blackDiamondBackers,
   friends,
   goldSponsors,
   silverSponsors,
@@ -159,7 +157,7 @@ export function Sponsors() {
   const { palette } = useTheme()
 
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Helmet>
         <title>CacheMore 2026 - Sponsors</title>
         <meta
@@ -236,6 +234,6 @@ export function Sponsors() {
           </Typography>
         </SponsorBlock>
       </Section> */}
-    </Fragment>
+    </div>
   )
 }

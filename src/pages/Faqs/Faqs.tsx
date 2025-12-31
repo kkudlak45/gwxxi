@@ -11,9 +11,6 @@ import { useIsMobile } from '../../hooks/useIsMobile'
 import { Section } from '../../components/Section'
 import { Helmet } from 'react-helmet'
 
-const VENUE_LINK =
-  'https://www.google.com/maps/place/Hazel+%26+J.W.+Ruby+Community+Center+at+Mylan+Park/@39.6364343,-80.0333398,17z/data=!3m1!4b1!4m6!3m5!1s0x883579357e332689:0x54cc7607d958f900!8m2!3d39.636431!4d-80.0312464!16s%2Fg%2F11cn7g375j?entry=ttu'
-
 export function FaqCard({
   question,
   children,

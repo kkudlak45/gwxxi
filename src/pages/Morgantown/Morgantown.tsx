@@ -5,7 +5,6 @@ import { useIsMobile } from '../../hooks/useIsMobile'
 import { CHARCOAL } from '../../constants/theme'
 import Carousel from 'react-multi-carousel'
 import { FaqCard } from '../Faqs/Faqs'
-import { Helmet } from 'react-helmet'
 
 const StyledGrid = styled(Grid)(() => {
   return {

@@ -169,20 +169,20 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {[...pages].map((page) => (
-                <MenuItem
-                  key={page.text}
+              {[...pages, ...infoPages, ...activityPages].map((page) => (
+                <a
                   href={page.href}
-                  onClick={handleCloseNavMenu}
+                  target={page.text === 'Shop' ? '_blank' : undefined}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                  <a
+                  <MenuItem
+                    key={page.text}
                     href={page.href}
-                    target={page.text === 'Shop' ? '_blank' : undefined}
-                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    onClick={handleCloseNavMenu}
                   >
                     <Typography textAlign="center">{page.text}</Typography>
-                  </a>
-                </MenuItem>
+                  </MenuItem>
+                </a>
               ))}
             </Menu>
           </Box>

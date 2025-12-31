@@ -72,13 +72,13 @@
   src: url('/fonts/TTNorms-Light.otf');
 }
 
-/* @font-face {
-  font-family: "TradeGothic";
-  src: url("/trade-gothic-lt-std/trade-gothic-lt-std-bold-condensed-no-20-5872def1d27d8.otf") format("otf");
-  font-weight: 700;
+@font-face {
+  font-family: 'TradeGothic-Bold';
+  src: url('/fonts/trade-gothic-lt-std/trade-gothic-lt-std-bold-condensed-no-20-5872def1d27d8.otf');
+  /* font-weight: 700;
   font-style: normal;
-  font-display: swap;
-} */
+  font-display: swap; */
+}
 
 /* @font-face {
   font-family: 'San Andreas';

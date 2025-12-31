@@ -1,12 +1,9 @@
-import { useTheme } from '@emotion/react'
-import { Typography } from '@mui/material'
-import { Fragment } from 'react/jsx-runtime'
-import { BoldKol } from '../Guide/CantMissExperiences/Counties'
+import { Typography, useTheme } from '@mui/material'
 
 export function Puzzles() {
   const { palette } = useTheme()
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Typography variant="h2" marginTop="2rem">
         Pre-Event Puzzles
       </Typography>
@@ -83,6 +80,6 @@ export function Puzzles() {
 
       <br />
       <br />
-    </Fragment>
+    </div>
   )
 }

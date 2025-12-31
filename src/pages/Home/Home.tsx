@@ -6,10 +6,9 @@ import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
 import { BLUE, CHARCOAL } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
-import { platinumSponsors } from '../Sponsors/sponsorsConstants'
+import { goldSponsors } from '../Sponsors/sponsorsConstants'
 import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
 import './Home.css'
-import { Numbers } from './Numbers'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
 
 const BANNER_CODE = `<p style="text-align:center"><a target="_blank" href="https://coord.info/GCBEBMA"><img src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png" style="height:135px;width:600px;max-width:670px;"/></a></p>`
@@ -38,12 +37,12 @@ const InfoBlockStuff = [
   },
 ]
 
-const shopInfoBlock = {
-  title: 'Shop',
-  imgSrc: `${import.meta.env.BASE_URL}homeicons/shop_400x400.webp`,
-  href: 'https://www.GeoWoodstockXXI.com/Register',
-  text: 'The official GeoWoodstock XXI has reopened! Now is your chance to buy geocoins, pathtags, event shirts, and more! All items are in limited quantities and will be shipped to the address provided. The store will only be available for a limited time, so if you missed any GWXXI SWAG, this is your FINAL chance.',
-}
+// const shopInfoBlock = {
+//   title: 'Shop',
+//   imgSrc: `${import.meta.env.BASE_URL}homeicons/shop_400x400.webp`,
+//   href: 'https://www.GeoWoodstockXXI.com/Register',
+//   text: 'The official GeoWoodstock XXI has reopened! Now is your chance to buy geocoins, pathtags, event shirts, and more! All items are in limited quantities and will be shipped to the address provided. The store will only be available for a limited time, so if you missed any GWXXI SWAG, this is your FINAL chance.',
+// }
 
 export function Home() {
   const isMobile = useIsMobile()
@@ -131,7 +130,12 @@ export function Home() {
           {'Do you have what it takes to crack the CacheMore code?'}
         </Typography>
 
-        <Typography textAlign="justify" lineHeight="1.6rem" fontSize="1.1rem">
+        <Typography
+          textAlign="justify"
+          lineHeight="1.6rem"
+          fontSize="1.1rem"
+          padding="0 1rem"
+        >
           Geocaching is on the brink of its most ambitious evolution as a
           renowned coder known as RUBATOSE unveils Cache AI, a cutting-edge
           system designed to deliver faster finds, easier puzzles, and fewer
@@ -376,7 +380,7 @@ export function Home() {
             </a>
             {' page for sponsorship information.'}
           </Typography>
-          <CorporateSponsorBlock sponsors={platinumSponsors} />
+          <CorporateSponsorBlock sponsors={goldSponsors} />
         </div>
       </div>
       <br />
@@ -394,14 +398,16 @@ export function Home() {
           </code>
         </pre>
 
-        <p style={{ textAlign: 'center' }}>
-          <a target="_blank" href="https://coord.info/GCBEBMA">
-            <img
-              src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png"
-              style={{ height: '135px', width: '600px', maxWidth: '670px' }}
-            />
-          </a>
-        </p>
+        <div style={{ maxWidth: '90%', width: '90%', overflowX: 'scroll' }}>
+          <p style={{ textAlign: 'center' }}>
+            <a target="_blank" href="https://coord.info/GCBEBMA">
+              <img
+                src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png"
+                style={{ height: '135px', width: '600px', maxWidth: '670px' }}
+              />
+            </a>
+          </p>
+        </div>
       </Section>
     </Fragment>
   )

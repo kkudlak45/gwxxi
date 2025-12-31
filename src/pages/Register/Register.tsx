@@ -1,5 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material'
-import { Fragment } from 'react'
+import { Button, Grid, Typography, useTheme } from '@mui/material'
 import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
 import { useIsMobile } from '../../hooks/useIsMobile'
@@ -7,89 +6,6 @@ import { FaqCard } from '../Faqs/Faqs'
 import { BoldKol } from '../Guide/CantMissExperiences/Counties'
 import { CHARCOAL } from '../../constants/theme'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
-import { useTheme } from '@emotion/react'
-
-function PictureCard({
-  title,
-  text,
-  imgSrc,
-  imgAlt,
-}: {
-  title: string
-  text: React.ReactNode
-  imgSrc: string
-  imgAlt: string
-}): JSX.Element {
-  const isMobile = useIsMobile()
-
-  if (isMobile) {
-    return (
-      <Fragment>
-        <Grid item xs={4}>
-          <img
-            alt={imgAlt}
-            src={imgSrc}
-            style={{ maxWidth: '100%', aspectRatio: '1' }}
-          />
-        </Grid>
-        <Grid item xs={8}>
-          <div
-            style={{
-              height: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              flexDirection: 'column',
-              paddingLeft: '1rem',
-            }}
-          >
-            <Typography
-              variant="h3"
-              fontSize="1.4rem"
-              textAlign="start"
-              marginBottom="0.6rem"
-            >
-              {title}
-            </Typography>
-            <Typography>{text}</Typography>
-          </div>
-        </Grid>
-      </Fragment>
-    )
-  }
-
-  return (
-    <Fragment>
-      <Grid item xs={3}>
-        <img
-          alt={imgAlt}
-          src={imgSrc}
-          style={{ maxWidth: '100%', aspectRatio: '1' }}
-        />
-      </Grid>
-      <Grid item xs={9}>
-        <div
-          style={{
-            height: '100%',
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            paddingLeft: '1rem',
-          }}
-        >
-          <Typography
-            variant="h3"
-            fontSize="1.6rem"
-            textAlign="start"
-            marginBottom="0.6rem"
-          >
-            {title}
-          </Typography>
-          <Typography>{text}</Typography>
-        </div>
-      </Grid>
-    </Fragment>
-  )
-}
 
 // function NonPictureCard({
 //   title,
@@ -144,7 +60,7 @@ export function Register(): JSX.Element {
     : { flexDirection: 'column', alignItems: 'center' }
 
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Helmet>
         <title>CacheMore 2026 - Registration and SWAG Packages</title>
         <meta
@@ -293,7 +209,8 @@ export function Register(): JSX.Element {
         <Grid container alignItems="center">
           <Grid
             item
-            xs={2}
+            xs={12}
+            md={2}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -306,12 +223,14 @@ export function Register(): JSX.Element {
                 borderRadius: '8px',
                 border: `2px solid ${CHARCOAL}`,
                 boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                marginBottom: isMobile ? '1rem' : 0,
               }}
             />
           </Grid>
           <Grid
             item
-            xs={10}
+            xs={12}
+            md={10}
             display="flex"
             alignItems="center"
             flexDirection="column"
@@ -336,7 +255,8 @@ export function Register(): JSX.Element {
         <Grid container alignItems="center">
           <Grid
             item
-            xs={2}
+            xs={12}
+            md={2}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -349,12 +269,14 @@ export function Register(): JSX.Element {
                 borderRadius: '8px',
                 border: `2px solid ${CHARCOAL}`,
                 boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                marginBottom: isMobile ? '1rem' : 0,
               }}
             />
           </Grid>
           <Grid
             item
-            xs={10}
+            xs={12}
+            md={10}
             display="flex"
             alignItems="center"
             flexDirection="column"
@@ -380,7 +302,8 @@ export function Register(): JSX.Element {
         <Grid container alignItems="center">
           <Grid
             item
-            xs={2}
+            xs={12}
+            md={2}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -393,12 +316,14 @@ export function Register(): JSX.Element {
                 borderRadius: '8px',
                 border: `2px solid ${CHARCOAL}`,
                 boxShadow: `0 0 12px 4px ${CHARCOAL}88`,
+                marginBottom: isMobile ? '1rem' : 0,
               }}
             />
           </Grid>
           <Grid
             item
-            xs={10}
+            xs={12}
+            md={10}
             display="flex"
             alignItems="center"
             flexDirection="column"
@@ -581,6 +506,6 @@ export function Register(): JSX.Element {
           <a href="mailto:info@CacheMore.com">info@CacheMore.com</a>
         </Typography>
       </Section>
-    </Fragment>
+    </div>
   )
 }

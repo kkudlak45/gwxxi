@@ -1,21 +1,16 @@
 import { Typography } from '@mui/material'
-import { Fragment } from 'react/jsx-runtime'
-import { Section } from '../../components/Section'
-import { GREEN } from '../../constants/theme'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
 import { BoldKol } from '../Guide/CantMissExperiences/Counties'
 
 export function Expect() {
   return (
-    <Fragment>
+    <div style={{ padding: '0 1rem' }}>
       <Typography variant="h2" marginTop="2rem">
         What to Expect
       </Typography>
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
-        <Typography variant="h4">
-          Story
-        </Typography>
+        <Typography variant="h4">Story</Typography>
         <Typography textAlign="justify">
           For years, Geocachers have pushed the limits of exploration,
           ingenuity, and problem-solving. Now, the game stands on the brink of
@@ -66,9 +61,7 @@ export function Expect() {
       <br />
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
-        <Typography variant="h4">
-          How does it work?
-        </Typography>
+        <Typography variant="h4">How does it work?</Typography>
         <Typography textAlign="justify">
           CacheMore works much like a live-action blend of a murder mystery, an
           escape room, and a game of Dungeons & Dragons… except the stage is the
@@ -97,9 +90,7 @@ export function Expect() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4">
-          Join a tech team!
-        </Typography>
+        <Typography variant="h4">Join a tech team!</Typography>
         <Typography textAlign="justify">
           When you register for CacheMore 2026, you’ll have the option to join
           one of two ‘Tech Teams’, adding an extra layer of identity and
@@ -299,6 +290,6 @@ export function Expect() {
           <a href="mailto:info@cachemore.com">info@cachemore.com</a>
         </Typography>
       </div>
-    </Fragment>
+    </div>
   )
 }
