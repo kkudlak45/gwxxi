@@ -271,7 +271,7 @@ export function Travel() {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Travel and Lodging</title>
+        <title>CacheMore 2026 - Travel and Lodging</title>
         <meta
           name="description"
           content="Wondering how to get to Morgantown, West Virginia or where to stay on the weekend of CacheMore 2026? Check this page for deals and discounts relating to hotels, campgrounds, airports, flights, and car rentals!"

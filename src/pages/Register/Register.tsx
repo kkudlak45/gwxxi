@@ -146,10 +146,10 @@ export function Register(): JSX.Element {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Registration and SWAG Packages</title>
+        <title>CacheMore 2026 - Registration and SWAG Packages</title>
         <meta
           name="description"
-          content="GeoWoodstock XXI is a free-to-attend event, but registering everyone in your party helps the event organizers prepare for an accurate number of attendees. Paid registration options are also available for additional activities such as the Country Roads Challenge and catered lunch. In addition to activities, paid registration options also include souvenirs to remember your time in Almost Heaven such as trackable Geocoins, Pathtags, a shirt, and much more. Not only are these nice keepsakes from the event, but your financial contribution helps ensure GeoWoodstock XXI will be the best event possible. Check out what’s available below, and when you’re ready, click the Shop icon above to visit our store. Registration options will be available starting October 11, 2024, and end in February 2025."
+          content="CacheMore 2026 is free to attend, but SWAG sales such as Geocoins, shirts, and Pathtags help fund the event and all additional activities. Registration for this year’s event will open on January 1, 2026 and close on June 5, 2026, while supplies last. To maintain demand for the inaugural event, team registration packages are extremely limited and are expected to sell out quickly. Items found within registration packages will be required to participate in some of the weekend’s activities such as the Tech Team and Trading Card Challenges. By registering, you are paying for not only the unique souvenirs from the event, but also the opportunity to participate in one of the most immersive Geocaching activities there is."
         />
       </Helmet>
 

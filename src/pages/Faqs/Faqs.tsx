@@ -48,10 +48,10 @@ export function Faqs() {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Frequently Asked Questions</title>
+        <title>CacheMore 2026 - Frequently Asked Questions</title>
         <meta
           name="description"
-          content="Not finding what you need? Frequently asked questions answered here! Check this page for more information about the upcoming geocaching mega event in Morgantown, West Virginia - GeoWoodstock XXI"
+          content="Not finding what you need? Frequently asked questions answered here! Check this page for more information about the upcoming geocaching mega event in Morgantown, West Virginia - CacheMore 2026"
         />
       </Helmet>
 

@@ -161,10 +161,10 @@ export function Sponsors() {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Morgantown</title>
+        <title>CacheMore 2026 - Sponsors</title>
         <meta
           name="description"
-          content="The GeoWoodstock XXI team wants to thank our excellent sponsors for helping to fund and support the original geocaching Mega Event. Thanks to our sponsors for their contributions to helping us host the event in Wild and Wonderful Morgantown, West Virginia!"
+          content="Thank you to the geocaching community and our sponsors for supporting CacheMore. Your contributions help make this event possible and ensure we can continue offering quality experiences for attendees. We appreciate the partnership and commitment that drives CacheMore forward. To learn more and consider donating yourself, please email"
         />
       </Helmet>
 

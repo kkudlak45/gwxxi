@@ -13,7 +13,7 @@ export function Expect() {
       </Typography>
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
-        <Typography variant="h4" color={GREEN}>
+        <Typography variant="h4">
           Story
         </Typography>
         <Typography textAlign="justify">
@@ -66,7 +66,7 @@ export function Expect() {
       <br />
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
-        <Typography variant="h4" color={GREEN}>
+        <Typography variant="h4">
           How does it work?
         </Typography>
         <Typography textAlign="justify">
@@ -97,7 +97,7 @@ export function Expect() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" color={GREEN}>
+        <Typography variant="h4">
           Join a tech team!
         </Typography>
         <Typography textAlign="justify">
@@ -133,7 +133,7 @@ export function Expect() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" color={GREEN}>
+        <Typography variant="h4">
           What are the main event objectives?
         </Typography>
         <Typography textAlign="justify">
@@ -211,7 +211,7 @@ export function Expect() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" color={GREEN}>
+        <Typography variant="h4">
           How many caches will be published for the event?
         </Typography>
         <Typography>
@@ -292,7 +292,9 @@ export function Expect() {
           alignItems: 'center',
         }}
       >
-        <Typography fontSize="1.4rem"><BoldKol>Got a question? Feel free to send us an email!</BoldKol></Typography>
+        <Typography fontSize="1.4rem">
+          <BoldKol>Got a question? Feel free to send us an email!</BoldKol>
+        </Typography>
         <Typography fontSize="1.1rem">
           <a href="mailto:info@cachemore.com">info@cachemore.com</a>
         </Typography>

@@ -127,13 +127,13 @@ export function Morgantown() {
 
   return (
     <Fragment>
-      <Helmet>
-        <title>GeoWoodstock XXI - Morgantown</title>
+      {/* <Helmet>
+        <title>CacheMore 2026 - Morgantown</title>
         <meta
           name="description"
           content="Morgantown, West Virginia will be the host location for GeoWoodstock XXI in 2025. This page highlights places to go and landmarks to see in and around Morgantown as well as throughout the state of West Virginia"
         />
-      </Helmet>
+      </Helmet> */}
 
       <Typography
         variant="h2"

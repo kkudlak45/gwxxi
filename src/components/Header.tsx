@@ -25,10 +25,10 @@ export const pages = [
   //   text: 'Info',
   //   href: `${import.meta.env.BASE_URL}events/2026/information`,
   // },
-  {
-    text: 'Activities',
-    href: `${import.meta.env.BASE_URL}events/2026/activities`,
-  },
+  // {
+  //   text: 'Activities',
+  //   href: `${import.meta.env.BASE_URL}events/2026/activities`,
+  // },
   {
     text: 'Register',
     href: 'https://cachemore.store/collections/cachemore-2026',
@@ -62,12 +62,33 @@ export const infoPages = [
   },
 ]
 
+export const activityPages = [
+  {
+    text: 'Pre-Event Puzzles',
+    href: `${import.meta.env.BASE_URL}events/2026/puzzles`,
+  },
+  {
+    text: 'Tech Team Challenge',
+    href: `${import.meta.env.BASE_URL}events/2026/teams`,
+  },
+  {
+    text: 'Trading Card Challenge',
+    href: `${import.meta.env.BASE_URL}events/2026/trading-cards`,
+  },
+  {
+    text: 'Visit Mountaineer Country GeoTour',
+    href: `${import.meta.env.BASE_URL}projects/vmc-gt`,
+  },
+]
+
 function ResponsiveAppBar() {
   const isMobile = useIsMobile()
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null)
   const [anchorElInfo, setAnchorElInfo] = React.useState<null | HTMLElement>(
     null,
   )
+  const [anchorElActivities, setAnchorElActivities] =
+    React.useState<null | HTMLElement>(null)
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget)
@@ -85,12 +106,20 @@ function ResponsiveAppBar() {
     setAnchorElInfo(null)
   }
 
+  const handleActivities = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElActivities(event.currentTarget)
+  }
+
+  const handleActivitiesClose = () => {
+    setAnchorElActivities(null)
+  }
+
   return (
     <AppBar position="static" sx={{ width: '100%' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ height: '84px', maxHeight: '84px' }}>
           <a
-            href="/events"
+            href="/events/2026"
             style={{
               height: isMobile ? 'auto' : '70%',
               maxHeight: '70%',
@@ -165,7 +194,7 @@ function ResponsiveAppBar() {
               justifyContent: 'center',
             }}
           >
-            {pages.map((page, i) => (
+            {pages.map((page) => (
               <Button
                 key={page.text}
                 target={page.text === 'Shop' ? '_blank' : undefined}
@@ -177,7 +206,7 @@ function ResponsiveAppBar() {
                   color: 'white',
                   display: 'block',
                   textAlign: 'center',
-                  borderRight: i < pages.length - 1 ? '2px solid white' : '',
+                  borderRight: '2px solid white',
                   borderRadius: '0px',
                   paddingLeft: '1.2rem',
                   paddingRight: '1.2rem',
@@ -186,6 +215,64 @@ function ResponsiveAppBar() {
                 {page.text}
               </Button>
             ))}
+
+            <Button
+              key="info"
+              style={{ fontSize: '1.1rem !important' }}
+              onClick={handleActivities}
+              sx={{
+                my: 2,
+                color: 'white',
+                display: 'flex',
+                paddingLeft: '1rem',
+                textAlign: 'center',
+                borderRight: '2px solid white',
+              }}
+              endIcon={
+                <ArrowDropDown
+                  sx={{
+                    marginLeft: '-0.5rem',
+                    marginTop: '-0.2rem',
+                    height: '1.4rem',
+                    width: '1.4rem',
+                  }}
+                />
+              }
+            >
+              <Typography color="white" fontSize="1.1rem">
+                Activities
+              </Typography>
+            </Button>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElActivities}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElActivities)}
+              onClose={handleActivitiesClose}
+            >
+              {activityPages.map((page) => {
+                return (
+                  <a
+                    href={page.href}
+                    target={page.text === 'Shop' ? '_blank' : undefined}
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                  >
+                    <MenuItem key={page.href} onClick={handleActivitiesClose}>
+                      <Typography textAlign="center">{page.text}</Typography>
+                    </MenuItem>
+                  </a>
+                )
+              })}
+            </Menu>
+
             <Button
               key="info"
               style={{ fontSize: '1.1rem !important' }}

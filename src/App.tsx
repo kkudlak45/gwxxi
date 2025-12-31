@@ -9,14 +9,12 @@ import { theme } from './constants/theme'
 import { Travel } from './pages/Travel'
 import { Faqs } from './pages/Faqs'
 import { Sponsors } from './pages/Sponsors'
-import { Morgantown } from './pages/Morgantown'
 import { Register } from './pages/Register'
 import 'react-multi-carousel/lib/styles.css'
-import { Guide } from './pages/Guide/Guide'
-import { EVENT_GUIDE_PAGES } from './pages/Guide/pages'
-import { GeoTour } from './pages/Guide/EventActivities/GeoTour'
-import { Live } from './pages/Guide/Live'
 import { Expect } from './pages/expect/Expect'
+import { Team } from './pages/Team/Team'
+import { Puzzles } from './pages/Puzzles/Puzzles'
+import { Trading } from './pages/Trading/Trading'
 
 function App() {
   return (
@@ -25,6 +23,17 @@ function App() {
         <Header />
         <Container maxWidth="xl" sx={{ padding: '8px 0px' }}>
           <Routes>
+            <Route path="projects">
+              <Route
+                index
+                element={
+                  <div style={{ width: '100%', height: '90vh' }}>
+                    coming soon...
+                  </div>
+                }
+              />
+              <Route path="*" element={<Navigate to="/projects" />} />
+            </Route>
             <Route path="events">
               <Route path="2026">
                 <Route index element={<Home />} />
@@ -35,6 +44,9 @@ function App() {
                 <Route path="about" element={<Expect />} />
                 {/* <Route path="morgantown" element={<Morgantown />} /> */}
                 <Route path="register" element={<Register />} />
+                <Route path="puzzles" element={<Puzzles />} />
+                <Route path="teams" element={<Team />} />
+                <Route path="trading-cards" element={<Trading />} />
                 {/* <Route path="geotour" element={<GeoTour />} /> */}
                 {/* <Route path="live" element={<Live />} /> */}
                 {/* <Route path="guide" element={<Guide />} /> */}
@@ -48,6 +60,8 @@ function App() {
                 <Route path="*" element={<Navigate to="/events/2026" />} />
               </Route>
             </Route>
+            
+            <Route path="*" element={<Navigate to="/events/2026" />} />
           </Routes>
         </Container>
         <Footer />

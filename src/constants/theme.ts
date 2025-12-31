@@ -32,7 +32,7 @@ export const theme = createTheme({
     h3: {
       textAlign: 'center',
       fontFamily: 'TradeGothic',
-      color: GREEN,
+      color: BLUE,
       textTransform: 'none',
     },
     h4: {

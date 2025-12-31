@@ -214,10 +214,10 @@ export function Events() {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Events and Activities</title>
+        <title>CacheMore 2026 - Events and Activities</title>
         <meta
           name="description"
-          content="Check here for a list of all the fun events and activities to participate in and around Morgantown during the weekend of GeoWoodstock XXI"
+          content="Check here for a list of all the fun events and activities to participate in and around Morgantown during the weekend of Cachemore 2026"
         />
       </Helmet>
       <div

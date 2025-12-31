@@ -54,10 +54,10 @@ export function Home() {
   return (
     <Fragment>
       <Helmet>
-        <title>GeoWoodstock XXI - Home</title>
+        <title>CacheMore - Home</title>
         <meta
           name="description"
-          content="Join us for GeoWoodstock XXI! The original Mega Geocaching Event is coming to Morgantown, West Virginia on May 24, 2025. Check here for information about the upcoming event. This event is now the second giga event ever in America!"
+          content="Geocaching is on the brink of its most ambitious evolution as a renowned coder known as RUBATOSE unveils Cache AI, a cutting-edge system designed to deliver faster finds, easier puzzles, and fewer DNFs. Rally your friends, form your team, and hit the ground running as you search for caches, gather clues, and race the clock to unravel a mystery that unfolds in real time. As each discovery feeds new information back into the system, the challenges grow more complex and the signals more cryptic, hinting that something isn't quite behaving as expected. Your mission is simple: participate, collaborate, and uncover the truth hidden within the test ... the fate of Geocaching may depend on it."
         />
       </Helmet>
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
@@ -131,7 +131,6 @@ export function Home() {
           {'Do you have what it takes to crack the CacheMore code?'}
         </Typography>
 
-        {/* TODO - link */}
         <Typography textAlign="justify" lineHeight="1.6rem" fontSize="1.1rem">
           Geocaching is on the brink of its most ambitious evolution as a
           renowned coder known as RUBATOSE unveils Cache AI, a cutting-edge
