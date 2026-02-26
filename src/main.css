@@ -11,3 +11,11 @@ a {
   color: #396b92;
   text-decoration-color: #396b92;
 }
+
+select {
+  font-family: 'Quicksand';
+}
+
+ol {
+  font-family: 'Quicksand';
+}

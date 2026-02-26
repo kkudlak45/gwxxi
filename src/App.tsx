@@ -15,6 +15,7 @@ import { Expect } from './pages/expect/Expect'
 import { Team } from './pages/Team/Team'
 import { Puzzles } from './pages/Puzzles/Puzzles'
 import { Trading } from './pages/Trading/Trading'
+import { Activate } from './pages/Activate/Activate'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               />
               <Route path="*" element={<Navigate to="/projects" />} />
             </Route>
+            <Route path="activate" element={<Activate />} />
             <Route path="events">
               <Route path="2026">
                 <Route index element={<Home />} />
