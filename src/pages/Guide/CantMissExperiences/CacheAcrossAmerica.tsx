@@ -20,15 +20,15 @@ export function CacheAcrossAmerica() {
           trails with rugged terrain and breathtaking views of the Cheat River.
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/cantmiss/cooperssp_800x533.jpg"
           style={{ maxWidth: '800px', width: '100%', aspectRatio: '800 / 533' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Parking</Subheader>
         <Typography>
@@ -40,8 +40,8 @@ export function CacheAcrossAmerica() {
           your vehicle is pulled completely off the road.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Know before you go</Subheader>
         <ul style={{ margin: '0px' }}>
@@ -81,8 +81,8 @@ export function CacheAcrossAmerica() {
           </li>
         </ul>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About the Cache Across America series</Subheader>
         <Typography>
@@ -98,7 +98,7 @@ export function CacheAcrossAmerica() {
           the United States.
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

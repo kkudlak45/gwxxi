@@ -23,15 +23,15 @@ export function CacheOdyssey() {
           This is the place to be during the summer.
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/cantmiss/cacheodyssey_800x600.jpg"
           style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 600' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Know before you go</Subheader>
         <ul>
@@ -73,8 +73,8 @@ export function CacheOdyssey() {
           </li>
         </ul>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About the cache odyssey series</Subheader>
         <Typography>
@@ -87,8 +87,8 @@ export function CacheOdyssey() {
           accessible to all.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Where can you find another one?</Subheader>
         <Typography>
@@ -97,7 +97,7 @@ export function CacheOdyssey() {
           this grand adventure. Once you track down the one closest to you, why
           stop there?
         </Typography>
-        <br />
+        <p />
         <Typography>
           This cache is part of the East Central Region Geotour. There are six
           exciting GeoTours making up this series which include a total of 50
@@ -108,7 +108,7 @@ export function CacheOdyssey() {
           for more Cache Odyssey hides close to Morgantown!
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

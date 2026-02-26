@@ -220,7 +220,7 @@ export function Events() {
             lineHeight="1.4rem"
           >
             Consider checking out everything that makes North Central West
-            Virginia unique! We've partnered with several <br /> local
+            Virginia unique! We've partnered with several <p /> local
             businesses to make your weekend in Appalachia unforgettable!
           </Typography>
 
@@ -258,7 +258,7 @@ export function Events() {
                 >
                   {cacheTours.map((tour) => {
                     if (!tour) {
-                      return <br />
+                      return <p />
                     }
                     return (
                       <a

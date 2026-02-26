@@ -121,8 +121,8 @@ export function Home() {
           {'June 26 - 28, 2026'}
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography
           variant="h3"
@@ -284,8 +284,8 @@ export function Home() {
         </Grid>
       </Section>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <Typography variant="h3" width="80%" marginBottom="1.6rem">
@@ -342,7 +342,7 @@ export function Home() {
                     {info.title}
                   </Typography>
                   <Typography
-                    textAlign={isMobile ? 'center' : 'start'}
+                    textAlign={isMobile ? 'center' : 'justify'}
                     sx={{ padding: isMobile ? '1rem' : '0.4rem 1rem 0px 1rem' }}
                   >
                     {info.text} <a href={info.href}>Learn More</a>
@@ -376,7 +376,7 @@ export function Home() {
             {
               'Thank you to our incredible sponsors for helping make CacheMore 2026 a reality!'
             }
-            <br />
+            <p />
             {'Check out our '}
             <a
               style={{ color: BLUE }}
@@ -390,12 +390,12 @@ export function Home() {
           <CorporateSponsorBlock sponsors={goldSponsors} />
         </div>
       </div>
-      <br />
+      <p />
       <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
         <Typography textAlign="center">
           Want to share your excitement and let the world know you're heading to
           West Virginia for CacheMore 2026?
-          <br /> Copy and paste the following HTML code to your Geocaching
+          <p /> Copy and paste the following HTML code to your Geocaching
           Profile!
         </Typography>
 

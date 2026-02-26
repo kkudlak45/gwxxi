@@ -17,8 +17,8 @@ export function AdventureLabs() {
           Adventure Lab stages will be placed for you to enjoy!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>25 years of Geocaching (30)</Subheader>
         <Typography>
@@ -35,8 +35,8 @@ export function AdventureLabs() {
           all.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Treasures of our Town (5)</Subheader>
         <Typography>
@@ -48,8 +48,8 @@ export function AdventureLabs() {
           speakers, <a href="/guide/speakers">click here</a>.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Country Roads Challenge (10)</Subheader>
         <Typography>
@@ -63,7 +63,7 @@ export function AdventureLabs() {
           hours for each location. Go in and say hi - these locations are
           thrilled to welcome you!
         </Typography>
-        <br />
+        <p />
         <Typography>
           Please note, two of the locations that have letterboxes are in parks
           and do not have an associated Adventure Lab location. These stops have
@@ -71,8 +71,8 @@ export function AdventureLabs() {
           physical container.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Adventure Lab Puzzle (10)</Subheader>
         <Typography>
@@ -90,8 +90,8 @@ export function AdventureLabs() {
           bragging rights.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Cryptid Search (5)</Subheader>
         <Typography>
@@ -105,8 +105,8 @@ export function AdventureLabs() {
           blacklight!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Prickett's Fort Tour (5)</Subheader>
         <Typography>
@@ -123,8 +123,8 @@ export function AdventureLabs() {
           help you answer Adventure Lab questions.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Adventures in Appalachia (600)</Subheader>
         <Typography>
@@ -140,7 +140,7 @@ export function AdventureLabs() {
           information here!
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

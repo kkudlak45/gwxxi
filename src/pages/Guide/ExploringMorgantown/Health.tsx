@@ -17,7 +17,7 @@ export function Health() {
           caching in any new area, we want to make you aware of some potential
           risks you may encounter so you can be prepared for what to do.
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol style={{ color: 'red' }}>
             IN CASE OF EMERGENCY CALL 911.
@@ -25,12 +25,12 @@ export function Health() {
           Please don't hesitate. If you encounter another cacher needing help
           while out on the trail, please stop to help, Geocaching can wait.
         </Typography>
-        <br />
+        <p />
         <Typography>
           Morgantown has two major hospitals, you can find their information
           below.
         </Typography>
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>J.W. Ruby Memorial Hospital</BoldKol> -{' '}
@@ -51,14 +51,14 @@ export function Health() {
           <a href="tel:3045984000">(304) 284-7454</a>
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           If you are planning on exploring some of the area that make West
           Virginia so wild and wonderful, please keep these things in mind.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Venomous Snakes</BoldKol>. West Virginia is home to two
@@ -73,7 +73,7 @@ export function Health() {
           is highly recommended.
         </Typography>
 
-        <br />
+        <p />
 
         <Grid
           container
@@ -95,7 +95,7 @@ export function Health() {
           </Grid>
         </Grid>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Ticks.</BoldKol> As several members of our team will tell
@@ -107,7 +107,7 @@ export function Health() {
           tweezers, pulling them straight out without twisting.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Wildlife Encounters.</BoldKol> West Virginia's forests and
@@ -120,7 +120,7 @@ export function Health() {
           prevent attracting animals.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Posion Ivy.</BoldKol> Poison ivy is a common hazard in West
@@ -135,7 +135,7 @@ export function Health() {
           your first-aid kit for relief.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Remote Locations.</BoldKol> Many Geocaching spots in West
@@ -148,7 +148,7 @@ export function Health() {
           is crucial when exploring secluded areas far from help.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Country Roads.</BoldKol> While most road in West Virginia are
@@ -159,7 +159,7 @@ export function Health() {
           caution as you acclimate to both the new car and our country roads.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Private Property.</BoldKol> When geocaching in West Virginia,
@@ -173,7 +173,7 @@ export function Health() {
           community.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Uneven Terrain.</BoldKol> Know your limits. West Virginia is
@@ -184,7 +184,7 @@ export function Health() {
           can easily breakaway. Hiking boots are strongly recommended.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Tree Climbs.</BoldKol> Morgantown has a slightly younger
@@ -193,7 +193,7 @@ export function Health() {
           your step while trying to reach these caches.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Weather.</BoldKol> May in Morgantown, WV, typically brings
@@ -207,7 +207,7 @@ export function Health() {
           fluctuate throughout the day.
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

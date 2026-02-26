@@ -60,8 +60,8 @@ export function Games() {
           area at Mylan Park on Friday (5/23) or Saturday (5/24) for a chance to
           win cache containers, trackables, pathtags, and MORE!
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About Wooden Nickels</Subheader>
         <Typography>
@@ -73,15 +73,15 @@ export function Games() {
           be scattered in caches throughout the weekend, so keep an eye out as
           you explore Morgantown!
         </Typography>
-        <br />
+        <p />
         <Typography>
           Each wooden nickel equals one play on any of the three games
           available, or you can collect five to play the big game. Wooden
           nickels will be marked on the back and returned to you, or discarded
           if you don't wish to keep them.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About the Games</Subheader>
         <Typography>
@@ -90,8 +90,8 @@ export function Games() {
           Virginia state animals! Each game has a different trackable; play all
           three games to win the full set.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
         <Grid container rowSpacing={4}>
           <NickelCard
             name="Dice Game"
@@ -109,8 +109,8 @@ export function Games() {
             text="Grab a winning film canister from the tote to win a Brook Trout trackable."
           />
         </Grid>
-        <br />
-        <br />
+        <p />
+        <p />
         <Typography>
           Each of these games cost one wooden nickel to play, or you can collect
           five wooden nickels to play our signature game: plinko! Each player
@@ -121,14 +121,14 @@ export function Games() {
           player's puck lands on the “Grand Prize” slot, that player will win
           ALL four plinko prizes.
         </Typography>
-        <br />
+        <p />
         <Typography>
           Additionally, this three-piece trackable set will be available for
           purchase in our event store for $30, while supplies last. We encourage
           you to swap and trade with other attendees to complete your full set!
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>But wait... there's more!</Subheader>
         <Typography>
@@ -140,8 +140,8 @@ export function Games() {
           chosen by the player from the small prize pot. Players will have an
           approximately equal chance to win at each of the three main games.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Hours of operation</Subheader>
         <Typography>
@@ -161,7 +161,7 @@ export function Games() {
           additional players will NOT be allowed to get in line past closing
           time.
         </Typography>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

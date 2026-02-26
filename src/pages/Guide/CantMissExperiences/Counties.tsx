@@ -36,15 +36,15 @@ export function Counties() {
           around “Almost Heaven”, using Morgantown as a home base.
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/cantmiss/countymap.png"
           style={{ width: '100%', aspectRatio: '800 / 699', maxWidth: '800px' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography>
           <BoldKol>Red Route</BoldKol> - This route primarily uses U.S. Route 50
@@ -75,8 +75,8 @@ export function Counties() {
           county!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>General Tips</Subheader>
         <ul>
@@ -115,7 +115,7 @@ export function Counties() {
           </li>
         </ul>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

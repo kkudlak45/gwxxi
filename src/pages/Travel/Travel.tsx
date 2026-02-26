@@ -489,7 +489,7 @@ export function Travel() {
               <em>Starred airports are recommended</em>
             </Typography>
             <Typography fontStyle="italic" fontWeight="bold" textAlign="center">
-              🚨 Update: United Airlines now offers direct flights <br />
+              🚨 Update: United Airlines now offers direct flights <p />
               from IAD and ORD to MGW.
             </Typography>
           </Grid>
@@ -514,7 +514,7 @@ export function Travel() {
           the Signal Symposium together. There might even be some special
           surprises here as well!
         </Typography>
-        <br />
+        <p />
         <Grid container justifyContent="center">
           {HOTELS
             // .sort((h1, h2) => h1.distance - h2.distance)
@@ -568,7 +568,7 @@ export function Travel() {
                           return (
                             <Fragment>
                               {text}
-                              <br />
+                              <p />
                             </Fragment>
                           )
                         })}
@@ -666,14 +666,14 @@ export function Travel() {
               expect this venue to fill up quickly. Be steps away from the event
               and enjoy a special bonfire event on Saturday (6/27) night!
             </Typography>
-            <br />
+            <p />
             <BigOrangeButton href="https://koa.com/campgrounds/morgantown/?gad_source=1&gad_campaignid=23019580968&gbraid=0AAAAA9cPXpEV1MIDQKq4pAcqiQUf7MVXn&gclid=CjwKCAiAxc_JBhA2EiwAFVs7XOzvhRkYoy9YUXOXvlOffi2ZvSNG-boiFtiwiH5TWdmYD6Q8sBuJaBoCv5MQAvD_BwE">
               Click here to check out the KOA
             </BigOrangeButton>
           </Grid>
         </Grid>
 
-        <br />
+        <p />
 
         <Grid container>
           {CAMPGROUNDS.sort((h1, h2) => h1.distance - h2.distance).map(
@@ -726,7 +726,7 @@ export function Travel() {
                           return (
                             <Fragment>
                               {text}
-                              <br />
+                              <p />
                             </Fragment>
                           )
                         })}

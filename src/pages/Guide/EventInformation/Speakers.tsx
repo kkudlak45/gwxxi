@@ -20,8 +20,8 @@ function SpeakerEvent({
         <BoldKol>{title}</BoldKol> | {place}
       </Typography>
       <Typography>{children}</Typography>
-      <br />
-      <br />
+      <p />
+      <p />
     </div>
   )
 }
@@ -41,8 +41,8 @@ export function Speakers() {
           will take place all day on Saturday (5/24) in both the GeoWoodstock
           offset building and on the main stage inside GeoWoodstock HQ.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <SpeakerEvent
           title="9:00 AM - Puzzle Factory - Hixon"
@@ -145,7 +145,7 @@ export function Speakers() {
           final goodbye and announcing where GeoWoodstock is headed in 2026. Who
           knows, it could be in your backyard!
         </SpeakerEvent>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

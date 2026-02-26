@@ -43,7 +43,7 @@ export const SCHEDULE: Event[] = [
   {
     gccode: 'GCBEBMA',
     name: 'CacheMore 2026',
-    type: EventType.EVENT,
+    type: EventType.MEGA,
     // TODO:
     description: (
       <Fragment>
@@ -55,7 +55,7 @@ export const SCHEDULE: Event[] = [
         pickup throughout the day.
         <br />
         <br />
-        <BoldKol>11 am - 1am / Lunch</BoldKol>
+        <BoldKol>11 am - 1 pm / Lunch</BoldKol>
         <br />
         Local food trucks will be on site for you to grab a quick snack while
         attending sessions and puzzling with your team.

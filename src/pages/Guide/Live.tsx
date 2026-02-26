@@ -307,7 +307,7 @@ export function Live() {
       />
       <GuideBody>
         <hr style={{ borderBottom: `1px solid ${CHARCOAL}`, width: '90%' }} />
-        <br />
+        <p />
         <Subheader>Important Event Announcements</Subheader>
         <div
           style={{
@@ -323,9 +323,9 @@ export function Live() {
             }}
           ></iframe>
         </div>
-        <br />
+        <p />
         <hr style={{ borderBottom: `1px solid ${CHARCOAL}`, width: '90%' }} />
-        <br /> <br />
+        <p /> <p />
         <Typography>
           Welcome to America's 2nd GIGA event: Wild and Wonderful GeoWoodstock
           XXI. There's a lot of things happening throughout the weekend, so take
@@ -333,20 +333,20 @@ export function Live() {
           will be continuously updated with announcements and information, as
           well as an interactive live schedule to help keep track of everything.
         </Typography>
-        <br />
+        <p />
         {/* @ts-ignore */}
         <BigOrangeButton href="/guide" target="">
           Check out our event guide
         </BigOrangeButton>
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
         <Subheader>What's next?</Subheader>
         <Typography>
           Throughout the event, this schedule with update with the next event,
           activity, or presentation, so you'll never miss what's happening.{' '}
         </Typography>
-        <br />
+        <p />
         <Tabs
           value={currentDay}
           onChange={(_, v) => setCurrentDay(v)}
@@ -359,7 +359,7 @@ export function Live() {
           <Tab label="saturday (5/24)" value={TabNames.SATURDAY} />
           <Tab label="sunday (5/25)" value={TabNames.SUNDAY} />
         </Tabs>
-        <br />
+        <p />
         <VerticalTimeline>
           {timelineItems.map((e) => {
             return (
@@ -371,8 +371,8 @@ export function Live() {
             )
           })}
         </VerticalTimeline>
-        <br />
-        <br />
+        <p />
+        <p />
       </GuideBody>
     </Fragment>
   )

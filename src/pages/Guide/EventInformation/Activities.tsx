@@ -19,7 +19,7 @@ export function Activities() {
           visit.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Friday (5/23):</BoldKol> (VIPs and Friends of GeoWoodstock):
@@ -32,8 +32,8 @@ export function Activities() {
           <BoldKol>Saturday (5/24):</BoldKol> 8 am - 5 pm
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Welcome!</Subheader>
         <Typography>
@@ -42,8 +42,8 @@ export function Activities() {
           to the event. They'll help point you in the right direction.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Pick up your registration package</Subheader>
         <Typography>
@@ -55,8 +55,8 @@ export function Activities() {
           <a href="/guide/pickup">Click here to learn more.</a>
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Lunch</Subheader>
         <Typography>
@@ -66,8 +66,8 @@ export function Activities() {
           a first-come, first-served basis.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Games</Subheader>
         <Typography>
@@ -78,8 +78,8 @@ export function Activities() {
           <a href="/guide/games">Click here to learn more.</a>
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>
           GPS Adventures Maze Exhibit (
@@ -96,8 +96,8 @@ export function Activities() {
           <a href="http://coord.info/GCANAAA">Click here to learn more.</a>
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Travel Bug Exchange</Subheader>
         <Typography>
@@ -106,8 +106,8 @@ export function Activities() {
           exchange area to trade travelers from all over the world!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Meet the Mascots</Subheader>
         <Typography>
@@ -116,8 +116,8 @@ export function Activities() {
           expected to make an appearance.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Adventure Labs</Subheader>
         <Typography>
@@ -127,8 +127,8 @@ export function Activities() {
           even be 5 bonus labs hidden throughout the event center, too!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Shop the Vendors</Subheader>
         <Typography>
@@ -138,8 +138,8 @@ export function Activities() {
           <a href="/guide/vendors">Click here to learn more.</a>
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Visit the Exhibitors</Subheader>
         <Typography>
@@ -149,8 +149,8 @@ export function Activities() {
           <a href="/guide/vendors">Click here to learn more.</a>
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Photo Opportunities</Subheader>
         <Typography>
@@ -159,8 +159,8 @@ export function Activities() {
           a milestone, and add your pin to our world map.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>VIP Lounge</Subheader>
         <Typography>
@@ -168,8 +168,8 @@ export function Activities() {
           get a quick snack and drink.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Quilt Raffle</Subheader>
         <Typography>
@@ -179,8 +179,8 @@ export function Activities() {
           each. The drawing will take place during the closing ceremony at 5 pm.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Let's go caching!</Subheader>
         <Typography>
@@ -188,7 +188,7 @@ export function Activities() {
           available for you to find while attending GeoWoodstock XXI.
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

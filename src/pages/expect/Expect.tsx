@@ -57,8 +57,8 @@ export function Expect() {
         </Typography>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
         <Typography variant="h4">How does it work?</Typography>
@@ -79,8 +79,8 @@ export function Expect() {
         </Typography>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div
         style={{
@@ -100,7 +100,7 @@ export function Expect() {
           Teams are encouraged to wear their colors throughout the weekend, sign
           logs using matching ink, and proudly represent their side at events
           and in the field. With{' '}
-          <a href="https://docs.google.com/document/d/1stklVKy5LOmJTxibibRxAW12onL8bbR8nt3h_eHgMjM/edit?tab=t.nynrccza0ei2">
+          <a href="/events/2026/travel">
             special host hotels
           </a>{' '}
           designated for each team, it’s easy to meet up, swap ideas, and
@@ -113,8 +113,8 @@ export function Expect() {
         </BigOrangeButton>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div
         style={{
@@ -135,7 +135,7 @@ export function Expect() {
         <ul>
           <li>
             <Typography>
-              Join a ‘Tech Team’ and visit 20 Adventure Lab stops across
+              Join a ‘Tech Team’ and visit 25 Adventure Lab stops across
               Morgantown.
             </Typography>
           </li>
@@ -191,8 +191,8 @@ export function Expect() {
         </BigOrangeButton>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div
         style={{
@@ -206,7 +206,7 @@ export function Expect() {
           How many caches will be published for the event?
         </Typography>
         <Typography>
-          In total, there will be 18 new Geocaches and 30 adventure labs
+          In total, there will be 18 new Geocaches and 25 adventure labs
           published for this event. The five pre-event puzzles will be released,
           one per week, from May 8 to June 5. GeoTour caches will publish at 10
           am on Friday (6/26). All other caches will be published after the
@@ -233,7 +233,7 @@ export function Expect() {
           <ul style={{ marginTop: '0.4rem' }}>
             <li>
               <Typography>
-                There will be 30 Adventure Labs published throughout the event
+                There will be 25 Adventure Labs published throughout the event
                 weekend.
               </Typography>
             </li>

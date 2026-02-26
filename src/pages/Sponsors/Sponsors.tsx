@@ -201,14 +201,14 @@ export function Sponsors() {
           Thank you to all our sponsors! Your support allows guest to have the
           best experience possible. To learn more and consider donating
           yourself, please email{' '}
-          <a href="mailto: contact@geowoodstockxxi.com">
-            contact@GeoWoodstockXXI.com
+          <a href="mailto: contact@CacheMore.com">
+            contact@CacheMore.com
           </a>
           .
         </Typography>
       </div>
 
-      <Section sx={{ flexDirection: 'column', paddingBottom: 0 }}>
+      <Section sx={{ flexDirection: 'column', paddingBottom: "2rem" }}>
         <SponsorBlock title="Friends of CacheMore 2026" sponsors={friends}>
           <Typography textAlign="center">
             CacheMore wouldn't be possible without the amazing community that

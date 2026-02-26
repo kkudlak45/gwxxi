@@ -29,8 +29,8 @@ export function Puzzles() {
         </Typography>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div
         style={{
@@ -55,10 +55,11 @@ export function Puzzles() {
         <Typography>May 15 -</Typography>
         <Typography>May 22 -</Typography>
         <Typography>May 29 -</Typography>
+        <Typography>June 5 -</Typography>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         <Typography variant="h4">
@@ -78,8 +79,8 @@ export function Puzzles() {
         </Typography>
       </div>
 
-      <br />
-      <br />
+      <p />
+      <p />
     </div>
   )
 }

@@ -27,7 +27,7 @@ export function FaqCard({
       display="flex"
       justifyContent="center"
     >
-      <Accordion sx={{ width: '90%', maxWidth: '98%' }}>
+      <Accordion sx={{ width: '90%', maxWidth: '98%', height: "fit-content" }}>
         <AccordionSummary>
           <Typography fontSize="1.2rem" fontWeight="bold" textAlign="start">
             {question}
@@ -256,7 +256,7 @@ export function Faqs() {
               anticipated crowd at the event. Not only does this help with
               planning, but it also keeps you up to date with announcements and
               information, which will be emailed directly to you. If you’re
-              traveling with a family or a group, please have each active player
+              traveling with a family or a group, please have each active player{' '}
               <a href="https://www.geocaching.com/live/geocache/GCBEBMA/log">
                 log a Will Attend
               </a>{' '}

@@ -18,13 +18,13 @@ export function Highpoint() {
           Mountain State. If you're looking to summit Spruce Knob, this page
           will serve as your tour guide!
         </Typography>
-        <br />
+        <p />
         <img
           style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 534' }}
           src={`${import.meta.env.BASE_URL}eventguide/cantmiss/spruce.jpg`}
         />
-        <br />
-        <br />
+        <p />
+        <p />
         <Subheader>Accessing the Summit</Subheader>
         <Typography>
           Spruce Knob is located 3 hours southeast of Morgantown. Take U.S. 33
@@ -34,7 +34,7 @@ export function Highpoint() {
           Spruce Knob. The final turn is on National Forest Route 104, which
           will then lead you to the summit of Spruce Knob!
         </Typography>
-        <br />
+        <p />
         <Typography>
           Once at the summit, an observation tower is located 800 feet away
           along a gravel path. This tower also features the official USGS
@@ -42,8 +42,8 @@ export function Highpoint() {
           further down the trail is another scenic overlook, which offers
           sweeping views of the area.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
         <Subheader>Caches at the summit</Subheader>
         <Typography>
           Along the trail to the lookout tower, there is a Traditional (GCH3CD -
@@ -65,8 +65,8 @@ export function Highpoint() {
           </a>
           )!
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
         <Subheader>Bonus Info - Hoye Crest & Mount Davis</Subheader>
         <Typography>
           Hoye Crest is the highest point in Maryland, but it gets a special
@@ -91,7 +91,7 @@ export function Highpoint() {
           </a>{' '}
           (GC2GZ9G).
         </Typography>
-        <br />
+        <p />
         <Typography>
           Mount Davis is the highest point in Pennsylvania, and is just over an
           hour from Morgantown via I-68. Parking is available at the summit, as
@@ -101,7 +101,7 @@ export function Highpoint() {
           </a>
           )
         </Typography>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

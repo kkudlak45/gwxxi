@@ -72,7 +72,7 @@ export function CountryRoadsChallenge() {
           Getting Started
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           First, you'll need to acquire a Country Roads Challenge passport;
@@ -95,7 +95,7 @@ export function CountryRoadsChallenge() {
           tips and secrets about the tour as well!
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Additionally, you can download and print a passport by{' '}
@@ -111,7 +111,7 @@ export function CountryRoadsChallenge() {
           transferring the stamps.
         </Typography>
 
-        <br />
+        <p />
 
         <BigOrangeButton
           href={`${import.meta.env.BASE_URL}eventguide/eventactivities/Country Roads Challenge Passport.pdf`}
@@ -125,7 +125,7 @@ export function CountryRoadsChallenge() {
           About the series
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           All 10 caches featured on the Country Roads Challenge will go live at
@@ -144,7 +144,7 @@ export function CountryRoadsChallenge() {
           completing the challenge will be more fun with friends).
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           At each location, you are searching for an ammo can container with
@@ -166,7 +166,7 @@ export function CountryRoadsChallenge() {
           ready for use by the next finder.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           The entire series will take about 4 hours to complete, but please stop
@@ -183,7 +183,7 @@ export function CountryRoadsChallenge() {
           to archive one of these caches.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           If you're looking for some song recommendations, check out our{' '}
@@ -197,7 +197,7 @@ export function CountryRoadsChallenge() {
           for listening to Country Roads on loop for the whole weekend.)
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           To help plan your visit to Mountaineer Country, our team has put
@@ -208,13 +208,13 @@ export function CountryRoadsChallenge() {
           about each of the locations.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Here is our recommended order for taking the series:
         </Typography>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#1 - A Piece of Cake"
@@ -229,7 +229,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#2 - Surf or Turf"
@@ -245,7 +245,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#3 - Pocket Full of Posies "
@@ -260,7 +260,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#4 - Fore"
@@ -275,7 +275,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#5 - Adventures Ahead"
@@ -290,7 +290,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#6 - Tea for Two"
@@ -304,7 +304,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#7 - Something is Brewing"
@@ -319,7 +319,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#8 - Shack Attack"
@@ -334,7 +334,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#9 - Take Me Out To The..."
@@ -349,7 +349,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <CacheInfoBlock
           title="#10 - Hop on Pop"
@@ -364,7 +364,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </CacheInfoBlock>
 
-        <br />
+        <p />
 
         <Typography>
           In addition to the 10 letterbox-hybrid caches featured on the Country
@@ -380,7 +380,7 @@ export function CountryRoadsChallenge() {
           to stop in and thank them for being part of this series.{' '}
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Two of the locations that have letterboxes are in parks and do not
@@ -389,7 +389,7 @@ export function CountryRoadsChallenge() {
           container.
         </Typography>
 
-        <br />
+        <p />
 
         <div
           style={{
@@ -416,7 +416,7 @@ export function CountryRoadsChallenge() {
           </Typography>
         </div>
 
-        <br />
+        <p />
 
         <div
           style={{
@@ -442,9 +442,9 @@ export function CountryRoadsChallenge() {
           </Typography>
         </div>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Typography>
           To help plan your visit to Mountaineer Country, our team has put
@@ -455,7 +455,7 @@ export function CountryRoadsChallenge() {
           about each of the locations.
         </Typography>
 
-        <br />
+        <p />
 
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1hrYhwHR92d73RXnjczVB2DZLVfMWTpY&ehbc=2E312F"
@@ -471,15 +471,15 @@ export function CountryRoadsChallenge() {
           loading="lazy"
         />
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Claim your coin
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           After collecting all 10 stamps from the letterbox-hybrid caches at
@@ -490,7 +490,7 @@ export function CountryRoadsChallenge() {
           of GeoWoodstock only.)
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Those who pre-registered for GeoWoodstock XXI will have a coin
@@ -503,7 +503,7 @@ export function CountryRoadsChallenge() {
           be courteous and only claim one coin per Geocaching username.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           To easily be awarded your coin, please print your Geocaching username
@@ -517,7 +517,7 @@ export function CountryRoadsChallenge() {
           to the success of this event.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Lastly, don't forget to thank Visit Mountaineer Country and all our
@@ -541,15 +541,15 @@ export function CountryRoadsChallenge() {
           experience for you all to enjoy.
         </Typography>
 
-        <br />
+        <p />
 
         <BigOrangeButton href="https://forms.gle/JGwZ2RA3cFCcYZRt5">
           COMPLETE THE SURVEY
         </BigOrangeButton>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
       </GuideBody>
     </Fragment>
   )

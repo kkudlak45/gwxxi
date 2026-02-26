@@ -17,7 +17,7 @@ export function Adventures() {
           src={`${import.meta.env.BASE_URL}eventguide/eventactivities/labart_600x586.jpg`}
         />
 
-        <br />
+        <p />
 
         <Typography>
           Welcome to West Virginia! This Adventure Lab art will serve as your
@@ -30,13 +30,13 @@ export function Adventures() {
           call this place “Almost Heaven”.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Accessing the Adventure
         </Typography>
-        <br />
+        <p />
         <Typography>
           The Adventures in Appalachia Geo-Art is located at the I-79 welcome
           center north of Morgantown, West Virginia. If you're traveling
@@ -46,13 +46,13 @@ export function Adventures() {
           re-enter West Virginia to access the labs.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           What to expect
         </Typography>
-        <br />
+        <p />
         <Typography>
           Each of the 120 adventure labs highlight a unique piece of Appalachian
           culture. Whether it's highlighting a local celebrity, general trivia,
@@ -69,8 +69,8 @@ export function Adventures() {
           bonus cache to celebrate your visit to West Virginia!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Quick tips
@@ -106,7 +106,7 @@ export function Adventures() {
           </li>
         </ul>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

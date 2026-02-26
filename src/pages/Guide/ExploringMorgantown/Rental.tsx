@@ -20,7 +20,7 @@ export function Rental() {
           kayaks and bikes to make your weekend that much more enjoyable.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           The challenge here is that the rental locations are not located at the
@@ -31,7 +31,7 @@ export function Rental() {
           determine. These same factors apply to bike rentals.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           We have given you a list of locations where you may possibly be able
@@ -40,7 +40,7 @@ export function Rental() {
           according to their rental agreement.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           We have listed the vendors that we know of in the area who rent, along
@@ -49,7 +49,7 @@ export function Rental() {
           see if they have what they need in their inventory.
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>Where to rent kayaks and bikes</Subheader>
 
@@ -72,7 +72,7 @@ export function Rental() {
           Phone: <a href="tel:+3042937407">304-293-7407</a>
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>EXPLORE WV</BoldKol>
@@ -87,9 +87,9 @@ export function Rental() {
           Phone: <a href="tel:+3045669613">304-566-9613</a>
         </Typography>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Grid container justifyContent="space-evenly" rowSpacing={6}>
           <Grid item xs={12} md={7}>
@@ -184,10 +184,10 @@ export function Rental() {
         </Grid>
         <div></div>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
-        <br />
+        <p />
 
         <Typography>
           Some have asked if we would have storage space for kayaks and bikes
@@ -196,7 +196,7 @@ export function Rental() {
           GeoWoodstock attendees will be bringing.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Friday, May 23, at 9:00 am we will be having a Splash Mob on the
@@ -217,7 +217,7 @@ export function Rental() {
           reconnected with their vehicles and kayaks.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Given the number of people who may be going down river we may need to
@@ -226,7 +226,7 @@ export function Rental() {
           weekend.
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

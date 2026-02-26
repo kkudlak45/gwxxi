@@ -22,8 +22,8 @@ export function Oldest() {
           thoroughly.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Getting there from Morgantown</Subheader>
         <Typography>
@@ -35,8 +35,8 @@ export function Oldest() {
           those who might get car sick.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About the Hatfield-McCoy trail system</Subheader>
         <Typography>
@@ -53,8 +53,8 @@ export function Oldest() {
           and storied past of Appalachia.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Renting an ATV</Subheader>
         <Typography>
@@ -70,7 +70,7 @@ export function Oldest() {
           to get a good idea of what to expect.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           There are a few rental agencies in the area, but many geocachers have
@@ -84,14 +84,14 @@ export function Oldest() {
           trip the entire experience can take upwards of 5-6 hours.
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/cantmiss/howtorental_800x800.jpeg"
           style={{ width: '100%', maxWidth: '600px', aspectRatio: '1' }}
         />
 
-        <br />
+        <p />
 
         <Typography>
           That being said, traveling along the Hatfield-McCoy Trails can be a
@@ -102,8 +102,8 @@ export function Oldest() {
           wild life along your trip!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>For high clearance vehicles</Subheader>
         <Typography>
@@ -115,7 +115,7 @@ export function Oldest() {
           not attempt to take a rental car via the following route provided.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           For a long time, Rich Creek Road was closed after a point due to
@@ -135,7 +135,7 @@ export function Oldest() {
           cache.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           As with any caching adventure, be safe, exercise caution, and let
@@ -151,7 +151,7 @@ export function Oldest() {
           out on Facebook if you are interested!
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

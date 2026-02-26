@@ -19,7 +19,7 @@ export function TravelBugs() {
           prepared for a quick and easy exchange of travel bugs!
         </Typography>
 
-        <br />
+        <p />
 
         <Typography fontSize="1.4rem">
           <BoldKol>
@@ -28,7 +28,7 @@ export function TravelBugs() {
           </BoldKol>
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           It's the responsibility of the cacher who logged the TB/coin into the
@@ -37,7 +37,7 @@ export function TravelBugs() {
           TB/coin to log it properly in a timely manner.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           As the owner of a TB or coin dropped into the event, it is up to you
@@ -45,7 +45,7 @@ export function TravelBugs() {
           concerns you may have.
         </Typography>
 
-        <br />
+        <p />
 
         <div>
           <Typography>
@@ -106,7 +106,7 @@ export function TravelBugs() {
           </ol>
         </div>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>AW - No specific mission / task</BoldKol> - For bugs that can
@@ -172,8 +172,8 @@ export function TravelBugs() {
           America, South America
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>TB Trading Times</Subheader>
         <Typography>
@@ -181,7 +181,7 @@ export function TravelBugs() {
           drop off and pick up travel bugs. Please follow signage and ask
           volunteers if you have trouble finding the trading area.
         </Typography>
-        <br />
+        <p />
         <div>
           <Typography>
             <BoldKol>Friday (5/23) from 9 AM - 2 PM</BoldKol> - A table will be
@@ -193,14 +193,14 @@ export function TravelBugs() {
             Saturday morning. Tickets will be handed out, but TB's will not be
             available for pick up until Saturday.
           </Typography>
-          <br />
+          <p />
           <Typography>
             <BoldKol>Saturday (5/24) from 8 am - 3 pm</BoldKol> - TB area will
             be closed when all TB's are gone, or by 4 PM.
           </Typography>
         </div>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

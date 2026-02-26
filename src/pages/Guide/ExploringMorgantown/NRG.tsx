@@ -20,15 +20,15 @@ export function NRG() {
           experience Almost Heaven for yourself!
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/exploring/nrg_800x533.png"
           style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 533' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Accessing the Park</Subheader>
         <Typography>
@@ -40,8 +40,8 @@ export function NRG() {
           span bridge in the Western Hemisphere!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>What to do</Subheader>
         <Typography>
@@ -67,7 +67,7 @@ export function NRG() {
           ).
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

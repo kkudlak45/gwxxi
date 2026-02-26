@@ -28,8 +28,8 @@ export function Welcome() {
           }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography>
           The first GeoWoodstock event was created by JoGPS, a geocacher from
@@ -41,8 +41,8 @@ export function Welcome() {
           is excited to visit West Virginia to celebrate 25 years of Geocaching.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>What is a GIGA event?</Subheader>
         <Typography>
@@ -54,7 +54,7 @@ export function Welcome() {
           event in the United States, 2 in North America, and 12 globally.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           That means there will be a LOT of people in and around Morgantown
@@ -63,8 +63,8 @@ export function Welcome() {
           won't find at any other event, and maybe replace a full log or two.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>What to expect at GeoWoodstock XXI</Subheader>
         <Typography>
@@ -76,7 +76,7 @@ export function Welcome() {
           showcasing the best the area has to offer.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           A few things we ask you to keep in mind throughout the weekend:
@@ -136,7 +136,7 @@ export function Welcome() {
           </li>
         </ul>
 
-        <br />
+        <p />
 
         <Subheader>What's the deal about travel bugs and pathtags?</Subheader>
         <Typography>
@@ -151,7 +151,7 @@ export function Welcome() {
           to remember all the people you met by the end of the event.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           For GeoWoodstock XXI specifically, we have worked with Pathtags to
@@ -168,7 +168,7 @@ export function Welcome() {
           travel bugs and anything else you can think of!
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Speaking of travel bugs, travel bugs are trackable tags attached to
@@ -183,7 +183,7 @@ export function Welcome() {
           destinations.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           During the main event on Friday (5/23) and Saturday (5/24), stop by
@@ -193,7 +193,7 @@ export function Welcome() {
           <a href="/guide/travel-bugs">please click here</a>.
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>What do I need to bring?</Subheader>
         <Typography>
@@ -210,7 +210,7 @@ export function Welcome() {
           , but here are our must-bring items.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Geocaching Gear.</BoldKol> Everything that you would
@@ -221,7 +221,7 @@ export function Welcome() {
           but definitely double check before leaving home.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Exploring Morgantown.</BoldKol> You'll want a portable
@@ -232,7 +232,7 @@ export function Welcome() {
           highly recommend bringing it.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Event Specifics.</BoldKol> Pathtags and trackables are fun to
@@ -250,7 +250,7 @@ export function Welcome() {
           .
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           <BoldKol>Safety.</BoldKol> We're hoping for the best experience
@@ -262,7 +262,7 @@ export function Welcome() {
           hiking pole might help poke into some of those hard to see spots.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Most of all, don't forget to BRING THE FUN! This event will be unlike
@@ -271,7 +271,7 @@ export function Welcome() {
           Roads and we'll see you in Morgantown soon!
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>CAN I BRING MY GEO-PUP?</Subheader>
 
@@ -283,7 +283,7 @@ export function Welcome() {
           causing a disruption for guests, they will be asked to leave.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           The main event will have a pup watering hole, sponsored by Team
@@ -297,7 +297,7 @@ export function Welcome() {
           .
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Midnight Madness is our only side event that features an inside venue.
@@ -308,7 +308,7 @@ export function Welcome() {
           this is a nice option for our K-9 cacher friends.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           If you have any other questions or concerns about traveling with a
@@ -321,7 +321,7 @@ export function Welcome() {
           surrounded by 5,000+ of their closest caching friends.
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>HOW MANY ICONS CAN I GET AT GEOWOODSTOCK XXI?</Subheader>
 
@@ -332,7 +332,7 @@ export function Welcome() {
           Locationless, and Community Celebration Event.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           On the day of the main event, you'll have the opportunity to collect
@@ -341,7 +341,7 @@ export function Welcome() {
           miss.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           If you want to try for a busy day, the cache types that will be
@@ -353,7 +353,7 @@ export function Welcome() {
           experience on the day of the main event.
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

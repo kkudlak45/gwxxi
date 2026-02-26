@@ -20,8 +20,8 @@ export function Volunteer() {
           time.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Things to know about volunteering</Subheader>
 
@@ -33,7 +33,7 @@ export function Volunteer() {
           last-minute details and directed where to go to begin your shift.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Once your shift is finished, please return to the Welcome /
@@ -44,7 +44,7 @@ export function Volunteer() {
           coordinators; there will be no check in table during this time.
         </Typography>
 
-        <br />
+        <p />
 
         <Typography>
           Most volunteer opportunities will require you to be on your feet
@@ -53,15 +53,15 @@ export function Volunteer() {
           opportunity before signing up.
         </Typography>
 
-        <br />
+        <p />
 
         <BigOrangeButton href="https://www.signupgenius.com/go/10C054DA4AA22A5F4C61-55693217-geowoodstock#/">
           Click here to volunteer
         </BigOrangeButton>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Grid
           container
@@ -77,8 +77,8 @@ export function Volunteer() {
               area, banners, maze, and whatever else we will need help with.
             </Typography>
 
-            <br />
-            <br />
+            <p />
+            <p />
           </Grid>
           <Grid item xs={12} md={6}>
             <Subheader>Welcome / Information Table</Subheader>

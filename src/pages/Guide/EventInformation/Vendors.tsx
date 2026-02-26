@@ -27,7 +27,7 @@ function Vendor({
         )}
       </Typography>
       <Typography>{children}</Typography>
-      <br />
+      <p />
     </div>
   )
 }
@@ -140,8 +140,8 @@ export function Vendors() {
           hospitable accommodations. When you locate 35 out of 40 caches on the
           tour, you will receive a signature Explore Houma geocoin.
         </Vendor>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Vendors</Subheader>
 

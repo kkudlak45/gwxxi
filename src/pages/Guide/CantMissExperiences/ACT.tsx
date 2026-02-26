@@ -22,21 +22,21 @@ export function ACT() {
           as well as a hiking section, with varied terrain along the way.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Parking</Subheader>
         <Typography>
           This series is split up into two sections, #1 - #15 and #16 - #50.
         </Typography>
-        <br />
+        <p />
         <Typography>
           From GCAFRFG to GCAFRGG, you can drive along the seldom traveled road
           and park right next to each cache. The first 15 caches are all
           guardrail park and grabs. Be mindful of local traffic as there are
           some houses further down this road.
         </Typography>
-        <br />
+        <p />
         <Typography>
           GCAFRGH through GCAFRK0 are on a hard packed hiking and biking trail
           that follows the contour of the Cheat River. It's recommended that you
@@ -46,8 +46,8 @@ export function ACT() {
           need a bike lock unless you are planning on going for GCB14RA as well.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>What to Expect</Subheader>
         <Typography>
@@ -56,7 +56,7 @@ export function ACT() {
           fastened - do not try to remove them. Some finders have experienced
           difficulty in extracting the logs, so tweezers may be helpful.
         </Typography>
-        <br />
+        <p />
         <Typography>
           All the caches are located less than 100 feet from the trail, but
           there is some varied terrain along the trail. This series will require
@@ -66,7 +66,7 @@ export function ACT() {
           accurately reflects the terrain of the hide. If the cache is listed as
           a terrain 4+, you can expect a hard-to-reach hide.
         </Typography>
-        <br />
+        <p />
         <Typography>
           All the caches are at the posted coordinates and dogs are welcome on
           the trail. Lastly, when logging, copy and pasting your checker results
@@ -76,7 +76,7 @@ export function ACT() {
           qualify for a challenge yet, simply add it to a bookmark list and mark
           it as found after you've completed the challenge.
         </Typography>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

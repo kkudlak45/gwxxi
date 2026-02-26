@@ -26,16 +26,16 @@ export function StateStar() {
           here!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <img
           src="/eventguide/cantmiss/statestar_800x451.jpg"
           style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 451' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Solving the puzzles</Subheader>
         <Typography>
@@ -58,8 +58,8 @@ export function StateStar() {
           it.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Planning your trip</Subheader>
         <Typography>
@@ -73,7 +73,7 @@ export function StateStar() {
           along the trail if you are attempting to complete the trail in a
           single outing.
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Parking #1</BoldKol> - N 39° 33.825' W 80° 03.000' (Suggested
           parking for caches #1-30 at Opekiska.)
@@ -87,16 +87,16 @@ export function StateStar() {
           parking for caches #46-50 at Uffiington.)
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <img
           src="/eventguide/cantmiss/starmap_800x503.jpg"
           style={{ width: '100%', maxWidth: '800px', aspectRatio: '800 / 503' }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography>
           As with any caching adventure, be safe, exercise caution, and let
@@ -105,7 +105,7 @@ export function StateStar() {
           to join, so check that out on Facebook if you are interested!
         </Typography>
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

@@ -94,7 +94,7 @@ export function GeoTour() {
           src="/eventguide/eventactivities/moegeotour_600x600.png"
           style={{ maxWidth: '600px', width: '100%', aspectRatio: 1 }}
         />
-        <br />
+        <p />
         <Typography>
           Full of history, culture, and recreational opportunities, Marion
           County really is the Middle of Everywhere! From the rolling rapids of
@@ -107,18 +107,18 @@ export function GeoTour() {
           coin. Find all 20 to get a unique souvenir added to your Geocaching
           profile.
         </Typography>
-        <br />
+        <p />
         <BigOrangeButton href="https://www.geocaching.com/play/geotours/everywhere">
           CLICK HERE FOR MORE INFO
         </BigOrangeButton>
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Getting Started
         </Typography>
-        <br />
+        <p />
         {/* TODO - need the passport link */}
         <Typography zIndex="9999">
           You can pick up an official Middle of Everywhere GeoTour booklet by
@@ -132,7 +132,7 @@ export function GeoTour() {
           </a>
           .
         </Typography>
-        <br />
+        <p />
 
         <Grid
           container
@@ -276,8 +276,8 @@ export function GeoTour() {
           </Card>
         </Grid>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1Uq0nN5zMAMeijaMEG2VJgsjMjOB6PVY&ehbc=2E312F"
@@ -293,13 +293,13 @@ export function GeoTour() {
           loading="lazy"
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Claim your coin!
         </Typography>
-        <br />
+        <p />
         <Typography>
           Coins will be awarded on a first-come, first-served basis to any
           cacher who completes 16/20 caches on the tour. Qualifying participants
@@ -307,12 +307,12 @@ export function GeoTour() {
           / stamp in this book to be eligible. Finding all 20 caches is required
           to earn the digital souvenir.
         </Typography>
-        <br />
+        <p />
         <Typography>
           You can claim your coin at any of the following events by visiting the
           Marion County CVB table:
         </Typography>
-        <br />
+        <p />
         <div>
           <Typography fontFamily="KGRedHands">
             GeoWoodstock XXI (
@@ -333,7 +333,7 @@ export function GeoTour() {
             </li>
           </ul>
 
-          <br />
+          <p />
 
           <Typography fontFamily="KGRedHands">
             Breakfast with the Mommas (
@@ -348,7 +348,7 @@ export function GeoTour() {
             </li>
           </ul>
 
-          <br />
+          <p />
 
           <Typography fontFamily="KGRedHands">
             Farewell from the Fort (
@@ -364,9 +364,9 @@ export function GeoTour() {
           </ul>
         </div>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Know before you go!
@@ -421,7 +421,7 @@ export function GeoTour() {
           Park. Otherwise, the caches will be available for the next year to be
           eligible for the souvenir.
         </Typography>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

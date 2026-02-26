@@ -82,14 +82,14 @@ export function Pickup() {
             All items must be picked up before 3 pm on Saturday (5/24).
           </BoldKol>
         </Typography>
-        <br />
+        <p />
         <Typography>
           Package pick-up is located through the entrance doors and to the left.
           There will be two pick-up lines - one for general attendees and one
           for VIPs and Friends of GeoWoodstock. Please keep an eye out for
           signage and choose your line accordingly.
         </Typography>
-        <br />
+        <p />
         <Typography>
           Prior to entering your line,{' '}
           <BoldKol>
@@ -100,7 +100,7 @@ export function Pickup() {
           receipt email available, it will increase the likelihood of longer
           wait times for other guests.
         </Typography>
-        <br />
+        <p />
         <Typography>
           Confirmation emails were sent to you by{' '}
           <a href="mailto:SWAG@geowoodstockxxi.com">SWAG@geowoodstockxxi.com</a>
@@ -110,7 +110,7 @@ export function Pickup() {
           with the full name listed on your package and an approximate date of
           purchase and our team will forward your receipt to the email on file.
         </Typography>
-        <br />
+        <p />
         <Typography>
           We appreciate your patience as you wait in line. When you reach the
           front of the line, you'll be asked to show your confirmation receipt
@@ -118,15 +118,15 @@ export function Pickup() {
           find your package and walk you through the items. Packages will be
           organized by your first and last name provided when purchasing.
         </Typography>
-        <br />
+        <p />
         <div style={{ width: '100%' }}>
           <Typography>
             Upon receipt of the items, you'll be asked to sign to confirm you've
             received the correct items and package.
           </Typography>
         </div>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>I can't find my confirmation receipt email</Subheader>
         <Typography>
@@ -135,8 +135,8 @@ export function Pickup() {
           prevent longer wait times, we ask that you locate your confirmation
           receipt email ahead of time.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Picking up for others</Subheader>
         <Typography>
@@ -146,8 +146,8 @@ export function Pickup() {
           pick up their items. A written note, email, or text will all suffice
           as long as the original purchaser's name is clearly visible.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>I have an issue with my package</Subheader>
         <Typography>
@@ -156,7 +156,7 @@ export function Pickup() {
           package, please talk to a volunteer at the registration pickup area,
           who will connect you with a member of the GeoWoodstock XXI staff.
         </Typography>
-        <br />
+        <p />
         <Typography>
           If you want to exchange shirt sizes after picking up your packages,
           please visit our store. Shirt sizes run true to size, but if you are
@@ -164,8 +164,8 @@ export function Pickup() {
           supplies last. We strongly recommend picking up your SWAG early if you
           fear this might be a concern.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Shipping Packages</Subheader>
         <Typography>
@@ -173,8 +173,8 @@ export function Pickup() {
           Saturday (5/24). Uncollected items will be sold in the GeoWoodstock
           XXI store.
         </Typography>
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Buying additional items</Subheader>
         <Typography>
@@ -184,7 +184,7 @@ export function Pickup() {
           included for purchase include:
         </Typography>
 
-        <br />
+        <p />
 
         <Grid container rowSpacing={{ xs: 4, md: 1 }} justifyContent="center">
           <PictureCard
@@ -237,9 +237,9 @@ export function Pickup() {
         <Typography>
           <em>* Prices include tax</em>
         </Typography>
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
 
         <Grid container justifyContent="center" rowSpacing={6}>
           <PackageCard
@@ -262,9 +262,9 @@ export function Pickup() {
           />
         </Grid>
 
-        <br />
-        <br />
-        <br />
+        <p />
+        <p />
+        <p />
       </GuideBody>
     </Fragment>
   )

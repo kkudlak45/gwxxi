@@ -20,7 +20,7 @@ export function Parking() {
           to ensure the best experience possible for all cachers in attendance.{' '}
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>GETTING TO MYLAN PARK</Subheader>
         <Typography>
@@ -31,7 +31,7 @@ export function Parking() {
           congestion. It is not recommended to get off at exit 155 because of a
           difficult left hand turn on Chaplin Hill Road to access the park.
         </Typography>
-        <br />
+        <p />
         <Typography>
           If you are commuting from your hotel in Morgantown, try to avoid
           getting on the Interstate, regardless of what your GPS may tell you to
@@ -39,7 +39,7 @@ export function Parking() {
           are coming from the east.
         </Typography>
 
-        <br />
+        <p />
 
         <Subheader>One-Way information</Subheader>
         <Typography>
@@ -53,7 +53,7 @@ export function Parking() {
           walking to the event from our outer parking lots.
         </Typography>
 
-        <br />
+        <p />
 
         <img
           src="/eventguide/info/gw-large-map-5-17-25_1200x800.webp"
@@ -64,8 +64,8 @@ export function Parking() {
           }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Where can I park?</Subheader>
         <Typography>
@@ -78,78 +78,78 @@ export function Parking() {
           available at any of the following locations:
         </Typography>
 
-        <br />
+        <p />
 
         <div>
           <BoldKol>Mylan Park Main Lot - N 39° 38.233 W 080° 01.894</BoldKol>
-          <br />
+          <p />
           <Typography>
             This will be the main parking area for VIPs, Friends of
             GeoWoodstock, and some general parking. We are expecting this lot to
             fill quickly.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>Long Term Parking - N 39° 38.385 W 080° 01.806</BoldKol>
-          <br />
+          <p />
           <Typography>
             If you are arriving at 8 am and staying the majority of the day,
             please park in this grass field. 4WD is recommended.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>
             General Parking (Bus garage) - N 39° 38.221 W 080° 01.791
           </BoldKol>
-          <br />
+          <p />
           <Typography>
             This will be the first parking lot you come to as you enter the
             park. It is about a quarter mile walk down a small incline. The
             shuttle will not stop here.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>
             General Parking (Pro performance) - N 39° 38.285 W 080° 02.085
           </BoldKol>
-          <br />
+          <p />
           <Typography>
             This large parking area is located just past the main event center.
             It is about a quarter mile walk down a small incline. The shuttle
             will not stop here.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>General Parking (PACE) - N 39° 38.506 W 080° 01.898</BoldKol>
-          <br />
+          <p />
           <Typography>
             Please park in front, or behind, the building and safely cross the
             street, following the walking path around the soccer field to the
             event venue. It’s about a half mile walk.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>
             General Parking (Mylan Park Elementary) - N 39 38.597 W 080 01.797{' '}
           </BoldKol>
-          <br />
+          <p />
           <Typography>
             SATURDAY (5/24) ONLY. Please park in front, or behind, the building
             and safely cross the street, following the walking path around the
             soccer field to the event venue. It’s about a half mile walk.
           </Typography>
 
-          <br />
+          <p />
 
           <BoldKol>
             Overflow Parking (Shuttle) - N 39° 38.732 W 080° 02.607
           </BoldKol>
-          <br />
+          <p />
           <Typography>
             A shuttle will run from the overflow parking lot to the main event
             site every 20 minutes. The shuttle is not handicap accessible and
@@ -160,8 +160,8 @@ export function Parking() {
           </Typography>
         </div>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Entering the main parking lot</Subheader>
         <Typography>
@@ -186,7 +186,7 @@ export function Parking() {
           to access the main event.
         </Typography>
 
-        <br />
+        <p />
         <img
           src="/eventguide/info/xxi-map-update-5-17-25.webp"
           style={{
@@ -196,8 +196,8 @@ export function Parking() {
           }}
         />
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>VIPs and friends of GeoWoodstock</Subheader>
         <Typography>
@@ -214,7 +214,7 @@ export function Parking() {
           make sure we have enough parking spaces for everyone.
         </Typography>
 
-        {/* <br />
+        {/* <p />
 
         <Typography>
           If you can't pick up your registration during the VIP sneak peak event
@@ -224,8 +224,8 @@ export function Parking() {
           make sure we have enough parking spaces for everyone.
         </Typography> */}
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>ADA Parking</Subheader>
         <Typography>
@@ -244,8 +244,8 @@ export function Parking() {
           if you have trouble walking or standing.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>About the shuttle</Subheader>
         <Typography>
@@ -260,8 +260,8 @@ export function Parking() {
           and from the event venue. Dogs are not permitted on shuttles.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Caching in the park</Subheader>
         <Typography>
@@ -278,8 +278,8 @@ export function Parking() {
           located just outside the park.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Subheader>Please be patient</Subheader>
         <Typography>

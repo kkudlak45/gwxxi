@@ -22,7 +22,7 @@ export function Eat() {
             3071 University Ave, Morgantown, WV 26505
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Black Bear Burritos</BoldKol> - Mexican eats & draft
           microbrews are the draw at this spacious, casual counter served with
@@ -31,7 +31,7 @@ export function Eat() {
             3119 University Ave, Morgantown, WV 26505
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Short Story Brewing</BoldKol> - Enjoy a pint at this locally
           owned brewery!
@@ -48,7 +48,7 @@ export function Eat() {
             5904 Fairmont Rd, Rivesville, WV 26588
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Oliverio's Ristorante</BoldKol> - Traditional Italian dishes
           come in a relaxed, family-friendly dining room with a warm vibe.{' '}
@@ -56,7 +56,7 @@ export function Eat() {
             52 Clay St, Morgantown, WV 26501
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Mountain State Brewing Company</BoldKol> - Wood-fired
           flatbreads, bar food & house beers with mountain views in a low-key
@@ -74,7 +74,7 @@ export function Eat() {
             3505 Monongahela Blvd, Star City, WV 26505
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Muriale's Italian Kitchen</BoldKol> - Traditional Italian
           eats such as spaghetti & meatballs come in a comfortable,
@@ -83,7 +83,7 @@ export function Eat() {
             1742 Fairmont Ave, Fairmont, WV 26554
           </a>
         </Typography>
-        <br />
+        <p />
         <Typography>
           <BoldKol>Poky Dot</BoldKol> - Funky, long-running diner offering a big
           menu of comfort chow in a colorful, vintage setting.{' '}
@@ -91,7 +91,7 @@ export function Eat() {
             1111 Fairmont Ave, Fairmont, WV 26554
           </a>
         </Typography>
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

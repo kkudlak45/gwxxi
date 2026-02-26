@@ -20,7 +20,7 @@ export function InteractiveMap() {
           area, especially for those caches that haven't been published yet.
         </Typography>
 
-        <br />
+        <p />
 
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1Sg1az2wM2acIRqBInjXnsm0nUsc1FfE&hl=en&ehbc=2E312F"
@@ -36,7 +36,7 @@ export function InteractiveMap() {
           loading="lazy"
         />
 
-        <br />
+        <p />
       </GuideBody>
     </Fragment>
   )

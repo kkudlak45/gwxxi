@@ -24,13 +24,13 @@ export function CryptidQuest() {
           may or may not inhabit the hills of Appalachia!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           What type of experience is this?
         </Typography>
-        <br />
+        <p />
         <Typography>
           Cryptid Quest is a more casual caching experience aimed at those who
           don't want to or can't go traipsing through the woods. There's 21
@@ -40,13 +40,13 @@ export function CryptidQuest() {
           Mothman's trail.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Can you find Mothman?
         </Typography>
-        <br />
+        <p />
         <Typography>
           Each cache page displays a (purposefully) blurry image of a nearby
           location. Some have obvious hints showing where they are, others are a
@@ -56,21 +56,21 @@ export function CryptidQuest() {
           on to the next one!
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           How do I use Wherigo?
         </Typography>
-        <br />
+        <p />
         <Typography>
           If you're on a computer, simply navigate to whereigo.com and log in
           with your geocaching.com credentials. There's also the Wherigo app for
           mobile phones. Then simply search for the cartridge name or GC code.
         </Typography>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Typography variant="h3" fontSize="1.4rem">
           Know Before You Go

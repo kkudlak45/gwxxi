@@ -35,19 +35,9 @@ export const platinumSponsors = [
     href: 'https://www.MarionCVB.com',
   },
   {
-    name: 'Historic Boston GeoTour',
-    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bostontour.png`,
-    href: 'https://www.historicbostongeotour.com/',
-  },
-  {
     name: 'Gilby GeoTour',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gilby.png`,
     href: 'https://www.gilbygeotour.com/',
-  },
-  {
-    name: 'Retired Monkey Challenge Trail',
-    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/monkey.png`,
-    href: 'https://www.retiredmonkey.com/',
   },
   {
     name: 'Explore Houma',
@@ -98,6 +88,27 @@ export const goldSponsors = [
   // },
 ]
 export const silverSponsors = [
+  
+  {
+    name: 'Gilby GeoTour',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gilby.png`,
+    href: 'https://www.gilbygeotour.com/',
+  },
+  {
+    name: 'Historic Boston GeoTour',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bostontour.png`,
+    href: 'https://www.historicbostongeotour.com/',
+  },
+  {
+    name: 'Retired Monkey Challenge Trail',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/monkey.png`,
+    href: 'https://www.retiredmonkey.com/',
+  },
+  {
+    name: 'Middle of Everywhere GeoTour',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/moegt.png`,
+    href: '/Projects/MOE-GT',
+  },
   //   {
   //     name: 'Blackwater Outdoor Adventures',
   //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/boa.png`,
@@ -212,7 +223,19 @@ export const silverSponsors = [
   //   },
 ]
 
-export const friends = []
+export const friends = [
+  "f0t0m0m",
+"Igfrey & Turkey819",
+"Jonny Rascal",
+"poeanne",
+"Practical Geocaching®",
+"Scottish Cavalryman",
+"Superchucklez",
+"susanc14",
+"ThorScouts",
+"TrexM8s",
+"Troopbiz",
+]
 
 export const blackDiamondBackers = [
   'Beafrog',

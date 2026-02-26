@@ -65,7 +65,7 @@ export function Register(): JSX.Element {
         <title>CacheMore 2026 - Registration and SWAG Packages</title>
         <meta
           name="description"
-          content="CacheMore 2026 is free to attend, but SWAG sales such as Geocoins, shirts, and Pathtags help fund the event and all additional activities. Registration for this year’s event will open on January 1, 2026 and close on June 5, 2026, while supplies last. To maintain demand for the inaugural event, team registration packages are extremely limited and are expected to sell out quickly. Items found within registration packages will be required to participate in some of the weekend’s activities such as the Tech Team and Trading Card Challenges. By registering, you are paying for not only the unique souvenirs from the event, but also the opportunity to participate in one of the most immersive Geocaching activities there is."
+          content="CacheMore 2026 is free to attend, but SWAG sales such as Geocoins, shirts, and Pathtags help fund the event and all additional activities. Registration for this year's event will open on January 1, 2026 and close on June 5, 2026, while supplies last. To maintain demand for the inaugural event, team registration packages are extremely limited and are expected to sell out quickly. Items found within registration packages will be required to participate in some of the weekend's activities such as the Tech Team and Trading Card Challenges. By registering, you are paying for not only the unique souvenirs from the event, but also the opportunity to participate in one of the most immersive Geocaching activities there is."
         />
       </Helmet>
 
@@ -77,17 +77,17 @@ export function Register(): JSX.Element {
         <Typography>
           CacheMore 2026 is free to attend, but SWAG sales such as Geocoins,
           shirts, and Pathtags help fund the event and all additional
-          activities. Registration for this year’s event will open on January 1,
+          activities. Registration for this year's event will open on January 1,
           2026 and close on June 5, 2026, while supplies last. To maintain
           demand for the inaugural event, team registration packages are
           extremely limited and are expected to sell out quickly. Items found
           within registration packages will be required to participate in some
-          of the weekend’s activities such as the Tech Team and Trading Card
+          of the weekend's activities such as the Tech Team and Trading Card
           Challenges. By registering, you are paying for not only the unique
           souvenirs from the event, but also the opportunity to participate in
           one of the most immersive Geocaching activities there is.
         </Typography>
-        <br />
+        <p />
         <Typography textAlign="start" width="100%">
           A few important things to note:
         </Typography>
@@ -105,7 +105,7 @@ export function Register(): JSX.Element {
             <Typography>
               Each registration option has a maximum capacity of about 100
               registrants and are expected to sell out before the June 5
-              deadline. It’s highly recommended to register early, and select
+              deadline. It's highly recommended to register early, and select
               the same team as those you are traveling with to get the best
               experience possible.
             </Typography>
@@ -150,19 +150,19 @@ export function Register(): JSX.Element {
           comparable to the general registration, VIP registration, and VIP +1
           registration found at other events.
         </Typography>
-        <br />
+        <p />
         <Typography textAlign="justify">
           <BoldKol>General registration</BoldKol> is ideal for those visiting
-          for a single day, families, kids, spouses, or anyone who’d rather
+          for a single day, families, kids, spouses, or anyone who'd rather
           spend the weekend finding existing caches around Morgantown instead of
           cracking the code ... yes, even muggles are welcome. This is a great
           way to support the event without the commitment of having to
-          participate in all the weekend’s activities. General Registration does
-          not include the components needed to solve all of the weekend’s
+          participate in all the weekend's activities. General Registration does
+          not include the components needed to solve all of the weekend's
           puzzles. For access to exclusive items and the full mystery
           experience, be sure to register with a team.
         </Typography>
-        <br />
+        <p />
         <Typography textAlign="justify">
           <BoldKol>Team registration</BoldKol> is our signature registration
           option, giving attendees the opportunity to dive head first into the
@@ -179,12 +179,12 @@ export function Register(): JSX.Element {
           </a>{' '}
           event!
         </Typography>
-        <br />
+        <p />
         <Typography textAlign="justify">
           <BoldKol>Team + 1 registration</BoldKol> is best for those individuals
-          or couples who want to do it all! As a Double-Crossed Agent, you’ll
+          or couples who want to do it all! As a Double-Crossed Agent, you'll
           sleuth clues from both teams, giving you unmatched flexibility and
-          insight across the entire event. It’s perfect for couples or partners
+          insight across the entire event. It's perfect for couples or partners
           and functions as a VIP +1 option for those who truly want to do it
           all. This package includes every Geocoin, every Pathtag, the event
           shirt, and additional exclusive items, making you the ultimate cacher
@@ -195,8 +195,8 @@ export function Register(): JSX.Element {
 
       <Section style={{ flexDirection: 'column' }}>
         <Typography variant="h3">Join a Tech Team!</Typography>
-        <Typography>
-          Tech Teams are a fun way to dive into the event’s mystery. Teams are
+        <Typography textAlign="justify">
+          Tech Teams are a fun way to dive into the event's mystery. Teams are
           color-based factions rather than fixed small groups. You may
           collaborate with anyone on your team (or outside of it) throughout the
           weekend. Registering as part of Team Nexus or Team Byte is required
@@ -204,7 +204,7 @@ export function Register(): JSX.Element {
           <a href="/events/2026/teams">Tech Team Challenge</a>.
         </Typography>
 
-        <br />
+        <p/>
 
         <Grid container alignItems="center">
           <Grid
@@ -235,22 +235,22 @@ export function Register(): JSX.Element {
             alignItems="center"
             flexDirection="column"
           >
-            <Typography>
+            <Typography textAlign="justify">
               Team Nexus is for the masterminds of CacheMore 2026; the thinkers,
               code-breakers, and puzzle fanatics who live for a challenge. As
               the brains of the operation, Team Nexus thrives on logic,
               late-night “aha” moments, and bonding over complex puzzles that
               demand teamwork and strategy.
             </Typography>
-            <br />
+            <p />
             <BigOrangeButton href="https://cachemore.store/products/register1">
               Click here to join team Nexus
             </BigOrangeButton>
           </Grid>
         </Grid>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Grid container alignItems="center">
           <Grid
@@ -281,23 +281,23 @@ export function Register(): JSX.Element {
             alignItems="center"
             flexDirection="column"
           >
-            <Typography>
+            <Typography textAlign="justify">
               Team Byte is for the doers, the drivers, and the get-it-done crews
-              of CacheMore 2026. They’re the muscle of the operation, never
+              of CacheMore 2026. They're the muscle of the operation, never
               afraid of a tough task, a long drive, or a challenge that requires
-              boots on the ground. If there’s a clue to chase or a cache to
+              boots on the ground. If there's a clue to chase or a cache to
               grab, Team Byte is already on the move, ready to take a byte out
               of the competition.
             </Typography>
-            <br />
+            <p />
             <BigOrangeButton href="https://cachemore.store/products/register2">
               Click here to join team Byte
             </BigOrangeButton>
           </Grid>
         </Grid>
 
-        <br />
-        <br />
+        <p />
+        <p />
 
         <Grid container alignItems="center">
           <Grid
@@ -328,14 +328,14 @@ export function Register(): JSX.Element {
             alignItems="center"
             flexDirection="column"
           >
-            <Typography>
+            <Typography textAlign="justify">
               Become a Double-Crossed Agent for the ultimate CacheMore 2026
               experience. This is an elite, all-access package for those who
               refuse to miss a single clue or challenge. Built for die-hard
-              CacheMore fans, this premium option ensures there’s no cache you
-              can’t find and no puzzle you can’t solve.
+              CacheMore fans, this premium option ensures there's no cache you
+              can't find and no puzzle you can't solve.
             </Typography>
-            <br />
+            <p />
             <BigOrangeButton href="https://cachemore.store/products/register3">
               Click here to become a Double-Crossed Agent
             </BigOrangeButton>
@@ -347,7 +347,7 @@ export function Register(): JSX.Element {
         sx={{ backgroundColor: palette.grey[200], flexDirection: 'column' }}
       >
         <Typography variant="h3">Exciting Extras!</Typography>
-        <br />
+        <p />
         <Grid container gap={isMobile ? '3rem' : ''}>
           <Grid
             item
@@ -374,7 +374,7 @@ export function Register(): JSX.Element {
               becoming part of the CacheMore 2026 mystery. By creating a
               CacheMore trading card, your card will be randomly dispersed in
               registration packages and placed in caches throughout the weekend,
-              weaving you directly into the story. You’ll also receive 200 of
+              weaving you directly into the story. You'll also receive 200 of
               your own cards to swap, trade, and share with other attendees.
               Each card will be trackable, making them the perfect souvenir to
               drop in caches all year long.
@@ -436,9 +436,9 @@ export function Register(): JSX.Element {
           <FaqCard question="Does it matter which team I am on?">
             <Typography>
               Nope! Registering for a team is a great way to get involved in all
-              the event’s activities and collect unique SWAG produced for the
+              the event's activities and collect unique SWAG produced for the
               event. Both teams will have an equal opportunity to participate,
-              but it’s recommended to pick a team based on your caching style,
+              but it's recommended to pick a team based on your caching style,
               friend group, or hotel location.
             </Typography>
           </FaqCard>
@@ -450,7 +450,7 @@ export function Register(): JSX.Element {
               ground operations that may be more physically than mentally
               challenging. When in double, registering as a Double-Crossed agent
               ensures your best chance at collecting all the clues you need to
-              solve the weekend’s mystery.
+              solve the weekend's mystery.
             </Typography>
           </FaqCard>
           <FaqCard question="Can I switch teams?">
