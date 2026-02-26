@@ -204,7 +204,7 @@ export function Register(): JSX.Element {
           <a href="/events/2026/teams">Tech Team Challenge</a>.
         </Typography>
 
-        <p/>
+        <p />
 
         <Grid container alignItems="center">
           <Grid

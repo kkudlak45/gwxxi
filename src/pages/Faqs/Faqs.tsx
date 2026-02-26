@@ -27,7 +27,7 @@ export function FaqCard({
       display="flex"
       justifyContent="center"
     >
-      <Accordion sx={{ width: '90%', maxWidth: '98%', height: "fit-content" }}>
+      <Accordion sx={{ width: '90%', maxWidth: '98%', height: 'fit-content' }}>
         <AccordionSummary>
           <Typography fontSize="1.2rem" fontWeight="bold" textAlign="start">
             {question}

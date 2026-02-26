@@ -88,7 +88,6 @@ export const goldSponsors = [
   // },
 ]
 export const silverSponsors = [
-  
   {
     name: 'Gilby GeoTour',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gilby.png`,
@@ -224,17 +223,17 @@ export const silverSponsors = [
 ]
 
 export const friends = [
-  "f0t0m0m",
-"Igfrey & Turkey819",
-"Jonny Rascal",
-"poeanne",
-"Practical Geocaching®",
-"Scottish Cavalryman",
-"Superchucklez",
-"susanc14",
-"ThorScouts",
-"TrexM8s",
-"Troopbiz",
+  'f0t0m0m',
+  'Igfrey & Turkey819',
+  'Jonny Rascal',
+  'poeanne',
+  'Practical Geocaching®',
+  'Scottish Cavalryman',
+  'Superchucklez',
+  'susanc14',
+  'ThorScouts',
+  'TrexM8s',
+  'Troopbiz',
 ]
 
 export const blackDiamondBackers = [

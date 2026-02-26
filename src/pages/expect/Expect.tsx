@@ -100,13 +100,10 @@ export function Expect() {
           Teams are encouraged to wear their colors throughout the weekend, sign
           logs using matching ink, and proudly represent their side at events
           and in the field. With{' '}
-          <a href="/events/2026/travel">
-            special host hotels
-          </a>{' '}
-          designated for each team, it’s easy to meet up, swap ideas, and
-          collaborate on puzzles in common spaces, turning lobbies, lounges, and
-          late-night brainstorming sessions into an extension of the story
-          itself.
+          <a href="/events/2026/travel">special host hotels</a> designated for
+          each team, it’s easy to meet up, swap ideas, and collaborate on
+          puzzles in common spaces, turning lobbies, lounges, and late-night
+          brainstorming sessions into an extension of the story itself.
         </Typography>
         <BigOrangeButton href="/events/2026/teams">
           Learn more about tech teams and register

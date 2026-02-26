@@ -115,7 +115,8 @@ export function Trading() {
           associated cards; the exact number of cards will be a mystery until
           you get your official list at the event site. Most cards are equally
           common to find, but some may be intentionally more rare, so keep an
-          eye out in the <a href="/events/2026/puzzles">pre-event mystery caches</a> and{' '}
+          eye out in the{' '}
+          <a href="/events/2026/puzzles">pre-event mystery caches</a> and{' '}
           <a target="_blank" href="/projects/vmc-gt">
             GeoTour
           </a>{' '}

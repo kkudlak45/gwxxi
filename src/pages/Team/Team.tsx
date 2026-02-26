@@ -23,14 +23,14 @@ export function Team() {
           CacheMore 2026 introduces a bold new experiment: a powerful Cache AI
           designed to analyze data, recognize patterns, and unlock a mystery
           hidden across Morgantown. Before it can be trusted, the system must be
-          tested … and that’s where you come in.{' '}
+          tested … and that’s where you come in.
         </Justified>
         <p />
         <Justified>
           The Tech Team Challenge is a city-wide, team-based adventure that
           blends exploration, puzzles, and collaboration. Your mission is to
-          gather critical “data points,” feed the AI what it needs, and uncover
-          a final bonus geocache hidden somewhere in Morgantown.
+          perform a series of system tests to ensure the AI is ready to go live
+          and uncover a final bonus geocache hidden somewhere in Morgantown.
         </Justified>
         <p />
         <BigOrangeButton href="/events/2026/about">
@@ -44,56 +44,35 @@ export function Team() {
         <Typography variant="h4">How The Challenge Works</Typography>
         <p />
         <div style={{ width: '100%', alignItems: 'flex-start' }}>
-          <Typography>
-            To test the Cache AI, participants will collect information from 30
-            Adventure Lab locations placed throughout Morgantown:{' '}
-          </Typography>
-          <ul>
-            <li>
-              <Typography>
-                10 general Adventure Labs will be accessible to all
-                participants, regardless of team.
-              </Typography>
-            </li>
-            <li>
-              <Typography>
-                10 Adventure Labs will only be accessible to Team Nexus using
-                specialized information found in their registration packages.
-              </Typography>
-            </li>
-            <li>
-              <Typography>
-                10 Adventure Labs will only be accessible to Team Byte using
-                specialized information found in their registration packages.{' '}
-              </Typography>
-            </li>
-          </ul>
           <Justified>
-            Each Adventure Lab stop will guide you to local businesses,
-            landmarks, and unique locations around Mountaineer Country. Along
-            the way, you’ll solve puzzles and explore new places. These stops
-            serve as data points for the Cache AI. Adventure Lab locations can
-            be completed in any order, and visiting all 20 (10 general and 10
-            team specific) is estimated to take about six hours. At each
-            Adventure Lab, the journal entry will provide a special piece of
-            information. Every detail matters; these clues are required to
-            complete the challenge and locate the final bonus cache.
+            To test the Cache AI program, participants have the opportunity to
+            complete 25 unique protocols (Adventure Labs), organized across five
+            core data collection criteria. To gather as much information as
+            possible, all Adventure Labs will be open to all teams, but
+            information found within the registration packages will help
+            participants hone in on the clues they need to crack the case. The
+            objective is to complete enough Adventure Labs to uncover clues to
+            locate a physical Geocache placed somewhere in Morgantown.
           </Justified>
           <p />
           <Justified>
-            To collect enough information to solve the weekend’s mystery, you’ll
-            want to prioritize finding all 10 Adventure Labs designated for your
-            team. For Double-Crossed Agents, the same information can be
-            obtained from either Adventure Lab set, meaning Team Nexus stop #1
-            will have the same information as Team Byte stop #1. Strategizing
-            your locations to maximize efficiency of data collection is highly
-            recommended.
+            Clues for the final Geocache can be found in the Adventure Lab
+            journals for each test. 10 locations hold clues to help Team Nexus,
+            10 locations hold clues to help Team Byte, and 5 locations give
+            clues on how to piece it all together. Each Adventure Lab stop will
+            guide you to local businesses, landmarks, and unique locations
+            around Mountaineer Country. Along the way, you’ll solve puzzles and
+            complete site-specific tasks similar to an escape room.
           </Justified>
           <p />
           <Justified>
-            Teams are welcome to cross sides and complete Adventure Lab
-            locations of the other team, but they will need information from the
-            opposing registration package.
+            These locations can be completed in any order, and attendees should
+            prepare to spend at least 6 hours traveling to the various
+            locations. Participants are welcome to complete as many Adventure
+            Labs as they would like, but gathering all the clues for at least
+            one team is recommended to solve for the bonus geocache location.
+            Information found in registration packages will be required to solve
+            additional puzzles awarded in the Adventure Lab journal.
           </Justified>
         </div>
       </GoodSection>
@@ -107,17 +86,20 @@ export function Team() {
 
         <div style={{ width: '100%', alignItems: 'start' }}>
           <Justified>
-            You’ll have from Friday (6/26) at 10 AM to Saturday (6/27) at 4 PM
-            to complete as many Adventure Labs as possible and locate the bonus
-            geocache hidden somewhere within Morgantown. Inside the bonus
-            geocache is special information needed to claim your finisher
-            reward. The first 100 participants to complete the challenge will
-            receive a trackable Tech Team Challenge Finisher Geocoin. The bonus
-            geocache will publish at 5 PM on Saturday (6/27) following the
-            conclusion of the event, but can be found at any time once all the
-            information is collected. Participants who don’t finish the
+            The challenge will launch on Friday (6/26) at 10 AM and conclude
+            Saturday (6/27) at 4 PM; Participants will have this full time to
+            complete as many Adventure Labs as possible and locate the bonus
+            Geocache hidden somewhere in Morgantown. Inside the bonus geocache
+            is special information needed to claim your finisher reward. The
+            first 100 participants to complete the challenge will receive a
+            trackable Tech Team Challenge Finisher Geocoin. (Disclaimer: Only
+            registered participants are eligible to claim a finisher Geocoin.)
+            The bonus geocache will publish at 5 PM on Saturday (6/27) following
+            the conclusion of the event, but can be found at any time once all
+            the information is collected. Participants who don’t finish the
             challenge on Saturday are encouraged to find the official bonus
-            cache on Sunday to claim credit for the D5 mystery.
+            cache on Sunday to claim credit for the D5 mystery. Finisher coins
+            will be awarded until all 100 have been distributed.
           </Justified>
           <p />
           <Justified>
@@ -130,13 +112,13 @@ export function Team() {
             revealed during the symposium may reshape your understanding of the
             challenge, and could challenge everything you thought you knew about
             how the mystery fits together. While not required, skipping this
-            event may leave important pieces of the puzzle undiscovered.{' '}
+            event may leave important pieces of the puzzle undiscovered.
           </Justified>
           <p />
           <Justified>
             A smartphone capable of running the Adventure Lab app is required.
             No specialized knowledge is needed. All clues can be gathered on
-            site, no outside research, Googling, or prior puzzle experience
+            site; no outside research, Googling, or prior puzzle experience
             required. Just bring your curiosity, your team spirit, and your
             sense of adventure.
           </Justified>
@@ -157,12 +139,10 @@ export function Team() {
           <p />
           <Justified>
             The Tech Team Challenge is designed to be both competitive and
-            cooperative, with teamwork adding to the weekend’s fun. While teams
-            have exclusive access to certain Adventure Labs, collaboration is
-            encouraged. Work closely with your own team, or coordinate across
-            teams, to gather as much information as possible. All stages in the
-            Tech Team Challenge are designed to be completed solo or with a
-            team.
+            cooperative, with teamwork adding to the weekend’s fun. Work closely
+            with your own team, or coordinate across teams, to gather as much
+            information as possible. All stages in the Tech Team Challenge are
+            designed to be completed solo or with a team.
           </Justified>
         </div>
       </GoodSection>
@@ -182,7 +162,7 @@ export function Team() {
             <li>
               <Typography>
                 How many of the 100 finisher Geocoins are claimed by
-                participants from each team{' '}
+                participants from each team
               </Typography>
             </li>
           </ul>
@@ -191,7 +171,7 @@ export function Team() {
             of CacheMore 2026. This marks the beginning of an ongoing tradition.
             Future CacheMore events will feature red and blue teams, with a
             winning team crowned each year. Please keep in mind that this isn’t
-            a true competition, and is just for fun; participants are encouraged
+            a true competition and is just for fun; participants are encouraged
             to share information and collaborate with other attendees, even if
             they are part of a rival team.
           </Justified>
@@ -205,7 +185,7 @@ export function Team() {
             <li>
               <Typography>
                 It’s recommended (but not required) that individuals in your
-                party join the same team.{' '}
+                party join the same team.
               </Typography>
             </li>
             <li>

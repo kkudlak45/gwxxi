@@ -228,7 +228,7 @@ function ResponsiveAppBar() {
                   paddingLeft: '1rem',
                   textAlign: 'center',
                   borderRight: '2px solid white',
-                  borderRadius: "0px"
+                  borderRadius: '0px',
                 }}
                 endIcon={
                   <ArrowDropDown

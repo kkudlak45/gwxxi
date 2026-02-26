@@ -59,7 +59,7 @@ function EventBlock({
               alt={`the geocaching ${event.type} icon`}
               src={getIconSrc(event.type)}
               style={{
-                marginTop: isMobile ? 0 : "0.8rem",
+                marginTop: isMobile ? 0 : '0.8rem',
                 width: '4rem',
                 aspectRatio: 1,
                 borderRadius: '4rem',
@@ -101,7 +101,7 @@ function EventBlock({
             alignItems: isMobile ? 'center' : 'flex-end',
             flexDirection: 'column',
             justifyContent: isMobile ? 'center' : 'start',
-            paddingTop: isMobile ? '0' : '1.6rem'
+            paddingTop: isMobile ? '0' : '1.6rem',
           }}
         >
           {event.startTime ? (
