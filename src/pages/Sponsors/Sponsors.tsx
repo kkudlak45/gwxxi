@@ -5,6 +5,7 @@ import {
   goldSponsors,
   silverSponsors,
   CorporateSponsor,
+  bronzeSponsors,
 } from './sponsorsConstants'
 import { Helmet } from 'react-helmet'
 import Carousel from 'react-multi-carousel'
@@ -193,10 +194,10 @@ export function Sponsors() {
           title="Silver Sponsors"
           sponsors={silverSponsors}
         />
-        {/* <CorporateSponsorBlock
+        <CorporateSponsorBlock
           title="Bronze Sponsors"
           sponsors={bronzeSponsors}
-        /> */}
+        />
         <Typography textAlign="center">
           Thank you to all our sponsors! Your support allows guest to have the
           best experience possible. To learn more and consider donating

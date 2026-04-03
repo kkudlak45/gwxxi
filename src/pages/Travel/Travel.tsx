@@ -509,7 +509,7 @@ export function Travel() {
                   objectFit: 'cover',
                   objectPosition: 'center',
                 }}
-                src="/public\travel\nexus_360x360.png"
+                src="/travel/nexus_360x360.png"
               />
             </Grid>
             {BLUE_HOTELS.map((item) => {
@@ -532,7 +532,7 @@ export function Travel() {
                   objectFit: 'cover',
                   objectPosition: 'center',
                 }}
-                src="/public\travel\byte_360x360.png"
+                src="/travel/byte_360x360.png"
               />
             </Grid>
             {RED_HOTELS.map((item) => {

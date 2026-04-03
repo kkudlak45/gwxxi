@@ -108,119 +108,128 @@ export const silverSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/moegt.png`,
     href: '/Projects/MOE-GT',
   },
-  //   {
-  //     name: 'Blackwater Outdoor Adventures',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/boa.png`,
-  //     href: 'https://www.blackwateroutdooradventures.com/',
-  //   },
-  //   {
-  //     name: 'Team Maltese',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/maltese.png`,
-  //     href: 'https://www.geocaching.com/p/?guid=2227f7b2-ff37-4847-a1a3-743405f02419&wid=1345141b-666e-4f6b-80ea-b5b36146f51d&ds=2',
-  //   },
-  //   {
-  //     name: 'Mylan Park',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mylanPark.png`,
-  //     href: 'https://mylanpark.org',
-  //   },
-  //   {
-  //     name: 'Crunch Time',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/crunchTime.png`,
-  //     href: 'https://crunchtimewv.com',
-  //   },
-  //   {
-  //     name: 'XSCAPE',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/xscape.png`,
-  //     href: 'https://www.escape.cool',
-  //   },
-  //   {
-  //     name: 'Space Coast Geo-Store',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/spacecoast.png`,
-  //     href: 'https://spacecoastgeostore.com/',
-  //   },
-  //   {
-  //     name: 'Cache Craft',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachecraft.png`,
-  //     href: 'https://www.cachecraftnj.com/',
-  //   },
-  //   {
-  //     name: 'Odyssey Gifts',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/odyssey.png`,
-  //     href: 'https://www.odysseydragons.com/',
-  //   },
-  //   {
-  //     name: 'Wizard 3D',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/wizard3d.png`,
-  //     href: 'https://www.facebook.com/p/Wizard-3D-61556558757315/',
-  //   },
-  //   {
-  //     name: 'Poky Dot',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/pokydot_200x193.png`,
-  //     href: 'https://www.facebook.com/ThePokyDot/',
-  //   },
-  // ]
-  // export const bronzeSponsors = [
-  //   {
-  //     name: 'Heart of Civil War GeoTrail',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/heart_of_civil_war.png`,
-  //     href: 'https://www.heartofthecivilwar.org',
-  //   },
-  //   {
-  //     name: 'GeocacheTalk',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gctalk.png`,
-  //     href: 'http://geocachetalk.com/',
-  //   },
-  //   {
-  //     name: 'Gears & Gadgets',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gearsngadgets.png`,
-  //     href: 'https://www.gadgetsgeo.com/',
-  //   },
-  //   {
-  //     name: 'Cachly',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachly.png`,
-  //     href: 'https://www.cachly.com/',
-  //   },
-  //   {
-  //     name: 'NYGO',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/nygo.png`,
-  //     href: 'https://en.wikipedia.org/wiki/New_York_(state)',
-  //   },
-  //   {
-  //     name: 'CACHETHELINE',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachetheline.png`,
-  //     href: 'https://www.youtube.com/channel/UCZ2CBS4upyqZlZza6b1z9og',
-  //   },
-  //   {
-  //     name: 'Loving WV',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/loving.png`,
-  //     href: 'https://www.lovingwv.com/',
-  //   },
-  //   {
-  //     name: 'Wooden Nickel',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/woodenfiver.png`,
-  //     href: 'https://woodennickelgeocoins.com/',
-  //   },
-  //   {
-  //     name: 'ArtEdCrafted',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artedcrafted.png`,
-  //     href: 'https://artedcrafted.com/?srsltid=AfmBOoqdP0VtlTRXovNhnaer9STaEn_hF05BAqG-Yk5JPumDjkKZ1yfI',
-  //   },
-  //   {
-  //     name: 'Artisinal',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artisinal.png`,
-  //     href: 'https://www.example.com/',
-  //   },
-  //   {
-  //     name: 'BAC Country Rentals LLC',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
-  //     href: 'https://baccountryatvrentals.com/',
-  //   },
-  //   {
-  //     name: 'The Thrifty Mountaineer',
-  //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/thrifty_200x168.png`,
-  //     href: 'https://thethriftymountaineer.com/',
-  //   },
 ]
+
+export const bronzeSponsors = [
+  {
+    name: 'Explore Houma',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/explorehouma_200x200.png`,
+    href: 'https://explorehouma.com',
+  },
+]
+//   {
+//     name: 'Blackwater Outdoor Adventures',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/boa.png`,
+//     href: 'https://www.blackwateroutdooradventures.com/',
+//   },
+//   {
+//     name: 'Team Maltese',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/maltese.png`,
+//     href: 'https://www.geocaching.com/p/?guid=2227f7b2-ff37-4847-a1a3-743405f02419&wid=1345141b-666e-4f6b-80ea-b5b36146f51d&ds=2',
+//   },
+//   {
+//     name: 'Mylan Park',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mylanPark.png`,
+//     href: 'https://mylanpark.org',
+//   },
+//   {
+//     name: 'Crunch Time',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/crunchTime.png`,
+//     href: 'https://crunchtimewv.com',
+//   },
+//   {
+//     name: 'XSCAPE',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/xscape.png`,
+//     href: 'https://www.escape.cool',
+//   },
+//   {
+//     name: 'Space Coast Geo-Store',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/spacecoast.png`,
+//     href: 'https://spacecoastgeostore.com/',
+//   },
+//   {
+//     name: 'Cache Craft',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachecraft.png`,
+//     href: 'https://www.cachecraftnj.com/',
+//   },
+//   {
+//     name: 'Odyssey Gifts',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/odyssey.png`,
+//     href: 'https://www.odysseydragons.com/',
+//   },
+//   {
+//     name: 'Wizard 3D',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/wizard3d.png`,
+//     href: 'https://www.facebook.com/p/Wizard-3D-61556558757315/',
+//   },
+//   {
+//     name: 'Poky Dot',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/pokydot_200x193.png`,
+//     href: 'https://www.facebook.com/ThePokyDot/',
+//   },
+// ]
+// export const bronzeSponsors = [
+//   {
+//     name: 'Heart of Civil War GeoTrail',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/heart_of_civil_war.png`,
+//     href: 'https://www.heartofthecivilwar.org',
+//   },
+//   {
+//     name: 'GeocacheTalk',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gctalk.png`,
+//     href: 'http://geocachetalk.com/',
+//   },
+//   {
+//     name: 'Gears & Gadgets',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/gearsngadgets.png`,
+//     href: 'https://www.gadgetsgeo.com/',
+//   },
+//   {
+//     name: 'Cachly',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachly.png`,
+//     href: 'https://www.cachly.com/',
+//   },
+//   {
+//     name: 'NYGO',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/nygo.png`,
+//     href: 'https://en.wikipedia.org/wiki/New_York_(state)',
+//   },
+//   {
+//     name: 'CACHETHELINE',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/cachetheline.png`,
+//     href: 'https://www.youtube.com/channel/UCZ2CBS4upyqZlZza6b1z9og',
+//   },
+//   {
+//     name: 'Loving WV',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/loving.png`,
+//     href: 'https://www.lovingwv.com/',
+//   },
+//   {
+//     name: 'Wooden Nickel',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/woodenfiver.png`,
+//     href: 'https://woodennickelgeocoins.com/',
+//   },
+//   {
+//     name: 'ArtEdCrafted',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artedcrafted.png`,
+//     href: 'https://artedcrafted.com/?srsltid=AfmBOoqdP0VtlTRXovNhnaer9STaEn_hF05BAqG-Yk5JPumDjkKZ1yfI',
+//   },
+//   {
+//     name: 'Artisinal',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artisinal.png`,
+//     href: 'https://www.example.com/',
+//   },
+//   {
+//     name: 'BAC Country Rentals LLC',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
+//     href: 'https://baccountryatvrentals.com/',
+//   },
+//   {
+//     name: 'The Thrifty Mountaineer',
+//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/thrifty_200x168.png`,
+//     href: 'https://thethriftymountaineer.com/',
+//   },
+// ]
 
 export const friends = [
   'f0t0m0m',
