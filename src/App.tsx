@@ -16,13 +16,14 @@ import { Team } from './pages/Team/Team'
 import { Puzzles } from './pages/Puzzles/Puzzles'
 import { Trading } from './pages/Trading/Trading'
 import { Activate } from './pages/Activate/Activate'
+import { LHRHT } from './pages/LHRGT/lhrgt'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Header />
-        <Container maxWidth="xl" sx={{ padding: '8px 0px' }}>
+        <Container sx={{ padding: '8px 0px', maxWidth: '800px' }}>
           <Routes>
             <Route path="projects">
               <Route
@@ -33,6 +34,7 @@ function App() {
                   </div>
                 }
               />
+              <Route path="LHRGT" element={<LHRHT />} />
               <Route path="*" element={<Navigate to="/projects" />} />
             </Route>
             <Route path="activate" element={<Activate />} />
@@ -49,6 +51,7 @@ function App() {
                 <Route path="puzzles" element={<Puzzles />} />
                 <Route path="teams" element={<Team />} />
                 <Route path="trading-cards" element={<Trading />} />
+
                 {/* <Route path="geotour" element={<GeoTour />} /> */}
                 {/* <Route path="live" element={<Live />} /> */}
                 {/* <Route path="guide" element={<Guide />} /> */}

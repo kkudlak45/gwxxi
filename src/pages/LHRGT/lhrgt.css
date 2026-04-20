@@ -1,0 +1,28 @@
+p {
+  text-align: justify;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  margin-top: 2rem !important;
+  margin-bottom: 0.6rem !important;
+}
+
+.page-base > .MuiButtonBase-root {
+  margin-top: 1rem !important;
+}
+
+.lhrlogo-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lhrlogo {
+  width: 100%;
+  max-width: 400px;
+}

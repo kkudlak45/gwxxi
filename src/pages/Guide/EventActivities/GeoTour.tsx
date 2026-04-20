@@ -45,7 +45,7 @@ function Card({
   )
 }
 
-function GCDisplay({
+export function GCDisplay({
   title,
   type,
   gcCode,

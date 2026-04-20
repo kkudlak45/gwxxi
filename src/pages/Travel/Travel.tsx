@@ -184,6 +184,7 @@ function HotelBlock({
             fontWeight="bold"
             lineHeight="2.2rem"
             marginBottom="0.6rem"
+            textAlign="start"
           >
             {item.name}
           </Typography>
@@ -633,6 +634,7 @@ export function Travel() {
                         fontWeight="bold"
                         lineHeight="2.2rem"
                         marginBottom="0.6rem"
+                        textAlign="start"
                       >
                         {item.name}
                       </Typography>
