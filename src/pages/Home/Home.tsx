@@ -36,7 +36,7 @@ const InfoBlockStuff = [
   {
     title: 'Mountaineer Country GeoTour',
     imgSrc: `${import.meta.env.BASE_URL}home/Home4.png`,
-    href: '/projects/vmc-gt',
+    href: '/projects/VMCGT',
     text: "Explore Mountaineer Country like you're a local with this new official GeoTour. Expanding on the Country Roads Challenge, this 20-stop GeoTour will feature 10 brand-new gadget caches and a trackable Geocoin!",
   },
 ]
@@ -121,12 +121,10 @@ export function Home() {
           {'June 26 - 28, 2026'}
         </Typography>
 
-        <p />
-        <p />
-
         <Typography
           variant="h3"
           marginBottom="24px"
+          marginTop="2.4rem"
           textAlign="center"
           fontSize={isMobile ? '2.4rem' : undefined}
           textTransform="none"
@@ -154,7 +152,7 @@ export function Home() {
         </Typography>
       </Section>
 
-      <Section sx={{ backgroundColor: palette.grey[200] }}>
+      {/* <Section sx={{ backgroundColor: palette.grey[200] }}>
         <Grid
           container
           justifyContent="center"
@@ -282,12 +280,15 @@ export function Home() {
             </Button>
           </Grid>
         </Grid>
-      </Section>
+      </Section> */}
 
-      <p />
-      <p />
-
-      <Section sx={{ flexDirection: 'column', alignItems: 'center' }}>
+      <Section
+        sx={{
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginBottom: '32px',
+        }}
+      >
         <Typography variant="h3" width="80%" marginBottom="1.6rem">
           Join our mailing list to stay up to date on important announcements,
           event details, and things to do while caching in West Virginia!

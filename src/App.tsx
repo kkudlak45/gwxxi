@@ -17,6 +17,7 @@ import { Puzzles } from './pages/Puzzles/Puzzles'
 import { Trading } from './pages/Trading/Trading'
 import { Activate } from './pages/Activate/Activate'
 import { LHRHT } from './pages/LHRGT/lhrgt'
+import { VMCGT } from './pages/VMCGT/VMCGT'
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
                 }
               />
               <Route path="LHRGT" element={<LHRHT />} />
+              <Route path="VMCGT" element={<VMCGT />} />
               <Route path="*" element={<Navigate to="/projects" />} />
             </Route>
             <Route path="activate" element={<Activate />} />
