@@ -116,6 +116,11 @@ export const bronzeSponsors = [
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/explorehouma_200x200.png`,
     href: 'https://explorehouma.com',
   },
+  {
+    name: 'BAC Country Rentals LLC',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
+    href: 'https://baccountryatvrentals.com/',
+  },
 ]
 //   {
 //     name: 'Blackwater Outdoor Adventures',
@@ -218,11 +223,6 @@ export const bronzeSponsors = [
 //     name: 'Artisinal',
 //     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/artisinal.png`,
 //     href: 'https://www.example.com/',
-//   },
-//   {
-//     name: 'BAC Country Rentals LLC',
-//     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
-//     href: 'https://baccountryatvrentals.com/',
 //   },
 //   {
 //     name: 'The Thrifty Mountaineer',

@@ -1,4 +1,7 @@
 import { Typography, useTheme } from '@mui/material'
+import { CopyBlock, dracula } from 'react-code-blocks'
+import { TEXT } from './cachepagepuzzlehtml'
+import './Puzzles.css'
 
 export function Puzzles() {
   const { palette } = useTheme()
@@ -40,9 +43,10 @@ export function Puzzles() {
           backgroundColor: palette.grey[200],
           padding: '1rem',
           alignItems: 'center',
+          marginTop: '2rem',
         }}
       >
-        <Typography textAlign="center" variant="h4">
+        <Typography textAlign="center" variant="h4" marginTop="0px !important">
           Can you solve them all?
         </Typography>
         <Typography marginBottom="0.4rem">
@@ -51,17 +55,54 @@ export function Puzzles() {
             details.
           </em>
         </Typography>
-        <Typography>May 8 -</Typography>
-        <Typography>May 15 -</Typography>
-        <Typography>May 22 -</Typography>
-        <Typography>May 29 -</Typography>
-        <Typography>June 5 -</Typography>
+        <Typography>
+          May 8 - Crossed Wires (
+          <a href="https://coord.info/GCBHQQJ" target="_blank">
+            GCBHQQJ
+          </a>
+          )
+        </Typography>
+        <Typography>
+          May 15 - Binary Reboot (
+          <a href="https://coord.info/GCBHQQN" target="_blank">
+            GCBHQQN
+          </a>
+          )
+        </Typography>
+        <Typography>
+          May 22 - Keyed Entry (
+          <a href="https://coord.info/GCBNPC8" target="_blank">
+            GCBNPC8
+          </a>
+          )
+        </Typography>
+        <Typography>
+          May 29 - Computational Computing (
+          <a href="https://coord.info/GCBNPBV" target="_blank">
+            GCBNPBV
+          </a>
+          )
+        </Typography>
+        <Typography>
+          June 5 - Not A Robot (
+          <a href="https://coord.info/GCBNPCC" target="_blank">
+            GCBNPCC
+          </a>
+          )
+        </Typography>
       </div>
 
       <p />
       <p />
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem',
+          marginBottom: '1rem',
+        }}
+      >
         <Typography variant="h4">
           Host or Attend a CacheMore Countdown Event!
         </Typography>
@@ -74,10 +115,32 @@ export function Puzzles() {
           way to connect with your team and start the countdown to the greatest
           weekend of geocaching yet!
         </Typography>
-        <Typography textAlign="center">
-          <em>Check back in April for more information</em>
+        <Typography textAlign="justify">
+          Need help solving the pre-event puzzles? Don't worry - attend a
+          CacheMore Countdown event in your area and share ideas!{' '}
+          <a target="_blank" href="https://coord.info/BMFBGWE">
+            Find one near you!
+          </a>{' '}
+          Don't see one close? You can host your own!
+        </Typography>
+        <Typography textAlign="justify">
+          Use the HTML found below to create your own CacheMore Countdown event
+          and message{' '}
+          <a target="_blank" href="https://www.geocaching.com/p/?u=JenOvations">
+            JenOvations
+          </a>{' '}
+          to have your event added to the list! Thanks, and we can't wait to see
+          you in Morgantown!
         </Typography>
       </div>
+
+      <CopyBlock
+        language="html"
+        text={TEXT}
+        theme={dracula}
+        showLineNumbers
+        codeBlock
+      />
 
       <p />
       <p />
