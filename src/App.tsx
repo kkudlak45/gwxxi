@@ -18,14 +18,30 @@ import { Trading } from './pages/Trading/Trading'
 import { Activate } from './pages/Activate/Activate'
 import { LHRHT } from './pages/LHRGT/lhrgt'
 import { VMCGT } from './pages/VMCGT/VMCGT'
+import { GeoTour } from './pages/Guide/EventActivities/GeoTour'
+import { useIsMobile } from './hooks/useIsMobile'
+import { CacheMoreGuide } from './pages/Guide/CachemoreGuide'
+import { Jigsaw } from './puzzle/jigsaw'
 
 function App() {
+  const isMobile = useIsMobile()
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <Header />
-        <Container sx={{ padding: '8px 0px', maxWidth: '800px' }}>
+        <Container
+          sx={{
+            padding: isMobile ? '64px 0px' : '48px 0px',
+            maxWidth: '800px',
+          }}
+        >
           <Routes>
+            <Route path="puzzle">
+              <Route path="blue" element={<Jigsaw />} />
+              <Route path="red" element={<Jigsaw />} />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Route>
+
             <Route path="projects">
               <Route
                 index
@@ -37,6 +53,7 @@ function App() {
               />
               <Route path="LHRGT" element={<LHRHT />} />
               <Route path="VMCGT" element={<VMCGT />} />
+              <Route path="MOEGT" element={<GeoTour />} />
               <Route path="*" element={<Navigate to="/projects" />} />
             </Route>
             <Route path="activate" element={<Activate />} />
@@ -53,10 +70,10 @@ function App() {
                 <Route path="puzzles" element={<Puzzles />} />
                 <Route path="teams" element={<Team />} />
                 <Route path="trading-cards" element={<Trading />} />
+                <Route path="guide" element={<CacheMoreGuide />} />
 
                 {/* <Route path="geotour" element={<GeoTour />} /> */}
                 {/* <Route path="live" element={<Live />} /> */}
-                {/* <Route path="guide" element={<Guide />} /> */}
                 {/* <Route path="guide/*">
                   {EVENT_GUIDE_PAGES.filter((p) => !!p.component).map((p) => (
                     // @ts-ignore

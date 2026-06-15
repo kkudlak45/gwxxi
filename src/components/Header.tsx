@@ -11,6 +11,7 @@ import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { useIsMobile } from '../hooks/useIsMobile'
 import { ArrowDropDown } from '@mui/icons-material'
+import { Alert } from '@mui/material'
 
 export const pages = [
   {
@@ -29,10 +30,10 @@ export const pages = [
   //   text: 'Activities',
   //   href: `${import.meta.env.BASE_URL}events/2026/activities`,
   // },
-  {
-    text: 'Register',
-    href: 'https://cachemore.store/collections/cachemore-2026',
-  },
+  // {
+  //   text: 'Register',
+  //   href: 'https://cachemore.store/collections/cachemore-2026',
+  // },
   // {
   //   text: 'Shop',
   //   href: 'https://geowoodstockxxi.myshopify.com/collections/all',
@@ -77,7 +78,7 @@ export const activityPages = [
   },
   {
     text: 'Visit Mountaineer Country GeoTour',
-    href: `${import.meta.env.BASE_URL}projects/vmc-gt`,
+    href: `${import.meta.env.BASE_URL}projects/vmcgt`,
   },
 ]
 
@@ -352,20 +353,20 @@ function ResponsiveAppBar() {
           </Toolbar>
         </Container>
 
-        {/* <Alert variant="filled" severity="warning">
-        Your last chance to buy individual SWAG items such as Geocoins, shirts,
-        Pathtags, meal tickets, and more is <BoldKol>April 25</BoldKol>. Some
-        items may not be available for purchase at the event.{' '}
-        <a
-          href={`${import.meta.env.BASE_URL}register`}
-          style={{ color: 'lightblue' }}
-        >
-          Click here to shop.
+        <a href="/events/2026/guide">
+          <Alert
+            variant="filled"
+            severity="warning"
+            sx={{ display: 'flex', justifyContent: 'center' }}
+          >
+            It's almost time for CacheMore 2026! The event guide is now live!
+            Click here for more information.
+          </Alert>
         </a>
-      </Alert> */}
       </AppBar>
       <div style={{ height: '84px' }} />
     </Fragment>
   )
 }
+
 export default ResponsiveAppBar

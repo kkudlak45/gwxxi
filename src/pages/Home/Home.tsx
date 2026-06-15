@@ -1,12 +1,16 @@
-import { Button, Grid, Typography, useTheme } from '@mui/material'
+import { Grid, Typography, useTheme } from '@mui/material'
 import { Fragment } from 'react/jsx-runtime'
 import PlaceIcon from '@mui/icons-material/Place'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import { Helmet } from 'react-helmet'
 import { Section } from '../../components/Section'
-import { BLUE, CHARCOAL } from '../../constants/theme'
+import { BLUE } from '../../constants/theme'
 import { useIsMobile } from '../../hooks/useIsMobile'
-import { goldSponsors } from '../Sponsors/sponsorsConstants'
+import {
+  bronzeSponsors,
+  goldSponsors,
+  silverSponsors,
+} from '../Sponsors/sponsorsConstants'
 import { CorporateSponsorBlock } from '../Sponsors/Sponsors'
 import './Home.css'
 import { BigOrangeButton } from '../Guide/BigOrangeButton'
@@ -388,7 +392,9 @@ export function Home() {
             </a>
             {' page for sponsorship information.'}
           </Typography>
-          <CorporateSponsorBlock sponsors={goldSponsors} />
+          <CorporateSponsorBlock
+            sponsors={[...goldSponsors, ...silverSponsors, ...bronzeSponsors]}
+          />
         </div>
       </div>
       <p />
@@ -400,18 +406,29 @@ export function Home() {
           Profile!
         </Typography>
 
-        <pre style={{ width: '80%' }}>
+        <pre style={{ width: '80%', marginTop: '1rem' }}>
           <code style={{ textAlign: 'center', textWrap: 'wrap' }}>
             {BANNER_CODE}
           </code>
         </pre>
 
-        <div style={{ maxWidth: '90%', width: '90%', overflowX: 'scroll' }}>
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '1.4rem',
+          }}
+        >
           <p style={{ textAlign: 'center' }}>
             <a target="_blank" href="https://coord.info/GCBEBMA">
               <img
                 src="https://s3.amazonaws.com/gs-geo-images/00d954dd-8dbe-44a8-bc60-fb34fb78e9b6.png"
-                style={{ height: '135px', width: '600px', maxWidth: '670px' }}
+                style={{
+                  width: '100%',
+                  maxWidth: '600px',
+                  aspectRatio: '600 / 135',
+                }}
               />
             </a>
           </p>

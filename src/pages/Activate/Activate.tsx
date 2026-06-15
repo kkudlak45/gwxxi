@@ -39,7 +39,7 @@ function ImgBlock({
           paddingBottom: '0.4rem',
         }}
       />
-      <Typography fontSize="1.2rem" marginBottom="0.4rem">
+      <Typography fontSize="1.2rem" marginBottom="0.4rem" textAlign="center">
         <BoldKol>{title}</BoldKol>
       </Typography>
       {children}
@@ -71,7 +71,7 @@ export function Activate(): JSX.Element {
         retrieve your activation code and make it discoverable for the caching
         community.
       </Justified>
-      <p />
+      <br />
       <Typography>
         <BoldKol>Please select the event or GeoTour: </BoldKol>
         <select onChange={(e) => setSelectedCode(e.target.value)}>
@@ -89,9 +89,15 @@ export function Activate(): JSX.Element {
           {DROPDOWNITEMS[selectedCode]}
         </span>
       </Typography>
-      <p />
+      <br />
       <Section
-        style={{ backgroundColor: palette.grey[200], flexDirection: 'column' }}
+        style={{
+          backgroundColor: palette.grey[200],
+          flexDirection: 'column',
+          paddingTop: 0,
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
+        }}
       >
         <Typography variant="h4">
           To activate your trackable on{' '}
@@ -137,8 +143,7 @@ export function Activate(): JSX.Element {
           </li>
         </ol>
       </Section>
-      <p />
-      <p />
+      <br />
       <Typography variant="h4">Find your next adventure!</Typography>
       <Grid container>
         <ImgBlock
@@ -149,7 +154,8 @@ export function Activate(): JSX.Element {
             Full of history, culture, and recreational opportunities, Marion
             County really is the Middle of Everywhere! From the rolling rapids
             of Valley Falls State Park to the Italian influence of local
-            bakeries, there's so much to do while visiting the area. Learn More
+            bakeries, there's so much to do while visiting the area.{' '}
+            <a href="/projects/MOEGT">Learn More</a>
           </Justified>
         </ImgBlock>
         <ImgBlock
@@ -160,7 +166,8 @@ export function Activate(): JSX.Element {
             Come go wild in the heart of Appalachia with the Visit Mountaineer
             Country GeoTour. From lively downtown streets to scenic mountain
             views, each stop offers a new reason to discover what makes
-            Mountaineer Country unforgettable. Learn More
+            Mountaineer Country unforgettable.{' '}
+            <a href="/projects/VMCGT">Learn More</a>
           </Justified>
         </ImgBlock>
         <ImgBlock
@@ -172,7 +179,7 @@ export function Activate(): JSX.Element {
             Region spans 4.2 million acres across 15 counties. From sweeping
             forests and rolling hills to vibrant communities shaped by the
             lumber industry, come explore what makes North-Central Pennsylvania
-            so special! Learn More
+            so special! <a href="/projects/LHRGT">Learn More</a>
           </Justified>
         </ImgBlock>
       </Grid>

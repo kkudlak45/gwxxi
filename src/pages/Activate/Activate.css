@@ -2,9 +2,11 @@
   0% {
     background-color: rgba(25, 118, 210, 0);
   }
+
   50% {
     background-color: rgba(25, 118, 210, 0.15);
   }
+
   100% {
     background-color: rgba(25, 118, 210, 0);
   }
@@ -13,4 +15,10 @@
 .pulseanim {
   animation: pulse 0.3s;
   animation-iteration-count: 1;
+}
+
+select {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.4rem;
 }

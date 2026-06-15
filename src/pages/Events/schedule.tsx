@@ -61,27 +61,6 @@ export const SCHEDULE: Event[] = [
         attending sessions and puzzling with your team.
         <br />
         <br />
-        <BoldKol>11 am / Puzzle Solving 101</BoldKol>
-        <br />
-        New to puzzle caches or looking to sharpen your skills? This session
-        covers common puzzle types, solving strategies, and tips to help you
-        break through even the trickiest challenges.
-        <br />
-        <br />
-        <BoldKol>12 pm / Solving Pre-Event Puzzles</BoldKol>
-        <br />
-        Get hands-on help with CacheMore’s pre-event puzzles as hosts walk
-        through approaches, hints, and thought processes. Bring your
-        questions—and your notes—as you prep for the main mystery.
-        <br />
-        <br />
-        <BoldKol>1 pm / Puzzle Writing 101</BoldKol>
-        <br />
-        Interested in creating puzzles of your own? Learn the basics of puzzle
-        design, fair difficulty balancing, and creative techniques to craft
-        engaging challenges for fellow cachers.
-        <br />
-        <br />
         <BoldKol>2 pm / Reviewer Q&A</BoldKol>
         <br />
         Ever wonder what happens behind the scenes? Join a live Q&A with a
@@ -97,11 +76,10 @@ export const SCHEDULE: Event[] = [
         <br />
         <BoldKol>4 pm / Announcements, Awards, & Prizes</BoldKol>
         <br />
-        As the CacheMore weekend comes to a thrilling close as hosts reveal how
+        As the CacheMore weekend comes to a thrilling close, hosts reveal how
         the puzzles unfolded, step through the full mystery, and connect all the
-        clues from start to finish. Celebrate standout achievements, cheer as
-        the winning team is crowned, and be among the first to discover the
-        theme for next year’s CacheMore event.
+        clues from start to finish. Celebrate standout achievements and be among
+        the first to discover the theme for next year's CacheMore event.
       </Fragment>
     ),
     startTime: 1782568800,

@@ -45,11 +45,6 @@ export const platinumSponsors = [
     href: 'https://explorehouma.com',
   },
   {
-    name: 'Geoswag / Oakcoins',
-    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
-    href: 'https://geoswag.com/',
-  },
-  {
     name: "Dick's Sporting Goods",
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/dicks_200x200.png`,
     href: 'https://www.dickssportinggoods.com/',
@@ -75,11 +70,6 @@ export const goldSponsors = [
   //   name: 'Belmont County',
   //   imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/belmont.png`,
   //   href: 'https://www.visitbelmontcounty.com',
-  // },
-  // {
-  //   name: 'McClumsy',
-  //   imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcclumsy.png`,
-  //   href: 'https://mcclumsy.com',
   // },
   // {
   //   name: 'West Virginia University',
@@ -120,6 +110,16 @@ export const bronzeSponsors = [
     name: 'BAC Country Rentals LLC',
     imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/bac.png`,
     href: 'https://baccountryatvrentals.com/',
+  },
+  {
+    name: 'McClumsy',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/mcclumsy.png`,
+    href: 'https://mcclumsy.com',
+  },
+  {
+    name: 'Geoswag / Oakcoins',
+    imgSrc: `${import.meta.env.BASE_URL}sponsors/icons/geoswag.png`,
+    href: 'https://geoswag.com/',
   },
 ]
 //   {
@@ -232,11 +232,16 @@ export const bronzeSponsors = [
 // ]
 
 export const friends = [
+  'APC2',
+  'chipper66',
+  'CuriousGeorge59',
   'f0t0m0m',
   'Igfrey & Turkey819',
   'Jonny Rascal',
+  'neoncacher',
   'poeanne',
   'Practical Geocaching®',
+  'RetiredGuy',
   'Scottish Cavalryman',
   'Superchucklez',
   'susanc14',

@@ -6,6 +6,7 @@ import { BigOrangeButton } from '../BigOrangeButton'
 import { CHARCOAL } from '../../../constants/theme'
 import { CacheType, ICON_MAP } from '../../../components/icons/Icons'
 import { useIsMobile } from '../../../hooks/useIsMobile'
+import { BoldKol } from '../CantMissExperiences/Counties'
 
 function Card({
   children,
@@ -26,19 +27,23 @@ function Card({
           border: `1px solid ${CHARCOAL}`,
           borderRadius: '8px',
           width: '80%',
-          height: 'calc(100% - 24px)',
+          height: 'calc(100%)',
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'start',
           flexDirection: 'column',
         }}
       >
-        <Typography
-          fontSize="1.4rem"
-          fontFamily="KGRedHands"
-          marginBottom="0.4rem"
+        <BoldKol
+          style={{
+            fontSize: '1.4rem',
+            marginBottom: '0.4rem',
+            width: '100%',
+            justifyContent: 'center',
+            display: 'flex',
+          }}
         >
           {title}
-        </Typography>
+        </BoldKol>
         {children}
       </div>
     </Grid>
@@ -91,48 +96,46 @@ export function GeoTour() {
 
       <GuideBody>
         <img
-          src="/eventguide/eventactivities/moegeotour_600x600.png"
-          style={{ maxWidth: '600px', width: '100%', aspectRatio: 1 }}
+          src="/eventguide/eventactivities/moegtheader.jpg"
+          style={{ width: '100%', aspectRatio: '1800 / 540' }}
         />
-        <p />
+        <br />
         <Typography>
           Full of history, culture, and recreational opportunities, Marion
           County really is the Middle of Everywhere! From the rolling rapids of
           Valley Falls State Park to the Italian influence of local bakeries,
-          there's so much to do while visiting the area. As part of GeoWoodstock
-          XXI, we invite you to join us for the Middle of Everywhere GeoTour!
-          This officially registered tour highlights 20 of our favorite
+          there's so much to do while visiting the area. While you're visiting
+          West Virginia, we invite you to join us for the Middle of Everywhere
+          GeoTour! This officially registered tour highlights 16 of our favorite
           locations in the area, categorized by shops, history, murals, and
-          parks! Find 16/20 caches to qualify for a limited-edition GeoTour
-          coin. Find all 20 to get a unique souvenir added to your Geocaching
+          parks! Find 12/16 caches to qualify for a limited-edition GeoTour
+          coin. Find all 16 to get a unique souvenir added to your Geocaching
           profile.
         </Typography>
-        <p />
+        <br />
         <BigOrangeButton href="https://www.geocaching.com/play/geotours/everywhere">
           CLICK HERE FOR MORE INFO
         </BigOrangeButton>
-        <p />
-        <p />
-        <p />
+        <br />
+        <br />
+        <br />
 
         <Typography variant="h3" fontSize="1.4rem">
           Getting Started
         </Typography>
-        <p />
+        <br />
         {/* TODO - need the passport link */}
         <Typography zIndex="9999">
-          You can pick up an official Middle of Everywhere GeoTour booklet by
-          visiting the Marion County CVB table at Mylan Park during GeoWoodstock
-          XXI. Alternatively, you may print out a passport by{' '}
-          <a
-            target="_blank"
-            href="/eventguide/eventactivities/Middle of Everywhere GeoTour Passport.pdf"
-          >
-            clicking the link provided
-          </a>
-          .
+          Welcome to Marion County, West Virginia! This officially registered
+          GeoTour features 16 unique caches split between 4 areas of interest:
+          parks, businesses, history, and art. You must find 3 of the 4 caches
+          in each section to claim a limited-edition Geocoin. Please record the
+          code words or stamps found in the Geocaches at each location on your
+          passport. You can pick up a passport at the Marion County CVB office,
+          or print one off using the link below to help keep track of your
+          adventure.
         </Typography>
-        <p />
+        <br />
 
         <Grid
           container
@@ -145,30 +148,25 @@ export function GeoTour() {
               spots throughout the county, including two state parks and a
               campground.
             </Typography>
-            <div style={{ height: '1rem' }} />
+            <br />
             <GCDisplay
               type={CacheType.MULTI}
-              title="MOE-GT #01: Visiting the Veterans"
+              title="MOE-GT: Visiting the Veterans"
               gcCode="GCB2F62"
             />
             <GCDisplay
               type={CacheType.MULTI}
-              title="MOE-GT #02: At the Falls"
+              title="MOE-GT: At the Falls"
               gcCode="GCB2H3K"
             />
             <GCDisplay
               type={CacheType.MULTI}
-              title="MOE-GT #03: The Pioneers"
+              title="MOE-GT: The Pioneers"
               gcCode="GCB2H3M"
             />
             <GCDisplay
               type={CacheType.MULTI}
-              title="MOE-GT #04: Fishing in the Dark"
-              gcCode="GCB2H3P"
-            />
-            <GCDisplay
-              type={CacheType.MULTI}
-              title="MOE-GT #05: Flying Frisbees"
+              title="MOE-GT: Flying Frisbees"
               gcCode="GCB2H3T"
             />
           </Card>
@@ -178,30 +176,25 @@ export function GeoTour() {
               In the mood for some food? Stop in at one of our local shops or
               restaurants while you're finding these gadget caches.
             </Typography>
-            <div style={{ height: '1rem' }} />
+            <br />
             <GCDisplay
               type={CacheType.TRADITIONAL}
-              title="MOE-GT #06: Connect the Dots"
-              gcCode="GCB2F9P"
-            />
-            <GCDisplay
-              type={CacheType.TRADITIONAL}
-              title="MOE-GT #07: On Tap"
+              title="MOE-GT: On Tap"
               gcCode="GCB2FG7"
             />
             <GCDisplay
               type={CacheType.TRADITIONAL}
-              title="MOE-GT #08: Cabernet Conundrum"
+              title="MOE-GT: Cabernet Conundrum"
               gcCode="GCB2FHH"
             />
             <GCDisplay
               type={CacheType.TRADITIONAL}
-              title="MOE-GT #09: The Bee's Knees"
+              title="MOE-GT: The Bee's Knees"
               gcCode="GCB2FJ6"
             />
             <GCDisplay
               type={CacheType.TRADITIONAL}
-              title="MOE-GT #10: Fine-Tuned"
+              title="MOE-GT: Fine-Tuned"
               gcCode="GCB2H3V"
             />
           </Card>
@@ -212,26 +205,21 @@ export function GeoTour() {
               mining industry which West Virginia is famous for. This category
               explores the monuments and sights from the early days of the area.
             </Typography>
-            <div style={{ height: '1rem' }} />
+            <br />
             <GCDisplay
               type={CacheType.MYSTERY}
-              title="MOE-GT #11: Home of the Pepperoni Roll"
+              title="MOE-GT: Home of the Pepperoni Roll"
               gcCode="GCB2FJT"
             />
             <GCDisplay
               type={CacheType.MYSTERY}
-              title="MOE-GT #12: Number Nine"
+              title="MOE-GT: Number Nine"
               gcCode="GCB2GKW"
             />
             <GCDisplay
               type={CacheType.MYSTERY}
-              title="MOE-GT #13: Monongah Mining Disaster"
+              title="MOE-GT: Monongah Mining Disaster"
               gcCode="GCB2GMC"
-            />
-            <GCDisplay
-              type={CacheType.MYSTERY}
-              title="MOE-GT #14: Black Diamond"
-              gcCode="GCB2GNC"
             />
             <GCDisplay
               type={CacheType.MYSTERY}
@@ -247,40 +235,35 @@ export function GeoTour() {
               little different at each location. Don't forget to stamp your
               passport!
             </Typography>
-            <div style={{ height: '1rem' }} />
+            <br />
             <GCDisplay
               type={CacheType.LETTERBOX}
-              title="MOE-GT #16: Hometown Heroes"
+              title="MOE-GT: Hometown Heroes"
               gcCode="GCB2H2W"
             />
             <GCDisplay
               type={CacheType.LETTERBOX}
-              title="MOE-GT #17: Downtown"
+              title="MOE-GT: Downtown"
               gcCode="GCB2H33"
             />
             <GCDisplay
               type={CacheType.LETTERBOX}
-              title="MOE-GT #18: Colorful Campus"
+              title="MOE-GT: Colorful Campus"
               gcCode="GCB2H3B"
             />
             <GCDisplay
               type={CacheType.LETTERBOX}
-              title="MOE-GT #19: Titans of Industry"
+              title="MOE-GT: Titans of Industry"
               gcCode="GCB2H3G"
-            />
-            <GCDisplay
-              type={CacheType.LETTERBOX}
-              title="MOE-GT #20: Open Happiness"
-              gcCode="GCB2FM7"
             />
           </Card>
         </Grid>
 
-        <p />
-        <p />
+        <br />
+        <br />
 
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=1Uq0nN5zMAMeijaMEG2VJgsjMjOB6PVY&ehbc=2E312F"
+          src="https://www.google.com/maps/d/embed?mid=1mCgrM5iVEGZLgUNTEfuE5qF944I68zE&ehbc=2E312F"
           width="640"
           height="480"
           style={{
@@ -293,80 +276,36 @@ export function GeoTour() {
           loading="lazy"
         />
 
-        <p />
-        <p />
+        <br />
+        <br />
 
         <Typography variant="h3" fontSize="1.4rem">
           Claim your coin!
         </Typography>
-        <p />
+        <br />
         <Typography>
           Coins will be awarded on a first-come, first-served basis to any
-          cacher who completes 16/20 caches on the tour. Qualifying participants
-          must find at least 4/5 caches from each category and note the codeword
-          / stamp in this book to be eligible. Finding all 20 caches is required
-          to earn the digital souvenir.
+          cacher who completes 12/16 caches on the tour. Qualifying participants
+          must find at least 3/4 caches from each category and note the codeword
+          / stamp in this book to be eligible. Finding all 16 caches is required
+          to earn the digital souvenir. Coins can be claimed by visiting the
+          Marion County CVB office.
         </Typography>
-        <p />
-        <Typography>
-          You can claim your coin at any of the following events by visiting the
-          Marion County CVB table:
-        </Typography>
-        <p />
-        <div>
-          <Typography fontFamily="KGRedHands">
-            GeoWoodstock XXI (
-            <a target="_blank" href="https://coord.info/GCBEBMA">
-              GCBEBMA
-            </a>
-            )
+        <br />
+
+        <div style={{ width: '100%', marginTop: '1rem' }}>
+          <BoldKol>Marion County CVB</BoldKol>
+          <Typography>1000 Cole Street, Pleasant Valley, WV 26554</Typography>
+          <Typography>Monday - Thursday, 8:30 am - 4:30 pm</Typography>
+          <Typography>Friday, 8:30 am - 3:30 pm</Typography>
+          <Typography>
+            <a href="tel:+13043681123">(304) 368-1123</a> |{' '}
+            <a href="mailto:Leah@MarionCVB.com">Leah@MarionCVB.com</a>
           </Typography>
-          <ul style={{ margin: 0 }}>
-            <li>
-              <Typography>Friday (5/23) from 8 am* - 3 pm</Typography>
-              <Typography>
-                <em>*8 - 10 am is for VIPs and Friends of GeoWoodstock only</em>
-              </Typography>
-            </li>
-            <li>
-              <Typography>Saturday (5/24) from 8 am - 5 pm</Typography>
-            </li>
-          </ul>
-
-          <p />
-
-          <Typography fontFamily="KGRedHands">
-            Breakfast with the Mommas (
-            <a target="_blank" href="https://coord.info/GCANXX7">
-              GCANXX7
-            </a>
-            )
-          </Typography>
-          <ul style={{ margin: 0 }}>
-            <li>
-              <Typography>Sunday (5/25) from 8 - 11 am</Typography>
-            </li>
-          </ul>
-
-          <p />
-
-          <Typography fontFamily="KGRedHands">
-            Farewell from the Fort (
-            <a target="_blank" href="https://coord.info/GCANXX8">
-              GCANXX8
-            </a>
-            )
-          </Typography>
-          <ul style={{ margin: 0 }}>
-            <li>
-              <Typography>Sunday (5/25) from 4 - 7 pm</Typography>
-            </li>
-          </ul>
         </div>
 
-        <p />
-        <p />
-        <p />
+        <br />
+        <br />
 
         <Typography variant="h3" fontSize="1.4rem">
           Know before you go!
@@ -374,7 +313,7 @@ export function GeoTour() {
         <ul>
           <li>
             <Typography>
-              Two of the locations have restricted hours, so please review the
+              2 of the locations have restricted hours, so please review the
               cache pages for GCB2GNV and GCB2H3G while planning.
             </Typography>
           </li>
@@ -382,16 +321,15 @@ export function GeoTour() {
             <Typography>
               You will need some special equipment to complete all the caches on
               the tour. We highly recommend you bring hiking boots, a 9V
-              battery, a flashlight, an NFC capable device, an Adventure Lab
-              capable device, and a lot of patience.
+              battery, an NFC-capable device, an Adventure Lab-capable device,
+              and a lot of patience.
             </Typography>
           </li>
           <li>
             <Typography>
-              GCB2H3K and GCB2H3P can involve terrain that some cachers might
-              find challenging. Please be mindful of your ability level and ask
-              for help if you are uncomfortable doing some light rock scrambling
-              or walking in the dark.
+              GCB2H3K may involve terrain that some cachers might find
+              challenging. Please be mindful of your ability level and ask for
+              help if you are uncomfortable doing some light rock scrambling.
             </Typography>
           </li>
           <li>
@@ -421,7 +359,18 @@ export function GeoTour() {
           Park. Otherwise, the caches will be available for the next year to be
           eligible for the souvenir.
         </Typography>
-        <p />
+        <br />
+
+        <a
+          target="_blank"
+          href="https://MarionCVB.com"
+          style={{ width: '100%', maxWidth: '384px', aspectRatio: '384/225' }}
+        >
+          <img
+            src="/eventguide/eventactivities/marioncvb.jpg"
+            style={{ width: '100%' }}
+          />
+        </a>
       </GuideBody>
     </Fragment>
   )

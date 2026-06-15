@@ -193,7 +193,7 @@ function HotelBlock({
               return (
                 <Fragment>
                   {text}
-                  <p />
+                  <br />
                 </Fragment>
               )
             })}
@@ -466,7 +466,7 @@ export function Travel() {
               <em>Starred airports are recommended</em>
             </Typography>
             <Typography fontStyle="italic" fontWeight="bold" textAlign="center">
-              🚨 Update: United Airlines now offers direct flights <p />
+              🚨 Update: United Airlines now offers direct flights <br />
               from IAD and ORD to MGW.
             </Typography>
           </Grid>
@@ -491,7 +491,7 @@ export function Travel() {
           the Signal Symposium together. There might even be some special
           surprises here as well!
         </Typography>
-        <p />
+        <br />
 
         <Grid container>
           <Grid
@@ -501,7 +501,7 @@ export function Travel() {
             justifyContent="center"
             sx={{ backgroundColor: `${BLUE}44` }}
           >
-            <Grid item xs={12}>
+            <Grid item xs={12} justifyContent="center" display="flex">
               <img
                 style={{
                   maxWidth: '360px',
@@ -524,7 +524,7 @@ export function Travel() {
             justifyContent="center"
             sx={{ backgroundColor: `${RED}44` }}
           >
-            <Grid item xs={12}>
+            <Grid item xs={12} justifyContent="center" display="flex">
               <img
                 style={{
                   maxWidth: '360px',
@@ -589,14 +589,14 @@ export function Travel() {
               expect this venue to fill up quickly. Be steps away from the event
               and enjoy a special bonfire event on Saturday (6/27) night!
             </Typography>
-            <p />
+            <br />
             <BigOrangeButton href="https://koa.com/campgrounds/morgantown/?gad_source=1&gad_campaignid=23019580968&gbraid=0AAAAA9cPXpEV1MIDQKq4pAcqiQUf7MVXn&gclid=CjwKCAiAxc_JBhA2EiwAFVs7XOzvhRkYoy9YUXOXvlOffi2ZvSNG-boiFtiwiH5TWdmYD6Q8sBuJaBoCv5MQAvD_BwE">
               Click here to check out the KOA
             </BigOrangeButton>
           </Grid>
         </Grid>
 
-        <p />
+        <br />
 
         <Grid container>
           {CAMPGROUNDS.sort((h1, h2) => h1.distance - h2.distance).map(
@@ -650,7 +650,7 @@ export function Travel() {
                           return (
                             <Fragment>
                               {text}
-                              <p />
+                              <br />
                             </Fragment>
                           )
                         })}

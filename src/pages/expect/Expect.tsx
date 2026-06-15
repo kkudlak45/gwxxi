@@ -57,8 +57,8 @@ export function Expect() {
         </Typography>
       </div>
 
-      <p />
-      <p />
+      <br />
+      <br />
 
       <div style={{ flexDirection: 'column', gap: '0.8rem', display: 'flex' }}>
         <Typography variant="h4">How does it work?</Typography>
@@ -79,8 +79,8 @@ export function Expect() {
         </Typography>
       </div>
 
-      <p />
-      <p />
+      <br />
+      <br />
 
       <div
         style={{
@@ -106,12 +106,12 @@ export function Expect() {
           brainstorming sessions into an extension of the story itself.
         </Typography>
         <BigOrangeButton href="/events/2026/teams">
-          Learn more about tech teams and register
+          Learn more about tech teams
         </BigOrangeButton>
       </div>
 
-      <p />
-      <p />
+      <br />
+      <br />
 
       <div
         style={{
@@ -164,8 +164,8 @@ export function Expect() {
           <li>
             <Typography>
               If puzzles aren’t your thing, complete the{' '}
-              <a href="/projects/vmc-gt">Visit Mountaineer Country GeoTour</a>{' '}
-              to earn a trackable Geocoin and digital souvenir!
+              <a href="/projects/vmcgt">Visit Mountaineer Country GeoTour</a> to
+              earn a trackable Geocoin and digital souvenir!
             </Typography>
           </li>
           <li>
@@ -184,12 +184,12 @@ export function Expect() {
           to tie up loose ends.
         </Typography>
         <BigOrangeButton href="/events/2026/schedule">
-          Learn more about events and activities
+          Learn more about events & activities
         </BigOrangeButton>
       </div>
 
-      <p />
-      <p />
+      <br />
+      <br />
 
       <div
         style={{
@@ -211,7 +211,7 @@ export function Expect() {
           completion of any of the event puzzles.
         </Typography>
         <div style={{ width: '100%' }}>
-          <Typography>Pre-event publications</Typography>
+          <BoldKol>Pre-event publications</BoldKol>
           <ul style={{ marginTop: '0.4rem' }}>
             <li>
               <Typography>
@@ -226,7 +226,7 @@ export function Expect() {
             </li>
           </ul>
 
-          <Typography>Publishing on June 26, 2025</Typography>
+          <BoldKol>Publishing on June 26, 2025</BoldKol>
           <ul style={{ marginTop: '0.4rem' }}>
             <li>
               <Typography>
@@ -239,13 +239,12 @@ export function Expect() {
                 In addition to the existing 10 Geocaches part of the{' '}
                 <a href="/projects/crc">Country Roads Challenge</a>, 10 new
                 Geocaches will be published as part of the official{' '}
-                <a href="/projects/vmc-gt">Visit Mountaineer Country GeoTour</a>
-                .
+                <a href="/projects/vmcgt">Visit Mountaineer Country GeoTour</a>.
               </Typography>
             </li>
           </ul>
 
-          <Typography>Publishing on June 27, 2025</Typography>
+          <BoldKol>Publishing on June 27, 2025</BoldKol>
           <ul style={{ marginTop: '0.4rem' }}>
             <li>
               <Typography>

@@ -1,23 +1,23 @@
-import { Grid, Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import { Justified } from '../Team/Team'
-import { BigOrangeButton } from '../Guide/BigOrangeButton'
+import { BoldKol } from '../Guide/CantMissExperiences/Counties'
 
 export function Trading() {
   return (
     <div style={{ padding: '0 1rem' }}>
       <Typography variant="h2" marginTop="2rem">
-        Create Your Own CacheMore 2026 Trading Card
+        CacheMore 2026 Trading Card Challenge
       </Typography>
 
-      <div style={{ width: '100%', alignItems: 'start' }}>
-        <Justified>
+      {/* <div style={{ width: '100%', alignItems: 'start' }}> */}
+      {/* <Justified>
           Be part of the story with your very own CacheMore trading card! These
           trackable game pieces are an excellent way to meet new cachers, show
           your team spirit, and be part of the fun all weekend long. And the
           best part? After the event, these cards make excellent SWAG items to
           leave in caches.
-        </Justified>
-        <Grid container marginTop="1rem" display="flex" alignItems="center">
+        </Justified> */}
+      {/* <Grid container marginTop="1rem" display="flex" alignItems="center">
           <Grid item md={6} xs={12} display="flex" justifyContent="center">
             <img
               src="/trading/Trading_Card_Front.png"
@@ -47,8 +47,8 @@ export function Trading() {
               BUY YOUR TRADING CARD TODAY
             </BigOrangeButton>
           </Grid>
-        </Grid>
-        <p />
+        </Grid> */}
+      {/* <p />
         <Justified>
           By purchasing a trading card, you'll get the opportunity to submit
           custom information to appear on your very own card, including your own
@@ -68,22 +68,15 @@ export function Trading() {
           allow up to two weeks for our team to design and send it back to you
           for approval. The deadline to purchase a card and submit your
           information is May 1.
-        </Justified>
-      </div>
-      <p />
+        </Justified> */}
+      {/* </div> */}
+      {/* <br />
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
         <BigOrangeButton href="https://cachemore.store/products/trading-cards">
-          CLICK HERE TO CREATE YOUR OWN <p /> CACHEMORE TRADING CARD
+          CLICK HERE TO CREATE YOUR OWN <br /> CACHEMORE TRADING CARD
         </BigOrangeButton>
-      </div>
+      </div> */}
 
-      <p />
-      <p />
-      <p />
-      <Typography variant="h4">
-        CacheMore 2026 Trading Card Challenge
-      </Typography>
-      <p />
       <div style={{ width: '100%', alignItems: 'start' }}>
         <Justified>
           One of the highlights of the CacheMore 2026 event will be meeting with
@@ -93,7 +86,7 @@ export function Trading() {
           throughout the weekend. However, these cards contain more than meets
           the eye.
         </Justified>
-        <p />
+        <br />
         <Justified>
           Hidden within the full set of cards is a mystery waiting to be
           uncovered, which leads to a special bonus cache that will be published
@@ -104,7 +97,7 @@ export function Trading() {
           opportunity to try for this very coveted FTF, or at the very least,
           snag a juicy D/T mystery while attending.
         </Justified>
-        <p />
+        <br />
         <Justified>
           What's the mystery you ask? That's up for you to uncover. Trading
           cards can be found in registration packages and in caches throughout
@@ -117,13 +110,13 @@ export function Trading() {
           common to find, but some may be intentionally more rare, so keep an
           eye out in the{' '}
           <a href="/events/2026/puzzles">pre-event mystery caches</a> and{' '}
-          <a target="_blank" href="/projects/vmc-gt">
+          <a target="_blank" href="/projects/vmcgt">
             GeoTour
           </a>{' '}
           caches because you never know what card you might find.
         </Justified>
-        <p />
-        <Typography>A few helpful notes to aid in this year's hunt:</Typography>
+        <br />
+        <BoldKol>A few helpful notes to aid in this year's hunt:</BoldKol>
         <ul>
           <li>
             <Justified>
@@ -168,11 +161,11 @@ export function Trading() {
           </li>
           <li>
             <Justified>
-              The bonus cache will be a physical ammo can container hidden
-              somewhere in Morgantown. Once you solve the puzzle, you will be
-              given coordinates to the location. The final location will be
-              published as an official mystery cache on Saturday (6/27) evening
-              with a rating of D5/T2.5.
+              The bonus Geocache will be a locked container hidden somewhere in
+              Morgantown. You will need to use the trading cards to solve for
+              the GPS coordinates AND lock combination. The final location will
+              be published as an official mystery cache on Saturday (6/27)
+              evening with a rating of D5/T1.5
             </Justified>
           </li>
         </ul>
@@ -186,8 +179,8 @@ export function Trading() {
         </Typography>
       </div>
 
-      <p />
-      <p />
+      <br />
+      <br />
     </div>
   )
 }

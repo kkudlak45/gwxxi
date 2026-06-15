@@ -40,6 +40,8 @@ export function LHRHT() {
           style={{ width: '100%', maxWidth: '800px' }}
         />
 
+        <br />
+
         <Typography textAlign="justify">
           Full of history and natural beauty, Pennsylvania's Lumber Heritage
           Region spans 4.2 million acres across 15 counties. From sweeping
@@ -51,7 +53,10 @@ export function LHRHT() {
           to unlock a unique souvenir added to your Geocaching profile.
         </Typography>
 
-        <BigOrangeButton>CLICK HERE FOR MORE INFO</BigOrangeButton>
+        <BigOrangeButton href="https://www.geocaching.com/play/geotours/lumber-heritage">
+          CLICK HERE FOR MORE INFO
+        </BigOrangeButton>
+        <br />
 
         <Typography variant="h4">About the Lumber Heritage Region</Typography>
 
@@ -98,11 +103,12 @@ export function LHRHT() {
           own by clicking the link provided.
         </Typography>
 
-        <BigOrangeButton href="/cachemore/lhrgt/LHR-GeoTour-v4.pdf">
+        <BigOrangeButton href="/cachemore/lhrgt/LHR-GeoTour-v6.pdf">
           CLICK HERE TO DOWNLOAD THE LHR-GT PASSPORT
         </BigOrangeButton>
 
-        <p />
+        <br />
+        <br />
 
         <div>
           {LHRGTCACHES.map((c) => {
@@ -142,6 +148,7 @@ export function LHRHT() {
           <BoldKol>Warren County CVB</BoldKol>
           <Typography>22045 US-6, Warren, PA 16365</Typography>
           <Typography>Monday - Friday, 9 am - 4:30 pm</Typography>
+          <Typography>Saturday, 9 am - 2 pm</Typography>
         </div>
 
         <Typography variant="h4">Know Before You Go!</Typography>
@@ -203,10 +210,10 @@ export function LHRHT() {
               <a target="_blank" href="https://coord.info/GCBF93Y">
                 GCBF93Y
               </a>
-              ). The office is only open from 9 am to 4:30 pm, Monday to Friday.
-              You only need 20/23 code words to claim your Geocoin, so it's
-              recommended to find stop #03, then finish with stop #02 and stop
-              #01.
+              ). The office is only open from 9 am to 4:30 pm, Monday to Friday,
+              or 9 am to 2 pm on Saturday. Closed Sundays. You only need 20/23
+              code words to claim your Geocoin, so it's recommended to find stop
+              #03, then finish with stop #02 and stop #01.
             </Typography>
           </li>
           <li>

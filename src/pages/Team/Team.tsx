@@ -9,6 +9,7 @@ export const Justified = styled(Typography)({
 export const GoodSection = styled(Section)({
   flexDirection: 'column',
   alignItems: 'center',
+  padding: '0.5rem 0',
 })
 
 export function Team() {
@@ -23,26 +24,25 @@ export function Team() {
           CacheMore 2026 introduces a bold new experiment: a powerful Cache AI
           designed to analyze data, recognize patterns, and unlock a mystery
           hidden across Morgantown. Before it can be trusted, the system must be
-          tested … and that’s where you come in.
+          tested … and that’s where you come in. The Tech Team Challenge is a
+          city-wide, team-based adventure that blends exploration, puzzles, and
+          collaboration. Your mission is to perform a series of system tests to
+          ensure the AI is ready to go live and uncover a final bonus geocache
+          hidden somewhere in Morgantown.
         </Justified>
-        <p />
-        <Justified>
-          The Tech Team Challenge is a city-wide, team-based adventure that
-          blends exploration, puzzles, and collaboration. Your mission is to
-          perform a series of system tests to ensure the AI is ready to go live
-          and uncover a final bonus geocache hidden somewhere in Morgantown.
-        </Justified>
-        <p />
-        <BigOrangeButton href="/events/2026/about">
+        <br />
+        <BigOrangeButton
+          href="/events/2026/about"
+          sx={{ lineHeight: '2rem', marginTop: '1rem', padding: '0.6rem 2rem' }}
+        >
           Click here to learn more
-          <p />
+          <br />
           about what to expect
         </BigOrangeButton>
       </GoodSection>
 
       <GoodSection>
         <Typography variant="h4">How The Challenge Works</Typography>
-        <p />
         <div style={{ width: '100%', alignItems: 'flex-start' }}>
           <Justified>
             To test the Cache AI program, participants have the opportunity to
@@ -54,7 +54,7 @@ export function Team() {
             objective is to complete enough Adventure Labs to uncover clues to
             locate a physical Geocache placed somewhere in Morgantown.
           </Justified>
-          <p />
+          <br />
           <Justified>
             Clues for the final Geocache can be found in the Adventure Lab
             journals for each test. 10 locations hold clues to help Team Nexus,
@@ -64,7 +64,7 @@ export function Team() {
             around Mountaineer Country. Along the way, you’ll solve puzzles and
             complete site-specific tasks similar to an escape room.
           </Justified>
-          <p />
+          <br />
           <Justified>
             These locations can be completed in any order, and attendees should
             prepare to spend at least 6 hours traveling to the various
@@ -81,8 +81,6 @@ export function Team() {
         <Typography variant="h4">
           Timeline & Final Objective Challenge
         </Typography>
-
-        <p />
 
         <div style={{ width: '100%', alignItems: 'start' }}>
           <Justified>
@@ -101,7 +99,7 @@ export function Team() {
             cache on Sunday to claim credit for the D5 mystery. Finisher coins
             will be awarded until all 100 have been distributed.
           </Justified>
-          <p />
+          <br />
           <Justified>
             Be sure to attend the{' '}
             <a target="_blank" href="http://coord.info/GCBFQRD">
@@ -114,7 +112,7 @@ export function Team() {
             how the mystery fits together. While not required, skipping this
             event may leave important pieces of the puzzle undiscovered.
           </Justified>
-          <p />
+          <br />
           <Justified>
             A smartphone capable of running the Adventure Lab app is required.
             No specialized knowledge is needed. All clues can be gathered on
@@ -129,14 +127,13 @@ export function Team() {
         <Typography variant="h4">
           Team Structure & Competition Details
         </Typography>
-        <p />
         <div style={{ width: '100%', alignItems: 'start' }}>
           <Justified>
             Participation in the Tech Team Challenge requires{' '}
             <a href="/events/2026/register">registering on a team</a>. Depending
             on demand, teams will be capped at 100 participants.
           </Justified>
-          <p />
+          <br />
           <Justified>
             The Tech Team Challenge is designed to be both competitive and
             cooperative, with teamwork adding to the weekend’s fun. Work closely
@@ -147,7 +144,7 @@ export function Team() {
         </div>
       </GoodSection>
 
-      <GoodSection>
+      {/* <GoodSection>
         <Typography variant="h4">
           The final results are based on a combination of:
         </Typography>
@@ -176,7 +173,7 @@ export function Team() {
             they are part of a rival team.
           </Justified>
         </div>
-      </GoodSection>
+      </GoodSection> */}
 
       <GoodSection>
         <Typography variant="h4">Team Tips</Typography>
@@ -202,9 +199,7 @@ export function Team() {
                   <Typography>Dress in your team’s colors </Typography>
                 </li>
                 <li>
-                  <Typography>
-                    Sign cache logs using your team color{' '}
-                  </Typography>
+                  <Typography>Sign cache logs using your team color</Typography>
                 </li>
                 <li>
                   <Typography>Represent your side wherever you go </Typography>
@@ -217,7 +212,6 @@ export function Team() {
 
       <GoodSection sx={{ marginTop: '-1rem' }}>
         <Typography variant="h4">Puzzle Solving Not Your Thing?</Typography>
-        <p />
         <div style={{ width: '100%', alignItems: 'start' }}>
           <Justified>
             No worries! There are still plenty of things to enjoy at CacheMore!
@@ -225,9 +219,9 @@ export function Team() {
             required to find and enjoy the various Adventure Labs hidden
             throughout Morgantown. Along the way, don’t forget to find the 10
             new caches that are a part of the{' '}
-            <a href="/projects/vmc-gt">Visit Mountaineer Country GeoTour</a>!{' '}
+            <a href="/projects/vmcgt">Visit Mountaineer Country GeoTour</a>!{' '}
           </Justified>
-          <p />
+          <br />
           <Justified>
             There are also tons of exciting events to participate in, where
             you’ll meet hundreds of other cachers. This is a great opportunity
@@ -237,8 +231,8 @@ export function Team() {
         </div>
       </GoodSection>
 
-      <p />
-      <p />
+      <br />
+      <br />
     </div>
   )
 }

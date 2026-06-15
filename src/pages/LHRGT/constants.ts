@@ -17,7 +17,7 @@ export const LHRGTCACHES = [
     gcCode: 'GCBF93Y',
   },
   {
-    name: 'LHR-GT #04: Wilds Sonshine Factory',
+    name: 'LHR-GT #04: Sonshine in the Wilds',
     type: CacheType.MYSTERY,
     gcCode: 'GCBF941',
   },
@@ -48,7 +48,7 @@ export const LHRGTCACHES = [
   },
   {
     name: 'LHR-GT #10: Susquehanna Riverwalk',
-    type: CacheType.TRADITIONAL,
+    type: CacheType.MYSTERY,
     gcCode: 'GCBF953',
   },
   {
@@ -77,7 +77,7 @@ export const LHRGTCACHES = [
     gcCode: 'GCBF96B',
   },
   {
-    name: 'LHR-GT #16: Straub Brewery',
+    name: "LHR-GT #16: St. Mary's Oldest Brewery",
     type: CacheType.TRADITIONAL,
     gcCode: 'GCBF96P',
   },
