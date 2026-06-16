@@ -3,8 +3,10 @@ import { BigOrangeButton } from '../Guide/BigOrangeButton'
 import { VMCGTCACHES } from './constants'
 import { GCDisplay } from '../Guide/EventActivities/GeoTour'
 import { BoldKol } from '../Guide/CantMissExperiences/Counties'
+import { useIsMobile } from '../../hooks/useIsMobile'
 
 export function VMCGT() {
+  const isMobile = useIsMobile()
   return (
     <div
       style={{
@@ -17,7 +19,7 @@ export function VMCGT() {
     >
       <Typography variant="h2">Visit Mountaineer Country GeoTour</Typography>
       <img
-        src="/eventguide/eventactivities/moegtheader.jpg"
+        src="/eventguide/eventactivities/vmcgtheader.png"
         style={{ width: '100%', aspectRatio: '1800 / 540' }}
       />
       <Typography>
@@ -48,7 +50,7 @@ export function VMCGT() {
         passport at the Visit Mountaineer Country CVB office, or print one off
         using the link below to help keep track.
       </Typography>
-      <BigOrangeButton href="/eventguide/eventactivities/Visit-Mountaineer-GeoTour-v7.pdf">
+      <BigOrangeButton href="/projects/vmcgt/passport.pdf">
         DOWNLOAD THE PASSPORT
       </BigOrangeButton>
 
@@ -97,6 +99,20 @@ export function VMCGT() {
           )
         })}
       </Grid>
+
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1Yr7WJsIpstsArRHzoOAz1iW9C_e6pHY&ehbc=2E312F"
+        width="640"
+        height="480"
+        style={{
+          maxWidth: '80%',
+          maxHeight: '80%',
+          width: '80%',
+          height: 'auto',
+          aspectRatio: isMobile ? '1' : '640 / 480',
+        }}
+        loading="lazy"
+      />
 
       <Typography variant="h4">Claim your coin</Typography>
       <Typography>

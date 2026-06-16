@@ -124,7 +124,6 @@ export function GeoTour() {
           Getting Started
         </Typography>
         <br />
-        {/* TODO - need the passport link */}
         <Typography zIndex="9999">
           Welcome to Marion County, West Virginia! This officially registered
           GeoTour features 16 unique caches split between 4 areas of interest:
@@ -135,6 +134,14 @@ export function GeoTour() {
           or print one off using the link below to help keep track of your
           adventure.
         </Typography>
+        <br />
+
+        <BigOrangeButton href="/projects/moegt/passport.pdf">
+          DOWNLOAD THE PASSPORT
+        </BigOrangeButton>
+
+        <br />
+        <br />
         <br />
 
         <Grid

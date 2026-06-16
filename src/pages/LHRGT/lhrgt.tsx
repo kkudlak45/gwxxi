@@ -103,7 +103,7 @@ export function LHRHT() {
           own by clicking the link provided.
         </Typography>
 
-        <BigOrangeButton href="/cachemore/lhrgt/LHR-GeoTour-v6.pdf">
+        <BigOrangeButton href="/projects/lhrgt/passport.pdf">
           CLICK HERE TO DOWNLOAD THE LHR-GT PASSPORT
         </BigOrangeButton>
 

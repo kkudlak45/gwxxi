@@ -30,6 +30,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Container
+          id="maincontainer"
           sx={{
             padding: isMobile ? '64px 0px' : '48px 0px',
             maxWidth: '800px',
